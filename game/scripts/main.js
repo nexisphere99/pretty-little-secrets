@@ -89,7 +89,7 @@ Macro.add("centerImage", {
 $(document).on(":passagerender", function () {
   if (!$("#menu-item-patreon").length) {
     $("#menu-core").append(
-      '<li id="menu-item-patreon"><a href="https://www.patreon.com/c/zaramystique" target="_blank">❤️ Support Me</a></li>'
+      '<li id="menu-item-patreon"><a href="https://www.patreon.com/c/zaramystique_pls" target="_blank">❤️ Support Me</a></li>'
     );
   }
   if (!$("#menu-item-characters").length) {
