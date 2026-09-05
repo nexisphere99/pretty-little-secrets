@@ -1,0 +1,79 @@
+:: Day1_Evening_B [day1 evening chloe phone]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<p>My bed feels different tonight. Maybe it's the same bed it's always been and I'm the one who's different, but the sheets seem rougher, the mattress less forgiving, like my body has been recalibrated to notice textures it used to ignore.</p>
+
+<p>I call Chloe at nine. She picks up on the first ring, which means she was waiting, which means she'd never admit she was waiting.</p>
+
+<<dialog "Chloe" "Hey, you.">>
+
+<p>"Hey."</p>
+
+<p>We talk about nothing for an hour. She tells me about her day after I left. How she reorganized her bookshelf by color instead of author and immediately regretted it. How Mia texted her about some party next weekend. How Jade got a new tattoo, a tiny butterfly behind her ear.</p>
+
+<p>"You should meet them properly," she says. "Mia and Jade. They've been asking about you."</p>
+
+<p>"Asking what?"</p>
+
+<p>"If you're cute. If you're nice. If you're..." She pauses. A loaded pause, the kind that makes my stomach clench. "...interesting."</p>
+
+<p>"Am I interesting?"</p>
+
+<p>"You have no idea."</p>
+
+<<set $chloePhoneCall to true>>
+
+<<if $pantiesAccepted>>
+<p>There's a shift in her voice. Lower. Warmer. Like honey dripping off a spoon.</p>
+
+<<dialog "Chloe" "Hey. Are you still wearing them?">>
+
+<p>I look down. The pink lace peeks above the waistband of my sweatpants. I didn't take them off. I went home, ate dinner, sat through Evelyn's posture corrections and Lily's interrogation, and never once thought to change. Or maybe I thought about it and decided not to. I can't tell the difference anymore.</p>
+
+<p>"Yeah," I say. My voice is quiet. "I am."</p>
+
+<p>She makes a sound. Not quite a word, not quite a moan. Something between. A vibration in her throat that travels through the phone line and settles in my groin like a warm hand. "Mmmmm. Good boy."</p>
+
+<p>My cock surges against the silk. It's been doing that all day, swelling and softening in waves, responding to every micro-friction, every shift and stretch. But hearing her say that, "good boy," in that voice, it doesn't just twitch. It throbs. A full, aching pulse that pushes the silk tight against the head of my cock and sends a pearl of precum into the fabric.</p>
+
+<<dialog "Chloe" "Keep them on tonight. For me. Sleep in them.">>
+
+<p>"Chloe..."</p>
+
+<p>"Don't touch yourself." Her voice is firm now. A command, not a request. The shift is so seamless I almost miss it, from girlfriend to something else, something with teeth. "Just feel them. Feel how they feel against you. Let it build."</p>
+
+<p>I'm so hard it hurts. The silk is damp now, a wet spot forming where my cock leaks against the fabric, the material clinging to me, translucent where it's wet. I want to touch myself so bad my hand actually starts moving before I catch it and grip the mattress instead.</p>
+
+<p>"Okay," I whisper.</p>
+
+<p>"Okay what?"</p>
+
+<p>I don't know why I say it. The words come from some part of me I haven't visited before, some room in my brain I didn't know had a door. "Okay... I'll be good."</p>
+
+<p>The sound she makes. God. If I could bottle that sound and sell it, I'd be a millionaire. It's pure satisfaction, pure pleasure, the sound of someone getting exactly what they wanted and loving every atom of it.</p>
+
+<<dialog "Chloe" "Sweet dreams, baby.">>
+
+<p>And hangs up.</p>
+
+<p>I lie in the dark with my cock straining against damp pink silk and my heart beating in places I didn't know had a pulse.</p>
+
+<<statChange "arousal" 2>>
+<<statChange "obedience" 1>>
+<<statChange "feminization" 2>>
+<<set $chloeRelationship += 2>>
+<<else>>
+<p>We talk until my phone battery drops into the single digits and Chloe threatens to hang up first if I don't. It's easy, comfortable, the kind of call that doesn't need a reason to happen.</p>
+
+<<dialog "Chloe" "Sweet dreams, you.">>
+
+<<set $chloeRelationship += 1>>
+<</if>>
+
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

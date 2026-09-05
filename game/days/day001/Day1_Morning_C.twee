@@ -1,0 +1,73 @@
+:: Day1_Morning_C [day1 morning personal jog]
+<<nobr>>
+<<centerImage "image/events/jog.gif">>
+<<set $currentLocation to "events/jog">>
+
+<p>Running clears my head. Always has. I lace up my beat-to-hell Nikes, pull on gym shorts and the rattiest t-shirt I own, and I'm out the door before my brain fully boots up. The morning air is cool, that perfect temperature where you can feel the dew burning off the sidewalk.</p>
+
+<p>Our neighborhood is the kind of suburb that looks like it was assembled from a catalog. Two-story houses with tidy lawns. Mailboxes in a row. One tree per yard, planted at exactly the same distance from the curb, like some urban planner with OCD had a field day. I know every house, every crack in the sidewalk, every dog that barks when I pass.</p>
+
+<p>Mr. Henderson is out front watering his lawn. Seventy-something years old, skin like tanned leather, a Baltimore Orioles cap so faded it might be from the original franchise. He waters his lawn at the same time every morning regardless of weather, season, or common sense. He's been doing that at 8 AM every Saturday since before I moved in. His lawn is green enough to make a golf course jealous. He waves his free hand at me. I wave back without breaking stride.</p>
+
+<<dialog "Alex" "Morning, Mr. Henderson!">>
+
+<p><strong>"Morning, son! Good to see young people still exercise! Getting exercise! Good man. Young people these days, always on their phones. Not you though. You're a good one."</strong></p>
+
+<p>He says the same thing every week. I give the same answer. It's a ritual. Comfortable. Something about the reliability of it anchors me. In a world where everything else is apparently about to go sideways, Mr. Henderson will still be watering his lawn and calling me a good one.</p>
+
+<<set $hendersonFamiliarity += 1>>
+
+<p>I round the corner onto Maple and pick up my pace. Past the Johnsons' place with their aggressive garden gnomes. Past the empty lot where someone started building a fence and gave up halfway through. Past the park where kids are already claiming the swings, their shrieks carrying across the morning air like bird calls.</p>
+
+<p>Then I hit her block.</p>
+
+<p>I don't know her name yet. The woman next door. Well, two doors down. She moved in maybe a month ago and I've seen her exactly three times, always in yoga clothes, always doing something impossibly flexible on her front porch. Today she's out there in black leggings and a lavender sports bra, one foot pulled up behind her in a quad stretch, her free arm extended like a dancer. Blonde curls tumble past her shoulders, catching the light. She's toned in a way that whispers dedication. Not gym-bro muscle. Yoga muscle. Long and lean and controlled.</p>
+
+<p>She catches me looking. Of course she does. My stride probably stuttered like a bad connection. She smiles. It's an easy smile, no judgment in it, just warmth and maybe a little amusement.</p>
+
+<p>She waves.</p>
+
+<p>I wave back. Keep jogging. Don't look over my shoulder. I want to look over my shoulder so bad it physically hurts, but I keep my eyes forward because I'm not that guy. I'm not a creep. I'm just a dude who noticed a beautiful woman stretching on her porch. That's normal. That's biology.</p>
+
+<<set $sophiaNoticed to true>>
+
+<p>Up ahead the path splits: I can loop past the park's fitness area on my way back, or just cut straight home.</p>
+
+<<link "Take the long loop past the park fitness area" "Day1_Morning_C_Claire">><</link>><br>
+<<link "Head straight home" "Day1_Morning_C_End">><</link>>
+<</nobr>>
+
+:: Day1_Morning_C_Claire [day1 morning jog claire]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>There's a woman doing yoga in the park too. Not the one from my block, a different woman. Younger, maybe late twenties, with honey-blonde hair pulled back in a tight ponytail and an athletic build that speaks more to discipline than genetics. She's on a mat near the fitness equipment, leading what looks like an informal class: three other women following her movements as she flows through a sun salutation.</p>
+
+<p>She spots me jogging past and her eyes track me for two strides. Not checking me out. Assessing. Like a coach evaluating a recruit. She has this bearing, military almost, that doesn't match the gentle yoga poses. Her body is soft but her eyes are steel.</p>
+
+<p>I keep running. She keeps watching. Just for a second. Then she's back to her class, adjusting a student's hips with one firm hand, her voice carrying across the grass: <strong>"Wider stance. Drop your shoulders. Breathe from your belly, not your chest."</strong></p>
+
+<p>I don't know it yet, but she's going to teach me how to move like a woman. Not through yoga. Through the way she holds eye contact without flinching and speaks commands without raising her voice and occupies space with a confidence so absolute that it reshapes the room around her.</p>
+
+<p>But that's later. For now she's just a glimpse. A woman in the park doing yoga, who looked at me once and saw something I haven't seen yet.</p>
+
+<<set $claireNoticed to true>>
+<<statChange "confidence" 1>>
+
+<<link "Head home" "Day1_Morning_C_End">><</link>>
+<</nobr>>
+
+:: Day1_Morning_C_End [day1 morning jog end]
+<<nobr>>
+<p>By the time I get home I've done two miles and my lungs feel like they've been scrubbed clean. I stand in the shower and let the hot water hit my shoulders and I think about nothing. Good run. Normal morning.</p>
+
+<<statChange "confidence" 2>>
+<<statChange "resistance" 1>>
+<<set $joggedDay1 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<p><em>Sophia flag set, noticed her, she noticed you. She'll introduce herself properly in a few days regardless, but this early sighting makes that meeting feel more natural.</em></p>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

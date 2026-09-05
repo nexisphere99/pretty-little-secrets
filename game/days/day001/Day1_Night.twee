@@ -1,0 +1,40 @@
+:: Day1_Night [day1 night reflection]
+<<nobr>>
+<<centerImage "image/events/sleep.png">>
+<<set $phase to "night">>
+<h2>Night</h2>
+
+<p>The house is quiet. That special midnight quiet where even the pipes stop talking and the walls hold their breath. I lie in bed and stare at the ceiling, which is just a ceiling, white and boring and exactly what a ceiling should be.</p>
+
+<<if $pantiesEquipped>>
+<p>I can feel them. Every time I shift, every time I breathe deep enough for my stomach to push against the waistband, every time I roll onto my side and the silk slides across my hip. It's not painful. It's not even really uncomfortable. It's just... there. A layer between me and the world that wasn't there this morning. A thin, soft, pink boundary between who I was yesterday and whoever I'm becoming today.</p>
+
+<p>Chloe's face when she saw me in them. That raw, electric delight. The way her whole body leaned forward like I was a magnet and she was iron filings. Nobody's ever looked at me like that. Not with that intensity. Not with that hunger.</p>
+
+<p>I liked it.</p>
+
+<p>I liked making her happy. I liked the way her voice changed on the phone, going from girlfriend to something deeper, something with authority. I liked the word "good" in her mouth. I liked being told what to do and doing it and feeling the reward of her approval wash over me like warm water.</p>
+
+<p>Is that weird? It feels weird. It feels like something I should examine more closely, but I'm also hard and tired and the silk is warm against my skin and Chloe told me not to touch myself and I'm not going to touch myself because she told me not to and that's... fine. That's fine. That's a choice I'm making. A choice to listen. A choice to be good.</p>
+
+<p>I fall asleep with one hand gripping the sheet and the other pressed flat against the warm silk covering my cock, not stroking, just holding, just feeling, just existing in this new and terrifying and beautiful in-between.</p>
+
+<<statChange "feminization" 2>>
+<<else>>
+<p>I think about tomorrow. Maybe I'll check out that cafe job. Maybe I'll see what Chloe's up to. Maybe I'll do nothing again and let the weekend dissolve like sugar in hot water.</p>
+
+<p>Life feels simple. Comfortable. Like it could stay this way forever. Like the biggest change on my horizon is choosing between cereal brands or which game to play next. I don't know what I don't know. I don't know that this is the last night my life will ever feel like this. That tomorrow has a door in it, and the day after has another, and each one opens into a room a little stranger than the last.</p>
+
+<p>But right now, in this bed, in this dark, in this quiet house with Evelyn's roses in the air and Lily's bass through the wall, I'm just a nineteen-year-old kid on a Saturday night with nothing on his mind and nothing on his skin except a t-shirt and boxers and the ordinary promise of morning.</p>
+<</if>>
+
+<p>I sleep well.</p>
+
+<<statSummary>>
+
+<<link `"Sleep   Begin Day " + ($day + 1)`>>
+  <<set $day += 1>>
+  <<set $phase to "morning">>
+  <<goto "DailyHub">>
+<</link>>
+<</nobr>>

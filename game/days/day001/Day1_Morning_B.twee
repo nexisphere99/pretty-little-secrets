@@ -1,0 +1,31 @@
+:: Day1_Morning_B [day1 morning personal]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<p>The couch swallows me like a mouth. I sink into the cushions with a bowl of Cinnamon Toast Crunch and the TV remote and I don't plan on moving for at least three hours. Saturday cartoons are dead but there's always something dumb on cable, and today it's a marathon of one of those house-flipping shows where rich people complain about granite countertops.</p>
+
+<p>Evelyn walks through the living room on her way somewhere. She pauses. Looks at me. Looks at the cereal bowl balanced on my chest. Looks at the crumbs already forming a constellation on my t-shirt. Her mouth does this thing where it tightens at the corners, like she's physically swallowing a lecture.</p>
+
+<<dialog "Evelyn" "I see you have plans.">>
+
+<p>The way she says "plans" could peel paint.</p>
+
+<p>"Yep."</p>
+
+<p>She leaves. The air feels colder for about ten seconds after she's gone.</p>
+
+<p>I scroll my phone. Text Chloe back properly this time. "Yeah I'll come over this afternoon. What time?" She sends back a string of heart emojis and "whenever, I'm here all day." I send a thumbs up. She sends a middle finger emoji. I send a laughing face. This is us. This is normal.</p>
+
+<p>Lily doesn't surface. I can hear music thumping through her bedroom door, something with heavy bass and a woman singing in a language I don't recognize. She'll emerge at noon like a vampire who discovered eyeliner. Until then, the house is mine and Evelyn's, and Evelyn has apparently decided I don't exist, which is fine. More than fine. Comfortable.</p>
+
+<p>I watch three episodes of the house show. I eat two bowls of cereal. I let my phone die and don't plug it in. Nothing happens. Nothing at all. And that feels good. That feels right. Like today is a day where the biggest decision I'll make is whether to switch to the cooking channel or take a nap.</p>
+
+<<statChange "resistance" 2>>
+<<statChange "confidence" 1>>
+<<set $lazedDay1 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

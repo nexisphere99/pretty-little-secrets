@@ -1,0 +1,32 @@
+:: Day1_Afternoon_C [day1 afternoon job]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<p>My laptop is ancient. A Lenovo ThinkPad that runs like it's powered by hamsters and resentment. It takes four minutes to boot up and another two to load Chrome, during which time I could have walked to the cafe and applied in person. But here I am, sitting on my bed, watching the loading circle spin.</p>
+
+<p>Chloe mentioned a cafe that's hiring. Lush Latte, somewhere downtown. I pull up the listing. The website is one of those Squarespace templates with a stock photo of a latte and a font that's trying too hard.</p>
+
+<p><strong>"Delivery riders wanted. $12/hr plus tips. Must have reliable transportation (we provide an e-bike). Friendly attitude required. Flexible hours."</strong></p>
+
+<p>Twelve bucks an hour isn't great but it isn't nothing. I pull up the cafe's Instagram while I think about what to write. Lush Latte has an aesthetic. Pastel walls, Edison bulbs, succulents on every table, latte art that looks like it belongs in a museum. The staff photos show women in cute aprons, floral prints, hair in buns with loose strands framing their faces. One photo shows a delivery rider, a guy on an e-bike with a branded thermal bag, but even his uniform has a certain softness to it. Pastel green polo with the cafe logo embroidered on the chest. Tight-fitting. It looks comfortable but decidedly not masculine.</p>
+
+<p>I close the tab and tell myself it's just a delivery job. Ride a bike, drop off coffee, collect tips. Nothing weird about it. Nothing feminine about riding a bike in a pastel polo and delivering drinks to people while they examine you through the window.</p>
+
+<p>Nothing weird at all.</p>
+
+<p>I compose an email. "Hi, I saw your delivery rider listing. I'm available to start immediately. I'm Alex, 19, and I'm reliable and hardworking." I stare at "hardworking" for ten seconds, decide it sounds like something a robot wrote on a resume, and change it to "I'll show up on time and not drop your coffees." Then I change it back. Then I delete the whole thing and write "Hi, I'm interested in the delivery position. When can I come in?"</p>
+
+<p>Send.</p>
+
+<p>Within an hour, a reply pops up from someone named Vanessa. The shift manager, apparently. "Come in tomorrow morning, 9am. Bring a good attitude :)" She attached a smiley face. Seems friendly. Or passive-aggressive. Hard to tell over email. Her email is brisk and warm at the same time, three sentences, no wasted words. She capitalizes properly and uses punctuation, which puts her above ninety percent of people I've interacted with online.</p>
+
+<p>Either way, I have somewhere to be tomorrow.</p>
+
+<<statChange "confidence" 1>>
+<<set $cafeJobApplied to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

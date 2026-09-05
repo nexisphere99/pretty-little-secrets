@@ -1,0 +1,71 @@
+:: StoryTitle
+Pretty Little Secrets
+
+:: StoryData
+{
+	"ifid": "27FA6D7B-4709-4B3D-9797-F5BF92C9430B",
+	"format": "SugarCube",
+	"format-version": "2.37.3",
+	"start": "Start",
+	"zoom": 0.6
+}
+
+:: StoryCaption
+<<nobr>>
+Day $day | <<= $phase.toUpperCase()>>
+<li id="avatar-box">
+  <img src="image/avatar/alex.png" alt="Your Avatar" id="sidebar-avatar">
+</li>
+<li class="progress-box">
+  <label>Feminization</label>
+  <div class="progress-bar">
+    <span class="bar-label left">Low</span>
+    <span class="bar-label right">High</span>
+    <<= '<div class="progress-fill feminization" style="width: ' + $feminization + '%;"></div>' >>
+  </div>
+</li>
+<li class="progress-box">
+  <label>Obedience</label>
+  <div class="progress-bar with-labels">
+    <span class="bar-label left">Low</span>
+    <span class="bar-label right">High</span>
+    <<= '<div class="progress-fill obedience" style="width: ' + $obedience + '%;"></div>' >>
+  </div>
+</li>
+<li class="progress-box">
+  <label>Embarrassment</label>
+  <div class="progress-bar with-labels">
+    <span class="bar-label left">Low</span>
+    <span class="bar-label right">High</span>
+    <<= '<div class="progress-fill embarrassment" style="width: ' + $embarrassment + '%;"></div>' >>
+  </div>
+</li>
+<li class="progress-box">
+  <label>Arousal</label>
+  <div class="progress-bar with-labels">
+    <span class="bar-label left">Low</span>
+    <span class="bar-label right">High</span>
+    <<= '<div class="progress-fill arousal" style="width: ' + $arousal + '%;"></div>' >>
+  </div>
+</li>
+<li class="progress-box">
+  <label>Confidence</label>
+  <div class="progress-bar with-labels">
+    <span class="bar-label left">Low</span>
+    <span class="bar-label right">High</span>
+    <<= '<div class="progress-fill confidence" style="width: ' + $confidence + '%;"></div>' >>
+  </div>
+</li>
+<li class="progress-box">
+  <label>Resistance</label>
+  <div class="progress-bar with-labels">
+    <span class="bar-label left">Low</span>
+    <span class="bar-label right">High</span>
+    <<= '<div class="progress-fill resistance" style="width: ' + $resistance + '%;"></div>' >>
+  </div>
+</li>
+<li class="progress-box money-box">
+  <label>Money</label> $<<= $money>>
+</li>
+<br>
+<</nobr>>

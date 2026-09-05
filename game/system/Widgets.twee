@@ -1,0 +1,32 @@
+:: Widgets [widget]
+<<widget "statChange">><<set _stat to _args[0]>><<set _amount to _args[1]>><<set _current to State.variables[_stat]>><<if _amount > 0>><<if _current >= 90>><<set _amount to Math.ceil(_amount * 0.25)>><<elseif _current >= 75>><<set _amount to Math.ceil(_amount * 0.5)>><<elseif _current >= 50>><<set _amount to Math.ceil(_amount * 0.75)>><</if>><</if>><<set State.variables[_stat] to Math.max(0, Math.min(100, _current + _amount))>><<set _label to _stat.charAt(0).toUpperCase() + _stat.slice(1)>><span class="stat-change"><<print _label>>: <<if _amount > 0>>+<</if>><<print _amount>></span><</widget>>
+
+<<widget "addItem">><<if !$inventory.includes(_args[0])>><<run $inventory.push(_args[0])>><span class="item-gained">Acquired: <<print _args[0]>></span><</if>><</widget>>
+
+<<widget "hasItem">><<set _result to $inventory.includes(_args[0])>><</widget>>
+
+<<widget "equipOutfit">><<set $equippedOutfit to _args[0]>><</widget>>
+
+<<widget "statSummary">><div class="stat-summary"><strong>End of Day <<print $day>></strong><ul><li>Feminization: <<print $feminization>></li><li>Obedience: <<print $obedience>></li><li>Embarrassment: <<print $embarrassment>></li><li>Arousal: <<print $arousal>></li><li>Confidence: <<print $confidence>></li><li>Resistance: <<print $resistance>></li><li>Money: $<<print $money>></li></ul></div><</widget>>
+
+<<widget "startDay">><<set _mainCount to _args[0]>><<set _sideCount to _args[1]>><<if $timeBudgetDay isnot $day>><<set _totalUnits to _mainCount + Math.ceil(_sideCount / 2)>><<set $minutesPerTask to Math.round(((1380 - 420) / _totalUnits) / 5) * 5>><<set $gameMinutes to 420>><<set $timeBudgetDay to $day>><</if>><</widget>>
+
+<<widget "spendTime">><<set $gameMinutes to $gameMinutes + (_args[0] * $minutesPerTask)>><<if $gameMinutes >= 1200>><<set $phase to "night">><<elseif $gameMinutes >= 1020>><<set $phase to "evening">><<elseif $gameMinutes >= 720>><<set $phase to "afternoon">><<else>><<set $phase to "morning">><</if>><</widget>>
+
+<<widget "formatClock">><<set _m to _args[0]>><<set _h24 to Math.floor(_m / 60) % 24>><<set _min to _m % 60>><<set _ampm to _h24 >= 12 ? "PM" : "AM">><<set _h12 to _h24 % 12>><<if _h12 is 0>><<set _h12 to 12>><</if>><<print _h12>>:<<print _min < 10 ? "0" + _min : _min>> <<print _ampm>><</widget>>
+
+<<widget "taskEntry">><<set _label to _args[0]>><<set _target to _args[1]>><<set _cost to _args[2]>><<set _done to _args[3]>><<set _locked to _args[4]>><<set _hint to _args[5] || "">><<if _done>><li class="task-done">&#10003; <<print _label>></li><<elseif _locked>><li class="task-locked">&#128274; <<print _label>> <em><<print _hint>></em></li><<else>><li class="task-available"><<link _label _target>><</link>></li><</if>><</widget>>
+
+<<widget "homeTasks">><ul><<taskEntry "Help Evelyn with chores" "Day1_Morning_A" 1 $evelynChoresDay1 false "">><<taskEntry "Laze around the house" "Day1_Morning_B" 1 $lazedDay1 false "">><<taskEntry "Check job listings online" "Day1_Afternoon_C" 1 $cafeJobApplied false "">><<taskEntry "Have dinner with Evelyn and Lily" "Day1_Evening_A" 1 $dinnerDay1 false "">><<taskEntry "Call Chloe" "Day1_Evening_B" 1 $chloePhoneCall `!$chloeVisitedDay1` "(visit her first)">><<taskEntry "Play video games alone" "Day1_Evening_C" 1 $gamesDay1 false "">><<taskEntry "Look around the house" "Day1_SQ_HouseTour" 1 $houseTourSeen false "">></ul><</widget>>
+
+<<widget "neighborhoodTasks">><ul><<taskEntry "Go for a jog" "Day1_Morning_C" 1 $joggedDay1 false "">><<taskEntry "Explore the neighborhood" "Day1_Afternoon_B" 1 $neighborhoodExplored false "">><<taskEntry "Visit Ali's Corner Store" "Day1_SQ_Ali" 1 $aliMet `!$neighborhoodExplored` "(explore the neighborhood first)">><<taskEntry "Sit with Mrs. Delgado" "Day1_SQ_Delgado" 1 $delgadoMet `!$neighborhoodExplored` "(explore the neighborhood first)">></ul><</widget>>
+
+<<widget "chloeTasks">><ul><<taskEntry "Visit Chloe" "Day1_Afternoon_A" 1 $chloeVisitedDay1 false "">></ul><</widget>>
+
+<<widget "locationTasks">><<set _loc to _args[0]>><<if _loc is "home">><<homeTasks>><<elseif _loc is "neighborhood">><<neighborhoodTasks>><<elseif _loc is "chloe">><<chloeTasks>><</if>><</widget>>
+
+<<widget "lateWarning">><<if $gameMinutes < 1380 and ($gameMinutes + $minutesPerTask) >= 1380>><p class="late-warning">&#9888;&#65039; It's getting late. One more thing and I'll need to call it a night.</p><</if>><</widget>>
+
+<<widget "dayPlanContent">><div class="day-plan"><<if $day is 1>><h4>&#127968; Home</h4><<homeTasks>><h4>&#127961;&#65039; Neighborhood</h4><<neighborhoodTasks>><h4>&#128139; Chloe's Apartment</h4><<chloeTasks>><</if>></div><</widget>>
+
+<<widget "locationMap">><<set _loc to _args[0]>><div class="location-map"><svg viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg"><line x1="75" y1="105" x2="205" y2="105" class="map-edge"></line><line x1="75" y1="105" x2="325" y2="55" class="map-edge"></line><line x1="205" y1="105" x2="325" y2="160" class="map-edge map-edge-locked"></line><g class="map-node <<if _loc is 'home'>>map-node-active<</if>>"><circle cx="75" cy="105" r="30"></circle><text x="75" y="112" text-anchor="middle" class="map-icon">&#127968;</text><text x="75" y="150" text-anchor="middle" class="map-label">Home</text></g><g class="map-node <<if _loc is 'neighborhood'>>map-node-active<</if>>"><circle cx="205" cy="105" r="30"></circle><text x="205" y="112" text-anchor="middle" class="map-icon">&#127961;&#65039;</text><text x="205" y="150" text-anchor="middle" class="map-label">Neighborhood</text></g><g class="map-node <<if _loc is 'chloe'>>map-node-active<</if>>"><circle cx="325" cy="55" r="27"></circle><text x="325" y="61" text-anchor="middle" class="map-icon">&#128139;</text><text x="325" y="97" text-anchor="middle" class="map-label">Chloe's</text></g><g class="map-node map-node-locked"><circle cx="325" cy="160" r="25"></circle><text x="325" y="166" text-anchor="middle" class="map-icon">&#128274;</text><text x="325" y="200" text-anchor="middle" class="map-label">City</text></g></svg><p class="map-caption"><<if _loc is 'home'>>You are home.<<elseif _loc is 'neighborhood'>>You're out in the neighborhood.<<elseif _loc is 'chloe'>>You're at Chloe's apartment.<</if>></p></div><</widget>>

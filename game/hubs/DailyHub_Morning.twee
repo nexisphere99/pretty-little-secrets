@@ -1,0 +1,61 @@
+:: DailyHub [hub]
+<<nobr>>
+<<if $day is 1>>
+<<startDay 9 3>>
+
+<<if $gameMinutes >= 1380>>
+<<centerImage "image/events/bedroom.png">>
+<h2>Day 1</h2>
+<<if $currentMapLocation isnot "home">>
+<p>I'm exhausted. Somehow I make it home, legs heavy, barely keeping my eyes open.</p>
+<<set $currentMapLocation to "home">>
+<</if>>
+<p><strong>I'm exhausted.</strong> My eyes keep drifting shut mid-thought. Whatever else I meant to do today, it'll have to wait. There's only one thing left to do.</p>
+<<link `"Go to sleep   end Day " + $day`>><<goto "Day1_Night">><</link>>
+
+<<else>>
+
+<<if $gameMinutes is 420>>
+<p>My alarm doesn't wake me. The sun does, cutting through the gap in my curtains like a blade. I roll over, grab my phone, squint at the screen. 9:47 AM. Saturday. A text from Chloe sits at the top of my notifications: <em>"Come over later? Miss you xo."</em> I type back a thumbs up emoji and toss the phone onto my pillow.</p>
+<p>The day's mine to spend however I want, but there's only so much of it. Whatever I do costs time, and eventually I'll be too tired to keep going.</p>
+<</if>>
+
+<<if $currentMapLocation is "home">>
+<<centerImage "image/location/home.png">>
+<h2>Home</h2>
+<p>I'm home. The house is quiet except for whatever Evelyn or Lily are up to.</p>
+<<elseif $currentMapLocation is "neighborhood">>
+<<centerImage "image/events/street.png">>
+<h2>Neighborhood</h2>
+<p>Out on the street. The block looks the same as always.</p>
+<<elseif $currentMapLocation is "chloe">>
+<<centerImage "image/events/chloe_home.png">>
+<h2>Chloe's Apartment</h2>
+<p>Outside Chloe's building, third floor buzzer sticky as ever.</p>
+<</if>>
+
+<<lateWarning>>
+
+<<locationTasks $currentMapLocation>>
+
+<div class="travel-links">
+<<if $currentMapLocation is "home">>
+<<link "Walk to the Neighborhood">><<set $currentMapLocation to "neighborhood">><<goto "DailyHub">><</link>><br>
+<<link "Take the bus to Chloe's Apartment">><<set $currentMapLocation to "chloe">><<goto "DailyHub">><</link>>
+<p class="sleep-early"><<link "Head to bed early" "Day1_Night">><</link>></p>
+<<elseif $currentMapLocation is "neighborhood">>
+<<link "Head back home">><<set $currentMapLocation to "home">><<goto "DailyHub">><</link>>
+<<elseif $currentMapLocation is "chloe">>
+<<link "Head back home">><<set $currentMapLocation to "home">><<goto "DailyHub">><</link>>
+<</if>>
+</div>
+
+<</if>>
+
+<<else>>
+<<centerImage "image/events/bedroom.png">>
+<h2>Day <<print $day>></h2>
+<p>The sun comes up the same as it always does. But this is as far as Alex's story has been written so far - Day <<print $day>> hasn't been authored yet.</p>
+<p>Thanks for playing through Day 1 of <strong>Pretty Little Secrets</strong>. Check back soon for more of Alex's story.</p>
+<</if>>
+<</nobr>>

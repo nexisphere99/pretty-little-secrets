@@ -1,0 +1,27 @@
+:: Day1_Evening_C [day1 evening personal games]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<p>I boot up my PC and lose myself in a first-person shooter for three hours. The mechanical click of my mouse. The blue glow of my monitor. The satisfying ping of a headshot confirmed. This is my language, my territory, the one place where I'm completely in control of everything that happens.</p>
+
+<p>My K/D ratio is excellent tonight. Something about the day cleared my head, sharpened my reflexes. I'm moving through maps like a ghost, anticipating spawns, nailing shots I'd normally miss. It feels good. Clean. Simple. Do the thing, get the reward. No ambiguity, no weird feelings, no lace.</p>
+
+<p>Lily pokes her head in around eleven. She doesn't knock. She never knocks.</p>
+
+<<dialog "Lily" "Want snacks?">>
+
+<p>"No."</p>
+
+<p>She shrugs and leaves. Through the crack in my door I hear her combat boots recede down the hall. A minute later, the bass kicks in from her room again.</p>
+
+<p>I play until my eyes burn a little, then close the laptop and stretch until my spine pops. Clean. Simple. Exactly the kind of evening I needed.</p>
+
+<<statChange "resistance" 2>>
+<<statChange "confidence" 1>>
+<<set $gamesDay1 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

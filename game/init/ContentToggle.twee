@@ -1,0 +1,48 @@
+:: Start
+<<nobr>>
+<div class="explicit-warning">
+  <h2>Content Warning</h2>
+  <p><strong>Pretty Little Secrets</strong> is an 18+ interactive game intended for adult audiences only. This game contains explicit sexual content, including themes of feminization and sissification. Player discretion is advised, and most sensitive content includes options to opt in or out. By proceeding, you confirm you are 18 or older and consent to engaging with this material.</p>
+  <p>Do you wish to continue?</p>
+  [[Enter the Game|ContentToggle]]
+  [[Exit|Exit]]
+</div>
+<</nobr>>
+
+:: Exit
+<p>Thank you for your discretion. This game contains mature themes and is not suitable for all audiences. Please close the tab or navigate away.</p>
+
+:: ContentToggle
+<<nobr>>
+<h1>Content Preferences</h1>
+<p>Pretty Little Secrets lets you steer which extra themes show up later in the story. None of these affect Day 1, but setting them now means the game will respect your choices from the moment they become relevant. You can revisit this later from the game menu.</p>
+
+<div class="content-toggle-list">
+  <label class="select-all-row"><input type="checkbox" id="selectAllContent"> <strong>Select All</strong></label>
+  <label><<checkbox "$bbcEnabled" false true>> Interracial content (BBC)</label>
+  <label><<checkbox "$ntrEnabled" false true>> NTR / infidelity themes</label>
+  <label><<checkbox "$forcedBiEnabled" false true>> Forced-bi content</label>
+  <label><<checkbox "$publicEnabled" false true>> Public / exhibitionism scenes</label>
+  <label><<checkbox "$analEnabled" false true>> Anal content</label>
+  <label><<checkbox "$extremeEnabled" false true>> Extreme / hardcore content</label>
+</div>
+
+<<script>>
+$(document).off("change", "#selectAllContent").on("change", "#selectAllContent", function () {
+  var checked = this.checked;
+  var ids = ["checkbox-bbcenabled", "checkbox-ntrenabled", "checkbox-forcedbienabled", "checkbox-publicenabled", "checkbox-analenabled", "checkbox-extremeenabled"];
+  var vars = ["bbcEnabled", "ntrEnabled", "forcedBiEnabled", "publicEnabled", "analEnabled", "extremeEnabled"];
+  vars.forEach(function (v) { State.variables[v] = checked; });
+  ids.forEach(function (id) { $("#" + id).prop("checked", checked); });
+});
+$(document).off("change", ".content-toggle-list input.macro-checkbox").on("change", ".content-toggle-list input.macro-checkbox", function () {
+  var total = $(".content-toggle-list input.macro-checkbox").length;
+  var checkedCount = $(".content-toggle-list input.macro-checkbox:checked").length;
+  $("#selectAllContent").prop("checked", total === checkedCount);
+});
+<</script>>
+
+<p>All of it can be switched off entirely - leave everything unchecked for a vanilla feminization playthrough.</p>
+
+[[Begin|DailyHub]]
+<</nobr>>

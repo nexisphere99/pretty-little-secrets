@@ -1,0 +1,81 @@
+:: Day1_SQ_Ali [day1 sidequest neighborhood ali]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>The bell dings when I walk in and Ali looks up from his crossword and nods. Ali is fifty-three, Pakistani, has run this corner store for eighteen years, and knows every person in a six-block radius by first name, preferred snack, and approximate credit rating. He's short, round, has a mustache that could be described as "ambitious," and does the crossword puzzle from the newspaper every single day in pen because he says pencils are "for cowards."</p>
+
+<<dialog "Alex" "Hey Ali.">>
+
+<p><strong>"Alex! My favorite customer."</strong> He says this to everyone. I've heard him say it to at least nine different people. It doesn't matter. It still works.</p>
+
+<p>His store is a time capsule. The same fluorescent lights buzzing the same frequency since 2006. The same spinning rack of paperbacks. The same hand-written sign above the register that says "SMILE! You are on camera :)" with a smiley face drawn in marker that has faded to the color of a bruise.</p>
+
+<p>I buy a Gatorade. He rings me up without looking at the register because he has every price memorized.</p>
+
+<p><strong>"One seventy-five. How's your mother? The stepmother, I mean."</strong></p>
+
+<p>"She's fine. Same as always."</p>
+
+<p><strong>"Good woman. Scary woman. But good."</strong> He hands me my change. <strong>"And the pink-haired one? Your sister?"</strong></p>
+
+<p>"Step-sister. She's Lily. She's fine too."</p>
+
+<p><strong>"She came in yesterday. Bought three energy drinks and a bag of those sour gummy worms. I told her that much sugar will kill her. She told me she's already dead inside."</strong> He chuckles. <strong>"Funny girl. Scary, but funny."</strong></p>
+
+<p>But today he's just the corner store guy, and I'm just the kid buying Gatorade.</p>
+
+<<set $aliMet to true>>
+<<set $aliFamiliarity to 1>>
+<<set $money -= 2>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day1_SQ_Delgado [day1 sidequest park delgado]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>She's ancient. That's the only word for it. Mrs. Delgado is somewhere between eighty and geological time. She sits on the same park bench every afternoon, rain or shine, feeding pigeons from a paper bag full of stale bread that she probably baked during the Cold War.</p>
+
+<p>She watches me with eyes that are milky around the edges but sharp in the center, like old windows in a new frame.</p>
+
+<p><strong>"You're that boy from the Chambers house,"</strong> she says. Not a question. A statement.</p>
+
+<p>"Yes ma'am."</p>
+
+<p><strong>"Your stepmother's got good taste."</strong> She tosses a chunk of bread and three pigeons almost kill each other for it. <strong>"In furniture. In clothes. In how she keeps that house."</strong> A pause. Another bread chunk. <strong>"She'll have good taste in how she keeps you too, I imagine."</strong></p>
+
+<p>I have no idea what that means. I smile politely, nod, keep walking. Behind me I hear her chuckle, dry and papery, like someone crumpling tissue paper.</p>
+
+<p>Mrs. Delgado sees everything in this neighborhood. She's been on that bench longer than the bench has been there. She'll notice the change in me before anyone else does. Not because she's looking for it. Because she's always looking at everything.</p>
+
+<<set $delgadoMet to true>>
+<<set $delgadoAwareness to 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day1_SQ_HouseTour [day1 sidequest house tutorial]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+
+<p>My room is the last honest space in this house. Everything in here is mine and none of it is curated. A twin bed with sheets that haven't been changed in longer than I'd admit. A desk with my laptop and a tower of energy drink cans I keep meaning to recycle. Posters on the wall: a band, a game, a movie. Laundry on the floor because the hamper is three feet away and three feet might as well be three miles.</p>
+
+<p>My closet has: six t-shirts, three pairs of jeans, two pairs of shorts, one hoodie, one flannel shirt, sneakers, flip-flops, and a blazer from a wedding two years ago that doesn't fit anymore. The most feminine thing in here is a chapstick that might be tinted.</p>
+
+<p>This room will change. Slowly at first. But not today. Today it's still mine. Today it's still a boy's room.</p>
+
+<p>Evelyn's room is down the hall. The door's open. Her vanity dominates the far wall, perfume bottles, cosmetics, a walk-in closet visible but not really explored yet. A pair of black stockings folded on the dresser. A silk robe draped over a chair. Earrings in a porcelain dish: pearl studs, gold hoops, diamond drops.</p>
+
+<p>Lily's door is shut, per usual, bass thumping faintly from behind it. Through the gap under the door I can just make out the glow of a ring light left on. Whatever she's building in there, she's building it deliberately.</p>
+
+<<set $houseTourSeen to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

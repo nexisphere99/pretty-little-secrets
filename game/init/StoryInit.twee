@@ -1,0 +1,105 @@
+:: StoryInit
+/* Primary stats (0-100) */
+<<set $feminization to 5>>
+<<set $obedience to 5>>
+<<set $embarrassment to 0>>
+<<set $arousal to 0>>
+<<set $confidence to 10>>
+<<set $resistance to 100>>
+<<set $corruption to 0>>
+
+/* Money */
+<<set $money to 50>>
+
+/* Day / Time - free-roam clock system.
+   Alex is awake 7:00 AM - 11:00 PM (960 minutes). <<startDay>> divides that
+   window evenly across the day's (# main tasks + ceil(# side tasks / 2))
+   so $minutesPerTask is set once per day, then <<spendTime>> advances the
+   clock ($gameMinutes) by task-cost * $minutesPerTask. $phase is cosmetic,
+   derived from the clock, purely for the top bar/flavor. */
+<<set $day to 1>>
+<<set $phase to "morning">>
+<<set $gameMinutes to 420>>
+<<set $minutesPerTask to 0>>
+<<set $timeBudgetDay to 0>>
+
+/* Where Alex currently is on the map: "home" | "neighborhood" | "chloe" */
+<<set $currentMapLocation to "home">>
+
+/* Content toggles (set on ContentToggle screen) */
+<<set $bbcEnabled to false>>
+<<set $ntrEnabled to false>>
+<<set $forcedBiEnabled to false>>
+<<set $extremeEnabled to false>>
+<<set $publicEnabled to false>>
+<<set $analEnabled to false>>
+
+/* Arc-specific meters */
+<<set $bbcCuriosity to 0>>
+<<set $ntrAcceptance to 0>>
+
+/* Relationships */
+<<set $chloeRelationship to 10>>
+<<set $evelynRelationship to 5>>
+<<set $lilyRelationship to 5>>
+<<set $sophiaRelationship to 0>>
+<<set $vanessaRelationship to 0>>
+
+/* Stage tracking */
+<<set $chloeStage to 0>>
+<<set $evelynStage to 0>>
+<<set $lilyStage to 0>>
+<<set $sophiaStage to 0>>
+<<set $vanessaStage to 0>>
+
+/* Inventory / Outfit */
+<<set $inventory to []>>
+<<set $equippedOutfit to "masculine_default">>
+<<set $equippedAccessories to []>>
+<<set $cloths to [
+    { "img": "cloths/t_shirt_1.png" },
+    { "img": "cloths/jean_1.png" },
+    { "img": "cloths/boxer_1.png" }
+]>>
+
+/* NPC tracking */
+<<set $npcEncounters to {}>>
+<<set $aliFamiliarity to 0>>
+<<set $hendersonFamiliarity to 0>>
+<<set $delgadoAwareness to 0>>
+<<set $aliMet to false>>
+<<set $delgadoMet to false>>
+<<set $sophiaNoticed to false>>
+<<set $claireNoticed to false>>
+<<set $theoNoticed to false>>
+<<set $lilyAwareness to 0>>
+
+/* Key flags */
+<<set $pantiesAccepted to false>>
+<<set $pantiesEquipped to false>>
+<<set $pantiesRefused to false>>
+<<set $cafeJobApplied to false>>
+<<set $cafeJobStarted to false>>
+<<set $evelynChoresDay1 to false>>
+<<set $neighborhoodExplored to false>>
+<<set $houseTourSeen to false>>
+<<set $chloePhoneCall to false>>
+<<set $chloeVisitedDay1 to false>>
+<<set $lazedDay1 to false>>
+<<set $joggedDay1 to false>>
+<<set $dinnerDay1 to false>>
+<<set $gamesDay1 to false>>
+<<set $chastityLocked to false>>
+<<set $hormoneStarted to false>>
+<<set $nameChanged to false>>
+
+/* Location unlocks */
+<<set $mallOpen to false>>
+<<set $clubOpen to false>>
+<<set $shopOpen to false>>
+<<set $yogaOpen to false>>
+<<set $parkOpen to true>>
+<<set $loungeOpen to false>>
+<<set $gymOpen to false>>
+
+<<set $currentLocation to "location/home">>

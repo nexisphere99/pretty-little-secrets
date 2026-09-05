@@ -1,0 +1,63 @@
+:: Day1_Morning_A [day1 morning evelyn]
+<<nobr>>
+<<centerImage "image/events/kitchen.png">>
+<<set $currentLocation to "events/kitchen">>
+
+<p>The hallway smells like Earl Grey and something floral. Evelyn's doing. Everything in this house smells like Evelyn now. Three years since Mom married her, two years since Mom passed, and this place went from lived-in to curated. The carpet in the hallway got replaced with hardwood. The family photos on the stairs got swapped for abstract prints in gold frames. My room is the last holdout. Posters, dirty laundry, an energy drink can I've been using as a pen holder for six months. My little island of normal in Evelyn's museum.</p>
+
+<p>She's in the kitchen when I come downstairs, sitting at the breakfast table with her legs crossed and her back so straight you could use her spine as a ruler. Chestnut hair pinned up in one of those complicated twists that looks effortless but probably took twenty minutes. Cream silk blouse buttoned to her collarbone. A charcoal pencil skirt that stops just above her knees. She's forty but looks thirty-five, and she carries herself like she knows it. Her teacup is bone china with a gold rim. She brought a set of twelve when she moved in. I'm not allowed to use them.</p>
+
+<<dialog "Evelyn" "Good morning, Alex.">>
+
+<p>She doesn't look up from her phone. "Sleep well?"</p>
+
+<p>"Yeah. Fine."</p>
+
+<<dialog "Evelyn" "Eloquent as always. I need a favor this morning. My vanity upstairs needs dusting. The perfume bottles are crystal, so please be careful with them. Use the microfiber cloth, the blue one in the linen closet. Not the yellow one. The yellow one has chemicals that'll fog the glass.">>
+
+<p>She doesn't phrase it as a question. She never does. There's this thing about Evelyn where she makes requests that sound like instructions and instructions that sound like natural law. The sky is blue. Water is wet. You'll dust my vanity.</p>
+
+<p>"Sure," I say, because saying no to Evelyn feels like trying to swim upstream in concrete. You can do it. Technically. But why would you.</p>
+
+<p>I grab the blue microfiber cloth from the linen closet and head upstairs. Her bedroom door is already open, the room filling with morning light through sheer curtains. Everything in here is cream and gold and soft. The bed is made with military precision, a white duvet pulled taut, decorative pillows arranged in some kind of formation that probably has a name. The air is thick with her scent. Roses, definitely. Something underneath that's darker, richer. Like sandalwood mixed with warm skin. It hits me the second I cross the threshold and settles somewhere behind my sternum.</p>
+
+<<centerImage "image/events/bedroom.png">>
+
+<p>Her vanity is enormous. It takes up most of the wall opposite the bed, a wide antique piece with an arched mirror and more surface area than my desk. It's covered in bottles and jars and tubes and palettes and brushes and little glass things I don't have names for. Everything arranged with surgical precision. Lipsticks standing upright like soldiers. Compacts stacked by size. Brushes fanned out in a crystal holder.</p>
+
+<p>And the perfume bottles. God, those bottles.</p>
+
+<p>They're scattered across the vanity like little sculptures. Some are tall and elegant with gold caps. Some are squat and round with jeweled stoppers. One looks like a diamond caught mid-melt. Another is shaped like a woman's torso, curves and all. They catch the morning light and throw tiny rainbows across the wall, the mirror, my hands as I reach for the first one.</p>
+
+<p>I pick it up carefully. It's heavier than it looks. Cool glass against my palm, the weight of something expensive, something that matters. The label says "Shalimar" in gold cursive. I set it aside and run the cloth over the spot where it sat. A thin film of dust comes away. I pick up the next one. "Chanel No. 5." I know that one. Mom used to wear it, back before. The smell hits me when I lift it, faint but unmistakable, and I have to stand there for a second with my eyes closed because grief is a sucker punch that never follows a schedule.</p>
+
+<p>I work through the collection one by one. Each bottle gets lifted, the surface wiped clean, the bottle set back in its exact position. I'm careful. I'm so careful that my hands are barely trembling, and I'm holding my breath half the time. The room fills with a ghost of each fragrance as I disturb them. Roses. Jasmine. Vanilla. Something smoky I can't name. By the time I'm halfway through, my fingers smell like a department store and the light has shifted across the mirror.</p>
+
+<p>There's something strange about being in this room alone. Surrounded by her things, her clothes hanging in the open closet, her silk robe draped over the back of a chair. A pair of black stockings folded on the dresser. Earrings in a porcelain dish. Everything screams feminine in a way that I'm not used to being immersed in. Chloe's apartment has girl stuff, sure, but it's messy, lived-in. This is different. This is a temple to womanhood, meticulous and intentional, and I'm an altar boy dusting the relics.</p>
+
+<p>I catch my own reflection in the vanity mirror. Brown hair sticking up on one side. Ratty grey t-shirt with a faded video game logo. Boxers visible above the waistband of my sweatpants. I look like exactly what I am: a scruffy nineteen-year-old who doesn't belong in this room.</p>
+
+<p>But I keep dusting.</p>
+
+<p>When I finish, I go back downstairs. Evelyn is rinsing her teacup at the sink. She dries her hands on a linen towel and walks past me, heading upstairs. I follow without being asked. I'm not sure why.</p>
+
+<p>She stands at her vanity and runs one fingertip along the surface. Slow. Deliberate. Like she's reading braille. Her nail traces a line from one end to the other, across the wood grain, around the base of each perfume bottle. She checks behind the mirror. Runs her finger along the edge where dust collects. Lifts a compact and checks underneath.</p>
+
+<p>She finds nothing.</p>
+
+<<dialog "Evelyn" "Good boy.">>
+
+<p>Two words. That's all. But the warmth in her voice does something to my chest. This weird expanding feeling, like pride but softer, like earning something I didn't know I wanted. She looks at me over her shoulder and there's this tiny smile on her lips, not quite approval, more like... satisfaction. Like I just confirmed something she already knew about me.</p>
+
+<p>I go back to my room and sit on my bed and stare at the wall for about thirty seconds, trying to figure out why those two words made me feel so much.</p>
+
+<<statChange "obedience" 2>>
+<<statChange "feminization" 1>>
+<<set $evelynRelationship += 3>>
+<<set $evelynChoresDay1 to true>>
+<<set $evelynStage to Math.max($evelynStage, 1)>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

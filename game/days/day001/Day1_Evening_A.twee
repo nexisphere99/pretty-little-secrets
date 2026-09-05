@@ -1,0 +1,69 @@
+:: Day1_Evening_A [day1 evening home dinner]
+<<nobr>>
+<<centerImage "image/events/dinner.png">>
+<<set $currentLocation to "events/dinner">>
+
+<p>Lily surfaces at 6:47 PM. I know the exact time because I glance at the microwave clock when I hear her bedroom door bang open upstairs, followed by the heavy thud of combat boots on hardwood, which is Lily's version of descending a staircase.</p>
+
+<p>She enters the kitchen like a small pink hurricane. Her hair is the color of bubblegum, chopped into a messy bob that looks like she cut it herself in a bathroom mirror, which she probably did. She's wearing an oversized Paramore t-shirt that hangs to mid-thigh, ripped black tights, a choker with a tiny silver skull on it, and eyeliner thick enough to qualify as face paint. She looks like the lead singer of a band that would play in someone's garage and still somehow headline a festival.</p>
+
+<p>She's nineteen, same as me. We're step-siblings, not related by blood, and we get along the way two cats sharing a house get along. Tolerant. Occasionally affectionate. Capable of drawing blood if provoked.</p>
+
+<p>Evelyn made pasta. Spaghetti with a sauce that she probably made from scratch because Evelyn doesn't acknowledge the existence of jars. The table is set with cloth napkins and proper silverware, because even a casual Saturday dinner in this house has standards.</p>
+
+<p>We sit. Evelyn at the head of the table, straight-backed, napkin on her lap. Me on one side, Lily on the other. Lily sits with one leg tucked under her. Evelyn glances at it but doesn't comment. Some battles aren't worth fighting.</p>
+
+<p>Lily kicks my shin under the table. Not hard. Just enough to make me jump and nearly launch a meatball.</p>
+
+<<dialog "Lily" "So, what'd you do today? Anything fun with Chloe?">>
+
+<<if $pantiesEquipped>>
+<p>My face goes nuclear. I can feel the lace against my skin right now, sitting in this chair, at this table, across from Lily who has a built-in bullshit detector that would put the CIA to shame.</p>
+
+<p>"Nothing." My voice comes out a half-octave too high. I clear my throat. "Just hung out. Watched a movie."</p>
+
+<p>Lily stops chewing. Her eyes narrow. She leans forward slightly, like a predator catching a scent. Her nostrils don't actually flare but they might as well.</p>
+
+<p>"Uh-huh." She watches me for three more seconds. Four. Five. Then she goes back to her pasta, but there's a new quality to her attention. She's clocked me. She doesn't know what she's clocked, but she knows something's off, and Lily is the kind of person who will figure it out eventually because she treats other people's secrets like puzzles that exist specifically for her entertainment.</p>
+
+<p>Under the table, I shift in my chair. The panties slide against me. My cock, which had finally settled into a state of truce with the silk, gives an interested twitch at the friction. I press my thighs together and focus very hard on my spaghetti.</p>
+
+<<statChange "embarrassment" 2>>
+<<set $lilyAwareness += 1>>
+<<else>>
+<p>"Nothing much. Watched a movie."</p>
+
+<p>Lily's interest evaporates like morning dew. She goes back to her phone, thumbing through Instagram with one hand while eating with the other, a skill she's perfected into an art form. Evelyn does not approve but Evelyn is picking her battles tonight.</p>
+<</if>>
+
+<<dialog "Evelyn" "Sit up straight, Alex.">>
+
+<p>Her voice cuts through the sound of Lily's scrolling. I'm slouching. I didn't realize I was slouching, but the second she says it I feel my spine curl forward like a question mark. "You're not a sack of potatoes."</p>
+
+<p>I straighten up. It happens automatically, like a reflex. My body obeys her before my brain catches up. She nods, satisfied, and returns to her pasta. A minute later she does it again. "Elbows off the table, please." My elbows retreat. She nods again.</p>
+
+<p>Lily catches my eye and mouths "teacher's pet" across the table. I kick her shin. She kicks back harder.</p>
+
+<p>After dinner, Evelyn clears the table. She doesn't ask for help. She doesn't have to. Lily has already vanished upstairs with the speed of someone who has mastered the art of evading chores. I linger in the kitchen doorway, watching Evelyn rinse plates with the same precision she applies to everything else.</p>
+
+<<if $evelynChoresDay1>>
+<<dialog "Evelyn" "Thank you for earlier. The vanity. You did well.">>
+
+<p>That feeling again. That warm expanding thing in my chest. "No problem."</p>
+<<else>>
+<<dialog "Evelyn" "You've been scarce today. I hope tomorrow you'll make yourself a bit more useful around here.">>
+
+<p>It's not quite a scolding. It's something colder and more patient than that. "Sure," I say, because there isn't really another answer.</p>
+<</if>>
+
+<p>"There's more to do tomorrow, if you're inclined." She shuts off the faucet and dries her hands. Turns. Her eyes find mine and hold them. "I find it's good for young people to have structure. Purpose. Don't you agree?"</p>
+
+<p>I nod before I realize what I'm agreeing to.</p>
+
+<<statChange "obedience" 1>>
+<<set $dinnerDay1 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

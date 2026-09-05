@@ -1,0 +1,41 @@
+:: Day1_Afternoon_B [day1 afternoon neighborhood]
+<<nobr>>
+<<centerImage "image/events/street.png">>
+<<set $currentLocation to "events/street">>
+
+<p>There's no plan. That's the beauty of it. I just walk.</p>
+
+<p>Out the front door, down the porch steps, hang a right onto Elm Street. Our block is quiet, the kind of quiet that hums with lawnmowers and distant dog barks and the occasional thwack of a screen door. Houses line both sides, two-story colonials and ranch-styles with varying levels of landscaping ambition. The Hendersons' place has a lawn that could host a PGA tournament. The house across from us has a "For Sale" sign that's been there since before I moved in.</p>
+
+<p>There's a guy kneeling in his front yard about three blocks from my house, hands deep in the soil, pulling weeds with the focused intensity of someone performing surgery. He's maybe mid-twenties, slender, with soft brown hair that falls across his forehead. He's wearing a linen shirt rolled up to the elbows, khaki shorts, and gardening gloves that are covered in dirt. His yard is the second nicest on the block after Henderson's, but where Henderson's is military-green precision, this one is chaotic beauty. Wildflowers, climbing vines, a little stone path that winds between lavender bushes.</p>
+
+<p>He doesn't notice me pass. He's fully absorbed, holding a weed up to the light and examining its root structure like it contains the secrets of the universe. There's a gentleness to him that I can feel from the sidewalk, something soft and careful in the way he handles even the weeds, like he's apologizing to them for pulling them out.</p>
+
+<p>A silk scarf is tied around one of his garden stakes, fluttering in the breeze. It's pale blue with a floral print. It could be decorative. Or it could be his. Either way, it's a detail my brain files away without knowing why.</p>
+
+<<set $theoNoticed to true>>
+
+<p>The corner store is four blocks east. Ali's. A Pakistani guy named Ali who knows every kid in the neighborhood by name and stocks exactly three brands of energy drink because I asked. I make a mental note to swing by sometime, not today, just now I'm walking.</p>
+
+<p>The park is six blocks south. Oakdale Park, which has no oak trees and is barely on a dale. It has a playground, a basketball court with one bent rim, a path that loops around a duck pond, and benches donated by people who are probably dead now. Kids chase each other around the swings. A couple walks a Labrador that looks like it ate another Labrador. An old woman feeds pigeons from a paper bag on a bench by the pond, she's there every time, like part of the landscaping.</p>
+
+<p>I loop the path twice, sipping my Gatorade, thinking about nothing in particular. On my second pass I notice her house from the back. The yoga woman. Blonde curls. Her backyard borders the park, separated by a low wooden fence. I can see crystals in her window from here, catching the afternoon light. Amethyst, maybe. Or quartz. Something purple and something clear. Hippie vibes.</p>
+
+<p>She's in her living room doing some kind of flow, moving from one pose to another with the fluid ease of water finding its level. Candles on the shelf behind her, unlit but present. A tapestry on the wall with a mandala pattern. The house smells like incense even from outside. I catch a whiff through the screen door as I pass.</p>
+
+<p>She doesn't notice me this time. She's deep in it, eyes closed, hands pressed together at her chest, standing on one foot with the other pressed against her inner thigh. Tree pose. Even I know that one.</p>
+
+<p>She's beautiful in a way that's different from Chloe. Chloe is sharp, electric, a lightning strike. This woman is warm. A slow sunrise. Her body moves with intention, every muscle engaged, every breath measured. There's a peace in her that radiates outward, and I catch myself standing on the sidewalk for three extra seconds just soaking it in before I realize I'm being a creep and keep walking.</p>
+
+<p>I head home. I don't have a destination and I don't need one. I've mapped the territory in my head now, the store, the park, the yoga woman's house between them. It all fits together like a board game layout, and I'm the piece that moves between the spaces.</p>
+
+<<set $sophiaNoticed to true>>
+<<set $neighborhoodExplored to true>>
+<<statChange "confidence" 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<p><em>Now that I know my way around, I could stop by Ali's store or sit with that old woman by the pond next time I'm out here.</em></p>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
