@@ -1,0 +1,47 @@
+:: Day3_Afternoon_C [day3 afternoon mall boutique]
+<<nobr>>
+<<centerImage "image/events/mall.png">>
+<<set $currentLocation to "events/mall">>
+
+<p>The mall is still sleeping. Scaffolding and banners and the occasional construction worker hauling drywall through side doors. But the strip around it is alive, and I walk it slowly, hands in my pockets, letting my eyes do the exploring my feet don't need to.</p>
+
+<p>The Velvet Boutique catches me. A clothing store two doors down from the sealed mall entrance. The window display is a tableau of femininity: three mannequins arranged in a conversation, frozen mid-gesture, wearing outfits that span from casual to cocktail. The left mannequin wears a red dress with a plunging neckline that shows painted-on cleavage and a hemline that stops at mid-thigh. The center mannequin wears a fitted skirt and blouse combo, cream and navy, buttoned to the collarbone, conservative but form-fitting. It reminds me of Evelyn. The right mannequin wears jeans and a crop top and sneakers, but the jeans are high-waisted and the crop top is cropped enough to show a painted navel and the sneakers have platform soles.</p>
+
+<p>I'm staring. I know I'm staring because my reflection in the glass overlays the mannequins, my face floating ghost-like over the red dress, and for a disorienting second it looks like I'm wearing it. Me in a red dress with a plunging neckline and a hemline at mid-thigh. The image lasts half a breath before I blink and it's gone, just a trick of light and glass, but my stomach flips in a way that has nothing to do with lunch.</p>
+
+<p>A girl comes out of the boutique. About my age, maybe younger. She's carrying shopping bags in both hands and she's smiling the satisfied smile of someone who just spent money on things that make her feel good. She sees me and her smile brightens.</p>
+
+<p>"Great store, right? The sales rack is insane right now."</p>
+
+<p>"Oh, I was just, uh. Walking by."</p>
+
+<p>"Sure." She grins. Like she knows something I don't. Like everyone knows something I don't. She walks past me and the bags rustle and I catch a glimpse of tissue paper and something pink inside and my brain files it away in that drawer that's getting fuller by the day.</p>
+
+<p>I walk faster. Past the boutique. Past the smoothie shop. Past a nail salon with a neon "OPEN" sign and women sitting in massage chairs getting their feet done. One of them catches my eye through the window and waves. I wave back automatically.</p>
+
+<p>I think about the mannequin in the red dress. I think about my reflection overlaid on it. I think about how the dress would fit a body like mine. Skinny. Narrow shoulders. The thought came and went so fast I almost missed it.</p>
+
+<p>Almost.</p>
+
+<p>I linger a moment longer at the glass, and this time I notice details I missed at first glance. The red dress mannequin has a necklace. A thin gold chain with a pendant that catches the light. The pendant is a letter. I lean closer to the glass. An "A."</p>
+
+<p>My name starts with A.</p>
+
+<p>This is a coincidence. Obviously a coincidence. A mass-produced necklace on a mass-produced mannequin. But my brain, primed by three days of accumulating signals, sees a sign. A message. An invitation addressed specifically to me.</p>
+
+<p>I stand at the glass long enough that my reflection returns. My face, ghosting over the mannequin's painted features. My body, overlaid on the red dress. My eyes, looking through myself at something I'm not ready to name.</p>
+
+<p>The girl from earlier is right. It is a great store. I just don't know what I'd buy.</p>
+
+<p>Yet.</p>
+
+<<statChange "feminization" 1>>
+<<statChange "embarrassment" 1>>
+<<set $mallWalkDay3 to true>>
+<<set $boutiqueNecklaceSeen to true>>
+<<set $boutiqueReflection to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

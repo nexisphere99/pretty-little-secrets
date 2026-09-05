@@ -1,0 +1,86 @@
+:: Day3_SQ_Ali [day3 sidequest neighborhood ali]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>I stop at Ali's for a Gatorade. He's on a new crossword.</p>
+
+<p><strong>"Six letters. 'To make visible.' Begins with 'U.'"</strong></p>
+
+<p>"Unveil?"</p>
+
+<p>Ali writes it in. Nods. "Good one. Unveil. Like pulling back a curtain." He tears off another discount strip. "For the future movie star."</p>
+
+<p>"I'm not a..."</p>
+
+<p><strong>"You're something. I can always tell. People who stop at my store on the way to becoming something always have a look."</strong> He taps his temple. <strong>"I've been watching people for eighteen years. You, my friend, are mid-reveal."</strong></p>
+
+<<set $aliFamiliarity += 1>>
+<<set $aliCrosswordDay3 to true>>
+<<set $aliCrosswordClue to "unveil">>
+<<set $money -= 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day3_SQ_Okonkwo [day3 sidequest town okonkwo]
+<<nobr>>
+<<centerImage "image/events/cafe.png">>
+
+<p>There's a woman at the window table who's been there since I arrived and shows no signs of leaving. She's Black, maybe fifty, with silver-streaked locs piled on her head in an architectural arrangement that defies gravity. She's wearing a wrapped dress in deep indigo, gold earrings, reading glasses perched on her nose. A hardcover book lies open beside her latte. She's been watching me work all morning.</p>
+
+<p>When I bus her table, replacing her empty cup with a fresh one Vanessa made without being asked, Mrs. Okonkwo looks up from her book and studies me over her glasses.</p>
+
+<p><strong>"You're new."</strong></p>
+
+<p>"First day."</p>
+
+<p><strong>"You carry yourself like you're apologizing for existing."</strong> She says it flatly. No malice. Just observation. <strong>"Stand up straight. You have a nice frame. Don't waste it."</strong></p>
+
+<p>I straighten. She nods.</p>
+
+<p><strong>"Better. You know, my son walked like that before his confidence came in. Shoulders hunched, head down. Now he walks into rooms and the air changes."</strong> She sips her latte. <strong>"He's six-four. Played football at Howard. Big boy. But it wasn't the size that changed. It was the posture."</strong></p>
+
+<p>She goes back to her book. I'm dismissed.</p>
+
+<p>I think about her son. Six-four. Football at Howard. Big boy. The image forms in my mind without permission: a tall, broad, confident Black man walking into a room and making the air change. The contrast with me, five-eight, skinny, hunched, apologizing for existing, is so stark it feels like a different species.</p>
+
+<p>Something in my stomach twists. Not jealousy exactly. Something more complicated. A kind of awe mixed with longing mixed with something I absolutely do not examine further.</p>
+
+<<set $okonkwoMet to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day3_SQ_Uniform [day3 sidequest town uniform]
+<<nobr>>
+<<centerImage "image/events/cafe.png">>
+
+<p>The uniform sits in my locker at the cafe. Vanessa pointed out the staff lockers during orientation, a narrow bank of metal doors in the break room. Mine has a sticky note that says "ALEX" in Vanessa's handwriting, round letters with a smiley face dotting the I.</p>
+
+<p>Inside: one pastel green polo, size small, still in its packaging. One black apron with the Lush Latte logo. The polo is soft. I hold it up. It's smaller than I expected. The fabric is stretchy, the kind that clings rather than drapes. The sleeves are short, the collar a low V-neck. On a guy with broader shoulders, it would look normal. On me, with my narrow frame, it's going to hug every line of my torso.</p>
+
+<p>I put it on over my t-shirt to test the fit. It's snug. Tight across the chest. Tight through the waist. The V-neck shows my collarbones, which I've never thought about as a feature of my body until right now, standing in a break room mirror, seeing them emerge from pastel green fabric like a landscape being revealed.</p>
+
+<p>Vanessa appears in the mirror behind me. I jump. She doesn't.</p>
+
+<<dialog "Vanessa" "Fits nice.">>
+
+<p>She reaches forward and tugs the hem straight. Her fingers brush my hip. "Tomorrow, wear it from the start. No t-shirt underneath. It's meant to be worn against skin."</p>
+
+<p>"Against skin?"</p>
+
+<<dialog "Vanessa" "Mmhmm. The fabric breathes better that way. Trust me.">>
+
+<p>She leaves. I stare at my reflection. Pastel green polo, V-neck showing my collarbones, fabric hugging my waist. I look like one of the girls in the Instagram photos. Not exactly. But close enough that the resemblance sends a chill down my spine that isn't entirely unpleasant.</p>
+
+<<set $cafeUniformTried to true>>
+<<set $cafeUniformInstruction to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

@@ -44,6 +44,7 @@
 <<set $lilyRelationship to 5>>
 <<set $sophiaRelationship to 0>>
 <<set $vanessaRelationship to 0>>
+<<set $ravenRelationship to 0>>
 
 /* Stage tracking */
 <<set $chloeStage to 0>>
@@ -122,6 +123,37 @@
 <<set $ridingCropSeen to false>>
 <<set $wardrobeAuditDone to false>>
 <<set $taraStorySeenDay2 to false>>
+
+/* Day 3 flags */
+<<set $cafeJobStarted to false>>
+<<set $cafeShiftCount to 0>>
+<<set $vanessaPostureTraining to false>>
+<<set $cafeUniformTried to false>>
+<<set $marcusDeliveryFlag to false>>
+<<set $marcusNameKnown to false>>
+<<set $bbcAtmospheric to 0>>
+<<set $okonkwoMet to false>>
+<<set $evelynClosetDay3 to false>>
+<<set $scarfMoment to false>>
+<<set $lilyPhotographyDone to false>>
+<<set $softFeaturesMentioned to false>>
+<<set $chloeParkDay3 to false>>
+<<set $purseCarried to false>>
+<<set $firstPublicFem to false>>
+<<set $delgadoPurseSeen to false>>
+<<set $ravenMet to false>>
+<<set $shopJobApplied to false>>
+<<set $shopJobStartDay to 0>>
+<<set $ravenHasNumber to false>>
+<<set $mallWalkDay3 to false>>
+<<set $boutiqueNecklaceSeen to false>>
+<<set $boutiqueReflection to false>>
+<<set $dinnerDay3 to false>>
+<<set $chloeCallDay3 to false>>
+<<set $prettyMentioned to false>>
+<<set $lilyPantiesDay3 to false>>
+<<set $lilyPantiesKept to false>>
+<<set $aliCrosswordDay3 to false>>
 
 /* Location unlocks */
 <<set $mallOpen to false>>

@@ -1,0 +1,51 @@
+:: Day3_Evening_A [day3 evening evelyn dinner]
+<<nobr>>
+<<centerImage "image/events/dinner.png">>
+<<set $currentLocation to "events/dinner">>
+
+<p>The table is set like a photograph in a magazine. Cloth napkins folded into triangles. Silverware from the wooden box. Candles lit, their flames reflected in the polished wood. Evelyn has made salmon with dill sauce and asparagus arranged on the plate like piano keys.</p>
+
+<p>She's in a black dress tonight. Not a casual around-the-house dress. An actual dress, fitted through the waist, with a neckline that shows her collarbones and the pearls that rest against them. She's dressed for dinner at her own table the way most people dress for restaurants. This is just who she is.</p>
+
+<<dialog "Evelyn" "Napkin on your lap, Alex.">>
+
+<p>She unfolds her own with one precise movement, a single flick of the wrist that transforms folded fabric into a flat surface on her thigh. I copy her. Mine takes two movements. She pretends not to notice.</p>
+
+<<dialog "Evelyn" "When you drink, lift the glass to your lips. Don't hunch down to it.">>
+
+<p>She demonstrates, her hand curling around the wine glass stem, her elbow lifted, her wrist rotating to bring the rim to her mouth. Every gesture is choreographed. Every movement has a form and a standard and she embodies both so naturally that it looks effortless, which is the greatest trick of all.</p>
+
+<p>She corrects me three times during dinner. The glass. The knife angle. My posture again, because slouching is apparently my default state and Evelyn treats it like a weed that must be pulled daily.</p>
+
+<p>Each correction comes with her voice, patient, unyielding, the voice of someone who has infinite time and zero tolerance. She doesn't raise it. She doesn't lower it. She simply states what needs to change and waits for me to change it, and the weight of her expectation is heavier than any hand.</p>
+
+<p>By the end of dinner I'm sitting straighter than I've ever sat. Napkin on my lap. Glass lifted to my lips. Knife angled properly. Chewing with my mouth closed. Looking like a boy who belongs at a table set with candles and silver. Looking like someone Evelyn made.</p>
+
+<p>Lily catches my eye across the table. She mouths "fancy boy." She's slurping her soup loudly enough to constitute an act of rebellion. Evelyn's jaw tightens but she doesn't engage. Lily is chaos. I am clay. Evelyn works with what responds to her hands.</p>
+
+<p>I glare at Lily. She grins with soup on her chin.</p>
+
+<p>After dinner, clearing plates, Lily blocks the kitchen doorway.</p>
+
+<<dialog "Lily" "She's turning you into a little gentleman, you know. Next week it'll be which fork to use. Week after that she'll have you in a tie. Month from now you'll be curtsying.">>
+
+<p>Her voice is quiet enough that Evelyn, running water in the other room, can't hear.</p>
+
+<p>"She's just teaching me manners."</p>
+
+<p>"Mmhmm." Lily pops a grape into her mouth. "That's how it starts. Manners. Then posture. Then clothes. Then..." She makes an explosion gesture with her hands. "Boom. Little Alice in Wonderland."</p>
+
+<p>"That's not..."</p>
+
+<p>"I'm not judging, step-bro. I'm just saying. Watch the rabbit hole." She pats my cheek and disappears. I stand in the doorway holding dirty plates and thinking about rabbit holes and how they always look small from the outside.</p>
+
+<<statChange "obedience" 2>>
+<<statChange "feminization" 1>>
+<<set $evelynRelationship += 2>>
+<<set $lilyAwareness += 2>>
+<<set $dinnerDay3 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

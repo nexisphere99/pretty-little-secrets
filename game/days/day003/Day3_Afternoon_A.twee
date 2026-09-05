@@ -1,0 +1,109 @@
+:: Day3_Afternoon_A [day3 afternoon chloe park]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+<<set $currentLocation to "location/park">>
+
+<p>Henderson is out front when I leave, same as always, hose in hand, Orioles cap in place.</p>
+
+<<dialog "Alex" "Afternoon, Mr. Henderson.">>
+
+<p><strong>"Good man. My first job was at a hardware store. Sixteen years old. Used to carry sixty-pound bags of concrete on each shoulder. That was back when men were men."</strong></p>
+
+<p>He says this with zero irony and a hundred percent conviction. I nod and keep walking. Behind me, the hose whispers its eternal devotion to the grass.</p>
+
+<<set $hendersonFamiliarity += 1>>
+
+<p>Chloe is buzzing when I arrive at her apartment. Not anxious buzzing. Excited buzzing. The kind of energy that fills a room and pushes the walls outward. She's wearing a sundress, white with little yellow flowers, and she's packed a picnic basket with sandwiches and fruit and those fancy sparkling waters that cost five dollars a can.</p>
+
+<<dialog "Chloe" "Let's go! It's gorgeous outside. I found this spot in the park with a huge oak tree and it's like something out of a painting.">>
+
+<p>I can't say no to Chloe when she's like this. I couldn't say no to Chloe when she's any way, but especially this way, vibrating with plans, her green eyes bright, her hair loose and catching the breeze when we step outside.</p>
+
+<p>Oakdale Park is different in the afternoon. The morning joggers and dog walkers have been replaced by families and couples and clusters of teenagers taking up the benches. Chloe leads me to a spot under an enormous oak, the kind of tree that's been there since before the neighborhood existed, its branches spreading wide enough to shade a small kingdom. She spreads a blanket, patterned with strawberries because of course it is, and we sit.</p>
+
+<p>We eat. Turkey sandwiches, strawberries, sparkling water. She talks about her week, about a podcast she discovered, about how Mia is training for a half marathon and won't shut up about her splits. Normal. Easy. The sun is warm through the leaves and Chloe's head is on my shoulder and the world is simple and kind.</p>
+
+<p>Then she sits up. Reaches for her purse. Lifts it off the blanket by its chain strap and holds it out to me.</p>
+
+<<dialog "Chloe" "Carry this for me? My shoulder's sore from yoga.">>
+
+<p>The purse is pink. Not subtle pink, not dusty rose like the panties. Bright, unapologetic, look-at-me pink. With a gold clasp and a chain strap that catches the sunlight and a designer logo I recognize because Chloe pointed it out in a magazine once and said "Someday." Apparently someday arrived.</p>
+
+<p>I take it automatically. My fingers close around the chain before my brain catches up to what's happening. The metal is warm from the sun. The purse swings from my hand, conspicuously, aggressively pink against my jeans and t-shirt.</p>
+
+<p>Chloe stands up. Brushes grass off her sundress. Starts walking along the path that loops around the pond. She doesn't look back. She doesn't check if I'm following. She knows.</p>
+
+<p>I follow. Holding her pink purse. In public. On a Monday afternoon in a park full of people.</p>
+
+<<set $chloeParkDay3 to true>>
+
+<<link "Carry it" "Day3_Afternoon_A_Carry">><</link>><br>
+<<link "Hand it back" "Day3_Afternoon_A_Return">><</link>>
+<</nobr>>
+
+:: Day3_Afternoon_A_Carry [day3 afternoon chloe park purse carry]
+<<nobr>>
+<p>A couple walking their dog comes toward us on the path. The man is first to notice. His eyes go from my face to the purse and back to my face. It's a quick look, a fraction of a second, but I feel it like a searchlight. His expression doesn't change. He doesn't laugh. He doesn't even smirk. But I know he noticed. I know he filed it. I know that for one moment, in his mind, I was categorized as something other than a regular guy taking a walk.</p>
+
+<p>The woman next to him looks too. Her gaze lingers longer. On the purse, then on me. And she smiles. Not a mocking smile. Not a pitying smile. A warm, genuine, isn't-that-sweet smile. The kind of smile you give a boyfriend who carries his girlfriend's stuff without being asked, who opens doors, who does the little things.</p>
+
+<p>That's somehow worse than laughter. Because laughter I could dismiss as cruelty. That smile means she thinks I'm sweet. Domesticated. Agreeable. The kind of man who carries a pink purse because his woman told him to. And the worst part, the truly terrifying part, is that she's right.</p>
+
+<p>"Chloe, can I just..."</p>
+
+<<dialog "Chloe" "You're being such a good helper.">>
+
+<p>Loud enough for the couple to hear. The woman's smile widens. The man's eyes flick to me again with something that might be sympathy. I feel heat crawl up my neck, through my cheeks, to the tips of my ears.</p>
+
+<p>We walk the full loop. Two hundred meters of public humiliation wrapped in sunshine and birdsong. The purse swings from my hand with every step. Three more people notice. An old woman on a bench. A teenager on a skateboard who does a double-take. A jogger who grins as she passes.</p>
+
+<p>The old woman on the bench is Mrs. Delgado. Same bench. Same bread bag. Same pigeons clustered at her feet like feathered disciples. Today she's wearing a wide-brimmed hat that makes her look like a very old, very knowing mushroom. Her eyes go from Chloe to the purse to me to the purse to my face. She doesn't say anything. But she tears her bread into smaller pieces than usual, which I take as a sign of either agitation or delight.</p>
+
+<<set $delgadoPurseSeen to true>>
+<<set $delgadoAwareness += 2>>
+
+<p>By the time we get back to the blanket, my face is so hot I could fry an egg on it. Chloe takes the purse back like nothing happened. She sits cross-legged on the strawberry blanket and pats the spot beside her.</p>
+
+<p>"Thank you, baby." She leans over and kisses my cheek. Right there. In the park. In front of anyone looking. "You're the best boyfriend."</p>
+
+<p>My cock is hard. I don't know why carrying a pink purse in a park made me hard but it did. Maybe it's the humiliation. Maybe it's Chloe's approval. Maybe it's the combination, the way being seen doing something embarrassing for her turns some dial in my brain that I didn't know existed.<<if $pantiesEquipped>> The panties are tight against my erection and I have to adjust myself subtly, shifting on the blanket.<</if>></p>
+
+<p>Chloe notices. She always notices. Her hand finds my thigh. Squeezes once. Brief and electric.</p>
+
+<<dialog "Chloe" "Good boy.">>
+
+<p>The afternoon dissolves into warmth and touch and the gradual realization that I just did something in public that can't be undone. People saw me carrying a pink purse. Strangers. And Chloe said "good boy" and I got hard and none of this is normal and all of it feels inevitable.</p>
+
+<<statChange "obedience" 3>>
+<<statChange "embarrassment" 3>>
+<<statChange "feminization" 2>>
+<<set $chloeRelationship += 3>>
+<<set $firstPublicFem to true>>
+<<set $purseCarried to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day3_Afternoon_A_Return [day3 afternoon chloe park purse return]
+<<nobr>>
+<p>"Here." I hold the purse back out to her. "I'll carry the picnic stuff instead."</p>
+
+<p>A flicker crosses her face. Fast. Controlled. She takes the purse back and slings it over her shoulder.</p>
+
+<<dialog "Chloe" "You're so worried about what people think.">>
+
+<p>It's not angry. It's not even disappointed. It's observational. Like she's noting a data point. A test result. The hypothesis was that I'd carry it. The result is that I didn't. She adjusts her model and moves on.</p>
+
+<p>The rest of the afternoon is fine. Normal. But there's a thin frost on everything, an invisible layer between us that wasn't there before. She doesn't rest her head on my shoulder on the walk back.</p>
+
+<p>We pass Mrs. Delgado's bench on the way out. She watches me pass with the same milky-sharp eyes as always. "Still that boy from the Chambers house," she murmurs. Not to me. To the pigeons. "Getting thinner. Or taller. Or something."</p>
+
+<<statChange "resistance" 3>>
+<<set $chloeRelationship -= 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

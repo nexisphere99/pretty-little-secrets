@@ -159,6 +159,17 @@ line breaks inside a widget body are actively dangerous.
   the branch for the relevant day** (add a new `<<elseif $day is N>>`
   branch for a new day's tasks, don't touch the existing day branches).
 
+  It's fine for a day to have **zero** tasks at a given location - not
+  every location needs something happening at it every day. `chloeTasks`'
+  Day 3 branch is just a plain `<p>` saying there's nothing to do there
+  today, instead of a `<ul>` of `<<taskEntry>>` calls (Day 3's Chloe
+  content - the park picnic - lives under `neighborhoodTasks` instead,
+  since the park is physically in the neighborhood, not her apartment).
+  This is a different, simpler case than the removed "all tasks done"
+  check below: it's "nothing was ever written for this location today,"
+  not "everything here is finished" - the plain message is the right
+  call here specifically because there's no task list to render at all.
+
   Earlier versions of these widgets wrapped the list in an "if every
   task here is done, print 'Nothing left to do here right now.' instead
   of the list" check. That was wrong: it hid completed tasks' ✓
@@ -180,27 +191,75 @@ line breaks inside a widget body are actively dangerous.
 - **`<<dayPlanContent>>`** - Popup-facing (Objectives icon): prints
   **all** locations with headings for the current `$day`, by calling
   `<<homeTasks>>`/`<<neighborhoodTasks>>`/`<<chloeTasks>>`/`<<townTasks>>`
-  directly (Town's heading only appears in the `$day is 2` branch). This
-  is what makes the Objectives popup a global overview instead of only
-  showing the current location.
+  directly (the `<<townTasks>>` widget's own day-branching means its
+  "Downtown" heading only appears from `$day is 2` onward - it's a
+  no-op on Day 1 since Downtown isn't reachable yet). This is what
+  makes the Objectives popup a global overview instead of only showing
+  the current location.
 
 - **`<<locationMap location>>`** - Renders the inline SVG location
-  graph (Home / Neighborhood / Chloe's Apartment / Town), highlighting
-  whichever location string is passed in, plus a one-line caption ("You
-  are home." etc.). Used by the Map popup (see §7). Town is a real,
-  reachable node from Day 2 on; on Day 1 it renders locked (🔒, label
-  "???", dashed edge from Neighborhood) as a teaser for what's coming -
-  this is what "add more places later" looks like in practice: the node
-  and edge were built before Town had any content, then `$day >= 2`
-  flipped it live. The SVG's `viewBox` is `0 0 400 210` - if you add
-  nodes, make sure their label `y` coordinates stay inside that box (a
-  clipped "City" label was the bug that prompted widening it from `170`
-  to `210` in the first place). **Critically, unlike every other widget,
-  this one cannot use inline `<<if>>`/macro syntax anywhere inside the
-  SVG markup at all** - see §10 Gotcha #6. All conditional values are
+  graph, highlighting whichever location string is passed in, plus a
+  one-line caption ("You are home." etc.). Used by the Map popup (see
+  §7). The internal location identifier for the fourth node is still
+  the string `"town"` everywhere in the code (`$currentMapLocation`,
+  every `<<if _loc is 'town'>>`/`is "town"` check across Widgets.twee,
+  DailyHub_Morning.twee, and the Day 2/3 task passages) - only the
+  **display label** was changed to "Downtown" (map node label, hub
+  `<h2>` headings, Objectives popup heading). This was a deliberate
+  choice to satisfy "rename town as downtown" as a text-only change
+  without touching the (much larger) surface area of code that
+  compares against the `"town"` string. If a future day ever needs the
+  identifier itself renamed, it's a straightforward find-and-replace of
+  `"town"` → e.g. `"downtown"` across those three files plus this doc -
+  just don't do it partially.
+
+  **Layout (current, post-redesign):** four main nodes in a fixed
+  `viewBox="0 0 480 270"` -
+
+  | Node | Coordinates | Notes |
+  |---|---|---|
+  | Home | `(70, 90)` | |
+  | Neighborhood | `(220, 90)` | |
+  | Downtown | `(370, 90)` | locked (🔒, label "???", dashed edge) until `$day >= 2` |
+  | Chloe's Apartment | `(70, 210)` | |
+
+  Home, Neighborhood, and Downtown sit on a single horizontal line
+  (`y=90`), drawn as one continuous edge chain: Home-Neighborhood-
+  Downtown. Chloe's hangs **straight down from Home only** - a single
+  vertical edge at `x=70` from `y=90` to `y=210` - and is not connected
+  to Neighborhood or Downtown at all. This was a deliberate redesign
+  (the original layout had Chloe's positioned so its edge visually
+  crossed the Home-Neighborhood-Downtown chain, which read as "travel
+  to Chloe's passes through the Neighborhood" even though that was
+  never true in the game logic - the fix was purely geometric: keep
+  Chloe's x-coordinate equal to Home's and outside the x-range of every
+  other edge, so the vertical drop can't intersect anything).
+
+  **Downtown sub-nodes (`$day >= 3` only):** three small decorative
+  nodes fan out below Downtown - Cafe `(290, 190)`, Kinky Kitty
+  `(370, 220)`, Mall `(450, 190)` - each linked to Downtown `(370, 90)`
+  by a dashed `.map-subedge` line. These exist purely to make the map
+  reflect what Downtown actually contains once Day 3 gives it real
+  sub-locations (cafe job, sex shop, mall) instead of being one
+  undifferentiated node. They are **not interactive** - the Map popup
+  has never been a navigation control (actual travel is only ever done
+  via the hub's "Walk to.../Head back home" links), so the sub-nodes
+  are labeled/positioned for information only and carry no `<<link>>`.
+  They render with smaller radius/font via the `.map-subnode`/
+  `.map-subicon`/`.map-sublabel` CSS classes, kept visually distinct
+  from the four main nodes.
+
+  If you add more nodes later: the `viewBox` is `0 0 480 270` - keep
+  new label `y` coordinates inside that box (a previous version of
+  this map used a smaller `0 0 400 210` box and clipped a label, which
+  is why there's headroom now). **Critically, unlike every other
+  widget, this one cannot use inline `<<if>>`/macro syntax anywhere
+  inside the SVG markup at all** - see §10 Gotcha #6. All conditional
+  values (active-node CSS class per location, Downtown's lock state,
+  icon, label, edge class, the sub-node block, the caption) are
   precomputed into temp variables with plain `<<set>>` ternaries, the
-  entire `<svg>...</svg>` string is built via concatenation, and the
-  whole thing is emitted with one `<<print _svg>>`.
+  entire `<svg>...</svg>` string is built via string concatenation, and
+  the whole thing is emitted with one `<<print _svg>>`.
 
 - **`<<statChange>>`, `<<addItem>>`, `<<hasItem>>`, `<<equipOutfit>>`,
   `<<statSummary>>`** - Unrelated to navigation; pre-existing stat/
@@ -213,7 +272,7 @@ line breaks inside a widget body are actively dangerous.
 is `DailyHub`, which is what everything actually links to now. Consider
 renaming the file itself if it's ever confusing.)
 
-The whole thing is one `<<if $day is 1>>...<<elseif $day is 2>>...<<else>>...<</if>>` at the top level. Day 2's branch is a near-exact mirror of Day 1's (same steps below, same `<<startDay 9 3>>` numbers - Day 2 also happens to have 9 main + 3 side tasks) with two differences: its intro paragraph text, and a fourth location (`"town"`) added to both the location-view `if/elseif` and the travel-links `if/elseif` - reachable only from Neighborhood ("Walk downtown"), with "Head back home" available directly from Town too as a convenience shortcut. The `<<else>>` "hasn't been authored yet" placeholder (step 8 below) only fires for `$day >= 3` now.
+The whole thing is one `<<if $day is 1>>...<<elseif $day is 2>>...<<elseif $day is 3>>...<<else>>...<</if>>` at the top level. Each day-branch follows the same shape below (same `<<startDay>>` call → forced-sleep check → first-visit intro → location view → `<<lateWarning>>` → `<<locationTasks>>` → travel links); only the intro paragraph text, location-view flavor text, and which locations/travel links are available differ per day. Day 1 has three reachable locations (Home, Neighborhood, Chloe's - Downtown is present on the map but locked). From Day 2 on, a fourth location (`"town"`, displayed as "Downtown") is added to both the location-view `if/elseif` and the travel-links `if/elseif` - reachable only from Neighborhood ("Walk downtown"), with "Head back home" available directly from Downtown too as a convenience shortcut. The `<<else>>` "hasn't been authored yet" placeholder (step 8 below) now fires for `$day >= 4` and includes a `.version-note` block with the current version badge and a Patreon link - bump the version text here each time a new day ships.
 
 Render order, every time `DailyHub` is visited (per day-branch):
 
@@ -414,3 +473,4 @@ These cost real debugging time and will bite again if forgotten:
 | `game/styles/main.css` | `.day-plan`, `.task-*`, `.location-map`, `.map-*`, `.late-warning`, `.travel-links`, `.clock-display` (now largely superseded by the top bar, but still present/harmless) rules. |
 | `game/days/day001/*.twee` | Day 1's task passages, each following the contract in §8. |
 | `game/days/day002/*.twee` | Day 2's task passages. Same contract as Day 1. Notable files: `Day2_Afternoon_A*` + `Day2_Chloe_OralSex` (the Chloe branch, including the obey-vs-redirect choice point - see §8's note on choice points), `Day2_Afternoon_C*` (Lily's nail-painting accept/refuse), `Day2_SideQuests.twee` (Ali/closet/wardrobe). |
+| `game/days/day003/*.twee` | Day 3's task passages. Introduces no new location - the cafe, Kinky Kitty, and the mall all live at the existing `"town"` node (established Day 2), and the Chloe park picnic was placed under `"neighborhood"` rather than `"chloe"` since Oakdale Park is physically a neighborhood location, not her apartment (meaning `chloeTasks`' Day 3 branch has no tasks at all - see the `<<else>>`-with-a-message pattern note below). Notable files: `Day3_Morning_A` (the cafe shift, with the BBC-gated Marcus delivery embedded inline via `<<if $bbcEnabled>>`, not a separate passage), `Day3_Afternoon_A*` (the park/purse scene, its own obey-vs-refuse choice point, each branch embedding Mrs. Delgado's differing reaction), `Day3_Morning_B` (Evelyn's closet/scarves - the `$yesMaamAccepted` warm path is from the source material, the dishes-adjacent cold-path `<<else>>` is invented, since the source only wrote the warm outcome), `Day3_SideQuests.twee` (Ali/Okonkwo/uniform - the latter two locked behind `$cafeJobStarted`). |

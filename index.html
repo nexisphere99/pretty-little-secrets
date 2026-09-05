@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://27FA6D7B-4709-4B3D-9797-F5BF92C9430B// --><tw-storydata name="Pretty Little Secrets" startnode="36" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="27FA6D7B-4709-4B3D-9797-F5BF92C9430B" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* General page styling */
+	<!-- UUID://27FA6D7B-4709-4B3D-9797-F5BF92C9430B// --><tw-storydata name="Pretty Little Secrets" startnode="53" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="27FA6D7B-4709-4B3D-9797-F5BF92C9430B" zoom="0.6" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* General page styling */
 body {
   background: linear-gradient(135deg, #f8e1e9, #e8c7ff);
   color: #333;
@@ -1125,6 +1125,27 @@ button:hover {
 
 .map-node-locked .map-label {
   fill: #a094a0;
+}
+
+.map-subedge {
+  stroke: #f4a6c6;
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+
+.map-subnode circle {
+  fill: #fff8fb;
+  stroke: #f4a6c6;
+  stroke-width: 1.5;
+}
+
+.map-subicon {
+  font-size: 13px;
+}
+
+.map-sublabel {
+  font-size: 9px;
 }
 
 .map-caption {
@@ -3077,7 +3098,763 @@ $(document).on(':passagerender', function () {
 &lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
 
 &lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="DailyHub" tags="hub" position="600,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Day3_Afternoon_A" tags="day3 afternoon chloe park" position="600,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/location/park.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;location/park&quot;&gt;&gt;
+
+&lt;p&gt;Henderson is out front when I leave, same as always, hose in hand, Orioles cap in place.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Alex&quot; &quot;Afternoon, Mr. Henderson.&quot;&gt;&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;Good man. My first job was at a hardware store. Sixteen years old. Used to carry sixty-pound bags of concrete on each shoulder. That was back when men were men.&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;He says this with zero irony and a hundred percent conviction. I nod and keep walking. Behind me, the hose whispers its eternal devotion to the grass.&lt;/p&gt;
+
+&lt;&lt;set $hendersonFamiliarity += 1&gt;&gt;
+
+&lt;p&gt;Chloe is buzzing when I arrive at her apartment. Not anxious buzzing. Excited buzzing. The kind of energy that fills a room and pushes the walls outward. She&#39;s wearing a sundress, white with little yellow flowers, and she&#39;s packed a picnic basket with sandwiches and fruit and those fancy sparkling waters that cost five dollars a can.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;Let&#39;s go! It&#39;s gorgeous outside. I found this spot in the park with a huge oak tree and it&#39;s like something out of a painting.&quot;&gt;&gt;
+
+&lt;p&gt;I can&#39;t say no to Chloe when she&#39;s like this. I couldn&#39;t say no to Chloe when she&#39;s any way, but especially this way, vibrating with plans, her green eyes bright, her hair loose and catching the breeze when we step outside.&lt;/p&gt;
+
+&lt;p&gt;Oakdale Park is different in the afternoon. The morning joggers and dog walkers have been replaced by families and couples and clusters of teenagers taking up the benches. Chloe leads me to a spot under an enormous oak, the kind of tree that&#39;s been there since before the neighborhood existed, its branches spreading wide enough to shade a small kingdom. She spreads a blanket, patterned with strawberries because of course it is, and we sit.&lt;/p&gt;
+
+&lt;p&gt;We eat. Turkey sandwiches, strawberries, sparkling water. She talks about her week, about a podcast she discovered, about how Mia is training for a half marathon and won&#39;t shut up about her splits. Normal. Easy. The sun is warm through the leaves and Chloe&#39;s head is on my shoulder and the world is simple and kind.&lt;/p&gt;
+
+&lt;p&gt;Then she sits up. Reaches for her purse. Lifts it off the blanket by its chain strap and holds it out to me.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;Carry this for me? My shoulder&#39;s sore from yoga.&quot;&gt;&gt;
+
+&lt;p&gt;The purse is pink. Not subtle pink, not dusty rose like the panties. Bright, unapologetic, look-at-me pink. With a gold clasp and a chain strap that catches the sunlight and a designer logo I recognize because Chloe pointed it out in a magazine once and said &quot;Someday.&quot; Apparently someday arrived.&lt;/p&gt;
+
+&lt;p&gt;I take it automatically. My fingers close around the chain before my brain catches up to what&#39;s happening. The metal is warm from the sun. The purse swings from my hand, conspicuously, aggressively pink against my jeans and t-shirt.&lt;/p&gt;
+
+&lt;p&gt;Chloe stands up. Brushes grass off her sundress. Starts walking along the path that loops around the pond. She doesn&#39;t look back. She doesn&#39;t check if I&#39;m following. She knows.&lt;/p&gt;
+
+&lt;p&gt;I follow. Holding her pink purse. In public. On a Monday afternoon in a park full of people.&lt;/p&gt;
+
+&lt;&lt;set $chloeParkDay3 to true&gt;&gt;
+
+&lt;&lt;link &quot;Carry it&quot; &quot;Day3_Afternoon_A_Carry&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;br&gt;
+&lt;&lt;link &quot;Hand it back&quot; &quot;Day3_Afternoon_A_Return&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Day3_Afternoon_A_Carry" tags="day3 afternoon chloe park purse carry" position="725,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;p&gt;A couple walking their dog comes toward us on the path. The man is first to notice. His eyes go from my face to the purse and back to my face. It&#39;s a quick look, a fraction of a second, but I feel it like a searchlight. His expression doesn&#39;t change. He doesn&#39;t laugh. He doesn&#39;t even smirk. But I know he noticed. I know he filed it. I know that for one moment, in his mind, I was categorized as something other than a regular guy taking a walk.&lt;/p&gt;
+
+&lt;p&gt;The woman next to him looks too. Her gaze lingers longer. On the purse, then on me. And she smiles. Not a mocking smile. Not a pitying smile. A warm, genuine, isn&#39;t-that-sweet smile. The kind of smile you give a boyfriend who carries his girlfriend&#39;s stuff without being asked, who opens doors, who does the little things.&lt;/p&gt;
+
+&lt;p&gt;That&#39;s somehow worse than laughter. Because laughter I could dismiss as cruelty. That smile means she thinks I&#39;m sweet. Domesticated. Agreeable. The kind of man who carries a pink purse because his woman told him to. And the worst part, the truly terrifying part, is that she&#39;s right.&lt;/p&gt;
+
+&lt;p&gt;&quot;Chloe, can I just...&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;You&#39;re being such a good helper.&quot;&gt;&gt;
+
+&lt;p&gt;Loud enough for the couple to hear. The woman&#39;s smile widens. The man&#39;s eyes flick to me again with something that might be sympathy. I feel heat crawl up my neck, through my cheeks, to the tips of my ears.&lt;/p&gt;
+
+&lt;p&gt;We walk the full loop. Two hundred meters of public humiliation wrapped in sunshine and birdsong. The purse swings from my hand with every step. Three more people notice. An old woman on a bench. A teenager on a skateboard who does a double-take. A jogger who grins as she passes.&lt;/p&gt;
+
+&lt;p&gt;The old woman on the bench is Mrs. Delgado. Same bench. Same bread bag. Same pigeons clustered at her feet like feathered disciples. Today she&#39;s wearing a wide-brimmed hat that makes her look like a very old, very knowing mushroom. Her eyes go from Chloe to the purse to me to the purse to my face. She doesn&#39;t say anything. But she tears her bread into smaller pieces than usual, which I take as a sign of either agitation or delight.&lt;/p&gt;
+
+&lt;&lt;set $delgadoPurseSeen to true&gt;&gt;
+&lt;&lt;set $delgadoAwareness += 2&gt;&gt;
+
+&lt;p&gt;By the time we get back to the blanket, my face is so hot I could fry an egg on it. Chloe takes the purse back like nothing happened. She sits cross-legged on the strawberry blanket and pats the spot beside her.&lt;/p&gt;
+
+&lt;p&gt;&quot;Thank you, baby.&quot; She leans over and kisses my cheek. Right there. In the park. In front of anyone looking. &quot;You&#39;re the best boyfriend.&quot;&lt;/p&gt;
+
+&lt;p&gt;My cock is hard. I don&#39;t know why carrying a pink purse in a park made me hard but it did. Maybe it&#39;s the humiliation. Maybe it&#39;s Chloe&#39;s approval. Maybe it&#39;s the combination, the way being seen doing something embarrassing for her turns some dial in my brain that I didn&#39;t know existed.&lt;&lt;if $pantiesEquipped&gt;&gt; The panties are tight against my erection and I have to adjust myself subtly, shifting on the blanket.&lt;&lt;/if&gt;&gt;&lt;/p&gt;
+
+&lt;p&gt;Chloe notices. She always notices. Her hand finds my thigh. Squeezes once. Brief and electric.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;Good boy.&quot;&gt;&gt;
+
+&lt;p&gt;The afternoon dissolves into warmth and touch and the gradual realization that I just did something in public that can&#39;t be undone. People saw me carrying a pink purse. Strangers. And Chloe said &quot;good boy&quot; and I got hard and none of this is normal and all of it feels inevitable.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;obedience&quot; 3&gt;&gt;
+&lt;&lt;statChange &quot;embarrassment&quot; 3&gt;&gt;
+&lt;&lt;statChange &quot;feminization&quot; 2&gt;&gt;
+&lt;&lt;set $chloeRelationship += 3&gt;&gt;
+&lt;&lt;set $firstPublicFem to true&gt;&gt;
+&lt;&lt;set $purseCarried to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;neighborhood&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Day3_Afternoon_A_Return" tags="day3 afternoon chloe park purse return" position="850,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;p&gt;&quot;Here.&quot; I hold the purse back out to her. &quot;I&#39;ll carry the picnic stuff instead.&quot;&lt;/p&gt;
+
+&lt;p&gt;A flicker crosses her face. Fast. Controlled. She takes the purse back and slings it over her shoulder.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;You&#39;re so worried about what people think.&quot;&gt;&gt;
+
+&lt;p&gt;It&#39;s not angry. It&#39;s not even disappointed. It&#39;s observational. Like she&#39;s noting a data point. A test result. The hypothesis was that I&#39;d carry it. The result is that I didn&#39;t. She adjusts her model and moves on.&lt;/p&gt;
+
+&lt;p&gt;The rest of the afternoon is fine. Normal. But there&#39;s a thin frost on everything, an invisible layer between us that wasn&#39;t there before. She doesn&#39;t rest her head on my shoulder on the walk back.&lt;/p&gt;
+
+&lt;p&gt;We pass Mrs. Delgado&#39;s bench on the way out. She watches me pass with the same milky-sharp eyes as always. &quot;Still that boy from the Chambers house,&quot; she murmurs. Not to me. To the pigeons. &quot;Getting thinner. Or taller. Or something.&quot;&lt;/p&gt;
+
+&lt;&lt;statChange &quot;resistance&quot; 3&gt;&gt;
+&lt;&lt;set $chloeRelationship -= 1&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;neighborhood&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Day3_Afternoon_B" tags="day3 afternoon kinkykitty raven" position="975,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/sex_toy_shop.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;events/sex_toy_shop&quot;&gt;&gt;
+
+&lt;p&gt;The neon cat winks. Over and over, an endless loop of hot pink invitation. I&#39;ve walked past this building a dozen times. Today I stop. Today I push the door open.&lt;/p&gt;
+
+&lt;p&gt;A bell chimes. Not a bright, cheerful bell like Ali&#39;s corner store. A deep, resonant chime, the kind you&#39;d hear in a temple or a very expensive hotel. The door closes behind me and the street noise vanishes, replaced by silence so thick I can hear my own heartbeat.&lt;/p&gt;
+
+&lt;p&gt;The shop is dim. Purple lights mounted in the ceiling cast everything in a violet haze. The walls are lined with merchandise, and my eyes take a moment to adjust, to sort the shapes into categories my brain has vocabulary for. Vibrators in a glass display case, arranged by size from demure to terrifying. Lingerie on mannequins, lace and satin and leather and mesh, each set lit with its own tiny spotlight. A shelf labeled &quot;Anal Play&quot; in elegant cursive, the handwriting of someone who discusses butt plugs with the same formality other people discuss wine. Handcuffs. Rope. Blindfolds. Masks. Things I don&#39;t have names for, things with straps and buckles that could be for pleasure or for restraint or for both.&lt;/p&gt;
+
+&lt;p&gt;The air smells like leather. Warm leather. And something sweet underneath, vanilla and sandalwood, the kind of candle you&#39;d find in a meditation studio if the meditation studio had a dungeon in the basement.&lt;/p&gt;
+
+&lt;&lt;if $kinkyKittyNoticed&gt;&gt;
+&lt;p&gt;My face is warm, not on fire &amp;mdash; I noticed this place before, filed away the neon and the &quot;Help Wanted&quot; sign, so walking in doesn&#39;t feel like free-falling off a cliff. More like stepping off a diving board I already measured.&lt;/p&gt;
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;My face is on fire. I&#39;m sweating. I&#39;m standing in the doorway of a sex shop at two in the afternoon on a Monday and every surface in every direction has something on it that makes my brain short-circuit.&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;dialog &quot;Alex&quot; &quot;Can I help you?&quot;&gt;&gt;
+
+&lt;p&gt;She emerges from the back like smoke taking human form. Jet black hair, ruler-straight, falling to her waist. Skin so pale it&#39;s almost blue in the purple light. Gothic makeup, precise and dramatic: black lips, black nails, eyes rimmed with kohl so thick her irises look like emeralds set in onyx. She&#39;s wearing a leather corset over a sheer mesh top, fitted leather pants, boots with silver buckles that climb to her knees. Every piece of jewelry on her body, rings, bracelets, a choker with a tiny silver pendant, is black or silver, nothing warm, nothing soft.&lt;/p&gt;
+
+&lt;p&gt;She is simultaneously the most intimidating and the most beautiful woman I&#39;ve ever seen. And she&#39;s looking at me the way a biologist looks at a new species. Clinical curiosity with an undercurrent of delight.&lt;/p&gt;
+
+&lt;p&gt;&quot;I saw the sign,&quot; I manage. &quot;About the job.&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Raven&quot; &quot;I&#39;m Raven.&quot;&gt;&gt;
+
+&lt;p&gt;She extends a hand. Black nails, long and coffin-shaped, catch the purple light. Her handshake is surprisingly strong. Her palm is cool and dry and her grip lasts exactly one beat longer than a normal handshake, long enough to communicate that she&#39;s choosing to let go, not that I&#39;m choosing to pull away. &quot;This is my shop.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Alex.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Alex.&quot; She tastes my name the same way Vanessa did, rolling it over her tongue like she&#39;s deciding what it sounds like dressed up in different syllables. &quot;You ever work retail?&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;I just started at a cafe. Delivery, mostly.&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Raven&quot; &quot;This would be part time. Evenings. Stocking shelves, helping customers, keeping the place clean. The products here are intimate in nature. Does that bother you?&quot;&gt;&gt;
+
+&lt;p&gt;I look around again. My gaze lands on a mannequin wearing a red lace bodysuit with straps that crisscross the torso like geometric art. Beside it, a shelf of dildos in graduated sizes, ranging from &quot;modest&quot; to &quot;you can&#39;t be serious.&quot; Below that, a rack of anal beads in every color of the rainbow.&lt;/p&gt;
+
+&lt;p&gt;&quot;No,&quot; I say. My voice cracks on the word. &quot;I mean. It&#39;s fine.&quot;&lt;/p&gt;
+
+&lt;p&gt;Raven smiles. It transforms her face. The intimidation doesn&#39;t disappear but it makes room for something warmer, almost affectionate, the way you&#39;d smile at a kitten who just walked into a wolf&#39;s den and decided to sit down.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Raven&quot; &quot;You&#39;re blushing. That&#39;s not a bad thing. Customers appreciate sincerity over polish. A blushing boy helping them choose a vibrator is more endearing than a bored one.&quot;&gt;&gt;
+
+&lt;p&gt;She said &quot;boy.&quot; Not &quot;man.&quot; Not &quot;employee.&quot; Boy. The word sits in the air between us, tiny and weighted.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Raven&quot; &quot;Start Day 10. Fourteen dollars an hour. Three shifts a week to start, we&#39;ll see about more. Don&#39;t be late.&quot;&gt;&gt;
+
+&lt;p&gt;She picks up a business card from the counter and holds it out between two black-tipped fingers. I take the card. Black matte with purple lettering. &quot;Kinky Kitty&quot; with the winking cat logo and Raven&#39;s name underneath. I pocket it and turn to leave.&lt;/p&gt;
+
+&lt;p&gt;&quot;Alex.&quot;&lt;/p&gt;
+
+&lt;p&gt;I stop. Turn back.&lt;/p&gt;
+
+&lt;p&gt;She&#39;s leaning on the counter, one elbow propped, chin on her fist. Her eyes are half-lidded and sharp at the same time, sleepy and predatory, a cat watching a mouse from a distance.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Raven&quot; &quot;The apron you&#39;ll wear here. Is much cuter than the cafe one.&quot;&gt;&gt;
+
+&lt;p&gt;The bell chimes behind me as I leave. The neon cat winks. The sunlight hits my face and I stand on the sidewalk blinking like someone who just walked out of a movie theater, or a dream, or a portal into a life I haven&#39;t agreed to yet.&lt;/p&gt;
+
+&lt;p&gt;My phone buzzes. A text from an unknown number. &quot;Btw it&#39;s lavender. The apron. You&#39;ll look adorable. -R&quot;&lt;/p&gt;
+
+&lt;p&gt;She already has my number. From the job application email. Of course she does.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;confidence&quot; 1&gt;&gt;
+&lt;&lt;statChange &quot;embarrassment&quot; 2&gt;&gt;
+&lt;&lt;set $ravenRelationship += 2&gt;&gt;
+&lt;&lt;set $ravenMet to true&gt;&gt;
+&lt;&lt;set $shopJobApplied to true&gt;&gt;
+&lt;&lt;set $shopJobStartDay to 10&gt;&gt;
+&lt;&lt;set $ravenHasNumber to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;town&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Day3_Afternoon_C" tags="day3 afternoon mall boutique" position="1100,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/mall.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;events/mall&quot;&gt;&gt;
+
+&lt;p&gt;The mall is still sleeping. Scaffolding and banners and the occasional construction worker hauling drywall through side doors. But the strip around it is alive, and I walk it slowly, hands in my pockets, letting my eyes do the exploring my feet don&#39;t need to.&lt;/p&gt;
+
+&lt;p&gt;The Velvet Boutique catches me. A clothing store two doors down from the sealed mall entrance. The window display is a tableau of femininity: three mannequins arranged in a conversation, frozen mid-gesture, wearing outfits that span from casual to cocktail. The left mannequin wears a red dress with a plunging neckline that shows painted-on cleavage and a hemline that stops at mid-thigh. The center mannequin wears a fitted skirt and blouse combo, cream and navy, buttoned to the collarbone, conservative but form-fitting. It reminds me of Evelyn. The right mannequin wears jeans and a crop top and sneakers, but the jeans are high-waisted and the crop top is cropped enough to show a painted navel and the sneakers have platform soles.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m staring. I know I&#39;m staring because my reflection in the glass overlays the mannequins, my face floating ghost-like over the red dress, and for a disorienting second it looks like I&#39;m wearing it. Me in a red dress with a plunging neckline and a hemline at mid-thigh. The image lasts half a breath before I blink and it&#39;s gone, just a trick of light and glass, but my stomach flips in a way that has nothing to do with lunch.&lt;/p&gt;
+
+&lt;p&gt;A girl comes out of the boutique. About my age, maybe younger. She&#39;s carrying shopping bags in both hands and she&#39;s smiling the satisfied smile of someone who just spent money on things that make her feel good. She sees me and her smile brightens.&lt;/p&gt;
+
+&lt;p&gt;&quot;Great store, right? The sales rack is insane right now.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Oh, I was just, uh. Walking by.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Sure.&quot; She grins. Like she knows something I don&#39;t. Like everyone knows something I don&#39;t. She walks past me and the bags rustle and I catch a glimpse of tissue paper and something pink inside and my brain files it away in that drawer that&#39;s getting fuller by the day.&lt;/p&gt;
+
+&lt;p&gt;I walk faster. Past the boutique. Past the smoothie shop. Past a nail salon with a neon &quot;OPEN&quot; sign and women sitting in massage chairs getting their feet done. One of them catches my eye through the window and waves. I wave back automatically.&lt;/p&gt;
+
+&lt;p&gt;I think about the mannequin in the red dress. I think about my reflection overlaid on it. I think about how the dress would fit a body like mine. Skinny. Narrow shoulders. The thought came and went so fast I almost missed it.&lt;/p&gt;
+
+&lt;p&gt;Almost.&lt;/p&gt;
+
+&lt;p&gt;I linger a moment longer at the glass, and this time I notice details I missed at first glance. The red dress mannequin has a necklace. A thin gold chain with a pendant that catches the light. The pendant is a letter. I lean closer to the glass. An &quot;A.&quot;&lt;/p&gt;
+
+&lt;p&gt;My name starts with A.&lt;/p&gt;
+
+&lt;p&gt;This is a coincidence. Obviously a coincidence. A mass-produced necklace on a mass-produced mannequin. But my brain, primed by three days of accumulating signals, sees a sign. A message. An invitation addressed specifically to me.&lt;/p&gt;
+
+&lt;p&gt;I stand at the glass long enough that my reflection returns. My face, ghosting over the mannequin&#39;s painted features. My body, overlaid on the red dress. My eyes, looking through myself at something I&#39;m not ready to name.&lt;/p&gt;
+
+&lt;p&gt;The girl from earlier is right. It is a great store. I just don&#39;t know what I&#39;d buy.&lt;/p&gt;
+
+&lt;p&gt;Yet.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;feminization&quot; 1&gt;&gt;
+&lt;&lt;statChange &quot;embarrassment&quot; 1&gt;&gt;
+&lt;&lt;set $mallWalkDay3 to true&gt;&gt;
+&lt;&lt;set $boutiqueNecklaceSeen to true&gt;&gt;
+&lt;&lt;set $boutiqueReflection to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;town&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Day3_Evening_A" tags="day3 evening evelyn dinner" position="1225,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/dinner.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;events/dinner&quot;&gt;&gt;
+
+&lt;p&gt;The table is set like a photograph in a magazine. Cloth napkins folded into triangles. Silverware from the wooden box. Candles lit, their flames reflected in the polished wood. Evelyn has made salmon with dill sauce and asparagus arranged on the plate like piano keys.&lt;/p&gt;
+
+&lt;p&gt;She&#39;s in a black dress tonight. Not a casual around-the-house dress. An actual dress, fitted through the waist, with a neckline that shows her collarbones and the pearls that rest against them. She&#39;s dressed for dinner at her own table the way most people dress for restaurants. This is just who she is.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;Napkin on your lap, Alex.&quot;&gt;&gt;
+
+&lt;p&gt;She unfolds her own with one precise movement, a single flick of the wrist that transforms folded fabric into a flat surface on her thigh. I copy her. Mine takes two movements. She pretends not to notice.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;When you drink, lift the glass to your lips. Don&#39;t hunch down to it.&quot;&gt;&gt;
+
+&lt;p&gt;She demonstrates, her hand curling around the wine glass stem, her elbow lifted, her wrist rotating to bring the rim to her mouth. Every gesture is choreographed. Every movement has a form and a standard and she embodies both so naturally that it looks effortless, which is the greatest trick of all.&lt;/p&gt;
+
+&lt;p&gt;She corrects me three times during dinner. The glass. The knife angle. My posture again, because slouching is apparently my default state and Evelyn treats it like a weed that must be pulled daily.&lt;/p&gt;
+
+&lt;p&gt;Each correction comes with her voice, patient, unyielding, the voice of someone who has infinite time and zero tolerance. She doesn&#39;t raise it. She doesn&#39;t lower it. She simply states what needs to change and waits for me to change it, and the weight of her expectation is heavier than any hand.&lt;/p&gt;
+
+&lt;p&gt;By the end of dinner I&#39;m sitting straighter than I&#39;ve ever sat. Napkin on my lap. Glass lifted to my lips. Knife angled properly. Chewing with my mouth closed. Looking like a boy who belongs at a table set with candles and silver. Looking like someone Evelyn made.&lt;/p&gt;
+
+&lt;p&gt;Lily catches my eye across the table. She mouths &quot;fancy boy.&quot; She&#39;s slurping her soup loudly enough to constitute an act of rebellion. Evelyn&#39;s jaw tightens but she doesn&#39;t engage. Lily is chaos. I am clay. Evelyn works with what responds to her hands.&lt;/p&gt;
+
+&lt;p&gt;I glare at Lily. She grins with soup on her chin.&lt;/p&gt;
+
+&lt;p&gt;After dinner, clearing plates, Lily blocks the kitchen doorway.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Lily&quot; &quot;She&#39;s turning you into a little gentleman, you know. Next week it&#39;ll be which fork to use. Week after that she&#39;ll have you in a tie. Month from now you&#39;ll be curtsying.&quot;&gt;&gt;
+
+&lt;p&gt;Her voice is quiet enough that Evelyn, running water in the other room, can&#39;t hear.&lt;/p&gt;
+
+&lt;p&gt;&quot;She&#39;s just teaching me manners.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Mmhmm.&quot; Lily pops a grape into her mouth. &quot;That&#39;s how it starts. Manners. Then posture. Then clothes. Then...&quot; She makes an explosion gesture with her hands. &quot;Boom. Little Alice in Wonderland.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;That&#39;s not...&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;m not judging, step-bro. I&#39;m just saying. Watch the rabbit hole.&quot; She pats my cheek and disappears. I stand in the doorway holding dirty plates and thinking about rabbit holes and how they always look small from the outside.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;obedience&quot; 2&gt;&gt;
+&lt;&lt;statChange &quot;feminization&quot; 1&gt;&gt;
+&lt;&lt;set $evelynRelationship += 2&gt;&gt;
+&lt;&lt;set $lilyAwareness += 2&gt;&gt;
+&lt;&lt;set $dinnerDay3 to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Day3_Evening_B" tags="day3 evening chloe phone" position="100,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/bedroom.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;events/bedroom&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;How was your first day at work?&quot;&gt;&gt;
+
+&lt;p&gt;Her voice through the phone is warm honey in my ear. I&#39;m lying on my bed, staring at the ceiling, and her voice fills the room the way her presence fills her apartment, completely.&lt;/p&gt;
+
+&lt;p&gt;I tell her about Vanessa. About the cafe, the deliveries, the tips. About Vanessa&#39;s hands on my shoulders adjusting my posture. About the apron she tied around my waist.&lt;/p&gt;
+
+&lt;p&gt;&quot;She tied it for you?&quot; Chloe sounds amused. Not jealous. Amused. Like she&#39;s hearing about a colleague implementing a plan she designed. &quot;Interesting. What&#39;s she look like?&quot;&lt;/p&gt;
+
+&lt;p&gt;I describe Vanessa. Brunette. Curvy. Confident. Red lipstick.&lt;/p&gt;
+
+&lt;p&gt;&quot;She sounds hot.&quot; No jealousy. Nothing possessive. Just an observation. &quot;Did you make any girl friends there?&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;What? It&#39;s a cafe, Chloe.&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;I&#39;m just saying. You need more female friends. Mia and Jade are coming over on Day 5. You should meet them. They&#39;ll love you.&quot;&gt;&gt;
+
+&lt;p&gt;Something about the way she says &quot;love you&quot; makes my pulse quicken. Not romantic love. Something else. Appreciation. Fascination. The way women love a new project.&lt;/p&gt;
+
+&lt;p&gt;&quot;Why will they love me?&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;Because you&#39;re sweet. And pretty. And you don&#39;t know you&#39;re pretty, which makes you even prettier. Has anyone ever told you you&#39;re pretty?&quot;&gt;&gt;
+
+&lt;p&gt;Nobody has. Handsome, once, from my grandmother. Cute, from Chloe, repeatedly. But pretty? Pretty is for girls. Pretty is for flowers and dresses and the mannequin in the boutique window.&lt;/p&gt;
+
+&lt;p&gt;&quot;No.&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Chloe&quot; &quot;Well, you are. And when Mia and Jade see you, they&#39;re going to agree with me. You&#39;ll see.&quot;&gt;&gt;
+
+&lt;p&gt;Her voice drops. That register again. The one that turns instructions into inevitabilities.&lt;/p&gt;
+
+&lt;p&gt;I lie in bed after we hang up, the word &quot;pretty&quot; echoing in my skull like a bell struck once and left to vibrate.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;arousal&quot; 1&gt;&gt;
+&lt;&lt;set $chloeRelationship += 1&gt;&gt;
+&lt;&lt;set $prettyMentioned to true&gt;&gt;
+&lt;&lt;set $chloeCallDay3 to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Day3_Evening_C" tags="day3 evening lily panties" position="225,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/location/home.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;location/home&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;Lily&quot; &quot;Psst. Alex.&quot;&gt;&gt;
+
+&lt;p&gt;Lily appears in my doorway like she materialized from the shadows. She&#39;s holding something behind her back. The fairy lights from her room behind her give her a halo effect, pink hair glowing like a punk angel.&lt;/p&gt;
+
+&lt;p&gt;&quot;I did a thing,&quot; she says. Dead serious. For exactly one second. Then the grin cracks through like sunlight through cloud.&lt;/p&gt;
+
+&lt;p&gt;She pulls out a pair of panties.&lt;/p&gt;
+
+&lt;p&gt;Not mine. Not hers either. Or maybe hers, I don&#39;t know, I don&#39;t catalog my stepsister&#39;s underwear. They&#39;re new. Tags still on. Black lace with a tiny purple bow at the front. She holds them up by the waistband, dangling them between us like evidence at a crime scene.&lt;/p&gt;
+
+&lt;p&gt;&quot;I saw these and thought of you,&quot; she says.&lt;/p&gt;
+
+&lt;p&gt;I stare at her. She stares back. Her expression is perfectly controlled, eyebrows slightly raised, lips pressed together against the laughter that&#39;s building behind them.&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;m not...&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Lily&quot; &quot;I&#39;m not saying WEAR them. God, Alex. I&#39;m just saying they&#39;d fit you. Your hips are almost the same size as mine. We could probably share clothes.&quot;&gt;&gt;
+
+&lt;p&gt;&quot;We are NOT sharing...&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;RELAX.&quot; She tosses them onto my bed. They land on my pillow. Black lace against white cotton pillowcase. &quot;Keep them. Throw them away. Burn them in a ritual bonfire. Whatever.&quot; She&#39;s already retreating to the hallway. &quot;They were on clearance. Three bucks. Consider it an investment in your future.&quot;&lt;/p&gt;
+
+&lt;p&gt;She disappears. Her cackling echoes down the hall. Her door closes. Bass kicks in.&lt;/p&gt;
+
+&lt;p&gt;I stand in my room looking at the panties on my pillow.&lt;/p&gt;
+
+&lt;p&gt;Black lace. Delicate. The bow is a tiny satin thing, almost cute, the kind of detail you&#39;d find on lingerie in a movie where the woman slowly undresses and the camera loves every inch of her. I pick them up. Soft. Lighter than expected. The lace is finer than Chloe&#39;s pink ones, the fabric underneath silkier.&lt;/p&gt;
+
+&lt;&lt;link &quot;Keep them&quot; &quot;Day3_Evening_C_Keep&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;br&gt;
+&lt;&lt;link &quot;Throw them away&quot; &quot;Day3_Evening_C_Trash&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Day3_Evening_C_Keep" tags="day3 evening lily panties keep" position="350,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $pantiesAccepted&gt;&gt;
+&lt;p&gt;There&#39;s a vertiginous quality to this moment. I&#39;m standing in my room holding a pair of panties my stepsister bought me while wearing a pair of panties my girlfriend gave me. Two different women. Same gift. Completely different energy. Chloe&#39;s were romantic, seductive, part of a plan I&#39;m only beginning to understand. Lily&#39;s are a taunt. A dare. A probe, designed to test how deep my resistance goes and whether it has a bottom.&lt;/p&gt;
+
+&lt;p&gt;I open my dresser drawer. The one where my boxers live. I tuck the black lace panties underneath the stack, hidden beneath cotton and elastic, out of sight. Not thrown away. Not worn. Just... kept. Just in case.&lt;/p&gt;
+
+&lt;p&gt;In case of what?&lt;/p&gt;
+
+&lt;p&gt;I close the drawer and go to bed.&lt;/p&gt;
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;I hold them up. They&#39;re small. Delicate. Meant for a body that isn&#39;t mine. Except Lily said my hips are almost the same size as hers, which is either a comment on her hips or a comment on mine, and I&#39;m not sure which is more unsettling.&lt;/p&gt;
+
+&lt;p&gt;I open my dresser drawer and tuck them underneath the stack of boxers, out of sight. Not worn. Not thrown away. Kept, for reasons I don&#39;t examine too closely.&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;statChange &quot;feminization&quot; 2&gt;&gt;
+&lt;&lt;statChange &quot;embarrassment&quot; 1&gt;&gt;
+&lt;&lt;set $lilyRelationship += 2&gt;&gt;
+&lt;&lt;addItem &quot;black_lace_panties_lily&quot;&gt;&gt;
+&lt;&lt;set $lilyPantiesKept to true&gt;&gt;
+&lt;&lt;set $lilyPantiesDay3 to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Day3_Evening_C_Trash" tags="day3 evening lily panties trash" position="475,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;p&gt;I toss them in the trash can by my desk. They land on top of a crumpled energy drink can and an old receipt. Black lace against garbage. There. Done.&lt;/p&gt;
+
+&lt;p&gt;Except twenty minutes later, lying in bed, I can see the trash can from my pillow. I can see the edge of the lace poking out. And I think about how I&#39;m a person who throws away gifts. Even joke gifts. Even dares.&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t get up. I don&#39;t fish them out of the trash. But I don&#39;t fall asleep for a long time either.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;resistance&quot; 2&gt;&gt;
+&lt;&lt;set $lilyRelationship += 1&gt;&gt;
+&lt;&lt;set $lilyPantiesDay3 to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Day3_Morning_A" tags="day3 morning cafe vanessa" position="600,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/cafe.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;events/cafe&quot;&gt;&gt;
+
+&lt;p&gt;My alarm screams at 7:30 and I kill it with a slap that nearly sends my phone off the nightstand. Monday. Workday. My first workday. The thought drags me vertical like a hook through my sternum.&lt;/p&gt;
+
+&lt;p&gt;Shower. Hot water sluicing over skin that still remembers yesterday.&lt;&lt;if $pantiesEquipped&gt;&gt; I peel the panties off before stepping under the spray and stand there holding them, wet silk dripping onto tile, and there&#39;s a moment where I bring them to my face without meaning to and breathe in, catching the ghost of Chloe&#39;s perfume mixed with my own body heat. I set them on the counter. I&#39;ll put them back on after. The choice is already made before I make it.&lt;&lt;/if&gt;&gt;&lt;/p&gt;
+
+&lt;p&gt;Jeans. T-shirt. Sneakers. I look at myself in the bathroom mirror. Brown hair that needs a cut, brown eyes, skinny but not weak. Jaw that&#39;s more boyish than masculine. Cheekbones that are, I&#39;m starting to notice, a little high. A little sharp. A little like something Lily would call &quot;soft features&quot; and mean it as a loaded compliment.&lt;/p&gt;
+
+&lt;p&gt;Just a normal dude. Normal.&lt;/p&gt;
+
+&lt;p&gt;Downstairs, Evelyn is already eating. Toast, tea, newspaper. The eternal triptych. She looks me up and down, her gaze cataloging my outfit the way a general surveys a battlefield.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;Going somewhere?&quot;&gt;&gt;
+
+&lt;p&gt;&quot;I got a job. At a cafe downtown. Lush Latte.&quot;&lt;/p&gt;
+
+&lt;p&gt;Her eyebrows lift. Not surprise. Interest. &quot;Good. Idle hands and all that.&quot; She sips her tea. &quot;What kind of cafe?&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Coffee. Pastries. Deliveries.&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;Hmm. Be presentable. First impressions matter.&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Yes, Ma&#39;am.&quot;&lt;/p&gt;
+
+&lt;p&gt;The words come easier now. Three days and they&#39;re already settling into my vocabulary like furniture in a room I didn&#39;t know I was furnishing. Evelyn nods, satisfied, and returns to her paper.&lt;/p&gt;
+
+&lt;p&gt;Lily&#39;s still asleep. The bass from her room has been replaced by silence, which for Lily is the sound of unconsciousness so deep it borders on coma.&lt;/p&gt;
+
+&lt;p&gt;The bus drops me two blocks from Lush Latte. I smell the place before I see it. Fresh roasted coffee and something baked, cinnamon rolls maybe, and underneath that the warm yeast scent of bread that&#39;s been in the oven since before dawn. The cafe&#39;s front windows catch the early light and throw it back golden, turning the interior into an aquarium of warmth.&lt;/p&gt;
+
+&lt;p&gt;Vanessa meets me at the door.&lt;/p&gt;
+
+&lt;p&gt;She&#39;s a lot. That&#39;s the first thought and it doesn&#39;t get revised, only expanded, every second I spend in her presence. Brunette hair pulled back in a high ponytail so tight it lifts her cheekbones. Full lips painted a red that doesn&#39;t exist in nature, a red that was engineered in a lab to make men lose their train of thought. She&#39;s curvy in the way that word was invented for, hips and chest and waist that create a silhouette my eyes follow without permission. Her uniform is the pastel green polo I saw on Instagram, but on her it looks nothing like the photos. The fabric stretches across her breasts and tucks into a black skirt that stops mid-thigh, and over it she wears a ruffled apron with the Lush Latte logo embroidered in gold. She looks like a pinup girl who wandered into a coffee shop and decided to run the place.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Vanessa&quot; &quot;Alex? You&#39;re the new delivery rider.&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Yeah. Hi. I&#39;m...&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;On time. Good start.&quot; She looks me over. Head to toe. Slowly. Her eyes travel down my body with the clinical precision of someone evaluating livestock, or merchandise, or raw material that hasn&#39;t been shaped yet. I can feel her gaze like a physical thing, a warm pressure that starts at my face and drags downward over my chest, my waist, my hips, my legs, and back up again.&lt;/p&gt;
+
+&lt;p&gt;&quot;You&#39;ll do.&quot; She turns and walks inside. I follow. &quot;Here&#39;s your apron.&quot;&lt;/p&gt;
+
+&lt;p&gt;She holds it out. It&#39;s black. Simple. A standard service-industry apron, the kind a thousand baristas wear without a second thought. But when I reach for it, she pulls it back.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Vanessa&quot; &quot;Let me.&quot;&gt;&gt;
+
+&lt;p&gt;She moves behind me. I feel her body close to my back, not touching but present, the heat of her radiating through the thin fabric of my t-shirt. Her arms come around my waist, the apron in her hands, and she wraps it around me. Her fingers find the strings at the small of my back and tie them. The knot pulls tight against my spine. Her knuckles press into the curve just above my ass.&lt;/p&gt;
+
+&lt;p&gt;&quot;There.&quot; Her breath is on the back of my neck. Warm. Coffee-scented. &quot;Now you look like you belong.&quot;&lt;/p&gt;
+
+&lt;p&gt;She steps away. I turn around. She&#39;s grinning. Not a smile, a grin, wide and wolfish and fully aware of what she just did.&lt;/p&gt;
+
+&lt;p&gt;&quot;Come on. I&#39;ll show you the ropes.&quot;&lt;/p&gt;
+
+&lt;p&gt;The morning is controlled chaos. Orders stream in through the app, a constant flow of lattes and cappuccinos and complicated drinks with names like &quot;Lavender Dream&quot; and &quot;Caramel Kiss.&quot; My job is delivery: load the thermal bag onto the e-bike, pedal to the address, smile, hand over the coffee, collect the tip if there is one. Simple enough.&lt;/p&gt;
+
+&lt;&lt;if $bbcEnabled&gt;&gt;
+&lt;p&gt;My third delivery of the morning goes to a high-rise downtown. Nice building. Glass and steel. A doorman in a uniform. The order is a large black coffee, no sugar, and a croissant. The name on the order says &quot;M. Jackson.&quot;&lt;/p&gt;
+
+&lt;p&gt;The doorman waves me through. I take the elevator to the fourteenth floor. The hallway is carpeted in dark grey, the walls painted a warm charcoal. It smells like cologne. Good cologne. The kind that costs more than my monthly bus pass.&lt;/p&gt;
+
+&lt;p&gt;I knock on 14C. No answer. I knock again.&lt;/p&gt;
+
+&lt;p&gt;The door opens. Just a crack. I can see a sliver of the apartment: hardwood floors, a leather couch, a window with a view of the whole downtown strip. And a hand. A large hand, dark-skinned, reaching through the crack for the coffee.&lt;/p&gt;
+
+&lt;p&gt;&quot;Thanks, man.&quot; The voice is deep. Warm. Like bass notes played on a cello. The hand takes the coffee and the croissant bag. I catch a glimpse of a wrist, thick, with a gold watch that catches the hallway light.&lt;/p&gt;
+
+&lt;p&gt;A bill appears through the crack. I take it. A twenty. For a seven-dollar coffee.&lt;/p&gt;
+
+&lt;p&gt;&quot;Keep the change.&quot; The door closes.&lt;/p&gt;
+
+&lt;p&gt;I stand in the hallway for a moment, holding a twenty-dollar bill that smells faintly of the cologne drifting through the door crack, and I think nothing. I think absolutely nothing about the deep voice and the large hand and the gold watch and the thirteen-dollar tip. Nothing at all.&lt;/p&gt;
+
+&lt;p&gt;I take the elevator back down. The doorman nods at me. I ride the e-bike back to the cafe.&lt;/p&gt;
+
+&lt;p&gt;At the counter, Vanessa sees my expression and misreads it. Or reads it perfectly. &quot;Good tip?&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Twenty on a seven-dollar order.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;M. Jackson. He always tips like that.&quot; She wipes the counter. &quot;He comes in sometimes. When he does, you&#39;ll know.&quot; She doesn&#39;t elaborate.&lt;/p&gt;
+
+&lt;&lt;set $money += 13&gt;&gt;
+&lt;&lt;set $marcusDeliveryFlag to true&gt;&gt;
+&lt;&lt;set $marcusNameKnown to true&gt;&gt;
+&lt;&lt;set $bbcAtmospheric += 1&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;My third delivery of the morning goes to an office building downtown. Standard order, standard tip, a guy in a suit who doesn&#39;t look up from his phone when he takes the bag.&lt;/p&gt;
+
+&lt;&lt;set $money += 3&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;p&gt;Between runs, I help in the cafe. Busing tables, wiping counters, restocking cups. Vanessa orbits the space like a planet with its own gravity, and everyone, the two other baristas, the customers, me, everyone rotates around her. She&#39;s not the owner but she acts like it. She&#39;s not my boss but she gives orders like one, and I follow them with a speed that surprises me.&lt;/p&gt;
+
+&lt;p&gt;&quot;Carry the tray like this.&quot; She takes the tray from my hands and demonstrates, lifting it onto her palm, fingers spread, the tray balanced at shoulder height. Her hips shift to compensate for the weight and the movement is liquid, practiced, almost dance-like. &quot;Hips forward, shoulders back. It&#39;s all about the posture. Try.&quot;&lt;/p&gt;
+
+&lt;p&gt;I take the tray back. Lift it. My shoulder hunches.&lt;/p&gt;
+
+&lt;p&gt;&quot;No.&quot; She steps behind me again. Her hands find my shoulders and physically adjust them, pulling them back, pressing them down. Her palms are warm through my t-shirt. Her thumbs dig into the muscle at the base of my neck and I nearly groan because it&#39;s both corrective and something else, something that sends a shiver down my spine that has nothing to do with posture.&lt;/p&gt;
+
+&lt;p&gt;&quot;Better. Now walk. Hips forward. Don&#39;t shuffle. Glide.&quot;&lt;/p&gt;
+
+&lt;p&gt;I walk. I don&#39;t glide. I probably look like a baby deer on ice. But Vanessa watches me cross the cafe with the tray and nods.&lt;/p&gt;
+
+&lt;p&gt;&quot;We&#39;ll work on it.&quot;&lt;/p&gt;
+
+&lt;p&gt;The shift ends at noon. Vanessa counts my tips behind the counter while I untie my apron. Her fingers move through the bills with the speed of a card dealer. She stacks them, snaps a rubber band around them, and holds the bundle out.&lt;/p&gt;
+
+&lt;p&gt;&quot;Twenty-three dollars. Not bad for a newbie.&quot;&lt;/p&gt;
+
+&lt;p&gt;I take the money. It feels warm. Real. I earned this by carrying coffee and smiling and following a beautiful woman&#39;s orders for four hours.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Vanessa&quot; &quot;Same time tomorrow?&quot;&gt;&gt;
+
+&lt;p&gt;Not a question. A confirmation. Like tomorrow is already decided and she&#39;s just informing me of the schedule.&lt;/p&gt;
+
+&lt;p&gt;&quot;Yeah. Same time.&quot;&lt;/p&gt;
+
+&lt;p&gt;She reaches out and adjusts my collar. Tucks in a tag that was sticking up. Her fingers brush my neck, the same spot Evelyn touched two days ago, and the parallel hits me like a static shock. Two different women. Same gesture. Same casual ownership of my body&#39;s details.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Vanessa&quot; &quot;You did good today, Alex. I think you&#39;re going to be perfect here.&quot;&gt;&gt;
+
+&lt;p&gt;Perfect for what? I don&#39;t ask. I take my twenty-three dollars and my adjusted collar and I walk out into the Monday sunlight feeling like I just survived an audition for something I didn&#39;t apply for.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;feminization&quot; 1&gt;&gt;
+&lt;&lt;statChange &quot;obedience&quot; 2&gt;&gt;
+&lt;&lt;statChange &quot;confidence&quot; 1&gt;&gt;
+&lt;&lt;set $money += 23&gt;&gt;
+&lt;&lt;set $vanessaRelationship += 3&gt;&gt;
+&lt;&lt;set $cafeJobStarted to true&gt;&gt;
+&lt;&lt;set $cafeShiftCount += 1&gt;&gt;
+&lt;&lt;set $vanessaPostureTraining to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;town&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Day3_Morning_B" tags="day3 morning evelyn closet" position="725,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/bedroom.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;events/bedroom&quot;&gt;&gt;
+
+&lt;&lt;if $yesMaamAccepted&gt;&gt;
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;Before you go anywhere today, I&#39;d like you to organize my closet. Please.&quot;&gt;&gt;
+
+&lt;p&gt;Please. She says it the way a queen says please when issuing a decree. The word is present. The choice is not.&lt;/p&gt;
+
+&lt;p&gt;&quot;Yes, Ma&#39;am.&quot;&lt;/p&gt;
+
+&lt;p&gt;Her walk-in closet is a country I&#39;ve never visited. The door opens and the air changes, cooler, scented, dense with the olfactory signature of expensive fabric and cedar hangers and that rose-sandalwood perfume that&#39;s become Evelyn&#39;s calling card. The space is narrow but deep, maybe four feet wide and ten feet long, with rails running both walls, packed with clothing arranged by type, then by color, then by season. Blouses on the left, dresses in the center, skirts and trousers on the right. Shoes on shelves below, arranged heel-forward. Accessories hanging from hooks on the back of the door.&lt;/p&gt;
+
+&lt;p&gt;And the scarves.&lt;/p&gt;
+
+&lt;p&gt;They have their own section, a wooden rack with horizontal bars, each scarf draped over a bar like a silk waterfall. There must be thirty of them. Every color, every pattern, every weight of fabric from gossamer chiffon to heavy cashmere. They catch the light from the closet&#39;s single overhead bulb and throw it back in muted rainbows.&lt;/p&gt;
+
+&lt;p&gt;I start organizing. Evelyn wants them arranged by fabric weight, lightest at the top, heaviest at the bottom. To do this I have to touch each one. Handle it. Feel the difference between silk and satin and chiffon and georgette, materials I didn&#39;t know the names of twenty minutes ago and now know by touch because Evelyn left a hand-lettered chart taped to the inside of the closet door.&lt;/p&gt;
+
+&lt;p&gt;My hands are full of her scarves. A lavender silk one slides through my fingers like cool water. A cream cashmere one is so soft it feels alive, warm even without a body inside it. A deep burgundy satin one catches on my calluses and I run it between my thumb and forefinger, feeling the weight, the sheen, the way it holds its shape when I fold it and releases when I let go.&lt;/p&gt;
+
+&lt;p&gt;I hold the lavender one up to the light. It shimmers. The color shifts from pale purple to almost blue depending on the angle, like the sky at that moment between day and night when the light hasn&#39;t decided what it&#39;s doing yet.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;You like that one?&quot;&gt;&gt;
+
+&lt;p&gt;Evelyn. In the doorway. Leaning against the frame with her arms crossed, watching me with an expression I can&#39;t read. How long has she been there? I drop the scarf like it burned me.&lt;/p&gt;
+
+&lt;p&gt;&quot;It&#39;s soft,&quot; I say. The understatement of the century. It&#39;s the softest thing I&#39;ve ever touched. Softer than Chloe&#39;s panties. Softer than my sheets. Softer than anything in my world, which is a world made of cotton and denim and rough edges.&lt;/p&gt;
+
+&lt;p&gt;Evelyn doesn&#39;t move. She watches me for three beats. Four. Five. Then she smiles. Not the satisfied smile from the vanity dusting or the towel folding. Something different. Something deeper. The smile of someone watching a prediction come true.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Evelyn&quot; &quot;You might appreciate those more soon.&quot;&gt;&gt;
+
+&lt;p&gt;The words land in my chest like a coin dropped into deep water. Sinking. Slow. Settling into sediment I didn&#39;t know was there.&lt;/p&gt;
+
+&lt;p&gt;She doesn&#39;t explain. She turns and walks away, her heels clicking on the hardwood, and I&#39;m left standing in her closet holding a lavender silk scarf that smells like roses and promises.&lt;/p&gt;
+
+&lt;p&gt;I finish organizing. I don&#39;t hold any more scarves up to the light. But my fingers remember the lavender one. They&#39;ll remember it tonight, lying in bed, curling against my palm in phantom softness.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;feminization&quot; 2&gt;&gt;
+&lt;&lt;statChange &quot;obedience&quot; 1&gt;&gt;
+&lt;&lt;set $evelynRelationship += 2&gt;&gt;
+&lt;&lt;set $scarfMoment to true&gt;&gt;
+&lt;&lt;set $evelynStage to Math.max($evelynStage, 3)&gt;&gt;
+
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;The note on the fridge is gone; Evelyn just points at the hallway closet on her way past with her teacup, not breaking stride. &quot;That needs tidying. Whenever you get to it.&quot;&lt;/p&gt;
+
+&lt;p&gt;Whenever you get to it, from Evelyn, means now. I spend twenty minutes refolding towels that were already fine, restacking boxes of things I don&#39;t recognize, sweeping a floor that wasn&#39;t dirty. She doesn&#39;t come to inspect this one. She doesn&#39;t need to. This is maintenance, not a lesson, and lessons are reserved for people who&#39;ve earned her attention.&lt;/p&gt;
+
+&lt;p&gt;I finish and go looking for her, half expecting a &quot;good boy&quot; that doesn&#39;t come. She&#39;s at the table with her paper, and she just nods without looking up.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;obedience&quot; 1&gt;&gt;
+&lt;&lt;set $evelynRelationship += 1&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;set $evelynClosetDay3 to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Day3_Morning_C" tags="day3 morning lily photography" position="850,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/location/home.png&quot;&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;location/home&quot;&gt;&gt;
+
+&lt;p&gt;Lily is up before noon. This alone constitutes a minor miracle, the kind of thing that deserves a plaque on the wall or at least a raised eyebrow from Evelyn, who gives it both.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Lily&quot; &quot;I need a model. It&#39;s for a school project. Photography comp. I need to submit a portrait series by Friday.&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Ask someone else.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;There is no one else. Everyone I know has a face like a foot. You at least have...&quot; She waves her hand at my face in a gesture that encompasses my entire head. &quot;...bone structure.&quot;&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t know if that&#39;s a compliment. Coming from Lily it&#39;s hard to tell. She says everything with the same flat delivery, whether she&#39;s ordering pizza or confessing to a crime.&lt;/p&gt;
+
+&lt;p&gt;&quot;Fine. Five minutes.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Ten.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Seven.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Deal.&quot;&lt;/p&gt;
+
+&lt;p&gt;She sets me up against the living room wall, the one with the white paint and the good light from the bay window. She shoots with her phone but she shoots like a professional, or at least like someone who&#39;s studied professionals and internalized their tricks. She moves around me, changing angles, getting low, getting high, shooting from the side.&lt;/p&gt;
+
+&lt;p&gt;&quot;Chin up. Tilt your head left. No, my left. Your right. There.&quot;&lt;/p&gt;
+
+&lt;p&gt;The poses start normal. Straight-on. Profile. Three-quarter angle. Basic stuff.&lt;/p&gt;
+
+&lt;p&gt;Then: &quot;Can you, like, tilt your head? Like this.&quot; She demonstrates. Chin slightly down, eyes looking up through lashes, lips parted. It&#39;s distinctly feminine. Not aggressively so, not drag queen obvious, but soft. The way women look in perfume ads and indie movie posters.&lt;/p&gt;
+
+&lt;p&gt;I mimic it without thinking. My chin drops, my eyes lift, my lips part slightly. The pose feels natural in a way that surprises me. Like my body already knew how to do this and was waiting to be asked.&lt;/p&gt;
+
+&lt;p&gt;Lily&#39;s shutter clicks rapid-fire. Click click click click click. Her eyes are wide behind her phone. Not shocked. Excited. The way she looks when her analytics spike or a post goes viral.&lt;/p&gt;
+
+&lt;p&gt;&quot;Perfect,&quot; she breathes. &quot;You&#39;re a natural.&quot;&lt;/p&gt;
+
+&lt;p&gt;She scrolls through the photos afterward, sitting on the couch, her shoulder against mine. I watch the images slide past. My face from different angles, different lights. Some look like me, the regular Alex I see in the bathroom mirror every morning. Others look like someone else. Someone softer. The tilted-chin photo stops her scrolling dead.&lt;/p&gt;
+
+&lt;p&gt;&quot;Look at that.&quot; She zooms in. My face fills the screen. Brown hair falling across my forehead, eyes dark and looking up, lips slightly apart. The light from the window catches my cheekbones and throws shadows under them that make my face look narrower, more refined. More... pretty. There&#39;s no other word for it.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Lily&quot; &quot;You photograph well. You know that? You&#39;ve got soft features. Like, your jaw isn&#39;t square. Your nose is small. Your lips are... full. For a guy.&quot;&gt;&gt;
+
+&lt;p&gt;&quot;Thanks?&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;It&#39;s a compliment. Trust me.&quot; She locks her phone and slides it into her pocket. &quot;These are actually going to be my best submissions. Don&#39;t tell anyone I said that.&quot;&lt;/p&gt;
+
+&lt;p&gt;She punches my shoulder and walks away. But her phone is in her pocket, and on that phone are ten photos of me, and at least three of them show a boy who looks like he could be a girl if you squinted, if you styled his hair, if you added lip gloss, if you let the light do its work.&lt;/p&gt;
+
+&lt;p&gt;Lily doesn&#39;t squint. She sees clearly. And she&#39;s already planning.&lt;/p&gt;
+
+&lt;&lt;statChange &quot;feminization&quot; 2&gt;&gt;
+&lt;&lt;statChange &quot;embarrassment&quot; 1&gt;&gt;
+&lt;&lt;set $lilyRelationship += 3&gt;&gt;
+&lt;&lt;set $lilyPhotographyDone to true&gt;&gt;
+&lt;&lt;set $softFeaturesMentioned to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Day3_Night" tags="day3 night reflection" position="975,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/sleep.png&quot;&gt;&gt;
+&lt;&lt;set $phase to &quot;night&quot;&gt;&gt;
+&lt;h2&gt;Night&lt;/h2&gt;
+
+&lt;p&gt;Day 3.&lt;&lt;if $cafeJobStarted&gt;&gt; I have a job at a cafe where a woman with red lipstick ties my apron and adjusts my shoulders and calls me &quot;perfect.&quot;&lt;&lt;/if&gt;&gt;&lt;&lt;if $ravenMet&gt;&gt; I might have a second job at a sex shop where a gothic queen called me &quot;boy&quot; and told me I&#39;d look adorable in lavender.&lt;&lt;/if&gt;&gt;&lt;&lt;if $evelynClosetDay3&gt;&gt; My stepmother is teaching me table manners with the patience and precision of someone sculpting marble.&lt;&lt;/if&gt;&gt;&lt;&lt;if $lipGlossApplied&gt;&gt; My girlfriend put lip gloss on me yesterday and I can still taste it if I lick my lips.&lt;&lt;/if&gt;&gt;&lt;&lt;if $lilyPantiesDay3&gt;&gt; My stepsister gave me panties as a joke, except nothing Lily does is a joke.&lt;&lt;/if&gt;&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m lying in bed and I realize something that makes my stomach flip.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve been adjusting. Not fighting. Not really.&lt;&lt;if $evelynRelationship &gt;= 10&gt;&gt; When Evelyn corrects my posture, I fix it.&lt;&lt;/if&gt;&gt;&lt;&lt;if $lipGlossApplied&gt;&gt; When Chloe puts gloss on my lips, I leave it.&lt;&lt;/if&gt;&gt;&lt;&lt;if $vanessaPostureTraining&gt;&gt; When Vanessa adjusts my shoulders, I lean into her hands.&lt;&lt;/if&gt;&gt;&lt;&lt;if $lilyRelationship &gt;= 8&gt;&gt; When Lily dares me, I consider it.&lt;&lt;/if&gt;&gt;&lt;&lt;if $ravenMet&gt;&gt; When Raven says I&#39;ll look adorable, I wonder what the apron looks like.&lt;&lt;/if&gt;&gt;&lt;/p&gt;
+
+&lt;p&gt;When did I become so agreeable?&lt;/p&gt;
+
+&lt;p&gt;I tell myself it&#39;s nothing. Just being nice. Just going along to get along. Just making people happy because making people happy is easier than fighting and the rewards are warm words and approving smiles and the occasional kiss on the cheek.&lt;/p&gt;
+
+&lt;p&gt;But somewhere in the back of my brain, behind the door that was locked and is now cracked open, a light is growing. Not bright. Not blinding. Just a sliver, a line of warmth along the floor, the promise of a room I haven&#39;t entered yet.&lt;/p&gt;
+
+&lt;&lt;if $pantiesEquipped&gt;&gt;
+&lt;p&gt;I roll over. The panties shift against my skin.&lt;&lt;if $deniedOrgasm &gt;= 1&gt;&gt; The ache from Chloe&#39;s denial two nights ago hasn&#39;t fully faded &amp;mdash; it just went quiet, banked like a coal, and moments like tonight&#39;s stir it back up.&lt;&lt;/if&gt;&gt; Something has changed. Something small. Something I can&#39;t name or undo.&lt;/p&gt;
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;I roll over. The boxers sit loose and familiar. Either way, something has changed. Something small. Something I can&#39;t name or undo.&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;p&gt;Day 3 ends.&lt;/p&gt;
+
+&lt;&lt;statSummary&gt;&gt;
+
+&lt;&lt;link `&quot;Sleep - end Day &quot; + $day`&gt;&gt;
+  &lt;&lt;set $day += 1&gt;&gt;
+  &lt;&lt;set $phase to &quot;morning&quot;&gt;&gt;
+  &lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Day3_SQ_Ali" tags="day3 sidequest neighborhood ali" position="1100,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/location/park.png&quot;&gt;&gt;
+
+&lt;p&gt;I stop at Ali&#39;s for a Gatorade. He&#39;s on a new crossword.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;Six letters. &#39;To make visible.&#39; Begins with &#39;U.&#39;&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&quot;Unveil?&quot;&lt;/p&gt;
+
+&lt;p&gt;Ali writes it in. Nods. &quot;Good one. Unveil. Like pulling back a curtain.&quot; He tears off another discount strip. &quot;For the future movie star.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;I&#39;m not a...&quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;You&#39;re something. I can always tell. People who stop at my store on the way to becoming something always have a look.&quot;&lt;/strong&gt; He taps his temple. &lt;strong&gt;&quot;I&#39;ve been watching people for eighteen years. You, my friend, are mid-reveal.&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;&lt;set $aliFamiliarity += 1&gt;&gt;
+&lt;&lt;set $aliCrosswordDay3 to true&gt;&gt;
+&lt;&lt;set $aliCrosswordClue to &quot;unveil&quot;&gt;&gt;
+&lt;&lt;set $money -= 1&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;neighborhood&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Day3_SQ_Okonkwo" tags="day3 sidequest town okonkwo" position="1225,600" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/cafe.png&quot;&gt;&gt;
+
+&lt;p&gt;There&#39;s a woman at the window table who&#39;s been there since I arrived and shows no signs of leaving. She&#39;s Black, maybe fifty, with silver-streaked locs piled on her head in an architectural arrangement that defies gravity. She&#39;s wearing a wrapped dress in deep indigo, gold earrings, reading glasses perched on her nose. A hardcover book lies open beside her latte. She&#39;s been watching me work all morning.&lt;/p&gt;
+
+&lt;p&gt;When I bus her table, replacing her empty cup with a fresh one Vanessa made without being asked, Mrs. Okonkwo looks up from her book and studies me over her glasses.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;You&#39;re new.&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&quot;First day.&quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;You carry yourself like you&#39;re apologizing for existing.&quot;&lt;/strong&gt; She says it flatly. No malice. Just observation. &lt;strong&gt;&quot;Stand up straight. You have a nice frame. Don&#39;t waste it.&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I straighten. She nods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;Better. You know, my son walked like that before his confidence came in. Shoulders hunched, head down. Now he walks into rooms and the air changes.&quot;&lt;/strong&gt; She sips her latte. &lt;strong&gt;&quot;He&#39;s six-four. Played football at Howard. Big boy. But it wasn&#39;t the size that changed. It was the posture.&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;She goes back to her book. I&#39;m dismissed.&lt;/p&gt;
+
+&lt;p&gt;I think about her son. Six-four. Football at Howard. Big boy. The image forms in my mind without permission: a tall, broad, confident Black man walking into a room and making the air change. The contrast with me, five-eight, skinny, hunched, apologizing for existing, is so stark it feels like a different species.&lt;/p&gt;
+
+&lt;p&gt;Something in my stomach twists. Not jealousy exactly. Something more complicated. A kind of awe mixed with longing mixed with something I absolutely do not examine further.&lt;/p&gt;
+
+&lt;&lt;set $okonkwoMet to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;town&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Day3_SQ_Uniform" tags="day3 sidequest town uniform" position="100,725" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/cafe.png&quot;&gt;&gt;
+
+&lt;p&gt;The uniform sits in my locker at the cafe. Vanessa pointed out the staff lockers during orientation, a narrow bank of metal doors in the break room. Mine has a sticky note that says &quot;ALEX&quot; in Vanessa&#39;s handwriting, round letters with a smiley face dotting the I.&lt;/p&gt;
+
+&lt;p&gt;Inside: one pastel green polo, size small, still in its packaging. One black apron with the Lush Latte logo. The polo is soft. I hold it up. It&#39;s smaller than I expected. The fabric is stretchy, the kind that clings rather than drapes. The sleeves are short, the collar a low V-neck. On a guy with broader shoulders, it would look normal. On me, with my narrow frame, it&#39;s going to hug every line of my torso.&lt;/p&gt;
+
+&lt;p&gt;I put it on over my t-shirt to test the fit. It&#39;s snug. Tight across the chest. Tight through the waist. The V-neck shows my collarbones, which I&#39;ve never thought about as a feature of my body until right now, standing in a break room mirror, seeing them emerge from pastel green fabric like a landscape being revealed.&lt;/p&gt;
+
+&lt;p&gt;Vanessa appears in the mirror behind me. I jump. She doesn&#39;t.&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Vanessa&quot; &quot;Fits nice.&quot;&gt;&gt;
+
+&lt;p&gt;She reaches forward and tugs the hem straight. Her fingers brush my hip. &quot;Tomorrow, wear it from the start. No t-shirt underneath. It&#39;s meant to be worn against skin.&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;Against skin?&quot;&lt;/p&gt;
+
+&lt;&lt;dialog &quot;Vanessa&quot; &quot;Mmhmm. The fabric breathes better that way. Trust me.&quot;&gt;&gt;
+
+&lt;p&gt;She leaves. I stare at my reflection. Pastel green polo, V-neck showing my collarbones, fabric hugging my waist. I look like one of the girls in the Instagram photos. Not exactly. But close enough that the resemblance sends a chill down my spine that isn&#39;t entirely unpleasant.&lt;/p&gt;
+
+&lt;&lt;set $cafeUniformTried to true&gt;&gt;
+&lt;&lt;set $cafeUniformInstruction to true&gt;&gt;
+&lt;&lt;spendTime 1&gt;&gt;
+&lt;&lt;set $currentMapLocation to &quot;town&quot;&gt;&gt;
+
+&lt;&lt;link &quot;Continue&quot; &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="DailyHub" tags="hub" position="225,725" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $day is 1&gt;&gt;
 &lt;&lt;startDay 9 3&gt;&gt;
 
@@ -3168,7 +3945,7 @@ $(document).on(':passagerender', function () {
 &lt;p&gt;Outside Chloe&#39;s building, third floor buzzer sticky as ever.&lt;/p&gt;
 &lt;&lt;elseif $currentMapLocation is &quot;town&quot;&gt;&gt;
 &lt;&lt;centerImage &quot;image/events/city.png&quot;&gt;&gt;
-&lt;h2&gt;Town&lt;/h2&gt;
+&lt;h2&gt;Downtown&lt;/h2&gt;
 &lt;p&gt;Downtown. Storefronts, parking meters, the smell of fresh-roasted coffee somewhere close.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 
@@ -3194,17 +3971,81 @@ $(document).on(':passagerender', function () {
 
 &lt;&lt;/if&gt;&gt;
 
+&lt;&lt;elseif $day is 3&gt;&gt;
+&lt;&lt;startDay 9 3&gt;&gt;
+
+&lt;&lt;if $gameMinutes &gt;= 1380&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/bedroom.png&quot;&gt;&gt;
+&lt;h2&gt;Day 3&lt;/h2&gt;
+&lt;&lt;if $currentMapLocation isnot &quot;home&quot;&gt;&gt;
+&lt;p&gt;I&#39;m exhausted. Somehow I make it home, legs heavy, barely keeping my eyes open.&lt;/p&gt;
+&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;p&gt;&lt;strong&gt;I&#39;m exhausted.&lt;/strong&gt; My eyes keep drifting shut mid-thought. Whatever else I meant to do today, it&#39;ll have to wait. There&#39;s only one thing left to do.&lt;/p&gt;
+&lt;&lt;link `&quot;Go to sleep - end Day &quot; + $day`&gt;&gt;&lt;&lt;goto &quot;Day3_Night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;else&gt;&gt;
+
+&lt;&lt;if $gameMinutes is 420&gt;&gt;
+&lt;p&gt;Monday. My alarm screams at 7:30 and I kill it with a slap that nearly sends my phone off the nightstand. Workday, if I want it to be.&lt;/p&gt;
+&lt;&lt;if $pantiesEquipped&gt;&gt;
+&lt;p&gt;I pull on my jeans and feel the lace adjust around my hips. Another day, same secret underneath.&lt;/p&gt;
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;Jeans, t-shirt, sneakers. Regular guy clothes.&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $currentMapLocation is &quot;home&quot;&gt;&gt;
+&lt;&lt;centerImage &quot;image/location/home.png&quot;&gt;&gt;
+&lt;h2&gt;Home&lt;/h2&gt;
+&lt;p&gt;I&#39;m home. Evelyn&#39;s got the newspaper open, Lily&#39;s still asleep somewhere upstairs.&lt;/p&gt;
+&lt;&lt;elseif $currentMapLocation is &quot;neighborhood&quot;&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/street.png&quot;&gt;&gt;
+&lt;h2&gt;Neighborhood&lt;/h2&gt;
+&lt;p&gt;Out on the street. The block looks the same as always.&lt;/p&gt;
+&lt;&lt;elseif $currentMapLocation is &quot;chloe&quot;&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/chloe_home.png&quot;&gt;&gt;
+&lt;h2&gt;Chloe&#39;s Apartment&lt;/h2&gt;
+&lt;p&gt;Outside Chloe&#39;s building. Nobody&#39;s buzzing you up today &amp;mdash; she&#39;s out and about.&lt;/p&gt;
+&lt;&lt;elseif $currentMapLocation is &quot;town&quot;&gt;&gt;
+&lt;&lt;centerImage &quot;image/events/city.png&quot;&gt;&gt;
+&lt;h2&gt;Downtown&lt;/h2&gt;
+&lt;p&gt;Downtown. Storefronts, parking meters, the smell of fresh-roasted coffee somewhere close.&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;lateWarning&gt;&gt;
+
+&lt;&lt;locationTasks $currentMapLocation&gt;&gt;
+
+&lt;div class=&quot;travel-links&quot;&gt;
+&lt;&lt;if $currentMapLocation is &quot;home&quot;&gt;&gt;
+&lt;&lt;link &quot;Walk to the Neighborhood&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;neighborhood&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;br&gt;
+&lt;&lt;link &quot;Take the bus to Chloe&#39;s Apartment&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;chloe&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;p class=&quot;sleep-early&quot;&gt;&lt;&lt;link &quot;Head to bed early&quot; &quot;Day3_Night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;&lt;elseif $currentMapLocation is &quot;neighborhood&quot;&gt;&gt;
+&lt;&lt;link &quot;Walk downtown&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;town&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;br&gt;
+&lt;&lt;link &quot;Head back home&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $currentMapLocation is &quot;chloe&quot;&gt;&gt;
+&lt;&lt;link &quot;Head back home&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $currentMapLocation is &quot;town&quot;&gt;&gt;
+&lt;&lt;link &quot;Walk back to the Neighborhood&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;neighborhood&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;br&gt;
+&lt;&lt;link &quot;Head back home&quot;&gt;&gt;&lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;&lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;/div&gt;
+
+&lt;&lt;/if&gt;&gt;
+
 &lt;&lt;else&gt;&gt;
 &lt;&lt;centerImage &quot;image/events/bedroom.png&quot;&gt;&gt;
 &lt;h2&gt;Day &lt;&lt;print $day&gt;&gt;&lt;/h2&gt;
 &lt;p&gt;The sun comes up the same as it always does. But this is as far as Alex&#39;s story has been written so far - Day &lt;&lt;print $day&gt;&gt; hasn&#39;t been authored yet.&lt;/p&gt;
-&lt;p&gt;Thanks for playing through Day 2 of &lt;strong&gt;Pretty Little Secrets&lt;/strong&gt;. Check back soon for more of Alex&#39;s story.&lt;/p&gt;
+&lt;p&gt;Thanks for playing through Day 3 of &lt;strong&gt;Pretty Little Secrets&lt;/strong&gt;. Check back soon for more of Alex&#39;s story.&lt;/p&gt;
 &lt;div class=&quot;version-note&quot;&gt;
-  &lt;p class=&quot;version-badge&quot;&gt;Version 0.0.2 complete!&lt;/p&gt;
+  &lt;p class=&quot;version-badge&quot;&gt;Version 0.0.3 complete!&lt;/p&gt;
   &lt;p&gt;If you enjoyed this and want to support future updates, consider visiting my &lt;a href=&quot;https://www.patreon.com/c/zaramystique&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Patreon&lt;/a&gt; &amp;#10084;&amp;#65039;&lt;/p&gt;
 &lt;/div&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Start" tags="" position="725,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Start" tags="" position="350,725" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;explicit-warning&quot;&gt;
   &lt;h2&gt;Content Warning&lt;/h2&gt;
   &lt;p&gt;&lt;strong&gt;Pretty Little Secrets&lt;/strong&gt; is an 18+ interactive game intended for adult audiences only. This game contains explicit sexual content, including themes of feminization and sissification. Player discretion is advised, and most sensitive content includes options to opt in or out. By proceeding, you confirm you are 18 or older and consent to engaging with this material.&lt;/p&gt;
@@ -3212,7 +4053,7 @@ $(document).on(':passagerender', function () {
   [[Enter the Game|ContentToggle]]
   [[Exit|Exit]]
 &lt;/div&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Exit" tags="" position="850,475" size="100,100">&lt;p&gt;Thank you for your discretion. This game contains mature themes and is not suitable for all audiences. Please close the tab or navigate away.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="38" name="ContentToggle" tags="" position="975,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Exit" tags="" position="475,725" size="100,100">&lt;p&gt;Thank you for your discretion. This game contains mature themes and is not suitable for all audiences. Please close the tab or navigate away.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="55" name="ContentToggle" tags="" position="600,725" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;h1&gt;Content Preferences&lt;/h1&gt;
 &lt;p&gt;Pretty Little Secrets lets you steer which extra themes show up later in the story. None of these affect Day 1, but setting them now means the game will respect your choices from the moment they become relevant. You can revisit this later from the game menu.&lt;/p&gt;
 
@@ -3244,7 +4085,7 @@ $(document).off(&quot;change&quot;, &quot;.content-toggle-list input.macro-check
 &lt;p&gt;All of it can be switched off entirely - leave everything unchecked for a vanilla feminization playthrough.&lt;/p&gt;
 
 [[Begin|DailyHub]]
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="StoryCaption" tags="" position="1100,475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="StoryCaption" tags="" position="725,725" size="100,100">&lt;&lt;nobr&gt;&gt;
 Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
 &lt;li id=&quot;avatar-box&quot;&gt;
   &lt;img src=&quot;image/avatar/alex.png&quot; alt=&quot;Your Avatar&quot; id=&quot;sidebar-avatar&quot;&gt;
@@ -3301,7 +4142,7 @@ Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
   &lt;label&gt;Money&lt;/label&gt; $&lt;&lt;= $money&gt;&gt;
 &lt;/li&gt;
 &lt;br&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="StoryInit" tags="" position="1225,475" size="100,100">/* Primary stats (0-100) */
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="StoryInit" tags="" position="850,725" size="100,100">/* Primary stats (0-100) */
 &lt;&lt;set $feminization to 5&gt;&gt;
 &lt;&lt;set $obedience to 5&gt;&gt;
 &lt;&lt;set $embarrassment to 0&gt;&gt;
@@ -3346,6 +4187,7 @@ Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
 &lt;&lt;set $lilyRelationship to 5&gt;&gt;
 &lt;&lt;set $sophiaRelationship to 0&gt;&gt;
 &lt;&lt;set $vanessaRelationship to 0&gt;&gt;
+&lt;&lt;set $ravenRelationship to 0&gt;&gt;
 
 /* Stage tracking */
 &lt;&lt;set $chloeStage to 0&gt;&gt;
@@ -3425,6 +4267,37 @@ Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
 &lt;&lt;set $wardrobeAuditDone to false&gt;&gt;
 &lt;&lt;set $taraStorySeenDay2 to false&gt;&gt;
 
+/* Day 3 flags */
+&lt;&lt;set $cafeJobStarted to false&gt;&gt;
+&lt;&lt;set $cafeShiftCount to 0&gt;&gt;
+&lt;&lt;set $vanessaPostureTraining to false&gt;&gt;
+&lt;&lt;set $cafeUniformTried to false&gt;&gt;
+&lt;&lt;set $marcusDeliveryFlag to false&gt;&gt;
+&lt;&lt;set $marcusNameKnown to false&gt;&gt;
+&lt;&lt;set $bbcAtmospheric to 0&gt;&gt;
+&lt;&lt;set $okonkwoMet to false&gt;&gt;
+&lt;&lt;set $evelynClosetDay3 to false&gt;&gt;
+&lt;&lt;set $scarfMoment to false&gt;&gt;
+&lt;&lt;set $lilyPhotographyDone to false&gt;&gt;
+&lt;&lt;set $softFeaturesMentioned to false&gt;&gt;
+&lt;&lt;set $chloeParkDay3 to false&gt;&gt;
+&lt;&lt;set $purseCarried to false&gt;&gt;
+&lt;&lt;set $firstPublicFem to false&gt;&gt;
+&lt;&lt;set $delgadoPurseSeen to false&gt;&gt;
+&lt;&lt;set $ravenMet to false&gt;&gt;
+&lt;&lt;set $shopJobApplied to false&gt;&gt;
+&lt;&lt;set $shopJobStartDay to 0&gt;&gt;
+&lt;&lt;set $ravenHasNumber to false&gt;&gt;
+&lt;&lt;set $mallWalkDay3 to false&gt;&gt;
+&lt;&lt;set $boutiqueNecklaceSeen to false&gt;&gt;
+&lt;&lt;set $boutiqueReflection to false&gt;&gt;
+&lt;&lt;set $dinnerDay3 to false&gt;&gt;
+&lt;&lt;set $chloeCallDay3 to false&gt;&gt;
+&lt;&lt;set $prettyMentioned to false&gt;&gt;
+&lt;&lt;set $lilyPantiesDay3 to false&gt;&gt;
+&lt;&lt;set $lilyPantiesKept to false&gt;&gt;
+&lt;&lt;set $aliCrosswordDay3 to false&gt;&gt;
+
 /* Location unlocks */
 &lt;&lt;set $mallOpen to false&gt;&gt;
 &lt;&lt;set $clubOpen to false&gt;&gt;
@@ -3434,7 +4307,7 @@ Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
 &lt;&lt;set $loungeOpen to false&gt;&gt;
 &lt;&lt;set $gymOpen to false&gt;&gt;
 
-&lt;&lt;set $currentLocation to &quot;location/home&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Widgets" tags="widget" position="100,600" size="100,100">&lt;&lt;widget &quot;statChange&quot;&gt;&gt;&lt;&lt;set _stat to _args[0]&gt;&gt;&lt;&lt;set _amount to _args[1]&gt;&gt;&lt;&lt;set _current to State.variables[_stat]&gt;&gt;&lt;&lt;if _amount &gt; 0&gt;&gt;&lt;&lt;if _current &gt;= 90&gt;&gt;&lt;&lt;set _amount to Math.ceil(_amount * 0.25)&gt;&gt;&lt;&lt;elseif _current &gt;= 75&gt;&gt;&lt;&lt;set _amount to Math.ceil(_amount * 0.5)&gt;&gt;&lt;&lt;elseif _current &gt;= 50&gt;&gt;&lt;&lt;set _amount to Math.ceil(_amount * 0.75)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set State.variables[_stat] to Math.max(0, Math.min(100, _current + _amount))&gt;&gt;&lt;&lt;set _label to _stat.charAt(0).toUpperCase() + _stat.slice(1)&gt;&gt;&lt;span class=&quot;stat-change&quot;&gt;&lt;&lt;print _label&gt;&gt;: &lt;&lt;if _amount &gt; 0&gt;&gt;+&lt;&lt;/if&gt;&gt;&lt;&lt;print _amount&gt;&gt;&lt;/span&gt;&lt;&lt;/widget&gt;&gt;
+&lt;&lt;set $currentLocation to &quot;location/home&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Widgets" tags="widget" position="975,725" size="100,100">&lt;&lt;widget &quot;statChange&quot;&gt;&gt;&lt;&lt;set _stat to _args[0]&gt;&gt;&lt;&lt;set _amount to _args[1]&gt;&gt;&lt;&lt;set _current to State.variables[_stat]&gt;&gt;&lt;&lt;if _amount &gt; 0&gt;&gt;&lt;&lt;if _current &gt;= 90&gt;&gt;&lt;&lt;set _amount to Math.ceil(_amount * 0.25)&gt;&gt;&lt;&lt;elseif _current &gt;= 75&gt;&gt;&lt;&lt;set _amount to Math.ceil(_amount * 0.5)&gt;&gt;&lt;&lt;elseif _current &gt;= 50&gt;&gt;&lt;&lt;set _amount to Math.ceil(_amount * 0.75)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set State.variables[_stat] to Math.max(0, Math.min(100, _current + _amount))&gt;&gt;&lt;&lt;set _label to _stat.charAt(0).toUpperCase() + _stat.slice(1)&gt;&gt;&lt;span class=&quot;stat-change&quot;&gt;&lt;&lt;print _label&gt;&gt;: &lt;&lt;if _amount &gt; 0&gt;&gt;+&lt;&lt;/if&gt;&gt;&lt;&lt;print _amount&gt;&gt;&lt;/span&gt;&lt;&lt;/widget&gt;&gt;
 
 &lt;&lt;widget &quot;addItem&quot;&gt;&gt;&lt;&lt;if !$inventory.includes(_args[0])&gt;&gt;&lt;&lt;run $inventory.push(_args[0])&gt;&gt;&lt;span class=&quot;item-gained&quot;&gt;Acquired: &lt;&lt;print _args[0]&gt;&gt;&lt;/span&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
@@ -3452,19 +4325,19 @@ Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
 
 &lt;&lt;widget &quot;taskEntry&quot;&gt;&gt;&lt;&lt;set _label to _args[0]&gt;&gt;&lt;&lt;set _target to _args[1]&gt;&gt;&lt;&lt;set _cost to _args[2]&gt;&gt;&lt;&lt;set _done to _args[3]&gt;&gt;&lt;&lt;set _locked to _args[4]&gt;&gt;&lt;&lt;set _hint to _args[5] || &quot;&quot;&gt;&gt;&lt;&lt;if _done&gt;&gt;&lt;li class=&quot;task-done&quot;&gt;&amp;#10003; &lt;&lt;print _label&gt;&gt;&lt;/li&gt;&lt;&lt;elseif _locked&gt;&gt;&lt;li class=&quot;task-locked&quot;&gt;&amp;#128274; &lt;&lt;print _label&gt;&gt; &lt;em&gt;&lt;&lt;print _hint&gt;&gt;&lt;/em&gt;&lt;/li&gt;&lt;&lt;else&gt;&gt;&lt;li class=&quot;task-available&quot;&gt;&lt;&lt;link _label _target&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/li&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
-&lt;&lt;widget &quot;homeTasks&quot;&gt;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Help Evelyn with chores&quot; &quot;Day1_Morning_A&quot; 1 $evelynChoresDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Laze around the house&quot; &quot;Day1_Morning_B&quot; 1 $lazedDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Check job listings online&quot; &quot;Day1_Afternoon_C&quot; 1 $cafeJobApplied false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Have dinner with Evelyn and Lily&quot; &quot;Day1_Evening_A&quot; 1 $dinnerDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Call Chloe&quot; &quot;Day1_Evening_B&quot; 1 $chloePhoneCall `!$chloeVisitedDay1` &quot;(visit her first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Play video games alone&quot; &quot;Day1_Evening_C&quot; 1 $gamesDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Look around the house&quot; &quot;Day1_SQ_HouseTour&quot; 1 $houseTourSeen false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Help Evelyn with her morning task&quot; &quot;Day2_Morning_A&quot; 1 `$yesMaamAccepted || $evelynDishesDay2` false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Sleep in&quot; &quot;Day2_Morning_C&quot; 1 $sleptInDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Hang out in Lily&#39;s room&quot; &quot;Day2_Afternoon_C&quot; 1 $lilyNailsDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Have dinner with Evelyn and Lily&quot; &quot;Day2_Evening_A&quot; 1 $dinnerDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Text Chloe goodnight&quot; &quot;Day2_Evening_B&quot; 1 $chloeGoodnightDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Lily&#39;s room, round two&quot; &quot;Day2_Evening_C&quot; 1 $prettyboyKaiSeen `!$toenailsPainted` &quot;(paint her nails first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Look through Evelyn&#39;s closet&quot; &quot;Day2_SQ_Closet&quot; 1 $ridingCropSeen `!$yesMaamAccepted` &quot;(help Evelyn this morning first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Check your wardrobe&quot; &quot;Day2_SQ_WardrobeAudit&quot; 1 $wardrobeAuditDone false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;homeTasks&quot;&gt;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Help Evelyn with chores&quot; &quot;Day1_Morning_A&quot; 1 $evelynChoresDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Laze around the house&quot; &quot;Day1_Morning_B&quot; 1 $lazedDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Check job listings online&quot; &quot;Day1_Afternoon_C&quot; 1 $cafeJobApplied false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Have dinner with Evelyn and Lily&quot; &quot;Day1_Evening_A&quot; 1 $dinnerDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Call Chloe&quot; &quot;Day1_Evening_B&quot; 1 $chloePhoneCall `!$chloeVisitedDay1` &quot;(visit her first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Play video games alone&quot; &quot;Day1_Evening_C&quot; 1 $gamesDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Look around the house&quot; &quot;Day1_SQ_HouseTour&quot; 1 $houseTourSeen false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Help Evelyn with her morning task&quot; &quot;Day2_Morning_A&quot; 1 `$yesMaamAccepted || $evelynDishesDay2` false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Sleep in&quot; &quot;Day2_Morning_C&quot; 1 $sleptInDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Hang out in Lily&#39;s room&quot; &quot;Day2_Afternoon_C&quot; 1 $lilyNailsDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Have dinner with Evelyn and Lily&quot; &quot;Day2_Evening_A&quot; 1 $dinnerDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Text Chloe goodnight&quot; &quot;Day2_Evening_B&quot; 1 $chloeGoodnightDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Lily&#39;s room, round two&quot; &quot;Day2_Evening_C&quot; 1 $prettyboyKaiSeen `!$toenailsPainted` &quot;(paint her nails first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Look through Evelyn&#39;s closet&quot; &quot;Day2_SQ_Closet&quot; 1 $ridingCropSeen `!$yesMaamAccepted` &quot;(help Evelyn this morning first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Check your wardrobe&quot; &quot;Day2_SQ_WardrobeAudit&quot; 1 $wardrobeAuditDone false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 3&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Help Evelyn with her morning task&quot; &quot;Day3_Morning_B&quot; 1 $evelynClosetDay3 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Help Lily with photography&quot; &quot;Day3_Morning_C&quot; 1 $lilyPhotographyDone false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Have dinner with Evelyn and Lily&quot; &quot;Day3_Evening_A&quot; 1 $dinnerDay3 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Call Chloe&quot; &quot;Day3_Evening_B&quot; 1 $chloeCallDay3 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;See what Lily wants&quot; &quot;Day3_Evening_C&quot; 1 $lilyPantiesDay3 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
-&lt;&lt;widget &quot;neighborhoodTasks&quot;&gt;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Go for a jog&quot; &quot;Day1_Morning_C&quot; 1 $joggedDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Explore the neighborhood&quot; &quot;Day1_Afternoon_B&quot; 1 $neighborhoodExplored false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Visit Ali&#39;s Corner Store&quot; &quot;Day1_SQ_Ali&quot; 1 $aliMet `!$neighborhoodExplored` &quot;(explore the neighborhood first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Sit with Mrs. Delgado&quot; &quot;Day1_SQ_Delgado&quot; 1 $delgadoMet `!$neighborhoodExplored` &quot;(explore the neighborhood first)&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Go for a jog (pass Sophia&#39;s house)&quot; &quot;Day2_Morning_B&quot; 1 $joggedDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Chat with Ali&quot; &quot;Day2_SQ_Ali&quot; 1 $aliCrosswordDay2 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;neighborhoodTasks&quot;&gt;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Go for a jog&quot; &quot;Day1_Morning_C&quot; 1 $joggedDay1 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Explore the neighborhood&quot; &quot;Day1_Afternoon_B&quot; 1 $neighborhoodExplored false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Visit Ali&#39;s Corner Store&quot; &quot;Day1_SQ_Ali&quot; 1 $aliMet `!$neighborhoodExplored` &quot;(explore the neighborhood first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Sit with Mrs. Delgado&quot; &quot;Day1_SQ_Delgado&quot; 1 $delgadoMet `!$neighborhoodExplored` &quot;(explore the neighborhood first)&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Go for a jog (pass Sophia&#39;s house)&quot; &quot;Day2_Morning_B&quot; 1 $joggedDay2 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Chat with Ali&quot; &quot;Day2_SQ_Ali&quot; 1 $aliCrosswordDay2 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 3&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Visit Chloe at the park&quot; &quot;Day3_Afternoon_A&quot; 1 $chloeParkDay3 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Chat with Ali&quot; &quot;Day3_SQ_Ali&quot; 1 $aliCrosswordDay3 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
-&lt;&lt;widget &quot;chloeTasks&quot;&gt;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Visit Chloe&quot; &quot;Day1_Afternoon_A&quot; 1 $chloeVisitedDay1 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Visit Chloe&#39;s apartment&quot; &quot;Day2_Afternoon_A&quot; 1 $chloeVisitedDay2 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;chloeTasks&quot;&gt;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Visit Chloe&quot; &quot;Day1_Afternoon_A&quot; 1 $chloeVisitedDay1 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Visit Chloe&#39;s apartment&quot; &quot;Day2_Afternoon_A&quot; 1 $chloeVisitedDay2 false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 3&gt;&gt;&lt;p class=&quot;nothing-here&quot;&gt;Nothing to do here today &amp;mdash; Chloe&#39;s out and about.&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
-&lt;&lt;widget &quot;townTasks&quot;&gt;&gt;&lt;&lt;if $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Explore town&quot; &quot;Day2_Afternoon_B&quot; 1 $townExplored false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;townTasks&quot;&gt;&gt;&lt;&lt;if $day is 2&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;Explore town&quot; &quot;Day2_Afternoon_B&quot; 1 $townExplored false &quot;&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;elseif $day is 3&gt;&gt;&lt;ul&gt;&lt;&lt;taskEntry &quot;First cafe shift&quot; &quot;Day3_Morning_A&quot; 1 $cafeJobStarted `!$cafeJobApplied` &quot;(apply for the job first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Visit Kinky Kitty&quot; &quot;Day3_Afternoon_B&quot; 1 $ravenMet false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Walk the mall area&quot; &quot;Day3_Afternoon_C&quot; 1 $mallWalkDay3 false &quot;&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Chat with Mrs. Okonkwo&quot; &quot;Day3_SQ_Okonkwo&quot; 1 $okonkwoMet `!$cafeJobStarted` &quot;(work a cafe shift first)&quot;&gt;&gt;&lt;&lt;taskEntry &quot;Try on your uniform&quot; &quot;Day3_SQ_Uniform&quot; 1 $cafeUniformTried `!$cafeJobStarted` &quot;(work a cafe shift first)&quot;&gt;&gt;&lt;/ul&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
 &lt;&lt;widget &quot;locationTasks&quot;&gt;&gt;&lt;&lt;set _loc to _args[0]&gt;&gt;&lt;&lt;if _loc is &quot;home&quot;&gt;&gt;&lt;&lt;homeTasks&gt;&gt;&lt;&lt;elseif _loc is &quot;neighborhood&quot;&gt;&gt;&lt;&lt;neighborhoodTasks&gt;&gt;&lt;&lt;elseif _loc is &quot;chloe&quot;&gt;&gt;&lt;&lt;chloeTasks&gt;&gt;&lt;&lt;elseif _loc is &quot;town&quot;&gt;&gt;&lt;&lt;townTasks&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
 &lt;&lt;widget &quot;lateWarning&quot;&gt;&gt;&lt;&lt;if $gameMinutes &lt; 1380 and ($gameMinutes + $minutesPerTask) &gt;= 1380&gt;&gt;&lt;p class=&quot;late-warning&quot;&gt;&amp;#9888;&amp;#65039; It&#39;s getting late. One more thing and I&#39;ll need to call it a night.&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
-&lt;&lt;widget &quot;dayPlanContent&quot;&gt;&gt;&lt;div class=&quot;day-plan&quot;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;h4&gt;&amp;#127968; Home&lt;/h4&gt;&lt;&lt;homeTasks&gt;&gt;&lt;h4&gt;&amp;#127961;&amp;#65039; Neighborhood&lt;/h4&gt;&lt;&lt;neighborhoodTasks&gt;&gt;&lt;h4&gt;&amp;#128139; Chloe&#39;s Apartment&lt;/h4&gt;&lt;&lt;chloeTasks&gt;&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;h4&gt;&amp;#127968; Home&lt;/h4&gt;&lt;&lt;homeTasks&gt;&gt;&lt;h4&gt;&amp;#127961;&amp;#65039; Neighborhood&lt;/h4&gt;&lt;&lt;neighborhoodTasks&gt;&gt;&lt;h4&gt;&amp;#128139; Chloe&#39;s Apartment&lt;/h4&gt;&lt;&lt;chloeTasks&gt;&gt;&lt;h4&gt;&amp;#127970; Town&lt;/h4&gt;&lt;&lt;townTasks&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;dayPlanContent&quot;&gt;&gt;&lt;div class=&quot;day-plan&quot;&gt;&lt;&lt;if $day is 1&gt;&gt;&lt;h4&gt;&amp;#127968; Home&lt;/h4&gt;&lt;&lt;homeTasks&gt;&gt;&lt;h4&gt;&amp;#127961;&amp;#65039; Neighborhood&lt;/h4&gt;&lt;&lt;neighborhoodTasks&gt;&gt;&lt;h4&gt;&amp;#128139; Chloe&#39;s Apartment&lt;/h4&gt;&lt;&lt;chloeTasks&gt;&gt;&lt;&lt;elseif $day is 2&gt;&gt;&lt;h4&gt;&amp;#127968; Home&lt;/h4&gt;&lt;&lt;homeTasks&gt;&gt;&lt;h4&gt;&amp;#127961;&amp;#65039; Neighborhood&lt;/h4&gt;&lt;&lt;neighborhoodTasks&gt;&gt;&lt;h4&gt;&amp;#128139; Chloe&#39;s Apartment&lt;/h4&gt;&lt;&lt;chloeTasks&gt;&gt;&lt;h4&gt;&amp;#127970; Downtown&lt;/h4&gt;&lt;&lt;townTasks&gt;&gt;&lt;&lt;elseif $day is 3&gt;&gt;&lt;h4&gt;&amp;#127968; Home&lt;/h4&gt;&lt;&lt;homeTasks&gt;&gt;&lt;h4&gt;&amp;#127961;&amp;#65039; Neighborhood&lt;/h4&gt;&lt;&lt;neighborhoodTasks&gt;&gt;&lt;h4&gt;&amp;#128139; Chloe&#39;s Apartment&lt;/h4&gt;&lt;&lt;chloeTasks&gt;&gt;&lt;h4&gt;&amp;#127970; Downtown&lt;/h4&gt;&lt;&lt;townTasks&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;&lt;/widget&gt;&gt;
 
 &lt;&lt;widget &quot;locationMap&quot;&gt;&gt;
 &lt;&lt;set _loc to _args[0]&gt;&gt;
@@ -3475,9 +4348,10 @@ Day $day | &lt;&lt;= $phase.toUpperCase()&gt;&gt;
 &lt;&lt;set _townClass to _townUnlocked ? (_loc === &#39;town&#39; ? &#39;map-node-active&#39; : &#39;&#39;) : &#39;map-node-locked&#39;&gt;&gt;
 &lt;&lt;set _townEdgeClass to _townUnlocked ? &#39;map-edge&#39; : &#39;map-edge map-edge-locked&#39;&gt;&gt;
 &lt;&lt;set _townIcon to _townUnlocked ? &#39;\u{1F3E2}&#39; : &#39;\u{1F512}&#39;&gt;&gt;
-&lt;&lt;set _townLabel to _townUnlocked ? &#39;Town&#39; : &#39;???&#39;&gt;&gt;
+&lt;&lt;set _townLabel to _townUnlocked ? &#39;Downtown&#39; : &#39;???&#39;&gt;&gt;
 &lt;&lt;set _caption to _loc === &#39;home&#39; ? &#39;You are home.&#39; : (_loc === &#39;neighborhood&#39; ? &#39;You\&#39;re out in the neighborhood.&#39; : (_loc === &#39;chloe&#39; ? &#39;You\&#39;re at Chloe\&#39;s apartment.&#39; : (_loc === &#39;town&#39; ? &#39;You\&#39;re downtown.&#39; : &#39;&#39;)))&gt;&gt;
-&lt;&lt;set _svg to &#39;&lt;div class=&quot;location-map&quot;&gt;&lt;svg viewBox=&quot;0 0 400 210&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;line x1=&quot;75&quot; y1=&quot;105&quot; x2=&quot;205&quot; y2=&quot;105&quot; class=&quot;map-edge&quot;&gt;&lt;/line&gt;&lt;line x1=&quot;75&quot; y1=&quot;105&quot; x2=&quot;325&quot; y2=&quot;55&quot; class=&quot;map-edge&quot;&gt;&lt;/line&gt;&lt;line x1=&quot;205&quot; y1=&quot;105&quot; x2=&quot;325&quot; y2=&quot;160&quot; class=&quot;&#39; + _townEdgeClass + &#39;&quot;&gt;&lt;/line&gt;&lt;g class=&quot;map-node &#39; + _homeActive + &#39;&quot;&gt;&lt;circle cx=&quot;75&quot; cy=&quot;105&quot; r=&quot;30&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;75&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&amp;#127968;&lt;/text&gt;&lt;text x=&quot;75&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;Home&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node &#39; + _neighborhoodActive + &#39;&quot;&gt;&lt;circle cx=&quot;205&quot; cy=&quot;105&quot; r=&quot;30&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;205&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&amp;#127961;&amp;#65039;&lt;/text&gt;&lt;text x=&quot;205&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;Neighborhood&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node &#39; + _chloeActive + &#39;&quot;&gt;&lt;circle cx=&quot;325&quot; cy=&quot;55&quot; r=&quot;27&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;325&quot; y=&quot;61&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&amp;#128139;&lt;/text&gt;&lt;text x=&quot;325&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;Chloe\&#39;s&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node &#39; + _townClass + &#39;&quot;&gt;&lt;circle cx=&quot;325&quot; cy=&quot;160&quot; r=&quot;25&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;325&quot; y=&quot;166&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&#39; + _townIcon + &#39;&lt;/text&gt;&lt;text x=&quot;325&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;&#39; + _townLabel + &#39;&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;&lt;p class=&quot;map-caption&quot;&gt;&#39; + _caption + &#39;&lt;/p&gt;&lt;/div&gt;&#39;&gt;&gt;
+&lt;&lt;set _subnodes to $day &gt;= 3 ? (&#39;&lt;line x1=&quot;370&quot; y1=&quot;90&quot; x2=&quot;290&quot; y2=&quot;190&quot; class=&quot;map-subedge&quot;&gt;&lt;/line&gt;&lt;line x1=&quot;370&quot; y1=&quot;90&quot; x2=&quot;370&quot; y2=&quot;220&quot; class=&quot;map-subedge&quot;&gt;&lt;/line&gt;&lt;line x1=&quot;370&quot; y1=&quot;90&quot; x2=&quot;450&quot; y2=&quot;190&quot; class=&quot;map-subedge&quot;&gt;&lt;/line&gt;&lt;g class=&quot;map-node map-subnode&quot;&gt;&lt;circle cx=&quot;290&quot; cy=&quot;190&quot; r=&quot;18&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;290&quot; y=&quot;196&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon map-subicon&quot;&gt;&amp;#9749;&lt;/text&gt;&lt;text x=&quot;290&quot; y=&quot;224&quot; text-anchor=&quot;middle&quot; class=&quot;map-label map-sublabel&quot;&gt;Cafe&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node map-subnode&quot;&gt;&lt;circle cx=&quot;370&quot; cy=&quot;220&quot; r=&quot;18&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;370&quot; y=&quot;226&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon map-subicon&quot;&gt;&amp;#128049;&lt;/text&gt;&lt;text x=&quot;370&quot; y=&quot;254&quot; text-anchor=&quot;middle&quot; class=&quot;map-label map-sublabel&quot;&gt;Kinky Kitty&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node map-subnode&quot;&gt;&lt;circle cx=&quot;450&quot; cy=&quot;190&quot; r=&quot;18&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;450&quot; y=&quot;196&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon map-subicon&quot;&gt;&amp;#128722;&lt;/text&gt;&lt;text x=&quot;450&quot; y=&quot;224&quot; text-anchor=&quot;middle&quot; class=&quot;map-label map-sublabel&quot;&gt;Mall&lt;/text&gt;&lt;/g&gt;&#39;) : &#39;&#39;&gt;&gt;
+&lt;&lt;set _svg to &#39;&lt;div class=&quot;location-map&quot;&gt;&lt;svg viewBox=&quot;0 0 480 270&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;line x1=&quot;70&quot; y1=&quot;90&quot; x2=&quot;220&quot; y2=&quot;90&quot; class=&quot;map-edge&quot;&gt;&lt;/line&gt;&lt;line x1=&quot;220&quot; y1=&quot;90&quot; x2=&quot;370&quot; y2=&quot;90&quot; class=&quot;&#39; + _townEdgeClass + &#39;&quot;&gt;&lt;/line&gt;&lt;line x1=&quot;70&quot; y1=&quot;90&quot; x2=&quot;70&quot; y2=&quot;210&quot; class=&quot;map-edge&quot;&gt;&lt;/line&gt;&#39; + _subnodes + &#39;&lt;g class=&quot;map-node &#39; + _homeActive + &#39;&quot;&gt;&lt;circle cx=&quot;70&quot; cy=&quot;90&quot; r=&quot;28&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;70&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&amp;#127968;&lt;/text&gt;&lt;text x=&quot;70&quot; y=&quot;134&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;Home&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node &#39; + _neighborhoodActive + &#39;&quot;&gt;&lt;circle cx=&quot;220&quot; cy=&quot;90&quot; r=&quot;28&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;220&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&amp;#127961;&amp;#65039;&lt;/text&gt;&lt;text x=&quot;220&quot; y=&quot;134&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;Neighborhood&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node &#39; + _chloeActive + &#39;&quot;&gt;&lt;circle cx=&quot;70&quot; cy=&quot;210&quot; r=&quot;25&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;70&quot; y=&quot;217&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&amp;#128139;&lt;/text&gt;&lt;text x=&quot;70&quot; y=&quot;251&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;Chloe\&#39;s&lt;/text&gt;&lt;/g&gt;&lt;g class=&quot;map-node &#39; + _townClass + &#39;&quot;&gt;&lt;circle cx=&quot;370&quot; cy=&quot;90&quot; r=&quot;28&quot;&gt;&lt;/circle&gt;&lt;text x=&quot;370&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; class=&quot;map-icon&quot;&gt;&#39; + _townIcon + &#39;&lt;/text&gt;&lt;text x=&quot;370&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; class=&quot;map-label&quot;&gt;&#39; + _townLabel + &#39;&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;&lt;p class=&quot;map-caption&quot;&gt;&#39; + _caption + &#39;&lt;/p&gt;&lt;/div&gt;&#39;&gt;&gt;
 &lt;&lt;print _svg&gt;&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">

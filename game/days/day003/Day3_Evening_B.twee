@@ -1,0 +1,46 @@
+:: Day3_Evening_B [day3 evening chloe phone]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<<dialog "Chloe" "How was your first day at work?">>
+
+<p>Her voice through the phone is warm honey in my ear. I'm lying on my bed, staring at the ceiling, and her voice fills the room the way her presence fills her apartment, completely.</p>
+
+<p>I tell her about Vanessa. About the cafe, the deliveries, the tips. About Vanessa's hands on my shoulders adjusting my posture. About the apron she tied around my waist.</p>
+
+<p>"She tied it for you?" Chloe sounds amused. Not jealous. Amused. Like she's hearing about a colleague implementing a plan she designed. "Interesting. What's she look like?"</p>
+
+<p>I describe Vanessa. Brunette. Curvy. Confident. Red lipstick.</p>
+
+<p>"She sounds hot." No jealousy. Nothing possessive. Just an observation. "Did you make any girl friends there?"</p>
+
+<p>"What? It's a cafe, Chloe."</p>
+
+<<dialog "Chloe" "I'm just saying. You need more female friends. Mia and Jade are coming over on Day 5. You should meet them. They'll love you.">>
+
+<p>Something about the way she says "love you" makes my pulse quicken. Not romantic love. Something else. Appreciation. Fascination. The way women love a new project.</p>
+
+<p>"Why will they love me?"</p>
+
+<<dialog "Chloe" "Because you're sweet. And pretty. And you don't know you're pretty, which makes you even prettier. Has anyone ever told you you're pretty?">>
+
+<p>Nobody has. Handsome, once, from my grandmother. Cute, from Chloe, repeatedly. But pretty? Pretty is for girls. Pretty is for flowers and dresses and the mannequin in the boutique window.</p>
+
+<p>"No."</p>
+
+<<dialog "Chloe" "Well, you are. And when Mia and Jade see you, they're going to agree with me. You'll see.">>
+
+<p>Her voice drops. That register again. The one that turns instructions into inevitabilities.</p>
+
+<p>I lie in bed after we hang up, the word "pretty" echoing in my skull like a bell struck once and left to vibrate.</p>
+
+<<statChange "arousal" 1>>
+<<set $chloeRelationship += 1>>
+<<set $prettyMentioned to true>>
+<<set $chloeCallDay3 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

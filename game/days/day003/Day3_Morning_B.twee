@@ -1,0 +1,63 @@
+:: Day3_Morning_B [day3 morning evelyn closet]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<<if $yesMaamAccepted>>
+<<dialog "Evelyn" "Before you go anywhere today, I'd like you to organize my closet. Please.">>
+
+<p>Please. She says it the way a queen says please when issuing a decree. The word is present. The choice is not.</p>
+
+<p>"Yes, Ma'am."</p>
+
+<p>Her walk-in closet is a country I've never visited. The door opens and the air changes, cooler, scented, dense with the olfactory signature of expensive fabric and cedar hangers and that rose-sandalwood perfume that's become Evelyn's calling card. The space is narrow but deep, maybe four feet wide and ten feet long, with rails running both walls, packed with clothing arranged by type, then by color, then by season. Blouses on the left, dresses in the center, skirts and trousers on the right. Shoes on shelves below, arranged heel-forward. Accessories hanging from hooks on the back of the door.</p>
+
+<p>And the scarves.</p>
+
+<p>They have their own section, a wooden rack with horizontal bars, each scarf draped over a bar like a silk waterfall. There must be thirty of them. Every color, every pattern, every weight of fabric from gossamer chiffon to heavy cashmere. They catch the light from the closet's single overhead bulb and throw it back in muted rainbows.</p>
+
+<p>I start organizing. Evelyn wants them arranged by fabric weight, lightest at the top, heaviest at the bottom. To do this I have to touch each one. Handle it. Feel the difference between silk and satin and chiffon and georgette, materials I didn't know the names of twenty minutes ago and now know by touch because Evelyn left a hand-lettered chart taped to the inside of the closet door.</p>
+
+<p>My hands are full of her scarves. A lavender silk one slides through my fingers like cool water. A cream cashmere one is so soft it feels alive, warm even without a body inside it. A deep burgundy satin one catches on my calluses and I run it between my thumb and forefinger, feeling the weight, the sheen, the way it holds its shape when I fold it and releases when I let go.</p>
+
+<p>I hold the lavender one up to the light. It shimmers. The color shifts from pale purple to almost blue depending on the angle, like the sky at that moment between day and night when the light hasn't decided what it's doing yet.</p>
+
+<<dialog "Evelyn" "You like that one?">>
+
+<p>Evelyn. In the doorway. Leaning against the frame with her arms crossed, watching me with an expression I can't read. How long has she been there? I drop the scarf like it burned me.</p>
+
+<p>"It's soft," I say. The understatement of the century. It's the softest thing I've ever touched. Softer than Chloe's panties. Softer than my sheets. Softer than anything in my world, which is a world made of cotton and denim and rough edges.</p>
+
+<p>Evelyn doesn't move. She watches me for three beats. Four. Five. Then she smiles. Not the satisfied smile from the vanity dusting or the towel folding. Something different. Something deeper. The smile of someone watching a prediction come true.</p>
+
+<<dialog "Evelyn" "You might appreciate those more soon.">>
+
+<p>The words land in my chest like a coin dropped into deep water. Sinking. Slow. Settling into sediment I didn't know was there.</p>
+
+<p>She doesn't explain. She turns and walks away, her heels clicking on the hardwood, and I'm left standing in her closet holding a lavender silk scarf that smells like roses and promises.</p>
+
+<p>I finish organizing. I don't hold any more scarves up to the light. But my fingers remember the lavender one. They'll remember it tonight, lying in bed, curling against my palm in phantom softness.</p>
+
+<<statChange "feminization" 2>>
+<<statChange "obedience" 1>>
+<<set $evelynRelationship += 2>>
+<<set $scarfMoment to true>>
+<<set $evelynStage to Math.max($evelynStage, 3)>>
+
+<<else>>
+<p>The note on the fridge is gone; Evelyn just points at the hallway closet on her way past with her teacup, not breaking stride. "That needs tidying. Whenever you get to it."</p>
+
+<p>Whenever you get to it, from Evelyn, means now. I spend twenty minutes refolding towels that were already fine, restacking boxes of things I don't recognize, sweeping a floor that wasn't dirty. She doesn't come to inspect this one. She doesn't need to. This is maintenance, not a lesson, and lessons are reserved for people who've earned her attention.</p>
+
+<p>I finish and go looking for her, half expecting a "good boy" that doesn't come. She's at the table with her paper, and she just nods without looking up.</p>
+
+<<statChange "obedience" 1>>
+<<set $evelynRelationship += 1>>
+<</if>>
+
+<<set $evelynClosetDay3 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

@@ -1,0 +1,61 @@
+:: Day3_Morning_C [day3 morning lily photography]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<p>Lily is up before noon. This alone constitutes a minor miracle, the kind of thing that deserves a plaque on the wall or at least a raised eyebrow from Evelyn, who gives it both.</p>
+
+<<dialog "Lily" "I need a model. It's for a school project. Photography comp. I need to submit a portrait series by Friday.">>
+
+<p>"Ask someone else."</p>
+
+<p>"There is no one else. Everyone I know has a face like a foot. You at least have..." She waves her hand at my face in a gesture that encompasses my entire head. "...bone structure."</p>
+
+<p>I don't know if that's a compliment. Coming from Lily it's hard to tell. She says everything with the same flat delivery, whether she's ordering pizza or confessing to a crime.</p>
+
+<p>"Fine. Five minutes."</p>
+
+<p>"Ten."</p>
+
+<p>"Seven."</p>
+
+<p>"Deal."</p>
+
+<p>She sets me up against the living room wall, the one with the white paint and the good light from the bay window. She shoots with her phone but she shoots like a professional, or at least like someone who's studied professionals and internalized their tricks. She moves around me, changing angles, getting low, getting high, shooting from the side.</p>
+
+<p>"Chin up. Tilt your head left. No, my left. Your right. There."</p>
+
+<p>The poses start normal. Straight-on. Profile. Three-quarter angle. Basic stuff.</p>
+
+<p>Then: "Can you, like, tilt your head? Like this." She demonstrates. Chin slightly down, eyes looking up through lashes, lips parted. It's distinctly feminine. Not aggressively so, not drag queen obvious, but soft. The way women look in perfume ads and indie movie posters.</p>
+
+<p>I mimic it without thinking. My chin drops, my eyes lift, my lips part slightly. The pose feels natural in a way that surprises me. Like my body already knew how to do this and was waiting to be asked.</p>
+
+<p>Lily's shutter clicks rapid-fire. Click click click click click. Her eyes are wide behind her phone. Not shocked. Excited. The way she looks when her analytics spike or a post goes viral.</p>
+
+<p>"Perfect," she breathes. "You're a natural."</p>
+
+<p>She scrolls through the photos afterward, sitting on the couch, her shoulder against mine. I watch the images slide past. My face from different angles, different lights. Some look like me, the regular Alex I see in the bathroom mirror every morning. Others look like someone else. Someone softer. The tilted-chin photo stops her scrolling dead.</p>
+
+<p>"Look at that." She zooms in. My face fills the screen. Brown hair falling across my forehead, eyes dark and looking up, lips slightly apart. The light from the window catches my cheekbones and throws shadows under them that make my face look narrower, more refined. More... pretty. There's no other word for it.</p>
+
+<<dialog "Lily" "You photograph well. You know that? You've got soft features. Like, your jaw isn't square. Your nose is small. Your lips are... full. For a guy.">>
+
+<p>"Thanks?"</p>
+
+<p>"It's a compliment. Trust me." She locks her phone and slides it into her pocket. "These are actually going to be my best submissions. Don't tell anyone I said that."</p>
+
+<p>She punches my shoulder and walks away. But her phone is in her pocket, and on that phone are ten photos of me, and at least three of them show a boy who looks like he could be a girl if you squinted, if you styled his hair, if you added lip gloss, if you let the light do its work.</p>
+
+<p>Lily doesn't squint. She sees clearly. And she's already planning.</p>
+
+<<statChange "feminization" 2>>
+<<statChange "embarrassment" 1>>
+<<set $lilyRelationship += 3>>
+<<set $lilyPhotographyDone to true>>
+<<set $softFeaturesMentioned to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

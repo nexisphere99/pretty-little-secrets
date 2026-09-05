@@ -1021,6 +1021,27 @@ button:hover {
   fill: #a094a0;
 }
 
+.map-subedge {
+  stroke: #f4a6c6;
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+
+.map-subnode circle {
+  fill: #fff8fb;
+  stroke: #f4a6c6;
+  stroke-width: 1.5;
+}
+
+.map-subicon {
+  font-size: 13px;
+}
+
+.map-sublabel {
+  font-size: 9px;
+}
+
 .map-caption {
   text-align: center;
   color: #a13a63;

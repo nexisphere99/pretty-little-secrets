@@ -1,0 +1,139 @@
+:: Day3_Morning_A [day3 morning cafe vanessa]
+<<nobr>>
+<<centerImage "image/events/cafe.png">>
+<<set $currentLocation to "events/cafe">>
+
+<p>My alarm screams at 7:30 and I kill it with a slap that nearly sends my phone off the nightstand. Monday. Workday. My first workday. The thought drags me vertical like a hook through my sternum.</p>
+
+<p>Shower. Hot water sluicing over skin that still remembers yesterday.<<if $pantiesEquipped>> I peel the panties off before stepping under the spray and stand there holding them, wet silk dripping onto tile, and there's a moment where I bring them to my face without meaning to and breathe in, catching the ghost of Chloe's perfume mixed with my own body heat. I set them on the counter. I'll put them back on after. The choice is already made before I make it.<</if>></p>
+
+<p>Jeans. T-shirt. Sneakers. I look at myself in the bathroom mirror. Brown hair that needs a cut, brown eyes, skinny but not weak. Jaw that's more boyish than masculine. Cheekbones that are, I'm starting to notice, a little high. A little sharp. A little like something Lily would call "soft features" and mean it as a loaded compliment.</p>
+
+<p>Just a normal dude. Normal.</p>
+
+<p>Downstairs, Evelyn is already eating. Toast, tea, newspaper. The eternal triptych. She looks me up and down, her gaze cataloging my outfit the way a general surveys a battlefield.</p>
+
+<<dialog "Evelyn" "Going somewhere?">>
+
+<p>"I got a job. At a cafe downtown. Lush Latte."</p>
+
+<p>Her eyebrows lift. Not surprise. Interest. "Good. Idle hands and all that." She sips her tea. "What kind of cafe?"</p>
+
+<p>"Coffee. Pastries. Deliveries."</p>
+
+<<dialog "Evelyn" "Hmm. Be presentable. First impressions matter.">>
+
+<p>"Yes, Ma'am."</p>
+
+<p>The words come easier now. Three days and they're already settling into my vocabulary like furniture in a room I didn't know I was furnishing. Evelyn nods, satisfied, and returns to her paper.</p>
+
+<p>Lily's still asleep. The bass from her room has been replaced by silence, which for Lily is the sound of unconsciousness so deep it borders on coma.</p>
+
+<p>The bus drops me two blocks from Lush Latte. I smell the place before I see it. Fresh roasted coffee and something baked, cinnamon rolls maybe, and underneath that the warm yeast scent of bread that's been in the oven since before dawn. The cafe's front windows catch the early light and throw it back golden, turning the interior into an aquarium of warmth.</p>
+
+<p>Vanessa meets me at the door.</p>
+
+<p>She's a lot. That's the first thought and it doesn't get revised, only expanded, every second I spend in her presence. Brunette hair pulled back in a high ponytail so tight it lifts her cheekbones. Full lips painted a red that doesn't exist in nature, a red that was engineered in a lab to make men lose their train of thought. She's curvy in the way that word was invented for, hips and chest and waist that create a silhouette my eyes follow without permission. Her uniform is the pastel green polo I saw on Instagram, but on her it looks nothing like the photos. The fabric stretches across her breasts and tucks into a black skirt that stops mid-thigh, and over it she wears a ruffled apron with the Lush Latte logo embroidered in gold. She looks like a pinup girl who wandered into a coffee shop and decided to run the place.</p>
+
+<<dialog "Vanessa" "Alex? You're the new delivery rider.">>
+
+<p>"Yeah. Hi. I'm..."</p>
+
+<p>"On time. Good start." She looks me over. Head to toe. Slowly. Her eyes travel down my body with the clinical precision of someone evaluating livestock, or merchandise, or raw material that hasn't been shaped yet. I can feel her gaze like a physical thing, a warm pressure that starts at my face and drags downward over my chest, my waist, my hips, my legs, and back up again.</p>
+
+<p>"You'll do." She turns and walks inside. I follow. "Here's your apron."</p>
+
+<p>She holds it out. It's black. Simple. A standard service-industry apron, the kind a thousand baristas wear without a second thought. But when I reach for it, she pulls it back.</p>
+
+<<dialog "Vanessa" "Let me.">>
+
+<p>She moves behind me. I feel her body close to my back, not touching but present, the heat of her radiating through the thin fabric of my t-shirt. Her arms come around my waist, the apron in her hands, and she wraps it around me. Her fingers find the strings at the small of my back and tie them. The knot pulls tight against my spine. Her knuckles press into the curve just above my ass.</p>
+
+<p>"There." Her breath is on the back of my neck. Warm. Coffee-scented. "Now you look like you belong."</p>
+
+<p>She steps away. I turn around. She's grinning. Not a smile, a grin, wide and wolfish and fully aware of what she just did.</p>
+
+<p>"Come on. I'll show you the ropes."</p>
+
+<p>The morning is controlled chaos. Orders stream in through the app, a constant flow of lattes and cappuccinos and complicated drinks with names like "Lavender Dream" and "Caramel Kiss." My job is delivery: load the thermal bag onto the e-bike, pedal to the address, smile, hand over the coffee, collect the tip if there is one. Simple enough.</p>
+
+<<if $bbcEnabled>>
+<p>My third delivery of the morning goes to a high-rise downtown. Nice building. Glass and steel. A doorman in a uniform. The order is a large black coffee, no sugar, and a croissant. The name on the order says "M. Jackson."</p>
+
+<p>The doorman waves me through. I take the elevator to the fourteenth floor. The hallway is carpeted in dark grey, the walls painted a warm charcoal. It smells like cologne. Good cologne. The kind that costs more than my monthly bus pass.</p>
+
+<p>I knock on 14C. No answer. I knock again.</p>
+
+<p>The door opens. Just a crack. I can see a sliver of the apartment: hardwood floors, a leather couch, a window with a view of the whole downtown strip. And a hand. A large hand, dark-skinned, reaching through the crack for the coffee.</p>
+
+<p>"Thanks, man." The voice is deep. Warm. Like bass notes played on a cello. The hand takes the coffee and the croissant bag. I catch a glimpse of a wrist, thick, with a gold watch that catches the hallway light.</p>
+
+<p>A bill appears through the crack. I take it. A twenty. For a seven-dollar coffee.</p>
+
+<p>"Keep the change." The door closes.</p>
+
+<p>I stand in the hallway for a moment, holding a twenty-dollar bill that smells faintly of the cologne drifting through the door crack, and I think nothing. I think absolutely nothing about the deep voice and the large hand and the gold watch and the thirteen-dollar tip. Nothing at all.</p>
+
+<p>I take the elevator back down. The doorman nods at me. I ride the e-bike back to the cafe.</p>
+
+<p>At the counter, Vanessa sees my expression and misreads it. Or reads it perfectly. "Good tip?"</p>
+
+<p>"Twenty on a seven-dollar order."</p>
+
+<p>"M. Jackson. He always tips like that." She wipes the counter. "He comes in sometimes. When he does, you'll know." She doesn't elaborate.</p>
+
+<<set $money += 13>>
+<<set $marcusDeliveryFlag to true>>
+<<set $marcusNameKnown to true>>
+<<set $bbcAtmospheric += 1>>
+<<else>>
+<p>My third delivery of the morning goes to an office building downtown. Standard order, standard tip, a guy in a suit who doesn't look up from his phone when he takes the bag.</p>
+
+<<set $money += 3>>
+<</if>>
+
+<p>Between runs, I help in the cafe. Busing tables, wiping counters, restocking cups. Vanessa orbits the space like a planet with its own gravity, and everyone, the two other baristas, the customers, me, everyone rotates around her. She's not the owner but she acts like it. She's not my boss but she gives orders like one, and I follow them with a speed that surprises me.</p>
+
+<p>"Carry the tray like this." She takes the tray from my hands and demonstrates, lifting it onto her palm, fingers spread, the tray balanced at shoulder height. Her hips shift to compensate for the weight and the movement is liquid, practiced, almost dance-like. "Hips forward, shoulders back. It's all about the posture. Try."</p>
+
+<p>I take the tray back. Lift it. My shoulder hunches.</p>
+
+<p>"No." She steps behind me again. Her hands find my shoulders and physically adjust them, pulling them back, pressing them down. Her palms are warm through my t-shirt. Her thumbs dig into the muscle at the base of my neck and I nearly groan because it's both corrective and something else, something that sends a shiver down my spine that has nothing to do with posture.</p>
+
+<p>"Better. Now walk. Hips forward. Don't shuffle. Glide."</p>
+
+<p>I walk. I don't glide. I probably look like a baby deer on ice. But Vanessa watches me cross the cafe with the tray and nods.</p>
+
+<p>"We'll work on it."</p>
+
+<p>The shift ends at noon. Vanessa counts my tips behind the counter while I untie my apron. Her fingers move through the bills with the speed of a card dealer. She stacks them, snaps a rubber band around them, and holds the bundle out.</p>
+
+<p>"Twenty-three dollars. Not bad for a newbie."</p>
+
+<p>I take the money. It feels warm. Real. I earned this by carrying coffee and smiling and following a beautiful woman's orders for four hours.</p>
+
+<<dialog "Vanessa" "Same time tomorrow?">>
+
+<p>Not a question. A confirmation. Like tomorrow is already decided and she's just informing me of the schedule.</p>
+
+<p>"Yeah. Same time."</p>
+
+<p>She reaches out and adjusts my collar. Tucks in a tag that was sticking up. Her fingers brush my neck, the same spot Evelyn touched two days ago, and the parallel hits me like a static shock. Two different women. Same gesture. Same casual ownership of my body's details.</p>
+
+<<dialog "Vanessa" "You did good today, Alex. I think you're going to be perfect here.">>
+
+<p>Perfect for what? I don't ask. I take my twenty-three dollars and my adjusted collar and I walk out into the Monday sunlight feeling like I just survived an audition for something I didn't apply for.</p>
+
+<<statChange "feminization" 1>>
+<<statChange "obedience" 2>>
+<<statChange "confidence" 1>>
+<<set $money += 23>>
+<<set $vanessaRelationship += 3>>
+<<set $cafeJobStarted to true>>
+<<set $cafeShiftCount += 1>>
+<<set $vanessaPostureTraining to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

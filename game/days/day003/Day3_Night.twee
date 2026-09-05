@@ -1,0 +1,34 @@
+:: Day3_Night [day3 night reflection]
+<<nobr>>
+<<centerImage "image/events/sleep.png">>
+<<set $phase to "night">>
+<h2>Night</h2>
+
+<p>Day 3.<<if $cafeJobStarted>> I have a job at a cafe where a woman with red lipstick ties my apron and adjusts my shoulders and calls me "perfect."<</if>><<if $ravenMet>> I might have a second job at a sex shop where a gothic queen called me "boy" and told me I'd look adorable in lavender.<</if>><<if $evelynClosetDay3>> My stepmother is teaching me table manners with the patience and precision of someone sculpting marble.<</if>><<if $lipGlossApplied>> My girlfriend put lip gloss on me yesterday and I can still taste it if I lick my lips.<</if>><<if $lilyPantiesDay3>> My stepsister gave me panties as a joke, except nothing Lily does is a joke.<</if>></p>
+
+<p>I'm lying in bed and I realize something that makes my stomach flip.</p>
+
+<p>I've been adjusting. Not fighting. Not really.<<if $evelynRelationship >= 10>> When Evelyn corrects my posture, I fix it.<</if>><<if $lipGlossApplied>> When Chloe puts gloss on my lips, I leave it.<</if>><<if $vanessaPostureTraining>> When Vanessa adjusts my shoulders, I lean into her hands.<</if>><<if $lilyRelationship >= 8>> When Lily dares me, I consider it.<</if>><<if $ravenMet>> When Raven says I'll look adorable, I wonder what the apron looks like.<</if>></p>
+
+<p>When did I become so agreeable?</p>
+
+<p>I tell myself it's nothing. Just being nice. Just going along to get along. Just making people happy because making people happy is easier than fighting and the rewards are warm words and approving smiles and the occasional kiss on the cheek.</p>
+
+<p>But somewhere in the back of my brain, behind the door that was locked and is now cracked open, a light is growing. Not bright. Not blinding. Just a sliver, a line of warmth along the floor, the promise of a room I haven't entered yet.</p>
+
+<<if $pantiesEquipped>>
+<p>I roll over. The panties shift against my skin.<<if $deniedOrgasm >= 1>> The ache from Chloe's denial two nights ago hasn't fully faded &mdash; it just went quiet, banked like a coal, and moments like tonight's stir it back up.<</if>> Something has changed. Something small. Something I can't name or undo.</p>
+<<else>>
+<p>I roll over. The boxers sit loose and familiar. Either way, something has changed. Something small. Something I can't name or undo.</p>
+<</if>>
+
+<p>Day 3 ends.</p>
+
+<<statSummary>>
+
+<<link `"Sleep - end Day " + $day`>>
+  <<set $day += 1>>
+  <<set $phase to "morning">>
+  <<goto "DailyHub">>
+<</link>>
+<</nobr>>

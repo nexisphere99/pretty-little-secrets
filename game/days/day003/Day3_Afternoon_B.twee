@@ -1,0 +1,79 @@
+:: Day3_Afternoon_B [day3 afternoon kinkykitty raven]
+<<nobr>>
+<<centerImage "image/events/sex_toy_shop.png">>
+<<set $currentLocation to "events/sex_toy_shop">>
+
+<p>The neon cat winks. Over and over, an endless loop of hot pink invitation. I've walked past this building a dozen times. Today I stop. Today I push the door open.</p>
+
+<p>A bell chimes. Not a bright, cheerful bell like Ali's corner store. A deep, resonant chime, the kind you'd hear in a temple or a very expensive hotel. The door closes behind me and the street noise vanishes, replaced by silence so thick I can hear my own heartbeat.</p>
+
+<p>The shop is dim. Purple lights mounted in the ceiling cast everything in a violet haze. The walls are lined with merchandise, and my eyes take a moment to adjust, to sort the shapes into categories my brain has vocabulary for. Vibrators in a glass display case, arranged by size from demure to terrifying. Lingerie on mannequins, lace and satin and leather and mesh, each set lit with its own tiny spotlight. A shelf labeled "Anal Play" in elegant cursive, the handwriting of someone who discusses butt plugs with the same formality other people discuss wine. Handcuffs. Rope. Blindfolds. Masks. Things I don't have names for, things with straps and buckles that could be for pleasure or for restraint or for both.</p>
+
+<p>The air smells like leather. Warm leather. And something sweet underneath, vanilla and sandalwood, the kind of candle you'd find in a meditation studio if the meditation studio had a dungeon in the basement.</p>
+
+<<if $kinkyKittyNoticed>>
+<p>My face is warm, not on fire &mdash; I noticed this place before, filed away the neon and the "Help Wanted" sign, so walking in doesn't feel like free-falling off a cliff. More like stepping off a diving board I already measured.</p>
+<<else>>
+<p>My face is on fire. I'm sweating. I'm standing in the doorway of a sex shop at two in the afternoon on a Monday and every surface in every direction has something on it that makes my brain short-circuit.</p>
+<</if>>
+
+<<dialog "Alex" "Can I help you?">>
+
+<p>She emerges from the back like smoke taking human form. Jet black hair, ruler-straight, falling to her waist. Skin so pale it's almost blue in the purple light. Gothic makeup, precise and dramatic: black lips, black nails, eyes rimmed with kohl so thick her irises look like emeralds set in onyx. She's wearing a leather corset over a sheer mesh top, fitted leather pants, boots with silver buckles that climb to her knees. Every piece of jewelry on her body, rings, bracelets, a choker with a tiny silver pendant, is black or silver, nothing warm, nothing soft.</p>
+
+<p>She is simultaneously the most intimidating and the most beautiful woman I've ever seen. And she's looking at me the way a biologist looks at a new species. Clinical curiosity with an undercurrent of delight.</p>
+
+<p>"I saw the sign," I manage. "About the job."</p>
+
+<<dialog "Raven" "I'm Raven.">>
+
+<p>She extends a hand. Black nails, long and coffin-shaped, catch the purple light. Her handshake is surprisingly strong. Her palm is cool and dry and her grip lasts exactly one beat longer than a normal handshake, long enough to communicate that she's choosing to let go, not that I'm choosing to pull away. "This is my shop."</p>
+
+<p>"Alex."</p>
+
+<p>"Alex." She tastes my name the same way Vanessa did, rolling it over her tongue like she's deciding what it sounds like dressed up in different syllables. "You ever work retail?"</p>
+
+<p>"I just started at a cafe. Delivery, mostly."</p>
+
+<<dialog "Raven" "This would be part time. Evenings. Stocking shelves, helping customers, keeping the place clean. The products here are intimate in nature. Does that bother you?">>
+
+<p>I look around again. My gaze lands on a mannequin wearing a red lace bodysuit with straps that crisscross the torso like geometric art. Beside it, a shelf of dildos in graduated sizes, ranging from "modest" to "you can't be serious." Below that, a rack of anal beads in every color of the rainbow.</p>
+
+<p>"No," I say. My voice cracks on the word. "I mean. It's fine."</p>
+
+<p>Raven smiles. It transforms her face. The intimidation doesn't disappear but it makes room for something warmer, almost affectionate, the way you'd smile at a kitten who just walked into a wolf's den and decided to sit down.</p>
+
+<<dialog "Raven" "You're blushing. That's not a bad thing. Customers appreciate sincerity over polish. A blushing boy helping them choose a vibrator is more endearing than a bored one.">>
+
+<p>She said "boy." Not "man." Not "employee." Boy. The word sits in the air between us, tiny and weighted.</p>
+
+<<dialog "Raven" "Start Day 10. Fourteen dollars an hour. Three shifts a week to start, we'll see about more. Don't be late.">>
+
+<p>She picks up a business card from the counter and holds it out between two black-tipped fingers. I take the card. Black matte with purple lettering. "Kinky Kitty" with the winking cat logo and Raven's name underneath. I pocket it and turn to leave.</p>
+
+<p>"Alex."</p>
+
+<p>I stop. Turn back.</p>
+
+<p>She's leaning on the counter, one elbow propped, chin on her fist. Her eyes are half-lidded and sharp at the same time, sleepy and predatory, a cat watching a mouse from a distance.</p>
+
+<<dialog "Raven" "The apron you'll wear here. Is much cuter than the cafe one.">>
+
+<p>The bell chimes behind me as I leave. The neon cat winks. The sunlight hits my face and I stand on the sidewalk blinking like someone who just walked out of a movie theater, or a dream, or a portal into a life I haven't agreed to yet.</p>
+
+<p>My phone buzzes. A text from an unknown number. "Btw it's lavender. The apron. You'll look adorable. -R"</p>
+
+<p>She already has my number. From the job application email. Of course she does.</p>
+
+<<statChange "confidence" 1>>
+<<statChange "embarrassment" 2>>
+<<set $ravenRelationship += 2>>
+<<set $ravenMet to true>>
+<<set $shopJobApplied to true>>
+<<set $shopJobStartDay to 10>>
+<<set $ravenHasNumber to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

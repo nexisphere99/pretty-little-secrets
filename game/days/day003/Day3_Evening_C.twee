@@ -1,0 +1,81 @@
+:: Day3_Evening_C [day3 evening lily panties]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<<dialog "Lily" "Psst. Alex.">>
+
+<p>Lily appears in my doorway like she materialized from the shadows. She's holding something behind her back. The fairy lights from her room behind her give her a halo effect, pink hair glowing like a punk angel.</p>
+
+<p>"I did a thing," she says. Dead serious. For exactly one second. Then the grin cracks through like sunlight through cloud.</p>
+
+<p>She pulls out a pair of panties.</p>
+
+<p>Not mine. Not hers either. Or maybe hers, I don't know, I don't catalog my stepsister's underwear. They're new. Tags still on. Black lace with a tiny purple bow at the front. She holds them up by the waistband, dangling them between us like evidence at a crime scene.</p>
+
+<p>"I saw these and thought of you," she says.</p>
+
+<p>I stare at her. She stares back. Her expression is perfectly controlled, eyebrows slightly raised, lips pressed together against the laughter that's building behind them.</p>
+
+<p>"I'm not..."</p>
+
+<<dialog "Lily" "I'm not saying WEAR them. God, Alex. I'm just saying they'd fit you. Your hips are almost the same size as mine. We could probably share clothes.">>
+
+<p>"We are NOT sharing..."</p>
+
+<p>"RELAX." She tosses them onto my bed. They land on my pillow. Black lace against white cotton pillowcase. "Keep them. Throw them away. Burn them in a ritual bonfire. Whatever." She's already retreating to the hallway. "They were on clearance. Three bucks. Consider it an investment in your future."</p>
+
+<p>She disappears. Her cackling echoes down the hall. Her door closes. Bass kicks in.</p>
+
+<p>I stand in my room looking at the panties on my pillow.</p>
+
+<p>Black lace. Delicate. The bow is a tiny satin thing, almost cute, the kind of detail you'd find on lingerie in a movie where the woman slowly undresses and the camera loves every inch of her. I pick them up. Soft. Lighter than expected. The lace is finer than Chloe's pink ones, the fabric underneath silkier.</p>
+
+<<link "Keep them" "Day3_Evening_C_Keep">><</link>><br>
+<<link "Throw them away" "Day3_Evening_C_Trash">><</link>>
+<</nobr>>
+
+:: Day3_Evening_C_Keep [day3 evening lily panties keep]
+<<nobr>>
+<<if $pantiesAccepted>>
+<p>There's a vertiginous quality to this moment. I'm standing in my room holding a pair of panties my stepsister bought me while wearing a pair of panties my girlfriend gave me. Two different women. Same gift. Completely different energy. Chloe's were romantic, seductive, part of a plan I'm only beginning to understand. Lily's are a taunt. A dare. A probe, designed to test how deep my resistance goes and whether it has a bottom.</p>
+
+<p>I open my dresser drawer. The one where my boxers live. I tuck the black lace panties underneath the stack, hidden beneath cotton and elastic, out of sight. Not thrown away. Not worn. Just... kept. Just in case.</p>
+
+<p>In case of what?</p>
+
+<p>I close the drawer and go to bed.</p>
+<<else>>
+<p>I hold them up. They're small. Delicate. Meant for a body that isn't mine. Except Lily said my hips are almost the same size as hers, which is either a comment on her hips or a comment on mine, and I'm not sure which is more unsettling.</p>
+
+<p>I open my dresser drawer and tuck them underneath the stack of boxers, out of sight. Not worn. Not thrown away. Kept, for reasons I don't examine too closely.</p>
+<</if>>
+
+<<statChange "feminization" 2>>
+<<statChange "embarrassment" 1>>
+<<set $lilyRelationship += 2>>
+<<addItem "black_lace_panties_lily">>
+<<set $lilyPantiesKept to true>>
+<<set $lilyPantiesDay3 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day3_Evening_C_Trash [day3 evening lily panties trash]
+<<nobr>>
+<p>I toss them in the trash can by my desk. They land on top of a crumpled energy drink can and an old receipt. Black lace against garbage. There. Done.</p>
+
+<p>Except twenty minutes later, lying in bed, I can see the trash can from my pillow. I can see the edge of the lace poking out. And I think about how I'm a person who throws away gifts. Even joke gifts. Even dares.</p>
+
+<p>I don't get up. I don't fish them out of the trash. But I don't fall asleep for a long time either.</p>
+
+<<statChange "resistance" 2>>
+<<set $lilyRelationship += 1>>
+<<set $lilyPantiesDay3 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
