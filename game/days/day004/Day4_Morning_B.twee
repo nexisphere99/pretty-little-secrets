@@ -1,0 +1,46 @@
+:: Day4_Morning_B [day4 morning evelyn heels]
+<<nobr>>
+<<centerImage "image/events/kitchen.png">>
+<<set $currentLocation to "events/kitchen">>
+
+<p>Evelyn is waiting for me in the kitchen, tea in front of her, posture as upright as ever. Arranged in a neat row on the table: three pairs of high heels.</p>
+
+<p>Nude pumps, classic and understated, a three-inch heel tapered but not extreme. Black stilettos, four inches, thin as a knife, patent leather that reflects the kitchen light in liquid pools. And red patent leather heels, the color of arterial blood, three and a half inches, the toe so shiny I can see a warped reflection of my own face in the curve of it.</p>
+
+<<dialog "Evelyn" "I need these polished. The patent leather ones need the cream, not the polish. The nude ones get both. Be gentle with the stilettos &mdash; the heel tips are replaceable but I'd rather not replace them.">>
+
+<p>She sits back. Crosses her legs. Watches.</p>
+
+<p>I pick up the nude pumps first. Heavier than I expected, the leather supple, molded to the shape of Evelyn's feet &mdash; I can see the faint impressions of her toes in the lining. I work the polish in circles the way you'd wax a car, feeling the shoe warm under my hands. There's an intimacy to this I wasn't prepared for. These shoes have been on her body, carried her weight. Holding them is holding a piece of her. My cock stirs in the panties. I shift and keep polishing.</p>
+
+<p>The stilettos are next, cold under the conditioning cream, glass-smooth. Held at arm's length, the black surface reflects my face back at me, elongated, unrecognizable. The heel is sharp enough to draw blood if you weren't careful.</p>
+
+<p>The red ones last. My hands shake slightly picking them up. They're shoes, leather and glue and a steel shank in the heel. But they're also red and shiny and they smell like Evelyn, and they look like the kind of thing a woman puts on when she wants the world to look at her feet and think about what those feet could do.</p>
+
+<p>I apply the cream. Buff. The shine comes up like a sunrise.</p>
+
+<<dialog "Evelyn" "You have gentle hands. Those shoes cost more than your monthly allowance. But you treat them like they deserve to be treated. That's rare.">>
+
+<p>She inspects each pair, turning them in the light like a jeweler examining gems. The red ones she holds longest, finding her own reflection in the patent leather.</p>
+
+<<dialog "Evelyn" "Perfect. Allowance bonus.">>
+
+<p>She slides a twenty across the table. My fingers smell like shoe polish, leather, and the faintest ghost of her perfume, transferred from the lining to my skin. The red heels gleam between us, waiting for feet to fill them.</p>
+
+<p>Evelyn meets my eyes. Holds the gaze. Three seconds. Four. Five.</p>
+
+<<dialog "Evelyn" "Someday, I'll teach you what those feel like from the inside.">>
+
+<p>She collects the shoes and leaves, heels clicking on the hardwood, a rhythm I know by heart. I sit at the table smelling leather, thinking about what "inside" means, and knowing, in the part of me that's been adjusting and not fighting for four days now, exactly what she meant.</p>
+
+<<statChange "feminization" 2>>
+<<statChange "obedience" 2>>
+<<set $money += 20>>
+<<set $evelynRelationship += 3>>
+<<set $heelsPolished to true>>
+<<set $evelynSomeday to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

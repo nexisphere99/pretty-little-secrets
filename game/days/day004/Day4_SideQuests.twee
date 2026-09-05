@@ -1,0 +1,119 @@
+:: Day4_SQ_Ali [day4 sidequest neighborhood ali]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>I stop at Ali's for a Gatorade. He's on a new crossword.</p>
+
+<p><strong>"Eight letters. 'Complete change of character or form.' Starts with M."</strong></p>
+
+<p>I think. "Makeover?"</p>
+
+<p><strong>"That's eight! Let me check&#8230; M-A-K-E-O-V-E-R. The intersections work. Makeover. Good word."</strong> He tears off my discount strip. <strong>"Your vocabulary is improving."</strong></p>
+
+<p>"Or just my luck."</p>
+
+<p><strong>"In my experience, luck and vocabulary grow from the same soil."</strong> He bags my Gatorade. <strong>"You look different today. Something about the eyes. More&#8230; awake."</strong></p>
+
+<p>"Just tired."</p>
+
+<p><strong>"No, awake is different from rested. Awake means you're seeing things you weren't seeing before. Noticing. Taking in. The world doesn't change. Only the eyes do."</strong></p>
+
+<p>Ali charges me for the Gatorade but slides a chocolate bar into the bag without adding it to the total.</p>
+
+<p><strong>"For the road. A man in the middle of a makeover needs his energy."</strong></p>
+
+<p>I'm halfway home before I register what he said. A man in the middle of a makeover. He said it like it was obvious. Like it was already filled in on his crossword, in pen, permanent.</p>
+
+<<set $aliFamiliarity += 1>>
+<<set $aliCrosswordDay4 to true>>
+<<set $money -= 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day4_SQ_Henderson [day4 sidequest neighborhood henderson]
+<<nobr>>
+<<centerImage "image/events/street.png">>
+
+<p>Mr. Henderson is out front, same as always, hose in hand, Orioles cap in place.</p>
+
+<<dialog "Alex" "Morning, Mr. Henderson.">>
+
+<p><strong>"Morning, son! Off to work?"</strong></p>
+
+<p>"Something like that."</p>
+
+<p><strong>"Good man. Hard worker. I can tell by the way you walk."</strong> He adjusts his cap. <strong>"You're walking different lately, you know. More&#8230; I dunno. Smooth. Like your mother used to walk."</strong></p>
+
+<p>He means Evelyn. He's always called her my mother even though she's my stepmother, because to Henderson the distinction doesn't matter. What matters is family and lawns and tradition.</p>
+
+<p>But he said I walk like Evelyn. Like the woman who's been teaching me to carry trays and polish heels and move with intention. And he noticed.</p>
+
+<p>If anyone else said this, I'd spiral. But Henderson says it with such simple, uncritical warmth that it feels like a weather observation. It's partly cloudy. The lawn needs water. Alex walks like his mother. Facts without judgment.</p>
+
+<p>"Thanks, Mr. Henderson."</p>
+
+<p><strong>"You bet, son."</strong></p>
+
+<p>I walk on, thinking about my walk. About Evelyn's walk. About the fact that an old man who waters his lawn every morning can see what's happening to me, and I'm the last one to notice.</p>
+
+<<set $hendersonFamiliarity += 1>>
+<<set $hendersonChatDay4 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day4_SQ_ProjectL [day4 sidequest home lily corkboard]
+<<nobr>>
+<<centerImage "image/events/lily_bedroom.png">>
+
+<p>Lily's door is open. She's out, probably at the library or the cafe or wherever chaos goes when it's not at home. I should walk past, eyes forward, like a person with boundaries and a functioning survival instinct.</p>
+
+<p>I look.</p>
+
+<p>Her corkboard has changed since I last glimpsed it. Analytics screenshots, follower counts circled in red marker. New additions: a printout of the @prettyboykai profile, follower count highlighted, a note in Lily's handwriting &mdash; <em>"started with 12k, now 1.2M. 18 months. growth rate: insane."</em> Below it, another profile, another male-presenting person in makeup and feminine fashion, 890k followers. <em>"niche but dedicated audience. engagement rate 8.2%. This demographic is HUNGRY."</em></p>
+
+<p>Below that, a sheet of paper headed "PROJECT L." Under it, a bullet list:</p>
+
+<p><em>Subject: available<br>Features: strong (see photos)<br>Resistance: decreasing<br>Timeline: 30 days to first post<br>Revenue potential: TBD</em></p>
+
+<p>Subject. Available. Resistance: decreasing.</p>
+
+<p>I'm the subject. "L" is for Lexi &mdash; the name she's been testing in conversation, the name that will become my public feminine identity when she launches it. I read the list three times. My hands are shaking. Not from fear. From recognition. From the vertigo of seeing yourself described as a project on someone else's corkboard, reduced to features and resistance levels and revenue potential.</p>
+
+<p>I should tear the paper down. I should confront her.</p>
+
+<p>I close the door and go to my room instead, and lie on my bed staring at the ceiling, thinking about "Project L." About resistance: decreasing. About how she's right.</p>
+
+<<statChange "embarrassment" 1>>
+<<set $lilyProjectLSeen to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day4_SQ_QuietNight [day4 sidequest home quiet night]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+
+<p>I play video games. Watch some YouTube. Exist for a while in the uncomplicated space of screens and sound effects, a world where I'm in control of an avatar that does exactly what I tell it and never wears panties and never carries purses and never has its toenails painted red while its girlfriend calls it a good girl.</p>
+
+<p>Later I go to bed in boxers. Regular cotton boxers. I put whatever lace I've been wearing in the drawer and choose boxers because I can, because choosing them feels like a small act of reclamation &mdash; a tiny flag planted on the hill of my masculinity.</p>
+
+<p>The boxers feel wrong. Loose. Shapeless. Like wearing a paper bag after wearing silk.</p>
+
+<p>I keep them on anyway. Some battles are fought with fabric.</p>
+
+<<statChange "resistance" 2>>
+<<statChange "confidence" 1>>
+<<set $quietNightDay4 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

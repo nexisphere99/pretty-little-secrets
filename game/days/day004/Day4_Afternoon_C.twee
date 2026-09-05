@@ -1,0 +1,58 @@
+:: Day4_Afternoon_C [day4 afternoon evelyn tray]
+<<nobr>>
+<<centerImage "image/events/kitchen.png">>
+<<set $currentLocation to "events/kitchen">>
+
+<p>The tea tray is a weapon of psychological warfare. Silver, loaded with bone china and a pot of Earl Grey and biscuits fanned on a small plate, and when Evelyn is watching you carry it, six pounds feels like ten thousand.</p>
+
+<<dialog "Evelyn" "Carry it properly. Slow. Deliberate. Don't rush. You're not running a relay, Alex.">>
+
+<p>I lift the tray. My arms lock rigid, elbows jutting at angles an orthopedist would weep at.</p>
+
+<<dialog "Evelyn" "No. Elbows in. Wrists level. The tray is an extension of your body, not a thing you're fighting with.">>
+
+<p>I adjust. The teacups rattle.</p>
+
+<<dialog "Evelyn" "Walk.">>
+
+<p>Kitchen to living room. Eight steps. Each one a performance. Evelyn watches with the critical intensity of a ballet instructor, cataloging every misstep.</p>
+
+<<dialog "Evelyn" "Stop. Turn around. Do it again.">>
+
+<p>I do it again.</p>
+
+<<dialog "Evelyn" "Your walk is terrible. You shuffle. Your feet barely leave the floor. A person of quality moves with intention.">>
+
+<p>She demonstrates, taking the tray herself and walking the same eight steps. Heel, toe. Heel, toe. The cups don't rattle. The tea doesn't ripple. She moves like gravity made a special arrangement with her that doesn't apply to the rest of us.</p>
+
+<<dialog "Evelyn" "Your turn.">>
+
+<p>I take the tray back. Heel, toe. The cups rattle. The tea sloshes. A biscuit slides.</p>
+
+<<dialog "Evelyn" "Again.">>
+
+<p>Again. Better. The rattle quiets. My steps lengthen. My spine straightens without being told. My chin lifts. My hips, trained by Vanessa's cafe lessons, find a rhythm that transfers weight smoothly from step to step.</p>
+
+<<dialog "Evelyn" "Adequate. We'll work on it.">>
+
+<p>I set the tray down. My arms ache. My calves ache. I've been walking eight steps back and forth for an hour and my body feels like I ran a marathon.</p>
+
+<p>Then I realize what just happened. I spent an hour learning to walk like my stepmother and didn't question it once. Not when she demonstrated the heel-toe pattern. Not when I mirrored a woman's walk, internalizing a woman's posture, building a woman's muscle memory into my legs and my spine and my hips.</p>
+
+<<dialog "Evelyn" "You're improving. Tomorrow, we'll add the mirror.">>
+
+<p>"The mirror?"</p>
+
+<p>She touches my chin, turning my face toward her, fingers cool, eyes measuring.</p>
+
+<<dialog "Evelyn" "You need to see yourself. See what I see. There's potential here, Alex. Raw material. You just need&#8230; shaping.">>
+
+<<statChange "obedience" 3>>
+<<statChange "feminization" 2>>
+<<set $evelynRelationship += 3>>
+<<set $trayCarried to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

@@ -1,0 +1,93 @@
+:: Day4_Morning_C [day4 morning sleep in lily]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<<if $pantiesEquipped or $lilyPantiesKept>>
+<p>Sleep is supposed to be safe. Sleep is the one place nobody adjusts my posture or paints my nails or asks me to carry pink things in public. Sleep is mine.</p>
+
+<p>Lily doesn't agree.</p>
+
+<p>The door bangs open at ten with no knock, no warning, just the sudden violent introduction of daylight and her voice.</p>
+
+<<dialog "Lily" "Get up loser, I need your phone charger.">>
+
+<p>I'm on my back, blanket tangled around my waist, wearing a t-shirt and panties and nothing else, and the morning wood I woke up with is pressing against the silk in a way that creates an unmistakable tent under the thin blanket.</p>
+
+<p>I scramble. Both hands on the blanket, yanking it to my chest. Lily's at my desk, back turned, rummaging through the drawer. I have maybe five seconds. I grab my sweatpants off the floor and shove my legs in under the covers, a contortionist act of desperation, and swing my legs out of bed.</p>
+
+<p>My t-shirt rides up.</p>
+
+<p>Half a second, less. The hem lifts as I stand and underneath it the waistband peeks above my sweatpants. Lace. The tiny bow catching the morning light like a beacon.</p>
+
+<p>Lily's eyes catch it. Her gaze drops from my face to my waistband in a microsecond, locks onto the lace, holds there just long enough to confirm what she's seeing, then snaps back to my face. She freezes, the charger dangling from her hand, forgotten. Confusion. Recognition. Disbelief. Delight. Pure, incandescent, radioactive delight.</p>
+
+<<dialog "Lily" "Oh. My. God.">>
+
+<p>"Lily..."</p>
+
+<<dialog "Lily" "Are those the ones I gave you?">>
+
+<p>There's no correct answer. My face catches fire, not a blush, a conflagration.</p>
+
+<p>"They're comfortable," I blurt out.</p>
+
+<p>The words leave my mouth and land at her feet like a full confession wrapped in a bow. Lily leans against the doorframe, arms crossed, a grin so wide it looks structural.</p>
+
+<<dialog "Lily" "Alex is wearing my panties. Alex likes wearing panties. Alex wears panties to bed. Alex's morning wood is in panties his stepsister bought him.">>
+
+<p>"Lily, I swear to god..."</p>
+
+<<dialog "Lily" "This is the greatest day of my life.">>
+
+<p>Her phone appears, the same teleportation trick from Day 2. One second in her pocket, the next in her hand, camera open, pointed at me. I see myself on the screen: my room, my face the color of a fire engine, black lace visible above grey sweatpants.</p>
+
+<p>Flash.</p>
+
+<p>The shutter sound is the loudest thing I've ever heard.</p>
+
+<<dialog "Lily" "Don't worry. It's just for my private collection.">>
+
+<p>She disappears. Her door closes. Thirty seconds of silence, then bass. She's celebrating.</p>
+
+<p>I stand in my room in panties and sweatpants and the ruins of my dignity, thinking about that photo. About where it lives now. About Lily's "collection" and what it contains and how it grows and what she'll do with it when it reaches critical mass. My cock is still hard. Terror and shame and the rush of being seen have somehow translated into arousal that throbs against the lace with each heartbeat.</p>
+
+<p>I pull on a hoodie. Go downstairs. Eat cereal. Pretend the last five minutes didn't happen.</p>
+
+<p>But Lily's photo is out there now. In her phone. In her collection. And we both know it.</p>
+
+<<statChange "embarrassment" 5>>
+<<statChange "feminization" 3>>
+<<statChange "arousal" 2>>
+<<set $lilyRelationship += 3>>
+<<set $lilyPhotoCount += 1>>
+<<set $lilyCaughtPanties to true>>
+<<set $lilyBlackmailActive to true>>
+
+<<else>>
+<p>Sleep is supposed to be safe, and this morning it actually is. I burrow under the blanket, chase the last threads of a dream, and pretend the day hasn't started yet.</p>
+
+<p>The door bangs open at ten with no knock, no warning.</p>
+
+<<dialog "Lily" "Get up loser, I need your phone charger.">>
+
+<p>She's at my desk in a second, rummaging through the drawer, cables sliding through her fingers. I sit up, hair a disaster, blinking against the daylight she let in.</p>
+
+<p>"Take the charger. Take whatever. Let me sleep."</p>
+
+<p>She finds it, holds it up in triumph, and heads for the door. Pauses. Looks back at me, sleep-rumpled and irritated, and for once there's nothing to catch, nothing to catalog, nothing sparkling behind her eyes.</p>
+
+<<dialog "Lily" "You're no fun when there's nothing to see.">>
+
+<p>She leaves. I go back to sleep for another twenty minutes before my own guilt drags me downstairs for cereal.</p>
+
+<<statChange "resistance" 1>>
+<<set $lilyRelationship += 1>>
+<</if>>
+
+<<set $sleptInDay4 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

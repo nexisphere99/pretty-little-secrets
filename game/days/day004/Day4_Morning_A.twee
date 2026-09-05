@@ -1,0 +1,102 @@
+:: Day4_Morning_A [day4 morning cafe vanessa]
+<<nobr>>
+<<centerImage "image/events/cafe.png">>
+<<set $currentLocation to "events/cafe">>
+
+<p>Second shift. Or third, depending on when I started counting. The routine is already cutting grooves into my days. Alarm. Shower.<<if $pantiesEquipped>> Panties on, because that's what happens now &mdash; the choice made itself somewhere between Day 2 and this morning and I've stopped pretending it's temporary.<</if>> Jeans over them. T-shirt. Bus. The smell of coffee reaches me before the building does.</p>
+
+<p>Vanessa is already there. Always already there, the way furniture exists, present and immovable. Her ponytail is pulled higher today, her lipstick a shade darker, edging toward wine.</p>
+
+<<dialog "Vanessa" "You're helping with table service today. Delivery's slow. I need you on the floor.">>
+
+<p>The floor is different from delivery. Delivery is solitary, me and the e-bike and the city. Table service is exposure &mdash; face to face with people who form opinions in the space between my first step toward their table and my last.</p>
+
+<p>I take orders. I carry trays. I smile because Vanessa told me to smile.</p>
+
+<p>During a lull, she pulls me behind the counter.</p>
+
+<<dialog "Vanessa" "You're walking like a robot. All stiff. Like someone put a broomstick up your ass and you're trying to keep it there.">>
+
+<p>She moves behind me. Her hands find my hips, not my shoulders this time, fingers pressing into the bone, thumbs at the small of my back, physically tilting my pelvis forward and to one side.</p>
+
+<<dialog "Vanessa" "Walk like this. Hips lead. Not your shoulders. Not your brain. Your hips. They know where to go. Let them.">>
+
+<p>I walk. It feels obscene, like performing something private in public. My hips move in a pattern they've never made before, a lateral shift with each step that turns my march into something smoother. Something with rhythm.</p>
+
+<p>"Much better," she says, and for a disorienting second I catch our reflection in the front window &mdash; two figures walking with the same sway, one in a waitress uniform and one in jeans, the silhouette of the movement identical.</p>
+
+<p>A group of college guys takes table six around ten. Loud, confident, four of them planting a flag. I serve them lattes and a complicated iced thing with oat milk, trying the hip walk, the sway, the shoulders-back posture Vanessa drilled into me.</p>
+
+<p>One of them watches me walk away from the table. I feel it like a sunburn. When I come back with their drinks he catches my eye &mdash; good-looking in a generic way, square jaw, baseball cap &mdash; and winks.</p>
+
+<p>At me.</p>
+
+<p>I retreat to the counter, face burning. Vanessa watches the exchange with the detachment of a scientist observing rats in a maze.</p>
+
+<<dialog "Vanessa" "See? Charm works.">>
+
+<p>She walks past me toward the kitchen. As she passes, her hand comes down on my ass &mdash; not a slap, a tap, light and quick with the flat of a menu she's carrying. The contact lasts a quarter of a second. The heat of it lasts an hour.</p>
+
+<p>Between rushes she grabs my hand and examines my nails.</p>
+
+<<dialog "Vanessa" "Nice color. You do them yourself?">>
+
+<p>"My sister," I mutter, yanking my hand back.</p>
+
+<p>"Cute. I could do them better though. Remind me sometime." Sometime. A future tense that contains nail polish and Vanessa's hands and the intimacy of someone decorating your body. I file it under things that are definitely going to happen and I'm definitely not going to stop.</p>
+
+<p>Later, during another quiet stretch, she catches me faking a smile at a table and pulls me aside again.</p>
+
+<<dialog "Vanessa" "The smile is fake. A real smile starts in the eyes. Think of a moment when you felt pretty. When someone looked at you and you felt seen.">>
+
+<p>I think about Chloe's face the first time she saw me in the panties. The raw delight. The way she looked at me like I was a present she'd been waiting to unwrap.</p>
+
+<p>My face changes. The muscles around my eyes soften. Something warm. Something real.</p>
+
+<<dialog "Vanessa" "There it is. That's the one that earns tips. Remember that feeling. Call it up every time you hit the floor.">>
+
+<<set $vanessaSmileTraining to true>>
+
+<p>The guy from table six, Derek, according to the receipt I bus later, orders last and says "surprise me" with a half-smile that carries more information than the rest of the table's conversation combined. Vanessa says "make something pretty" when I tell her, and I'm not sure if she means the drink or me. I bring him a lavender latte. He sips, holds eye contact over the rim. "Perfect." Not about the drink.</p>
+
+<p>On his way out he passes close enough that I catch his cologne, and he winks again &mdash; quick, private. Vanessa slides the receipt across the counter after they leave. Fourteen dollars on a thirty-dollar tab, and in neat handwriting: <em>"Great service. Great smile. See you tomorrow?"</em></p>
+
+<<dialog "Vanessa" "Oh, he likes you. Some guys respond to the walk. Some respond to the smile. He responded to both. That's rare.">>
+
+<p>She pins the receipt to the bulletin board behind the register. First fan mail. My face is hot the rest of the shift.</p>
+
+<<set $derekMet to true>>
+
+<<if $okonkwoMet>>
+<p>Mrs. Okonkwo is at her window table again, same latte, a different book with a dark cover and gold lettering. When I bus her table she looks up.</p>
+
+<p><strong>"Posture's better today. You're still leading with your shoulders but your hips are starting to figure it out."</strong></p>
+
+<p>"Thanks, I think?"</p>
+
+<p><strong>"It's a compliment. My daughter-in-law moves like you're starting to. Professional dancer before she married my son. She says the hips are the center of everything &mdash; expression, power, intention. All of it starts there."</strong></p>
+
+<p><strong>"You remind me of her, actually. Same energy. Same potential."</strong></p>
+
+<p>She goes back to her book. I'm left standing there with dirty cups and the knowledge that a sixty-year-old woman just compared me to her daughter-in-law and meant it entirely as a compliment.</p>
+<</if>>
+
+<p>End of shift. Tips: twenty-eight dollars, more than yesterday. Vanessa adjusts my collar again, the same signature touch, a stamp of ownership so subtle I barely register it anymore. Which is, of course, the point.</p>
+
+<<dialog "Vanessa" "Same time tomorrow.">>
+
+<p>Not a question.</p>
+
+<<statChange "feminization" 2>>
+<<statChange "obedience" 2>>
+<<statChange "arousal" 1>>
+<<set $money += 28>>
+<<set $vanessaRelationship += 3>>
+<<set $vanessaButtTap to true>>
+<<set $cafeShiftDay4 to true>>
+<<set $cafeShiftCount += 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

@@ -1,0 +1,31 @@
+:: Day4_Evening_A_Refuse [day4 evening lily blackmail refuse]
+<<nobr>>
+<p>"No."</p>
+
+<p>She blinks. Not shocked. Recalibrating.</p>
+
+<<dialog "Lily" "No?">>
+
+<p>"No clip. No deal. And if you post that photo, I'll tell Evelyn you've been selling my photos online."</p>
+
+<<dialog "Lily" "I haven't been selling&#8230;">>
+
+<p>"She doesn't know that. And she'll believe me over you because I'm the one who polishes her heels and says 'Yes, Ma'am,' and you're the one who slurps soup at her table."</p>
+
+<p>Lily stares at me. For once, the grin is gone. In its place, something more complex. Surprise. And maybe, underneath, a flicker of respect.</p>
+
+<<dialog "Lily" "Fine. But that photo's getting pretty lonely in my gallery. It could use some company.">>
+
+<p>She walks toward the hallway. Pauses.</p>
+
+<<dialog "Lily" "Think about it, Alex. The clip is easier than the alternative.">>
+
+<p>She's right. It is easier. That's what scares me.</p>
+
+<<statChange "resistance" 3>>
+<<set $lilyRelationship += 1>>
+<<set $lilyBlackmailRefused to true>>
+<<set $lilyNextBlackmail to $day + 3>>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

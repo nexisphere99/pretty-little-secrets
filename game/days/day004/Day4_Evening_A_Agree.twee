@@ -1,0 +1,31 @@
+:: Day4_Evening_A_Agree [day4 evening lily blackmail agree]
+<<nobr>>
+<p>"Fine."</p>
+
+<p>She lights up. Not surprised, delighted &mdash; she already knew I'd agree. The asking was a formality, like a judge reading a sentence that was decided before the trial began.</p>
+
+<p>She pulls the clip from her pocket. Already had it ready. A sparkly pink butterfly, small enough to be almost subtle, obvious enough that anyone who looked at my hair would see it. She holds it out between two fingers like an offering at an altar.</p>
+
+<<dialog "Lily" "Wear it all day tomorrow. All day. Morning to night. I'll know if you take it off. And I'll know if you lie.">>
+
+<p>I take the clip. It weighs nothing. It weighs everything.</p>
+
+<<dialog "Lily" "Good boy.">>
+
+<p>The words land differently from Lily than from Chloe. Chloe says it like a reward. Lily says it like a leash snapping tight. Both make my cock twitch. I hate that both make my cock twitch.</p>
+
+<p>She walks away. Stops in the doorway. Looks back.</p>
+
+<<dialog "Lily" "This is going to be fun. For me, I mean. For you it's going to be educational.">>
+
+<p>She disappears. Bass kicks in. The clip sits in my palm. Sparkly pink butterfly. Tomorrow's homework.</p>
+
+<<statChange "obedience" 3>>
+<<statChange "embarrassment" 2>>
+<<set $lilyRelationship += 3>>
+<<set $hairClipQuest to true>>
+<<set $hairClipDay to $day + 1>>
+<<set $lilyBlackmailCompliance += 1>>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

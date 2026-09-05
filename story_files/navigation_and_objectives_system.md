@@ -107,6 +107,33 @@ state read by later days/arcs, not by the task widgets), and
 `$taraStorySeenDay2` (set by `Day2_Night`, not a task at all - see §5's
 note on `<<dayPlanContent>>`/embedded content below).
 
+Day-3-specific flags, same idea: `$evelynClosetDay3`, `$scarfMoment`,
+`$lilyPhotographyDone`, `$softFeaturesMentioned`, `$dinnerDay3`,
+`$chloeCallDay3`, `$prettyMentioned`, `$lilyPantiesDay3`,
+`$lilyPantiesKept` (Home); `$chloeParkDay3`, `$purseCarried`,
+`$firstPublicFem`, `$delgadoPurseSeen`, `$aliCrosswordDay3`
+(Neighborhood - the Day 3 Chloe content moved here, not Chloe's
+Apartment, see §5); `$cafeJobStarted`, `$cafeShiftCount`,
+`$vanessaPostureTraining`, `$cafeUniformTried`, `$okonkwoMet`,
+`$ravenMet`, `$mallWalkDay3`, `$boutiqueNecklaceSeen` (Downtown); plus
+BBC-gated `$marcusDeliveryFlag`/`$marcusNameKnown`/`$bbcAtmospheric`
+(read by later days' BBC content, not by any task widget).
+
+Day-4-specific flags: `$heelsPolished`, `$evelynSomeday`,
+`$trayCarried`, `$sleptInDay4`, `$lilyEveningDay4`,
+`$lilyProjectLSeen`, `$quietNightDay4` (Home); `$aliCrosswordDay4`,
+`$hendersonChatDay4` (Neighborhood); `$chloeToenailsDay4` (Chloe's);
+`$cafeShiftDay4`, `$downtownWalkDay4` (Downtown); plus consequence
+state not read by any task widget: `$lilyCaughtPanties`/
+`$lilyBlackmailActive`/`$lilyBlackmailCompliance`/
+`$lilyBlackmailRefused`/`$lilyNextBlackmail`/`$hairClipQuest`/
+`$hairClipDay` (set inside `Day4_Morning_C` and the `Day4_Evening_A*`
+choice, read by future days), `$firstGoodGirl`/`$chloeOralDay4`
+(Chloe's first "good girl," a deliberate escalation beat), and
+`$evelynLaundryFlag`/`$evelynAwareness` (the random laundry-discovery
+event embedded directly in `Day4_Night`, not a task at all - see its
+note in §5).
+
 These are plain booleans (mostly), one per task, checked by the
 per-location task widgets (§5) to render the done/available state.
 
@@ -272,7 +299,7 @@ line breaks inside a widget body are actively dangerous.
 is `DailyHub`, which is what everything actually links to now. Consider
 renaming the file itself if it's ever confusing.)
 
-The whole thing is one `<<if $day is 1>>...<<elseif $day is 2>>...<<elseif $day is 3>>...<<else>>...<</if>>` at the top level. Each day-branch follows the same shape below (same `<<startDay>>` call → forced-sleep check → first-visit intro → location view → `<<lateWarning>>` → `<<locationTasks>>` → travel links); only the intro paragraph text, location-view flavor text, and which locations/travel links are available differ per day. Day 1 has three reachable locations (Home, Neighborhood, Chloe's - Downtown is present on the map but locked). From Day 2 on, a fourth location (`"town"`, displayed as "Downtown") is added to both the location-view `if/elseif` and the travel-links `if/elseif` - reachable only from Neighborhood ("Walk downtown"), with "Head back home" available directly from Downtown too as a convenience shortcut. The `<<else>>` "hasn't been authored yet" placeholder (step 8 below) now fires for `$day >= 4` and includes a `.version-note` block with the current version badge and a Patreon link - bump the version text here each time a new day ships.
+The whole thing is one `<<if $day is 1>>...<<elseif $day is 2>>...<<elseif $day is 3>>...<<elseif $day is 4>>...<<else>>...<</if>>` at the top level. Each day-branch follows the same shape below (same `<<startDay>>` call → forced-sleep check → first-visit intro → location view → `<<lateWarning>>` → `<<locationTasks>>` → travel links); only the intro paragraph text, location-view flavor text, and which locations/travel links are available differ per day. Day 1 has three reachable locations (Home, Neighborhood, Chloe's - Downtown is present on the map but locked). From Day 2 on, a fourth location (`"town"`, displayed as "Downtown") is added to both the location-view `if/elseif` and the travel-links `if/elseif` - reachable only from Neighborhood ("Walk downtown"), with "Head back home" available directly from Downtown too as a convenience shortcut. The `<<else>>` "hasn't been authored yet" placeholder (step 8 below) now fires for `$day >= 5` and includes a `.version-note` block with the current version badge and a Patreon link - bump the version text (and the `$day >= N` guard) here each time a new day ships.
 
 Render order, every time `DailyHub` is visited (per day-branch):
 
@@ -474,3 +501,4 @@ These cost real debugging time and will bite again if forgotten:
 | `game/days/day001/*.twee` | Day 1's task passages, each following the contract in §8. |
 | `game/days/day002/*.twee` | Day 2's task passages. Same contract as Day 1. Notable files: `Day2_Afternoon_A*` + `Day2_Chloe_OralSex` (the Chloe branch, including the obey-vs-redirect choice point - see §8's note on choice points), `Day2_Afternoon_C*` (Lily's nail-painting accept/refuse), `Day2_SideQuests.twee` (Ali/closet/wardrobe). |
 | `game/days/day003/*.twee` | Day 3's task passages. Introduces no new location - the cafe, Kinky Kitty, and the mall all live at the existing `"town"` node (established Day 2), and the Chloe park picnic was placed under `"neighborhood"` rather than `"chloe"` since Oakdale Park is physically a neighborhood location, not her apartment (meaning `chloeTasks`' Day 3 branch has no tasks at all - see the `<<else>>`-with-a-message pattern note below). Notable files: `Day3_Morning_A` (the cafe shift, with the BBC-gated Marcus delivery embedded inline via `<<if $bbcEnabled>>`, not a separate passage), `Day3_Afternoon_A*` (the park/purse scene, its own obey-vs-refuse choice point, each branch embedding Mrs. Delgado's differing reaction), `Day3_Morning_B` (Evelyn's closet/scarves - the `$yesMaamAccepted` warm path is from the source material, the dishes-adjacent cold-path `<<else>>` is invented, since the source only wrote the warm outcome), `Day3_SideQuests.twee` (Ali/Okonkwo/uniform - the latter two locked behind `$cafeJobStarted`). |
+| `game/days/day004/*.twee` | Day 4's task passages. Also introduces no new location - Downtown's cafe shift and free-roam walk (Sophia/Jamal/Zara/Pulse, all embedded inline in one passage rather than split into separate side-quest files, since the source treats them as automatic sub-encounters within the same walk) continue to live at `"town"`; Chloe's toenail-painting scene is back under `"chloe"` (unlike Day 3). Notable files: `Day4_Morning_A` (cafe shift - Vanessa's hip-sway/butt-tap/smile-training plus the Derek and Mrs. Okonkwo-follow-up encounters, all embedded inline, `$okonkwoMet`-gated), `Day4_Morning_C` (the sleep-in/Lily-panty-discovery scene - the mid-task branch here is not a player choice but a state check on `$pantiesEquipped or $lilyPantiesKept`, and it's the one that sets `$lilyCaughtPanties`/`$lilyBlackmailActive` read by `Day4_Evening_A`), `Day4_Afternoon_A` + `Day4_Chloe_Sex`/`Day4_Chloe_NoSex` (toenail painting into a player-chosen sex/no-sex mid-task branch, same contract pattern as Day 2's Chloe scene - see §8), `Day4_Evening_A` + `Day4_Evening_A_Agree`/`Day4_Evening_A_Refuse` (the hair-clip blackmail choice, only offered when `$lilyBlackmailActive`; the top-level passage sets its done flag and spends time up front regardless of branch, exactly like the Chloe pattern), `Day4_Night` (embeds two automatic, non-task scenes directly in the night passage rather than as side quests: the BBC-gated Pulse Instagram ad, and a randomized Evelyn-finds-the-panties-in-laundry event via `random(1, 10)`, both one-time via their own flags). |

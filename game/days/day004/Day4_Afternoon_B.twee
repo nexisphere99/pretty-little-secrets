@@ -1,0 +1,66 @@
+:: Day4_Afternoon_B [day4 afternoon downtown freeroam]
+<<nobr>>
+<<centerImage "image/events/city.png">>
+<<set $currentLocation to "events/city">>
+
+<p>I walk. No destination, just moving. Downtown swallows me into its noise and crowd and the comfortable anonymity of being nobody special in a city full of nobodies.</p>
+
+<p>I pass the yoga studio. Serene Yoga, windows glowing with afternoon light, and through the glass I can see Sophia leading a class in emerald green, her body moving through poses with that liquid ease I'm learning to associate with her. She spots me, waves, mouths "come in!" with a smile so warm it reaches me through the glass. I shake my head and keep walking. But my feet slow. And I look back once.</p>
+
+<<if $bbcEnabled>>
+<p>Two blocks past the studio: Iron Temple, a serious lifter's gym, exposed brick and iron plates and a vibe that says if you have to ask, you can't hang. A big dude is out front, stretching &mdash; tall, medium-dark skin, locs tied back, a tank top showing arms defined from use rather than display. He looks up as I pass. Easy smile.</p>
+
+<p><strong>"What's up, man."</strong></p>
+
+<p>"Hey."</p>
+
+<p>Normal guy interaction. A nod between strangers. Except something about the way he moved stays in my head for a block. Two blocks. The easy confidence of his body, the casual, unthinking authority of a man who is large and knows it and doesn't need to prove it.</p>
+
+<p><strong>"You work out?"</strong> he asks.</p>
+
+<p>"I jog sometimes."</p>
+
+<p><strong>"Jogging's good. I do personal training on the side. First session's free."</strong> He pulls a card from his pocket, hands it over. <em>Jamal Williams, CPT. Personal Training &amp; Wellness.</em> His fingers brush mine during the handoff, warm, large enough to make my hand look childlike by comparison.</p>
+
+<p><strong>"I'm around most afternoons. Just ask for me."</strong></p>
+
+<p>"Thanks. I'll think about it."</p>
+
+<p><strong>"You do that, pretty boy."</strong> Tossed off over his shoulder, already walking back toward the gym door.</p>
+
+<p>Pretty boy. The second person today to call me some variation of pretty. Different context, different person, same word Chloe used on the phone, the word Lily's photographs are slowly proving true. I walk home fast. The card burns in my pocket like a coal.</p>
+
+<<set $jamalPreIntro to true>>
+<<set $bbcCuriosity += 1>>
+<</if>>
+
+<p>Further down the strip, between Kinky Kitty and the gym, a black-facade building with a chrome sign catches the afternoon light: PULSE, a heartbeat line running through the letters. <em>Reopening Night: Friday. 21+ with ID. Ladies free.</em> Dormant during the day but radiating something even silent, the building equivalent of a sleeping tiger.</p>
+
+<p>A woman is taping a flyer to the door &mdash; tall, dark-skinned, gold dress, braids to her waist. She catches me looking and pulls one from her stack.</p>
+
+<<dialog "Zara" "Hey, cutie. You 21?">>
+
+<p>"Nineteen."</p>
+
+<p>She looks me up and down, the same evaluating gaze I'm getting from everyone this week.</p>
+
+<<dialog "Zara" "Hmm. Well, we might make exceptions for the right people. I'm Zara. I do promotions for the club. Tell your friends.">>
+
+<p>The flyer is glossy. <em>Ladies Night Every Friday. VIP Available. DJs. Dancing. The Night Is Yours.</em> The photo shows the interior, dark and neon and packed with bodies.</p>
+
+<p>"Thanks," I say, pocketing it.</p>
+
+<<dialog "Zara" "See you around, cutie.">>
+
+<p>She winks. A different wink than Derek's from the cafe. Derek's was curious. Zara's is an invitation to a party that hasn't started yet.</p>
+
+<<set $zaraMet to true>>
+<<set $zaraFlyer to true>>
+
+<<statChange "confidence" 1>>
+<<set $downtownWalkDay4 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

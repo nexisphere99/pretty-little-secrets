@@ -1,0 +1,52 @@
+:: Day4_Evening_A [day4 evening lily]
+<<nobr>>
+<<centerImage "image/events/kitchen.png">>
+<<set $currentLocation to "events/kitchen">>
+<<set $lilyEveningDay4 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<if $lilyBlackmailActive>>
+<p>She finds me in the kitchen after dinner. I'm loading the dishwasher, back to the door, and I hear her arrive before I see her &mdash; combat boots on hardwood, the jangle of chains on her belt.</p>
+
+<<dialog "Lily" "So.">>
+
+<p>I close the dishwasher. Turn around. She's leaning against the counter, phone in hand, screen angled away from me, pink hair falling across one eye. The other eye is sparkling with a light I've learned to associate with danger and entertainment, two things that are the same to Lily.</p>
+
+<<dialog "Lily" "I was thinking.">>
+
+<p>She turns the phone over. The screen lights up. It's the photo. Me. Morning. Red face. Sweatpants. The lace waistband peeking above the elastic, unmistakable.</p>
+
+<p>My stomach drops through the floor.</p>
+
+<<dialog "Lily" "I might post that photo.">>
+
+<p>Post it where? Instagram? TikTok? She has followers. She has reach. One post, one caption, and my life as I know it is over. School. Chloe. Evelyn. Everyone would know.</p>
+
+<p>She watches my face drain of color with the satisfaction of someone who's spent all day planning this exact moment.</p>
+
+<<dialog "Lily" "Relax. I won't. Probably.">>
+
+<p>"Probably?"</p>
+
+<<dialog "Lily" "Unless. I just want you to wear a hair clip tomorrow. The pink one from my room. Just around the house. Nobody sees except us.">>
+
+<p>A hair clip. That's it. A small piece of plastic that holds hair back. Something girls wear. Something I've never worn. But we both know what it really is. It's a test. A trade. I give you obedience, you give me silence. I comply, you don't destroy me.</p>
+
+<p>It's the first domino.</p>
+
+<<link "Agree to wear the hair clip" "Day4_Evening_A_Agree">><</link>><br>
+<<link "Refuse and counter-threaten" "Day4_Evening_A_Refuse">><</link>>
+
+<<else>>
+<p>Lily wants to hang out. She flops onto the kitchen counter and shows me a string of TikToks on her phone, narrating each one with the running commentary of someone who has opinions about everything and no filter for expressing them.</p>
+
+<<dialog "Lily" "Okay but THIS one. Watch the ending. It's unhinged.">>
+
+<p>We laugh. It's easy, uncomplicated, the version of Lily that exists when she isn't collecting leverage. For a few minutes I forget the corkboard and the camera and the way half our conversations lately have felt like negotiations.</p>
+
+<<set $lilyRelationship += 1>>
+
+<<link "Continue" "DailyHub">><</link>>
+<</if>>
+<</nobr>>

@@ -1,0 +1,64 @@
+:: Day4_Chloe_Sex [day4 afternoon chloe sex oral denial]
+<<nobr>>
+<p>I stand beside the bed. My hands go to my button. I unzip, push the denim down. The panties are right there, straining over my cock, which has been hardening since she first touched my feet. A dark wet spot marks the tip where I've been leaking steadily for twenty minutes.</p>
+
+<p>Chloe sits on the edge of the bed and traces one finger along the waistband, down the front, over the ridge of my cock, along the underside, back up.</p>
+
+<<dialog "Chloe" "You're so hard. Four days in panties and you're leaking like a faucet. What does that tell you?">>
+
+<p>I don't answer because the answer terrifies me.</p>
+
+<p>She lies back, pulls her shorts off in one smooth motion. No underwear. She spreads her legs and I can smell her, musky and warm and alive, the scent imprinted on my brain since the first time I went down on her, triggering an immediate response: my mouth waters, my jaw opens, my body leans forward before my brain gives permission.</p>
+
+<<dialog "Chloe" "Come here. On your knees. Between my legs. You know where you belong.">>
+
+<p>I kneel at the edge of the bed. She hooks her calves over my shoulders.</p>
+
+<<dialog "Chloe" "Show me what my good girl can do.">>
+
+<p>Good girl.</p>
+
+<p>Not good boy. Good girl. The word lands in my chest like a coin in deep water and sinks all the way to the bottom.</p>
+
+<<set $firstGoodGirl to true>>
+
+<p>My mouth finds her. I press my lips to her slit and taste salt and heat and Chloe. My tongue parts her, sliding upward, and she gasps, hips lifting, fingers finding my hair.</p>
+
+<p>"Mmmm. Yesss. Right there. Lick me. Lick me like a good girl."</p>
+
+<p>I circle her clit. Slow, precise, matching the tempo of her breathing which is getting shallower, faster. My cock is screaming, every pulse straining harder against the silk, the friction maddening, a constant low-grade stimulation that keeps me on the edge without getting anywhere near over it.</p>
+
+<p>"Don't you dare stop. I'm so close. Make me come, you pretty little&#8230; aaahhhHHH&#8230;"</p>
+
+<p>She comes hard, her whole body rigid, legs clamping my head in a vice, hands pulling my hair hard enough to make my eyes water. I keep licking, softer, riding the aftershocks, swallowing everything she gives me.</p>
+
+<p>She pulls me up onto the bed. My cock tents the panties, a dark wet stain at the tip. She wraps her hand around me through the silk. One stroke. Two. My hips buck. A whimper comes out of me, small and desperate and utterly undignified.</p>
+
+<p>"Nnnhhh&#8230; Chloe, please&#8230;"</p>
+
+<p>"Please what, baby?"</p>
+
+<p>"I need to come. Please."</p>
+
+<p>She holds my eyes. Green into brown. She owns this moment. She owns my body. She owns the orgasm building in my cock like a storm behind a dam. She could let it go with one more stroke. She could deny it with one word.</p>
+
+<p>She lets go.</p>
+
+<<dialog "Chloe" "Not today. Good girls earn their rewards over time. You're doing so well. But not today.">>
+
+<p>I lie beside her, cock throbbing in wet silk, jaw aching, toenails red, lips tasting like her. Somewhere in the distance Lily's photo exists on a phone. Somewhere in this city, Evelyn's heels are drying on a kitchen table. Somewhere inside me, the word "girl" is settling into a space that doesn't reject it anymore.</p>
+
+<<dialog "Chloe" "Wear the panties tonight. Don't touch yourself. And think about how pretty your toes look in red.">>
+
+<p>I put on my jeans, my socks over the red toenails, and ride the bus home with an erection that doesn't soften for twenty minutes and a taste in my mouth that won't wash away for hours.</p>
+
+<<statChange "arousal" 3>>
+<<statChange "obedience" 2>>
+<<statChange "feminization" 2>>
+<<set $chloeRelationship += 3>>
+<<set $chloeOralDay4 to true>>
+<<set $deniedOrgasm += 1>>
+<<set $currentMapLocation to "chloe">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

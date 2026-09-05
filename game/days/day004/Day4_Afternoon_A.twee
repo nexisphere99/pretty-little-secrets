@@ -1,0 +1,56 @@
+:: Day4_Afternoon_A [day4 afternoon chloe toenails]
+<<nobr>>
+<<centerImage "image/events/chloe_home.png">>
+<<set $currentLocation to "events/chloe_home">>
+
+<p>Chloe opens the door in a cropped tank top and shorts so small they qualify as suggestions. Her hair is wet from a shower, hanging in dark ropes over her shoulders.</p>
+
+<<dialog "Chloe" "I have plans for us.">>
+
+<p>She pulls me inside by my wrist, not my hand. The hand is partnership. The wrist is ownership.</p>
+
+<p>She leads me to the bathroom. Her vanity is cleared of its usual clutter and in its place: a row of nail polish bottles arranged by color, cotton balls, acetone, cuticle oil, and a towel spread on the floor with a cushion on top.</p>
+
+<<dialog "Chloe" "Sit on the edge of the tub. Give me your feet.">>
+
+<p>My shoes come off. My socks come off. My bare feet are in Chloe's lap, her hands wrapping around my ankle, her thumb pressing into the arch in a way that makes my toes curl involuntarily.</p>
+
+<<if $toenailsPainted and $toenailColor is "black">>
+<p>She looks at the chipped black remnants and wrinkles her nose.</p>
+
+<<dialog "Chloe" "Black? Who did this? Whoever did this used drugstore polish. I can tell by the streaking. Hold still.">>
+
+<p>She strips it away in practiced strokes, acetone stinging the air, revealing my bare nails underneath.</p>
+<</if>>
+
+<p>She reaches for the red. Not the pink, not the coral. Bright, arterial, unmistakable red &mdash; the same shade as Evelyn's patent leather heels, though I don't make the connection yet. I will, later, lying in bed, and the parallel will make me dizzy.</p>
+
+<p>Her brush touches my big toenail. Cold, wet, spreading in a smooth wave from cuticle to tip. She works with the concentration of a surgeon, blowing on my toes between coats, her breath sending shivers up through my ankles, my calves, my thighs, arriving in my groin as a spreading heat.</p>
+
+<<dialog "Chloe" "This is just for us. Your secret. Under your socks, nobody sees. But YOU know. And I know. And that makes it special.">>
+
+<p>Special. Secret. Collection. Words that build walls around what we're doing, walls that separate inside from outside, the person I am in this bathroom from the person I am in the world.</p>
+
+<p>Both feet done. Ten red toenails gleaming under the bathroom light. They look alien. They look beautiful. They look like they belong to someone I'm becoming, someone who exists in the space between Chloe's "good boy" and Evelyn's "someday" and Lily's camera flash.</p>
+
+<p>She takes a photo. Of course she does. "For my collection," she says.</p>
+
+<p>She sits back on the cushion and looks up at me with an expression I recognize now &mdash; the one that precedes every escalation, the one that says we're about to go further and you're going to let me.</p>
+
+<<dialog "Chloe" "You've been so good. The panties. The gloss. The purse in the park. The nails now. You deserve a reward.">>
+
+<p>She stands. Takes my hand. Leads me toward the bedroom, where the fairy lights are already on.</p>
+
+<<statChange "feminization" 4>>
+<<statChange "arousal" 2>>
+<<statChange "obedience" 1>>
+<<set $chloeRelationship += 4>>
+<<set $toenailsPainted to true>>
+<<set $toenailColor to "red">>
+<<set $chloeToenailsDay4 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "chloe">>
+
+<<link "Follow her to the bedroom" "Day4_Chloe_Sex">><</link>><br>
+<<link "Stay and watch a movie instead" "Day4_Chloe_NoSex">><</link>>
+<</nobr>>

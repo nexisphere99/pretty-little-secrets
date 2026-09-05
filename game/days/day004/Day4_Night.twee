@@ -1,0 +1,66 @@
+:: Day4_Night [day4 night reflection]
+<<nobr>>
+<<centerImage "image/events/sleep.png">>
+<<set $phase to "night">>
+<h2>Night</h2>
+
+<<if $bbcEnabled and !$pulseAdSeen>>
+<p>At home, scrolling Instagram, a targeted ad fills the screen: <em>Pulse Nightclub: VIP Night this Friday. Ladies drink free.</em> Dark walls, neon accents, a dance floor that looks made of polished obsidian. Behind the bar, leaning against it with the proprietary ease of someone who owns the space, a tall Black man in a fitted charcoal shirt. He's looking directly at the camera. Not posing. Just looking, with an intensity that lands somewhere in my lower abdomen. A gold watch on his wrist &mdash; the same kind I saw through a door crack once, catching the flash.</p>
+
+<p>I scroll past. My thumb hovers, for a second, maybe two, over "Learn More." Over his face. Over the watch I've now seen twice, once through a door and once through a screen, and both times the seeing has deposited something in the pit of my stomach that I refuse to examine.</p>
+
+<p>I close Instagram. I open a game. I play until my eyes burn. But when I close my eyes to sleep, the image of the gold watch flashes behind my eyelids. Just a glint.</p>
+
+<<set $bbcCuriosity += 1>>
+<<set $pulseAdSeen to true>>
+<</if>>
+
+<<if ($pantiesEquipped or $lilyPantiesKept) and !$evelynLaundryFlag>>
+<<set _laundryRoll to random(1, 10)>>
+<<set _laundryThreshold to $pantiesEquipped ? 6 : 3>>
+<<if _laundryRoll <= _laundryThreshold>>
+<p>I come downstairs for water at midnight. The house is dark except for the light under the laundry room door. Evelyn does laundry late &mdash; the house asleep, the machines humming, her alone with the fabric and the folds.</p>
+
+<p>The door is cracked. Through it I can see her hands sorting clothes on the folding table, whites and colors and darks in neat piles. Then she stops. Her hand is in my laundry pile, holding something &mdash; a thin strip of lace, and even from the hallway I can see the color.</p>
+
+<p>Evelyn holds the panties up. Examines them. Turns them over. Checks the size, the brand, the quality of the lace, the same meticulous attention she gives everything.</p>
+
+<p>Then she smirks. Not a smile. A smirk, tiny and controlled and knowing, containing an entire thesis about who I am and what I'm becoming.</p>
+
+<p>She folds them, neatly, the same fold she uses for her own silk lingerie, and sets them on top of my clean laundry, facing up, visible, unmistakable. She doesn't say anything. She doesn't need to. The folded panties say everything: I know. I've always known. And I approve.</p>
+
+<p>I back away from the door. Get my water. Go upstairs. The silence is louder than any conversation.</p>
+
+<<set $evelynLaundryFlag to true>>
+<<set $evelynAwareness += 3>>
+<</if>>
+<</if>>
+
+<p>Four days. That's all it's been. Four days since I woke up normal and went to bed normal and the space between waking and sleeping held nothing more complicated than cereal and video games.</p>
+
+<p>Four days and I'm wearing panties regularly.<<if $toenailsPainted>> Someone painted my toenails.<</if>><<if $purseCarried>> I carried a pink purse without being asked twice.<</if>> My stepmother is teaching me to walk gracefully and I'm practicing.<<if $lilyCaughtPanties>> My stepsister has a photo of me in lingerie and I'm negotiating with her about hair clips instead of deleting her phone.<</if>></p>
+
+<p>If this were someone else's life, I'd be worried about them. I'd sit them down and say hey, maybe pump the brakes. Maybe ask yourself why every woman in your life is pulling you in the same direction and you're not pulling back.</p>
+
+<p>But it's my life. And from the inside, each thing made sense when it happened. Each thing was small. A joke. A dare. A favor. A game. A pair of panties that are "just comfortable." A lip gloss that's "just a game." A purse that's "just helping." A walk that's "just refinement." A photo that's "just for a collection."</p>
+
+<p>Nothing to worry about.</p>
+
+<p>Right?</p>
+
+<p>I press my face into the pillow.<<if $firstGoodGirl>> I try not to think about the way Chloe said "good girl" today instead of "good boy," and how I didn't correct her.<</if>><<if $evelynSomeday>> About Evelyn saying "someday."<</if>><<if $lilyCaughtPanties>> About Lily's singing, her camera, her hair clip.<</if>><<if $vanessaButtTap>> About Vanessa's hand on my ass.<</if>><<if $jamalPreIntro>> About a man at a gym who called me "pretty boy" and meant it as a compliment.<</if>></p>
+
+<p>I'm trying not to think about any of it.</p>
+
+<p>Failing. At all of it.</p>
+
+<p>Day 4 ends.</p>
+
+<<statSummary>>
+
+<<link `"Sleep - end Day " + $day`>>
+  <<set $day += 1>>
+  <<set $phase to "morning">>
+  <<goto "DailyHub">>
+<</link>>
+<</nobr>>

@@ -1,0 +1,19 @@
+:: Day4_Chloe_NoSex [day4 afternoon chloe redirect]
+<<nobr>>
+<p>"Actually &mdash; can we just watch something? My feet are still tingling and I want to enjoy it for a minute before we do anything else."</p>
+
+<p>Chloe pauses in the doorway. For a second I watch her recalibrate, that quick flicker behind her eyes when a plan hits a wall it didn't expect. Then she shrugs, easy as breathing, and flops onto the bed beside me instead, pulling up something on her laptop.</p>
+
+<<dialog "Chloe" "Fine. We'll just be lazy, then.">>
+
+<p>We watch half a rom-com with her head on my shoulder and my sock-covered toes propped on the coffee table, red polish hidden but not forgotten. She traces slow circles on my thigh through the credits, not pushing further, but there's a glint in her eye when she walks me to the door, the look of someone filing this away rather than dropping it.</p>
+
+<<dialog "Chloe" "Next time, then.">>
+
+<<statChange "arousal" 1>>
+<<statChange "resistance" 2>>
+<<set $chloeRelationship += 1>>
+<<set $currentMapLocation to "chloe">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
