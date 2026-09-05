@@ -1,11 +1,20 @@
-Now we are in version 0.0.2.
+# Pretty Little Secrets — Dev Log
 
-@story_files/day_2/day2_main_quest.md 
-@story_files/day_2/day2_side_quests_npcs.md 
+## 0.0.1
+- Rebuilt Day 1 from scratch on a free-roam navigation system (replaces locked Morning/Afternoon/Evening phases).
+- Added time-budget clock, Objectives popup, Map popup, content-preference toggles.
 
-above is the day 2 content, below is file structure and navigation instruction.
+## 0.0.2
+- Added Day 2 content, through Day 2 sleep.
+- Introduced Downtown location (locked on Day 1, unlocked Day 2+).
+- Content toggles changed to a vertical list with a "Select All" checkbox.
+- Fixed: completed Chloe's-only tasks vanishing instead of showing a checkmark.
 
-@story_files/day_2/day2_code_agent_prompt.md 
-@story_files/navigation_and_objectives_system.md 
+## 0.0.3
+- Added Day 3 content, through Day 3 sleep.
+- Redesigned the map: fixed Home→Chloe's edge visually crossing the Home→Neighborhood→Downtown path, renamed "Town" to "Downtown", added Cafe/Kinky Kitty/Mall sub-nodes.
+- Added post-Day-1 "support the game" Patreon note.
 
-add this content till day 2 sleep..
+## 0.0.4
+- Added Day 4 content, through Day 4 sleep (Lily blackmail arc begins, Chloe's first "good girl," BBC-gated Jamal encounter).
+- Updated Patreon link to zaramystique_pls.
