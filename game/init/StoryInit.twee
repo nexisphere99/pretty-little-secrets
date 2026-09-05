@@ -93,6 +93,36 @@
 <<set $hormoneStarted to false>>
 <<set $nameChanged to false>>
 
+/* Day 2 flags */
+<<set $yesMaamAccepted to false>>
+<<set $evelynDishesDay2 to false>>
+<<set $sleptInDay2 to false>>
+<<set $joggedDay2 to false>>
+<<set $sophiaMet to false>>
+<<set $yogaStudioFlag to false>>
+<<set $chloeVisitedDay2 to false>>
+<<set $lipGlossApplied to false>>
+<<set $chloeOralDay2 to false>>
+<<set $deniedOrgasm to 0>>
+<<set $townExplored to false>>
+<<set $vanessaSpotted to false>>
+<<set $nicoletteSpotted to false>>
+<<set $kinkyKittyNoticed to false>>
+<<set $lilyNailsDay2 to false>>
+<<set $toenailsPainted to false>>
+<<set $toenailColor to "">>
+<<set $lilyHasNailPhoto to false>>
+<<set $lilyBlackmailPhotos to []>>
+<<set $lilyPhotoCount to 0>>
+<<set $dinnerDay2 to false>>
+<<set $chloeGoodnightDay2 to false>>
+<<set $prettyboyKaiSeen to false>>
+<<set $aliCrosswordDay2 to false>>
+<<set $aliCrosswordClue to "">>
+<<set $ridingCropSeen to false>>
+<<set $wardrobeAuditDone to false>>
+<<set $taraStorySeenDay2 to false>>
+
 /* Location unlocks */
 <<set $mallOpen to false>>
 <<set $clubOpen to false>>

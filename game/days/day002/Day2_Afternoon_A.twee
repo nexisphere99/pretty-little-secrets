@@ -1,0 +1,96 @@
+:: Day2_Afternoon_A [day2 afternoon chloe]
+<<nobr>>
+<<centerImage "image/events/chloe_home.png">>
+<<set $currentLocation to "events/chloe_home">>
+<<set $chloeVisitedDay2 to true>>
+
+<<if $pantiesAccepted>>
+<p>The bus ride is different today. I'm aware of my body in a way I wasn't before yesterday. Every bump in the road, every shift in the seat, I feel the silk adjust around me. I kept them on. I woke up this morning and looked at my boxers in the drawer and looked at the pink lace on my body and made a choice. The choice was the panties. I told myself it was because they were already on and changing seemed pointless. I know that's not the whole truth.</p>
+
+<p>Chloe buzzes me in. She opens the door in an oversized graphic tee and nothing else, her legs bare and tan, her black hair in a messy bun with loose strands framing her face. She pulls me inside by my belt loop this time, her fingers curling around the denim and tugging, possessive and casual at once.</p>
+
+<<dialog "Chloe" "Still wearing them?">>
+
+<p>She's at her vanity, a little white table cluttered with products, and she spins on the stool to face me. Her eyes drop to my jeans. She can't see through denim but she looks like she can.</p>
+
+<p>I nod.</p>
+
+<p>Her whole face brightens. Not surprise. Satisfaction. Like a gardener checking on a seed and finding it sprouted exactly on schedule.</p>
+
+<<dialog "Chloe" "Come here.">>
+
+<p>I walk over. She reaches out and hooks her fingers into my waistband, tugs me closer until I'm standing between her knees. Her thighs press against the outside of my legs. She pulls the denim down half an inch, just enough to see the waistband. Dusky pink lace against my hip bones.</p>
+
+<p>"Mmm." The sound vibrates in her throat. "Good boy."</p>
+
+<p>There it is again. That phrase. Two words that turn my brain to static. My cock responds immediately, filling against the silk, pushing the fabric taut. She watches it happen, her eyes tracking the shape of me through my jeans, and her lower lip catches between her teeth.</p>
+
+<p>She doesn't touch me there. Instead she turns back to her vanity and picks something up. A tube. Small, gold cap, clear barrel. Lip gloss.</p>
+
+<<dialog "Chloe" "Hold still.">>
+
+<p>She uncaps it with a click. The applicator comes out glossy, translucent, catching light. She brings it to my face. I should step back. I should say something. But her other hand is on my hip, her thumb pressing into the lace waistband of the panties, and the contact has short-circuited whatever part of my brain handles resistance.</p>
+
+<p>She traces the gloss across my lower lip. Slow. Deliberate. Starting at the center and pulling outward, following the shape of my mouth with the focus of an artist. The applicator is wet and cool and the gloss tastes faintly of vanilla. She does the upper lip next, more carefully, dipping into the curves. Her breathing is steady, controlled, but her pupils are dilated, the green of her irises reduced to thin rings around deep black.</p>
+
+<p>"There." She caps the tube. Studies me. Reaches up and tilts my chin with one finger, turning my face left, then right. "Look at you."</p>
+
+<p>She turns me toward the mirror.</p>
+
+<p>My reflection stares back. Brown hair, same as always. Jaw, cheekbones, eyebrows, all the same. But my lips. My lips are shiny now. Wet-looking. Soft. The light catches the gloss and turns them luminous, like they've been dipped in something precious. It's not dramatic. Not drag-queen obvious. Just... enhanced. Like someone turned up the volume on a single feature and suddenly I can't look away from my own mouth.</p>
+
+<p>My stomach does a complicated flip. Not disgust. Not excitement. Something in between. Something that doesn't have a name yet.</p>
+
+<<dialog "Chloe" "It's a fun game. Just between us.">>
+
+<p>She kisses my neck. I feel the warmth of her lips and the slight tacky pull of her own lip gloss against my skin. She turns me around and kisses me properly. The gloss smears between our mouths, hers and mine mixing, and when she pulls back her lips are glistening too and there's a thin strand of gloss connecting us for a split second before it breaks.</p>
+
+<p>She wipes her own lips clean with the back of her hand. But she doesn't wipe mine.</p>
+
+<<dialog "Chloe" "Leave it. I like how it looks.">>
+
+<p>We watch a movie. Her head on my shoulder, her fingers tracing patterns on my thigh, the laptop balanced on her knees. I catch my reflection in the dark edges of the screen sometimes. My shiny lips in the gloom. Each time my stomach flips again, that unnamed thing, that cocktail of shame and curiosity and something warmer than both.</p>
+
+<p>Halfway through the movie, Chloe's hand drifts higher. Not to my cock, though I'm half-hard and the panties are doing their thing, but to the inside of my thigh. She traces the seam of my jeans with one fingernail, up and up, until she reaches the junction where my leg meets my hip. She presses. Feels the lace through the denim.</p>
+
+<p>"These panties suit you," she murmurs, not looking away from the screen. "They're you now. You know that, right?"</p>
+
+<p>I don't answer. My cock throbs against silk that's growing damp.</p>
+
+<p>"I want to try something," she says. She pauses the movie. Sits up. Looks at me with those green eyes fully locked on. "Take off your jeans."</p>
+
+<p>"Chloe..."</p>
+
+<p>"Just the jeans. Leave the panties."</p>
+
+<<statChange "feminization" 3>>
+<<statChange "arousal" 2>>
+<<statChange "obedience" 1>>
+<<set $chloeRelationship += 3>>
+<<set $lipGlossApplied to true>>
+
+<<link "Take off your jeans - obey" "Day2_Chloe_OralSex">><</link>><br>
+<<link "Kiss her but keep your jeans on" "Day2_Afternoon_A_Redirect">><</link>>
+
+<<else>>
+<p>Chloe is different today. Softer around the edges. She's wearing a sundress and she's made snacks, little bowls of fruit and crackers arranged on the coffee table like she's hosting a brunch. The apartment smells like a candle she bought, something called "Cashmere Dreams" that smells like vanilla and money.</p>
+
+<<dialog "Chloe" "Come sit.">>
+
+<p>She pats the couch. I sit. She tucks herself against my side, her head on my shoulder, her legs folded underneath her. We watch a movie, something romantic she picked, and her hand finds mine and our fingers lace together.</p>
+
+<<dialog "Chloe" "You're my favorite person. I know I can be... a lot sometimes. But I just want us to try fun things together. Nothing weird. Nothing you don't want. I just think there's more to you than you know, and I want to help you find it.">>
+
+<p>She's good at this. The sincerity in her voice is real, or feels real enough that the difference doesn't matter. She's not manipulating me. She believes what she's saying. She genuinely thinks there's something inside me waiting to be discovered and she genuinely wants to be the one holding the flashlight.</p>
+
+<p>It's seductive. Not sexually, though her body pressed against mine is doing plenty on that front. Emotionally seductive. The idea that someone sees potential in you that you don't see in yourself. The idea that transformation could be beautiful instead of terrifying.</p>
+
+<p>She doesn't mention the panties. Not once. She's laying groundwork. Softening the soil. In a few days she'll try again, and by then the refusal will feel less like self-preservation and more like stubbornness.</p>
+
+<<statChange "arousal" 2>>
+<<set $chloeRelationship += 2>>
+<<spendTime 1>>
+
+<<link "Continue" "DailyHub">><</link>>
+<</if>>
+<</nobr>>

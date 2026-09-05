@@ -1,0 +1,55 @@
+:: Day2_Evening_A [day2 evening home dinner]
+<<nobr>>
+<<centerImage "image/events/dinner.png">>
+<<set $currentLocation to "events/dinner">>
+
+<p>Dinner is an event in this house. It shouldn't be. It's three people eating food at a table. But Evelyn transforms it into something more, a stage, a classroom, a proving ground. Tonight she's made roast chicken with vegetables arranged on the platter like a still life. Cloth napkins. Real silverware, not the stuff from the drawer but pieces from a set that came in a wooden box. Candles flickering on the table even though every light in the kitchen is on.</p>
+
+<p>Lily arrives last, sliding into her chair with the practiced indifference of someone who's studied looking unbothered as a career skill. She's in an oversized hoodie, her pink hair shoved under a beanie, eyeliner smudged in a way that might be deliberate or might be from rubbing her eyes.</p>
+
+<p>Evelyn sits at the head. Her posture could calibrate a level.</p>
+
+<<dialog "Evelyn" "Sit up straight, Alex.">>
+
+<p>I straighten. It happens automatically now, the way my spine responds to her voice before my brain engages.</p>
+
+<<dialog "Evelyn" "Elbows off the table.">>
+
+<p>My elbows retreat.</p>
+
+<<dialog "Evelyn" "You eat like a caveman. Smaller bites. Chew with your mouth closed. Your knife goes here.">>
+
+<p>She repositions my silverware without asking. Her fingers brush mine during the adjustment, cool and certain. "Cut your food into smaller pieces before you eat them. A gentleman doesn't gnaw."</p>
+
+<p>Each correction lands precisely. She doesn't raise her voice. She doesn't need to. Her authority lives in the calm certainty of her tone, the assumption that of course I'll comply, that compliance isn't a choice but a natural law. The sky is blue. Water runs downhill. Alex does what Evelyn says.</p>
+
+<p>Lily watches this exchange with her eyebrows climbing toward her hairline. She slurps her soup. Loud, deliberately loud, a performance of table manners so bad they'd make a trucker cringe. Evelyn's jaw tightens but she says nothing. She's picking her battles. I'm the battle she's picked.</p>
+
+<<dialog "Evelyn" "Thank you, Alex. You're improving.">>
+
+<p>The warmth in her voice settles into my bones. I want more of it. I cut my chicken into precise, delicate pieces and chew each one with my mouth closed and my back straight and my elbows off the table and I feel something sliding into place, something I can't name, like a gear engaging.</p>
+
+<p>Lily catches my eye across the table. She mouths: "teacher's pet."</p>
+
+<p>I kick her shin. She kicks back. Evelyn doesn't notice, or pretends not to.</p>
+
+<p>After dinner, clearing the table, Lily blocks my path to the kitchen.</p>
+
+<<dialog "Lily" "So what's the deal with you and Evil-yn? You're like her little project or something.">>
+
+<p>"She just wants me to have manners."</p>
+
+<p>"Mmhmm." Lily leans against the doorframe, arms crossed. "She wants something. That woman always wants something. Watch yourself, step-bro."</p>
+
+<p>She punches my shoulder and disappears upstairs. Her bass kicks in thirty seconds later.</p>
+
+<<statChange "obedience" 2>>
+<<statChange "feminization" 1>>
+<<set $evelynRelationship += 2>>
+<<set $lilyAwareness += 1>>
+<<set $dinnerDay2 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

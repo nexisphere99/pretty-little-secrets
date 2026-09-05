@@ -1,0 +1,20 @@
+:: Day2_Afternoon_A_Redirect [day2 afternoon chloe redirect]
+<<nobr>>
+<p>"Chloe." I catch her wrist, gentle, and pull her hand up instead of down. "Not that. Come here."</p>
+
+<p>She blinks. For a second I watch her recalibrate, that quick flicker behind her eyes when a plan hits a wall it didn't expect. Then she lets it go, easy as breathing, and climbs into my lap instead, straddling me, her arms looping around my neck.</p>
+
+<p>"Fine," she says, and she's smiling, not disappointed exactly, more like a chess player conceding a single pawn. "We'll watch the rest of the movie like normal people."</p>
+
+<p>We do. Her weight is warm against my thighs, her mouth finds mine a few times during the boring parts, unhurried, and the panties are still there under my jeans, a secret pressure I carry through the whole second act. She doesn't bring it up again today. But there's a glint in her eye when she walks me to the door, the look of someone filing this away rather than dropping it.</p>
+
+<<dialog "Chloe" "Next time, then.">>
+
+<<statChange "arousal" 1>>
+<<statChange "resistance" 2>>
+<<set $chloeRelationship += 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "chloe">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

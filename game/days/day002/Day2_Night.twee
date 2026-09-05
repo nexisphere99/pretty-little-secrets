@@ -1,0 +1,67 @@
+:: Day2_Night [day2 night reflection]
+<<nobr>>
+<<centerImage "image/events/sleep.png">>
+<<set $phase to "night">>
+<h2>Night</h2>
+
+<p>Midnight. The house settles around me, the creak of old wood and the tick of the clock downstairs and the whisper of Evelyn's sheer curtains moving in a draft I can't feel up here. Everything is quiet except the inside of my head.</p>
+
+<<if $lipGlossApplied or $toenailsPainted or $yesMaamAccepted>>
+<p>The day plays back in fragments.</p>
+
+<<if $lipGlossApplied>>
+<p>The taste of vanilla gloss.</p>
+<</if>>
+
+<<if $yesMaamAccepted>>
+<p>Evelyn's hand adjusting my collar.</p>
+<</if>>
+
+<<if $toenailsPainted>>
+<p>The cold wet kiss of black nail polish.</p>
+<</if>>
+
+<<if $chloeOralDay2>>
+<p>Chloe's thighs around my head, her fingers in my hair, the sound she made when she came.</p>
+<</if>>
+
+<p>"Yes, Ma'am." "Good boy." "You've got the face for it."</p>
+
+<p>Each moment is tiny on its own. Individually they're nothing. A word. A touch. A color on my nails. But together they form a shape I can't quite resolve, like a constellation where I can only make out three or four stars but I know there are more hiding in the dark, waiting for me to look the right way, to let my eyes adjust, to stop looking for what I expect to see and start seeing what's actually there.</p>
+
+<<if $pantiesEquipped>>
+<p>The panties shift against my skin when I roll over. Silk on hip. Lace on thigh. Chloe's territory. Evelyn's voice. Lily's camera. Three women, three different frequencies, all tuning the same instrument.</p>
+
+<p>I press my face into the pillow and breathe and try to sleep and my cock throbs in silk and my toenails are black under the sheets and my lips remember the weight of gloss and I think, not for the first time today but for the first time with real clarity:</p>
+<<else>>
+<p>I press my face into the pillow and breathe and try to sleep and my toenails are black under the sheets and my lips remember the weight of gloss and I think, not for the first time today but for the first time with real clarity:</p>
+<</if>>
+
+<p><strong>Something is happening to me.</strong></p>
+
+<<else>>
+<p>I think about Chloe. About her smile. About Sophia's handshake and Lily's music and Evelyn's note on the fridge. Each interaction was ordinary. Nothing to write home about. But there's an undercurrent I can feel without seeing, like swimming in a calm ocean and sensing the tide pulling gently, persistently, in a direction I haven't chosen.</p>
+
+<p>I roll over. Cotton boxers. Regular pillowcase. My room smells like my room, stale energy drinks and clean enough laundry. Normal. Everything normal.</p>
+
+<p>I tell myself tomorrow will be normal too.</p>
+<</if>>
+
+<p>Scrolling Instagram in bed, I pass a story from an account I barely remember following. "@tara_marie_xo" - someone from my high school. Tara Morrison. We were lab partners sophomore year. She had braces and bangs and a laugh like a smoke alarm.</p>
+
+<p>Her story shows her at a club, neon lights behind her, a drink in her hand, her mouth open in a laugh that hasn't changed since high school. She's grown into her face since then. Sharp jaw, dark eyes, confident posture. She's wearing something strappy and revealing and she looks like she owns the room.</p>
+
+<p>I tap to the next story. A group shot. Tara and three other women and<<if $bbcEnabled>>, in the background, blurred by movement, a tall Black man in a fitted shirt. He's out of focus but even blurred you can tell he's big. Broad shoulders, narrow waist. His hand is on someone's hip but the crop cuts off whose.<<else>> at a club, more of the same neon and noise.<</if>></p>
+
+<p>I swipe past. Keep scrolling. Don't think about it.</p>
+
+<<set $taraStorySeenDay2 to true>>
+
+<<statSummary>>
+
+<<link `"Sleep - end Day " + $day`>>
+  <<set $day += 1>>
+  <<set $phase to "morning">>
+  <<goto "DailyHub">>
+<</link>>
+<</nobr>>

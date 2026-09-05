@@ -1,0 +1,106 @@
+:: Day2_Afternoon_C [day2 afternoon lily nails]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<p>The bass coming through Lily's door is loud enough to vibrate the floorboards under my bare feet. I knock. Useless gesture. She can't hear a knock over whatever industrial music she's blasting in there. I push the door open.</p>
+
+<p>Lily is cross-legged on her bed, phone propped against a pillow playing music, a bottle of nail polish in one hand and her foot propped on her knee. She's painting her toenails black. The polish glistens wet and dark on her small toes, the brush moving with the focused precision of a bomb technician defusing a detonator.</p>
+
+<p>"Bored," I announce.</p>
+
+<p>"Sit down then." She doesn't look up. She pats the bed beside her without releasing the brush. I sit. The mattress dips under my weight and she sways slightly, corrects, keeps painting.</p>
+
+<p>Her room is chaos incarnate. Clothes on the floor, the chair, the desk, draped over a lamp, hanging from the closet door. Band posters layered on the walls three deep. Fairy lights taped to the ceiling in what might be a pattern or might be an accident. Her vanity is the opposite of Evelyn's, a graveyard of drugstore makeup, half-empty bottles of glitter nail polish, eyeliner pencils without caps bleeding black onto the wood surface. The ring light on its tripod stands like a sentinel beside her desk, the stool in front of it the stage for her social media empire.</p>
+
+<p>She finishes her last toenail. Blows on them. Wiggles them. Then she looks at me sideways, that look she gets when mischief is brewing behind her eyes, a look that has preceded every bad idea in the three years I've known her.</p>
+
+<<dialog "Lily" "Dare you to let me paint your toenails.">>
+
+<p>I laugh. Reflexive. "No way."</p>
+
+<p>"Chicken." She holds up the brush. A drop of black polish clings to the tip, pregnant and glistening. "Nobody's gonna see them. They'll be in your socks. Your shoes. Completely hidden. Come on, it'll be funny."</p>
+
+<p>"Funny for who?"</p>
+
+<p>"For me. And for you if you stop being such a baby about it."</p>
+
+<p>The dare hangs in the air between us. Lily's grinning, that punk rock grin where her eyes go sharp and her lips pull back and you can see the gap between her front teeth that she refuses to fix because she thinks it gives her "character."</p>
+
+<<link "Fine. Whatever." "Day2_Afternoon_C_Accept">><</link>><br>
+<<link "Nah, I'm good." "Day2_Afternoon_C_Refuse">><</link>>
+<</nobr>>
+
+:: Day2_Afternoon_C_Accept [day2 afternoon lily nails accept]
+<<nobr>>
+<p>"Fine. Whatever."</p>
+
+<p>She moves faster than I expect. Before I've even repositioned on the bed she's grabbed my ankle and yanked my sock off, pulling my foot into her lap. Her fingers are warm and surprisingly strong. She pins my ankle with one hand and pushes the brush between my toes with the other.</p>
+
+<<dialog "Lily" "Hold STILL, idiot. If you make me mess this up I'm starting over and doing pink instead.">>
+
+<p>"Don't you dare."</p>
+
+<p>"Then don't move."</p>
+
+<p>She paints. Each toenail gets a careful, smooth coat of black. The polish is cold and wet and I can feel it tightening as it dries, a thin film that changes the surface of my nails from ordinary to something else. Something decorated. Something deliberate.</p>
+
+<p>Lily works with a focus I rarely see from her. This isn't the girl who does everything at maximum volume and zero precision. This is someone with a steady hand and an artistic eye and an agenda I can't quite see. She finishes the left foot and switches to the right without letting go of my ankle. Her thumb presses into the arch of my foot and I flinch because it tickles and she smacks my calf.</p>
+
+<p>"Don't. Move."</p>
+
+<p>Five minutes. That's all it takes. But when she's done, when she releases my feet and leans back to admire her work, those five minutes feel like they lasted an hour.</p>
+
+<p>"Look," she says, holding my foot up by the ankle. My toenails gleam wet and black in the light from her fairy strings. Ten little dark mirrors reflecting the room back at me. They look... good, actually. Not feminine, exactly. Not on their own. Black is genderless. But on my feet, cradled in Lily's hands, observed by Lily's sharp eyes, they feel like a statement. Like a flag planted on territory someone else claimed.</p>
+
+<p>"Not bad," she says. "Kinda suits you, actually."</p>
+
+<p>Her phone appears. I don't see her pick it up. One second it's on the pillow and the next it's in her hand, camera app open, pointed at my feet. The shutter sound clicks twice before I react.</p>
+
+<p>"Lily!"</p>
+
+<p>"Relax." She tucks the phone behind her back. "It's just for me. My private collection." She winks.</p>
+
+<p>There's a weight to that word. Collection. It implies quantity, organization, intent. It implies that this isn't the first photo and won't be the last, that somewhere on Lily's phone there's a folder, and in that folder there are images, and those images form a narrative she's constructing without my input.</p>
+
+<p>My toenails glisten. Black and wet and already drying, sealing the moment into something permanent. Something I'll carry in my socks and shoes tomorrow and the next day, hidden but present. Another secret. Another layer between who I was and who I'm becoming.</p>
+
+<p>"Can I at least see the photos?"</p>
+
+<p>"Nope." She pops the P exactly the way Chloe does, and for a disorienting second I can't tell which of them I'm talking to. "Trust me. They're cute."</p>
+
+<p>She pulls up her own feet and wiggles her matching black toes next to mine. "Look at us. Twinsies."</p>
+
+<p>Something in my chest tightens. Not unpleasantly.</p>
+
+<<statChange "feminization" 3>>
+<<statChange "embarrassment" 2>>
+<<set $lilyRelationship += 3>>
+<<set $lilyNailsDay2 to true>>
+<<set $toenailsPainted to true>>
+<<set $toenailColor to "black">>
+<<set $lilyHasNailPhoto to true>>
+<<set $lilyPhotoCount += 1>>
+<<run $lilyBlackmailPhotos.push({day: 2, type: "toenails", color: "black"})>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day2_Afternoon_C_Refuse [day2 afternoon lily nails refuse]
+<<nobr>>
+<p>"Nah, I'm good."</p>
+
+<p>She shrugs. One shoulder lift, quick and dismissive. "Whatever, boring." She goes back to her own nails. We sit in comfortable silence, the kind that comes from proximity and familiarity and having nothing to prove to each other. She shows me TikToks on her phone, reactions to reactions to reactions, the infinite regress of internet content. I laugh at a few. She explains references I don't get. Normal stuff.</p>
+
+<p>But I notice the way her eyes keep flicking to my feet. Measuring. Planning. Lily doesn't accept "no" as a permanent answer. She accepts it as a "not yet."</p>
+
+<<statChange "resistance" 2>>
+<<set $lilyRelationship += 1>>
+<<set $lilyNailsDay2 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

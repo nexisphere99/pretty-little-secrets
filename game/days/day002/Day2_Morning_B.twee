@@ -1,0 +1,85 @@
+:: Day2_Morning_B [day2 morning neighborhood sophia]
+<<nobr>>
+<<centerImage "image/events/jog.gif">>
+<<set $currentLocation to "events/jog">>
+
+<p>The run is becoming a ritual. Lace up, headphones in, door, sidewalk, the slap of my soles on concrete, the rhythm of breath and heartbeat and motion. My body knows this route now. Autopilot. Left on Elm, right on Maple, past Henderson's green empire, past the empty lot, along the park fence where the basketball court echoes with someone's early morning pickup game.</p>
+
+<p>Henderson is a metronome. A human clock. I pass his yard and there he is, hose in hand, Orioles cap in place, the spray of water catching the light in a fine mist that drifts across the sidewalk and hits my ankles.</p>
+
+<<dialog "Alex" "Morning, Mr. Henderson!">>
+
+<p><strong>"Saw your stepmother heading out early. Sharp dresser, that one. My late wife used to say a woman who keeps herself well keeps her house well."</strong> He nods at some private wisdom. <strong>"Course, she also said a man who waters his lawn at 7 AM is either dedicated or crazy. I told her I'm both."</strong></p>
+
+<p>He chuckles. I chuckle. The exchange lasts fourteen seconds. I keep walking&mdash;jogging. Behind me the hose whispers against the grass, steady as breath.</p>
+
+<<if $pantiesEquipped>>
+<p>No change in Henderson's dialogue. He can't see the panties. But I feel them while he talks to me, the lace shifting against my hip when I stop and pivot to face him. There's a prickling awareness, a live wire of self-consciousness, standing in bright daylight talking to a seventy-year-old man about lawn care while wearing pink lace under my jeans. Henderson sees a normal kid. I know what's underneath. The gap between those two realities is a space I'm learning to live in.</p>
+<</if>>
+
+<<set $hendersonFamiliarity += 1>>
+
+<p>But today I vary the route. I swing down Birch Street, which takes me past her house. Sophia's. I don't plan it. My feet just go there, the way a compass needle swings north without anyone asking it to.</p>
+
+<p>She's outside again. This woman and her porch. It's her stage, her altar, her kingdom. Today she's in pale blue, a sports bra and matching high-waisted leggings that look like they were poured onto her body, the fabric catching every curve of her hips, the long lean muscle of her thighs, the subtle dip of her waist. Her blonde curls are loose, catching the morning light like a shampoo commercial directed by God.</p>
+
+<p>She's in warrior two when she spots me. Holds the pose, arms extended, legs wide, pelvis dropped, and calls out without breaking form: <strong>"Hey! Jogging boy! Come here for a second."</strong></p>
+
+<p>I slow. Stop. Jog in place for a second like an idiot before realizing how dumb that looks and just standing still. She flows out of her pose with the kind of grace that should be illegal before 10 AM.</p>
+
+<<dialog "Sophia" "I'm Sophia.">>
+
+<p>She offers her hand. Her grip is firm, warm, confident. Her palm is slightly rough from outdoor work. She smells like lavender and clean sweat and something herbal, like she bathes in tea.</p>
+
+<p>"Alex. I live down the block. With, uh, Evelyn and Lily."</p>
+
+<<dialog "Sophia" "I know. I've seen you running. Almost every morning. That's real dedication.">>
+
+<p>"Just trying to stay in shape."</p>
+
+<<dialog "Sophia" "Oh, you're in shape. But you're tight. Your hamstrings, your hips. You'd benefit from stretching. Proper stretching, not that two-second thing runners do against a wall.">>
+
+<p>"You offering lessons?"</p>
+
+<p>"I'm offering an invitation." She disappears inside for ten seconds and comes back with a flyer. Glossy card stock. "Serene Yoga" in elegant script over a photo of women in colorful outfits doing poses in a sun-drenched studio. All women. Every single person in the photo is a woman. Sophia hands it to me like she doesn't notice this fact, or like it doesn't matter.</p>
+
+<<dialog "Sophia" "Tuesday and Thursday mornings, 7 AM class. Saturday afternoons, advanced. Start with Tuesday. Come as you are. I promise you'll feel things you've never felt.">>
+
+<p>I take the flyer. "Yeah, maybe. Thanks."</p>
+
+<p>"Oh, here." She turns again, and this time when she comes back she's holding a tall glass of cold water with a sprig of mint floating in it. "You look like you need this."</p>
+
+<p>We sit on her porch steps. The wood is warm under my thighs. Her crystals catch the light through the window behind us, throwing faint purple and white rainbows across the floorboards. She asks about my running. About school. About Evelyn, whom she describes as "formidable" with a smile that suggests admiration rather than fear. She asks about my girlfriend.</p>
+
+<p>"Chloe. She's great. We've been together about eight months."</p>
+
+<<dialog "Sophia" "Is she good to you?">>
+
+<p>The question catches me off guard. Not "is she nice" or "do you love her" but "is she good to you." Like there's a difference. Like the answer might not be the same.</p>
+
+<p>"Yeah," I say. "She's... she's really good to me."</p>
+
+<p>Sophia looks at me for a long moment. Those warm hazel eyes that seem to see more than the surface. Then she nods and pats my knee.</p>
+
+<<dialog "Sophia" "Good. You deserve someone who's good to you.">>
+
+<p>I leave feeling something I can't name. Not arousal, though Sophia is objectively stunning and her hand on my knee left a warm print I can still feel three blocks later. Not attraction in the way I feel toward Chloe. Something gentler. Something like being seen. Not stared at, not evaluated, not inspected. Seen. The whole of me, not just the parts that are useful.</p>
+
+<p>I tuck the yoga flyer into my dresser drawer when I get home. I probably won't go. It's all women. That would be weird. I'd stick out like a sore thumb in my gym shorts surrounded by colorful leggings and sports bras and downward dogs.</p>
+
+<p>But I keep the flyer.</p>
+
+<<statChange "confidence" 1>>
+<<if $sophiaNoticed>>
+<<set $sophiaRelationship += 7>>
+<<else>>
+<<set $sophiaRelationship += 5>>
+<</if>>
+<<set $sophiaMet to true>>
+<<set $yogaStudioFlag to true>>
+<<set $joggedDay2 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

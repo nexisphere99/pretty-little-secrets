@@ -1,0 +1,52 @@
+:: Day2_Evening_B [day2 evening chloe phone]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<p>Ten PM. My bedroom. The blue glow of my phone against the ceiling. Chloe's name on the screen.</p>
+
+<p>She sends a selfie first. She's in bed, hair fanned out on the pillow, wearing a black silk nightgown with thin straps that shows the swell of her breasts and the shadow of her collarbone. The caption: <em>"thinking of u ;)"</em></p>
+
+<p>My cock responds before my brain does. I type back: "you're beautiful." She sends a blushing emoji and a devil emoji side by side.</p>
+
+<<if $lipGlossApplied>>
+<<dialog "Chloe" "Hey. Did you wash the gloss off?">>
+
+<p>I touch my lips. I did. Hours ago, in the bathroom before dinner, scrubbing it away with the back of my hand and then my toothbrush for good measure. My lips still feel different though. Softer. Like the gloss left a ghost of itself on my skin.</p>
+
+<p>"Yeah."</p>
+
+<<dialog "Chloe" "That's okay. Next time leave it longer. I want you to get used to the taste.">>
+
+<p>Next time. She said next time like it's already decided. Not "if" but "when." The future she's building has lip gloss in it, and she's laid the bricks so carefully I barely noticed the wall going up.</p>
+
+<p>"Okay," I type.</p>
+
+<p>"Okay what? ;)"</p>
+
+<p>My thumbs hover over the keyboard. The cursor blinks. I think about this morning, Evelyn's "Yes, Ma'am." I think about Chloe's "Good boy." Different women, different words, same feeling. The warm rush of compliance. The quiet pleasure of saying what they want to hear.</p>
+
+<p>"Okay, I'll leave it on longer next time."</p>
+
+<<dialog "Chloe" "That's my good boy. Sweet dreams baby.">>
+
+<p>My cock is hard against the sheets. Against the panties, if I'm still wearing them. Against the memory of her taste on my tongue and the phantom weight of gloss on my lips. I grip the mattress with both hands and breathe through it.</p>
+
+<<statChange "arousal" 2>>
+<<statChange "obedience" 1>>
+<<set $chloeRelationship += 2>>
+<<else>>
+<p>We text for half an hour about nothing. She tells me about Mia's new tattoo, a butterfly behind her ear. She says Jade wants to meet me properly. "They've been asking about you," she types. "Come over this weekend when they're here?"</p>
+
+<p>I agree because agreeing with Chloe feels like breathing. She sends a heart emoji. I send one back. I plug in my phone and close my eyes and think about her body and her smile and wonder what she'll want to try next.</p>
+
+<<statChange "arousal" 2>>
+<<set $chloeRelationship += 2>>
+<</if>>
+
+<<set $chloeGoodnightDay2 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

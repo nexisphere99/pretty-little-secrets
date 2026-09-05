@@ -1,0 +1,101 @@
+:: Day2_SQ_Ali [day2 sidequest neighborhood ali]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>Ali is doing his crossword when I walk in. He looks up, pen between his teeth, eyes narrowing at the clue he's stuck on.</p>
+
+<p><strong>"Alex! My favorite. Seven letters, 'gradual change in form.' You know this?"</strong></p>
+
+<p>I think. "Morphing?"</p>
+
+<p>"That's seven." He writes it in. Studies it. "Doesn't fit the intersections. I'll come back to it." He caps his pen. "What do you need?"</p>
+
+<p>"Just looking around."</p>
+
+<p>"You always say that. And you always buy a Gatorade."</p>
+
+<p>He's right. I buy a Gatorade. Blue, this time.</p>
+
+<p>"Hey, Ali. You know that shop down the street? Kinky Kitty?"</p>
+
+<p>His mustache twitches. The twitch contains multitudes: amusement, judgment, curiosity, restraint. "The cat shop. Yes. I know it."</p>
+
+<p>"What's it like?"</p>
+
+<p>"I've never been inside." A pause that lasts exactly long enough to be diplomatic. "The woman who runs it comes in sometimes. Tall, dark hair, lots of jewelry. Buys energy drinks and chocolate bars. She told me once that her shop sells 'lifestyle accessories.' I said 'so do I' and pointed at my display of reading glasses. She laughed." Another pause. "I like her. She's honest about what she sells. Most people aren't honest about anything."</p>
+
+<p>He hands me my change. One seventy-five, exact, without looking at the register.</p>
+
+<p>"Ali, the crossword. 'Gradual change in form.' Is it 'evolve'?"</p>
+
+<p>"Six letters."</p>
+
+<p>"Reshape?"</p>
+
+<p>"Seven! Let me check the intersections..." He grabs his pen, writes, nods. "That works. Reshape. Good word." He tears a strip of paper from his crossword page and writes something on it. "Here. Discount. Next Gatorade is on the house."</p>
+
+<p>"You don't have to..."</p>
+
+<p>"I know I don't have to. I want to. You're a good kid, Alex. Remember that, even when things get... reshaped."</p>
+
+<p>He says the last word with a half-smile that suggests he means more than the crossword. I pocket the coupon and leave with a weird feeling in my chest, like Ali sees something coming that I can't.</p>
+
+<<set $aliFamiliarity += 2>>
+<<set $aliCrosswordDay2 to true>>
+<<set $aliCrosswordClue to "reshape">>
+<<set $money -= 1>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day2_SQ_Closet [day2 sidequest home evelyn closet]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+
+<p>After organizing the linen closet, I pass Evelyn's bedroom on the way to my own. Her door is open. She's downstairs. The room sits there, empty, perfumed, full of sunlight filtering through sheers.</p>
+
+<p>I don't go in. Not fully. But I stop in the doorway and look.</p>
+
+<p>Her walk-in closet is visible from here. The door is ajar, a sliver of darkness beyond it that catches the hallway light and throws it back in the sheen of hanging fabric. I can see the edge of something dark, a row of dresses packed tight on a rail, their hems hanging at different lengths. Something white and filmy, a blouse or a slip. The glint of shoes arranged on a shelf, heels of varying heights, all polished, all positioned heel-forward like soldiers at attention.</p>
+
+<p>And on the back of the closet door, visible through the crack, a thin riding crop hanging from a hook.</p>
+
+<p>It could be decorative. Some people mount swords on their walls and have never cut anything more dangerous than a steak. A riding crop in a closet doesn't mean anything. It's an accessory. A leftover from an equestrian hobby. An antique she inherited. There are a hundred innocent explanations.</p>
+
+<p>But I stand in that doorway and I look at that crop and something in my stomach drops, not with fear but with a kind of gravitational awareness, the feeling you get standing at the edge of a high place, looking down, knowing you could fall, knowing the fall would be terrifying, knowing some part of you wants to jump.</p>
+
+<p>I go to my room. I close my door. I stare at the ceiling.</p>
+
+<p>Evelyn's riding crop stays behind my eyes like an afterimage of the sun.</p>
+
+<<set $ridingCropSeen to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day2_SQ_WardrobeAudit [day2 sidequest home wardrobe]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+
+<p>I open my closet after getting dressed and really look at it for the first time in months. Not to find something to wear but to see what's there. To take inventory, like I'm cataloging a museum collection, except instead of artifacts it's the physical evidence of who I am.</p>
+
+<p>Six t-shirts. Three black, two grey, one blue that Chloe bought me because she said the color matched her eyes, which it doesn't. Three pairs of jeans, all basically identical, varying only in how faded they are. Two pairs of shorts, one athletic, one cargo. A flannel shirt I wear when I want to feel "dressed up." Sneakers that need replacing. Flip-flops for the shower. A blazer from a wedding two years ago that's too tight across the shoulders now.</p>
+
+<p>The most feminine thing in this closet is the blue t-shirt, and that's only because Chloe chose it.</p>
+
+<p>I look at this collection of fabric and I think about Evelyn's closet. The density of it. The variety. Dresses and blouses and skirts and lingerie and shoes for every occasion and accessories I don't have names for. A wardrobe that contains multitudes. Mine contains about six variations on the same theme: guy who doesn't care.</p>
+
+<p>I close the closet. There's nothing wrong with not caring about clothes. Lots of guys don't. It's normal. It's fine.</p>
+
+<p>But I notice, for the first time, that "not caring" feels less like a choice and more like a limitation. Like I never considered the alternatives because the alternatives never presented themselves. And now they're presenting. One pink pair of panties at a time.</p>
+
+<<set $wardrobeAuditDone to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

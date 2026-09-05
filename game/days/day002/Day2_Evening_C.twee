@@ -1,0 +1,50 @@
+:: Day2_Evening_C [day2 evening lily instagram]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<<dialog "Lily" "Psst. Alex.">>
+
+<p>Lily's head appears around my bedroom door at eleven PM. She's in pajama shorts and a tank top, her phone clutched to her chest, pink hair flattened on one side from lying down.</p>
+
+<p>"Come look at something."</p>
+
+<p>I follow her to her room. She drops onto her bed and pats the space beside her. I sit. She opens Instagram and scrolls through a profile, tilting the screen so I can see.</p>
+
+<p>The account belongs to someone named @prettyboykai. The feed is a cascade of images: a young man with delicate features, cheekbones sharp enough to cut, wearing eyeliner and lipstick and blush. Foundation that makes his skin look poreless. In some photos he's in casual boy clothes with full makeup. In others he's in crop tops, skirts, thigh-highs. One shot shows him at what looks like a party, surrounded by women who are all touching him, a hand on his shoulder, fingers in his hair, an arm around his waist. He's smiling like the sun.</p>
+
+<<dialog "Lily" "He's got like a million followers. Crazy, right?">>
+
+<p>"Yeah."</p>
+
+<p>"He started just like... posting his face with a little eyeliner. And people went nuts." She scrolls further. More photos. The guy progressively more feminized across his timeline, an evolution documented in real time, from subtle eye makeup to full contour to wigs to outfits that blur every line between masculine and feminine until the line stops existing entirely.</p>
+
+<p>Lily turns to me. Her eyes are sharp in the fairy-light glow. Measuring. Calculating. I can practically see the gears turning behind her irises.</p>
+
+<<dialog "Lily" "You could pull off something like that. You've got the face for it.">>
+
+<p>She says it casually, like observing that I've got brown hair or two hands. A fact, not a proposition. But the casualness is performative. Everything about Lily's casualness is performative. She's the least casual person I know. She has more calculations running at any given moment than NASA mission control.</p>
+
+<<dialog "Lily" "I'm serious. Your bone structure? Your jawline? With the right angles and the right light and a little bit of product, you'd break Instagram. I could do your whole look in fifteen minutes.">>
+
+<p>"I'm not interested in being an Instagram model, Lily."</p>
+
+<p>"Who said model? I said you've got the face. I didn't say you had to do anything with it." She locks her phone. Stretches. "But if you ever change your mind, you know where to find me."</p>
+
+<p>She pats my knee. Her hand stays there a beat too long. Then she shoves me off her bed.</p>
+
+<p>"Get out. I need my beauty sleep."</p>
+
+<p>I go back to my room. In bed, in the dark, I think about @prettyboykai. About his million followers. About the progression from a little eyeliner to a full transformation, documented and liked and shared and celebrated. About Lily's eyes when she said "you've got the face for it."</p>
+
+<p>About the black nail polish still on my toenails, hidden in my socks, hidden from everyone except Lily and her camera and her collection.</p>
+
+<<statChange "feminization" 1>>
+<<statChange "embarrassment" 1>>
+<<set $lilyRelationship += 2>>
+<<set $prettyboyKaiSeen to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

@@ -1,0 +1,77 @@
+:: Day2_Morning_A [day2 morning evelyn]
+<<nobr>>
+<<centerImage "image/events/kitchen.png">>
+<<set $currentLocation to "events/kitchen">>
+
+<<if $evelynChoresDay1>>
+<p>Sunday mornings have a specific quality in this house. The light is softer, filtered through Evelyn's sheer curtains downstairs, and the kitchen smells like fresh bread and Earl Grey and whatever botanical thing she sprays on the countertops. Everything gleams. Evelyn doesn't do mess. Mess is a moral failing in her worldview, right up there with slouching and saying "yeah" instead of "yes."</p>
+
+<p>I come downstairs in sweatpants and a wrinkled t-shirt and she's already immaculate. Cream blouse again, this time with a pearl necklace that sits against her collarbone like it was born there. Her hair is down today, chestnut waves brushing her shoulders. She looks like a woman who was never young, who emerged fully formed from some finishing school for elegant predators.</p>
+
+<p>She slides a plate of toast toward me without looking up from the newspaper. Actual newspaper. Broadsheet. She reads it unfolded, covering half the table, her teacup balanced on the corner like a porcelain bird perched on a cliff.</p>
+
+<<dialog "Evelyn" "Good morning, Alex.">>
+
+<p>"Morning."</p>
+
+<p>She sets the paper down. Folds it. Precise creases. Then she looks at me with those grey-blue eyes and there it is again, that feeling of being weighed on a scale I can't see.</p>
+
+<<dialog "Evelyn" "I'd like to establish something. In this household, when I ask you to do something, I'd like you to respond with 'Yes, Ma'am.' It's a matter of respect. You're old enough to speak properly.">>
+
+<p>The kitchen goes very quiet. The clock on the wall ticks. The refrigerator hums. Lily's bass thumps faintly from two floors up, distant as a heartbeat in another body.</p>
+
+<p>"Yes, Ma'am" is nothing. Two words. People say them in the South every day. Customer service reps say them to elderly women at the DMV. It's polite. It's formal. It's the kind of thing an etiquette book would recommend.</p>
+
+<p>But the way Evelyn says it, sitting there in her pearls with her tea and her newspaper and her posture like a steel rod threaded through silk, it doesn't feel like etiquette. It feels like a contract. Like I'm signing something with my voice.</p>
+
+<p>"Yes... Ma'am."</p>
+
+<p>The words feel bizarre coming out of my mouth. Foreign. Like speaking a language I learned from a textbook but never practiced aloud. My tongue doesn't know what to do with the "Ma'am" part. It comes out soft, almost whispered, like a secret I'm not sure I should be telling.</p>
+
+<p>Evelyn nods. A single, precise dip of her chin. The faintest smile on her lips. Satisfied. Not triumphant, that would be crass, and Evelyn is never crass. Just... confirmed. Like she expected exactly this and got exactly this and the world is proceeding according to her specifications.</p>
+
+<<dialog "Evelyn" "Good. Now. I'd like you to organize the linen closet after breakfast. The towels are in disarray. Fold them by color and size. Largest on the bottom, smallest on top.">>
+
+<p>"Yes, Ma'am."</p>
+
+<p>Easier the second time. Still strange. But easier. Like the first time you ride a bike without training wheels. Wobbly, uncertain, but moving.</p>
+
+<p>The linen closet is narrow and deep and smells like lavender sachets that Evelyn tucks between the stacks. I pull everything out and lay it on the hallway floor. Bath towels, hand towels, washcloths, guest towels I didn't know we owned. They're all cream and white and pale gold because Evelyn apparently believes in a three-color palette for household textiles.</p>
+
+<p>Folding towels is boring. I know this. But something about doing it for Evelyn, knowing she'll inspect it, knowing she'll run her fingers along the stacks and check the edges, transforms it. My folds get tighter. My stacks get neater. I rearrange twice because the first attempt has a slight crease on a guest towel that I know she'd catch.</p>
+
+<p>When I'm done, she appears in the hallway like she materialized from the wallpaper. She examines the closet. Opens the door wider. Steps closer. Runs her hand along the top shelf. Lifts a towel from the middle of a stack and checks the fold underneath.</p>
+
+<<dialog "Evelyn" "Very good, Alex.">>
+
+<p>My chest does that thing again. That warm bloom. I swallow it down.</p>
+
+<p>"Yes, Ma'am."</p>
+
+<p>She reaches out and adjusts the collar of my t-shirt. Her fingers brush my neck. The contact lasts maybe half a second but I feel it for minutes afterward, a cool print of her fingertips against my skin, like she's marking me in some invisible way.</p>
+
+<<dialog "Evelyn" "Tomorrow I'll have something different for you. Something that requires a bit more... delicacy.">>
+
+<p>She doesn't elaborate. I don't ask.</p>
+
+<<statChange "obedience" 3>>
+<<statChange "feminization" 1>>
+<<set $evelynRelationship += 3>>
+<<set $yesMaamAccepted to true>>
+<<set $evelynStage to Math.max($evelynStage, 2)>>
+
+<<else>>
+<p>The kitchen is a battlefield of last night's dinner. Evelyn is nowhere to be seen, but a note on the fridge reads: <em>"Dishes. E."</em> Two words. No greeting, no "please," no warmth. Just an instruction from a woman who has decided I'm not worth the energy of a full sentence today.</p>
+
+<p>I wash the dishes. Hot water, soap, the clink of plates against the steel sink. It takes twenty minutes. When I'm done I dry everything and put it away in the exact cupboards I've memorized over three years. Evelyn doesn't appear to check. Doesn't acknowledge the work. The silence is its own form of communication, and what it communicates is: you could have done better yesterday, and we both know it.</p>
+
+<<statChange "obedience" 1>>
+<<set $evelynRelationship += 1>>
+<<set $evelynDishesDay2 to true>>
+<</if>>
+
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

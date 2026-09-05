@@ -1,0 +1,60 @@
+:: Day2_Afternoon_B [day2 afternoon town]
+<<nobr>>
+<<centerImage "image/events/city.png">>
+<<set $currentLocation to "events/city">>
+
+<p>Downtown is a fifteen-minute walk from our neighborhood. The transition happens gradually, residential yards shrinking, sidewalks widening, parking meters appearing like metal sentries along the curb. The buildings shift from houses to storefronts, a mix of chains and local businesses that cling to existence through sheer stubbornness and good coffee.</p>
+
+<p>Lush Latte is the first thing I see. Well, smell. Fresh roasted beans and something baked, cinnamon maybe, carried on a breeze that reaches me half a block before I reach the door. The cafe has enormous front windows, floor to ceiling, and through them I can see the interior: pastel walls in mint and blush, Edison bulbs hanging from exposed pipes, succulents on every table, a chalkboard menu with handwriting so stylish it belongs in a font catalog.</p>
+
+<p>I peer inside. The counter runs along the back wall, espresso machines gleaming like chrome spacecraft. Behind the counter, a woman moves with the practiced efficiency of someone who's made ten thousand lattes and enjoyed every single one. She's brunette, curvy, her hair pulled back in a high ponytail that swings when she moves. She's wearing a fitted uniform, a pastel green polo with the Lush Latte logo embroidered on the chest, tucked into a black skirt that stops mid-thigh. An apron with ruffled edges is tied at her waist.</p>
+
+<p>She spots me staring through the glass. Catches my eye. And winks.</p>
+
+<p>Not a casual, friendly, "hey stranger" wink. A wink with intention behind it, like she can see through the window and through my clothes and through the skin and bone and right into whatever part of me responds to a beautiful woman in a tight uniform. She grins, mouths something I can't read, and goes back to steaming milk.</p>
+
+<p>Her nametag, I realize as I lean closer to the glass, says "Vanessa."</p>
+
+<p>I keep walking before I look like a stalker.</p>
+
+<<if $cafeJobApplied>>
+<p>Tomorrow morning's interview flashes through my head. I pull up the cafe's Instagram again, the one I scouted before I ever applied. Pastel uniforms. Latte art. A delivery rider in a polo so tight it might as well be painted on, captioned "our delivery cuties." I close the tab and stare at the mint-and-blush facade and wonder, not for the first time, what exactly I signed up for.</p>
+<</if>>
+
+<<set $vanessaSpotted to true>>
+
+<p>Further down the strip, past a dry cleaner and a tattoo parlor and a store that sells nothing but phone cases, there's a shop with blacked-out windows and a neon sign in the shape of a cat. "Kinky Kitty" in hot pink cursive. The cat winks. A sex toy shop. I've walked past this place maybe fifty times and never given it more than a glance, the way you don't look directly at the sun because something in you knows it's too much.</p>
+
+<p>Today I notice the "Help Wanted" sign in the window. Handwritten on purple card stock. "Looking for discreet, open-minded staff. Ask within."</p>
+
+<p>I do not ask within. But my brain photographs the sign and files it away in a drawer I didn't know existed.</p>
+
+<p>I stand on the sidewalk and look at this building and try to imagine myself walking through the front door. The image won't form. It's like trying to picture yourself on the moon. Theoretically possible. Practically unthinkable.</p>
+
+<p>But the sign said "discreet" and "open-minded." And the pay is probably better than cafe delivery. And there's something about a shop with blacked-out windows that speaks to the part of me wearing pink panties under my jeans, the part that's starting to learn new words like "Yes, Ma'am" and "I'll be good," the part that's growing in the dark like a plant someone forgot to check on.</p>
+
+<p>I keep walking. But I look over my shoulder once. Twice.</p>
+
+<p>The neon cat winks.</p>
+
+<<set $kinkyKittyNoticed to true>>
+
+<p>At the end of the strip, Crystal Haven Mall looms behind scaffolding and construction barriers. "Grand Reopening Soon!" the banners declare. Most of the storefronts are dark behind the glass, emptied out for renovation. But one salon has its lights on. Through the window I can see a woman sweeping hair clippings off a marble floor. She's got a platinum pixie cut that looks like it costs more than my monthly food budget, sharp cheekbones, dark eyes outlined in precise wings of eyeliner. She moves with a dancer's economy, every gesture deliberate.</p>
+
+<p>She looks up. Sees me standing outside like a lost puppy. Her mouth curves and she gives me a finger wave, a delicate curl of manicured fingers, the kind of wave that contains an entire personality.</p>
+
+<p>I wave back. A regular wave. A dumb guy wave, flat palm, side to side. She laughs silently behind the glass and goes back to sweeping.</p>
+
+<p>I add her to my mental map. Salon woman. Platinum hair. Mall. She goes into the same drawer as Sophia and Vanessa, these women who orbit my life at varying distances, each one radiating something specific, each one pulling me toward her with a gravity I don't fully understand yet.</p>
+
+<<set $nicoletteSpotted to true>>
+
+<p>I hurry home.</p>
+
+<<statChange "confidence" 1>>
+<<set $townExplored to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

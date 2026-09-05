@@ -1,0 +1,19 @@
+:: Day2_Morning_C [day2 morning personal restday]
+<<nobr>>
+<<centerImage "image/events/bedroom.png">>
+<<set $currentLocation to "events/bedroom">>
+
+<p>Eleven o'clock and I'm still under the covers. My body feels heavy, like gravity has a personal grudge against me today. I hear Evelyn knock once, a single precise rap of knuckles on wood that communicates both courtesy and displeasure. I groan something that might be words. She doesn't knock again.</p>
+
+<p>When I finally surface, the house smells like cleaning products and silent judgment. Evelyn is out. A note on the fridge: <em>"Clean the kitchen. E."</em></p>
+
+<p>I clean the kitchen. It takes forty minutes because she left the complicated pots, the ones with crusted bits that require soaking and scrubbing and moral fortitude. By the time I'm done my fingers are pruned and the house is still empty and I've accomplished nothing except avoiding the day.</p>
+
+<<statChange "resistance" 1>>
+<<set $evelynRelationship -= 1>>
+<<set $sleptInDay2 to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

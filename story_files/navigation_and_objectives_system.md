@@ -84,7 +84,7 @@ Defined in `game/init/StoryInit.twee`:
 | `$gameMinutes` | Minutes since midnight (420 = 7:00 AM). This **is** the clock. Advanced only by `<<spendTime>>`. |
 | `$minutesPerTask` | Set once per day by `<<startDay>>`. How many minutes one "unit" of task cost consumes. |
 | `$timeBudgetDay` | Which day `$minutesPerTask`/`$gameMinutes` were last initialized for. `<<startDay>>` compares this to `$day` so it only resets the clock once, on the first `DailyHub` visit of a new day - not every time the hub re-renders. |
-| `$currentMapLocation` | `"home"` \| `"neighborhood"` \| `"chloe"`. Where Alex currently is. Read by `DailyHub` to decide which location view/task list to show, and by `<<locationMap>>` to highlight the active node. |
+| `$currentMapLocation` | `"home"` \| `"neighborhood"` \| `"chloe"` \| `"town"` (the last only reachable from Day 2 on). Where Alex currently is. Read by `DailyHub` to decide which location view/task list to show, and by `<<locationMap>>` to highlight the active node. |
 
 Day-1-specific "have I done this yet" flags (also in `StoryInit.twee`):
 `$evelynChoresDay1`, `$lazedDay1`, `$cafeJobApplied`, `$dinnerDay1`,
@@ -92,9 +92,23 @@ Day-1-specific "have I done this yet" flags (also in `StoryInit.twee`):
 `$joggedDay1`, `$neighborhoodExplored`, `$aliMet`, `$delgadoMet`
 (Neighborhood tasks); `$chloeVisitedDay1` (Chloe's Apartment task).
 
-These are plain booleans, one per task, checked by the per-location task
-widgets (§5) to render the done/available state and to gate the
-"nothing left to do here" message.
+Day-2-specific flags, same idea, one per task/beat: `$yesMaamAccepted`,
+`$evelynDishesDay2`, `$sleptInDay2`, `$dinnerDay2`, `$chloeGoodnightDay2`,
+`$prettyboyKaiSeen`, `$ridingCropSeen`, `$wardrobeAuditDone` (Home);
+`$joggedDay2`, `$sophiaMet`, `$yogaStudioFlag`, `$aliCrosswordDay2`,
+`$aliCrosswordClue` (Neighborhood); `$chloeVisitedDay2`,
+`$lipGlossApplied`, `$chloeOralDay2`, `$deniedOrgasm` (Chloe's, the last
+a running counter, not a boolean); `$townExplored`, `$vanessaSpotted`,
+`$nicoletteSpotted`, `$kinkyKittyNoticed` (Town); plus Lily-arc tracking
+that isn't purely per-task: `$lilyNailsDay2` (task-done flag for "Hang
+out in Lily's room"), `$toenailsPainted`/`$toenailColor`/
+`$lilyHasNailPhoto`/`$lilyPhotoCount`/`$lilyBlackmailPhotos` (consequence
+state read by later days/arcs, not by the task widgets), and
+`$taraStorySeenDay2` (set by `Day2_Night`, not a task at all - see §5's
+note on `<<dayPlanContent>>`/embedded content below).
+
+These are plain booleans (mostly), one per task, checked by the
+per-location task widgets (§5) to render the done/available state.
 
 ## 5. Widgets - `game/system/Widgets.twee`
 
@@ -131,13 +145,19 @@ line breaks inside a widget body are actively dangerous.
   `(!$var)` - see §8 Gotcha #2. Example call:
   ``<<taskEntry "Call Chloe" "Day1_Evening_B" 1 $chloePhoneCall `!$chloeVisitedDay1` "(visit her first)">>``
 
-- **`<<homeTasks>>` / `<<neighborhoodTasks>>` / `<<chloeTasks>>`** - One
-  widget per location. Each is the **single source of truth** for what
-  tasks exist at that location: a fixed, unconditional sequence of
-  `<<taskEntry>>` calls. Both `<<locationTasks>>` (hub) and
-  `<<dayPlanContent>>` (popup) call into these three widgets rather than
-  duplicating the task list - **when a new task is added to a location,
-  edit only its one `*Tasks` widget.**
+- **`<<homeTasks>>` / `<<neighborhoodTasks>>` / `<<chloeTasks>>` /
+  `<<townTasks>>`** (the last only meaningful from Day 2) - One widget
+  per location. Each is the **single source of truth** for what tasks
+  exist at that location, and each now branches internally on `$day`
+  (`<<if $day is 1>>...<<elseif $day is 2>>...<</if>>`) to list that
+  day's own task set - Day 1 and Day 2 use completely different tasks at
+  the same physical location (e.g. Home's Day 1 list is chores/laze/
+  job-listings/etc., Day 2's is Evelyn's morning task/sleep-in/Lily's
+  room/etc.). Both `<<locationTasks>>` (hub) and `<<dayPlanContent>>`
+  (popup) call into these widgets rather than duplicating the task list
+  - **when a new task is added, edit only its one `*Tasks` widget, in
+  the branch for the relevant day** (add a new `<<elseif $day is N>>`
+  branch for a new day's tasks, don't touch the existing day branches).
 
   Earlier versions of these widgets wrapped the list in an "if every
   task here is done, print 'Nothing left to do here right now.' instead
@@ -158,19 +178,29 @@ line breaks inside a widget body are actively dangerous.
 - **`<<lateWarning>>`** - See §3.
 
 - **`<<dayPlanContent>>`** - Popup-facing (Objectives icon): prints
-  **all** locations with headings, regardless of `$currentMapLocation`,
-  by calling `<<homeTasks>>`/`<<neighborhoodTasks>>`/`<<chloeTasks>>`
-  directly. This is what makes the Objectives popup a global overview
-  instead of only showing the current location.
+  **all** locations with headings for the current `$day`, by calling
+  `<<homeTasks>>`/`<<neighborhoodTasks>>`/`<<chloeTasks>>`/`<<townTasks>>`
+  directly (Town's heading only appears in the `$day is 2` branch). This
+  is what makes the Objectives popup a global overview instead of only
+  showing the current location.
 
 - **`<<locationMap location>>`** - Renders the inline SVG location
-  graph (Home / Neighborhood / Chloe's Apartment / a locked "City" node
-  reserved for future content), highlighting whichever location string
-  is passed in, plus a one-line caption ("You are home." etc.). Used
-  by the Map popup (see §7). The SVG's `viewBox` is `0 0 400 210` -
-  if you add nodes, make sure their label `y` coordinates stay inside
-  that box (a clipped "City" label was the actual bug that prompted
-  widening it from `170` to `210`).
+  graph (Home / Neighborhood / Chloe's Apartment / Town), highlighting
+  whichever location string is passed in, plus a one-line caption ("You
+  are home." etc.). Used by the Map popup (see §7). Town is a real,
+  reachable node from Day 2 on; on Day 1 it renders locked (🔒, label
+  "???", dashed edge from Neighborhood) as a teaser for what's coming -
+  this is what "add more places later" looks like in practice: the node
+  and edge were built before Town had any content, then `$day >= 2`
+  flipped it live. The SVG's `viewBox` is `0 0 400 210` - if you add
+  nodes, make sure their label `y` coordinates stay inside that box (a
+  clipped "City" label was the bug that prompted widening it from `170`
+  to `210` in the first place). **Critically, unlike every other widget,
+  this one cannot use inline `<<if>>`/macro syntax anywhere inside the
+  SVG markup at all** - see §10 Gotcha #6. All conditional values are
+  precomputed into temp variables with plain `<<set>>` ternaries, the
+  entire `<svg>...</svg>` string is built via concatenation, and the
+  whole thing is emitted with one `<<print _svg>>`.
 
 - **`<<statChange>>`, `<<addItem>>`, `<<hasItem>>`, `<<equipOutfit>>`,
   `<<statSummary>>`** - Unrelated to navigation; pre-existing stat/
@@ -183,9 +213,11 @@ line breaks inside a widget body are actively dangerous.
 is `DailyHub`, which is what everything actually links to now. Consider
 renaming the file itself if it's ever confusing.)
 
-Render order, every time `DailyHub` is visited:
+The whole thing is one `<<if $day is 1>>...<<elseif $day is 2>>...<<else>>...<</if>>` at the top level. Day 2's branch is a near-exact mirror of Day 1's (same steps below, same `<<startDay 9 3>>` numbers - Day 2 also happens to have 9 main + 3 side tasks) with two differences: its intro paragraph text, and a fourth location (`"town"`) added to both the location-view `if/elseif` and the travel-links `if/elseif` - reachable only from Neighborhood ("Walk downtown"), with "Head back home" available directly from Town too as a convenience shortcut. The `<<else>>` "hasn't been authored yet" placeholder (step 8 below) only fires for `$day >= 3` now.
 
-1. `<<startDay 9 3>>` - see §2/§5 (numbers are Day 1's task counts).
+Render order, every time `DailyHub` is visited (per day-branch):
+
+1. `<<startDay 9 3>>` - see §2/§5 (numbers are that day's task counts; Day 1 and Day 2 both happen to be 9 main + 3 side, but this is coincidence, not a rule - count each new day's tasks yourself).
 2. **Forced sleep check**: `$gameMinutes >= 1380`? If so, show the
    "I'm exhausted" screen and stop - no task list, no travel links, just
    a sleep link. If the player wasn't at Home when time ran out, a short
@@ -222,7 +254,7 @@ Two existing systems were reused rather than rebuilt:
     ``Wikifier.wikifyEval('<<locationMap $currentMapLocation>>')``.
 
   **`Wikifier.wikifyEval()` returns a `DocumentFragment`, not a string**
-  (see §8 Gotcha #4) - it's appended to `#popup-body` with jQuery
+  (see §10 Gotcha #4) - it's appended to `#popup-body` with jQuery
   `.append()` after the heading HTML is set with `.html()`, never
   string-concatenated.
 
@@ -256,6 +288,24 @@ it in the passage itself - gate it in that location's `*Tasks` widget via
 `<<taskEntry>>`'s `lockedExpr` argument (backtick expression!). The
 passage doesn't need to know it's locked; the hub simply won't offer a
 link to it until the widget says otherwise.
+
+**Mid-task player choices** (a scene that branches on something the
+player decides *within* the scene, not on prior-day state) are a
+separate concern from the accept/refuse pattern above and don't go
+through `<<taskEntry>>` at all: the top-level task passage plays out its
+shared setup, then ends in a plain pair of `<<link>>`s to two *other*
+passages, each of which independently completes the full contract above
+(done flag, `<<spendTime>>`, location, `Continue` link back to
+`DailyHub`). `Day2_Afternoon_A` does this for the Chloe scene: it always
+sets `$chloeVisitedDay2` and spends the task's time up front (visiting
+happens regardless of what's chosen next), then - only on the
+`$pantiesAccepted` path - ends in a choice between `Day2_Chloe_OralSex`
+(continues into the full scene, plus its own additional stat block) and
+`Day2_Afternoon_A_Redirect` (a shorter, invented alternate scene, since
+the source material only wrote the "obey" outcome). Neither branch needs
+its own `<<taskEntry>>` entry - the map only ever links to the top-level
+`Day2_Afternoon_A`, which is the one and only thing marked done/locked
+on the task list.
 
 ## 9. Extending this for a new day
 
@@ -327,6 +377,32 @@ These cost real debugging time and will bite again if forgotten:
    fired (see Gotcha #1) - trust that one, verify the rest against an
    actual compile + browser test.
 
+6. **SugarCube processes nothing - no macros, no naked `$var`/`_var`
+   interpolation - once content sits inside an `<svg>` element tree.**
+   This bit `<<locationMap>>` specifically: every `<<if>>` conditional
+   and even plain `_variable` references written inside `<g class="...">`
+   attributes or `<text>...</text>` content were emitted to the DOM as
+   **literal, unevaluated text** (`<<if _loc is 'home'>>map-node-active
+   <</if>>` verbatim, or `_townIcon` as literal characters). This was
+   silent and easy to miss: Home/Neighborhood/Chloe's each only differed
+   by a CSS class between their two branches, so the broken output
+   *looked* plausible in a screenshot without a careful side-by-side
+   diff, and the whole "active location" highlight silently never
+   worked from the day the map was first built. It only became obvious
+   once Town's icon/label differed enough between its two branches
+   (🏢 vs 🔒) to visibly show both concatenated together. The fix:
+   never put `<<if>>`/naked-variable syntax inside an `<svg>` subtree.
+   Precompute every value that needs conditional logic into temp
+   variables with plain `<<set>>` (pure JS ternaries, no `<<if>>`
+   blocks), concatenate the **entire** `<svg>...</svg>` markup into one
+   JS string, and emit it with a single `<<print _svg>>` - by the time
+   that string reaches the DOM it's already fully resolved, so there's
+   nothing left inside the SVG for the (non-existent) in-SVG macro
+   processing to fail on. This is why `<<locationMap>>` looks different
+   from every other widget in the file (a block of `<<set>>` statements
+   building one big string, versus everywhere else's dense single line
+   of inline macros) - don't "clean it up" back to inline `<<if>>`s.
+
 ## 11. File map
 
 | File | Role |
@@ -336,4 +412,5 @@ These cost real debugging time and will bite again if forgotten:
 | `game/hubs/DailyHub_Morning.twee` | The `DailyHub` passage - the actual navigation hub (§6). |
 | `game/scripts/main.js` | Icon strip / popup wiring for Objectives + Map, and the top-bar clock (§7). |
 | `game/styles/main.css` | `.day-plan`, `.task-*`, `.location-map`, `.map-*`, `.late-warning`, `.travel-links`, `.clock-display` (now largely superseded by the top bar, but still present/harmless) rules. |
-| `game/days/day001/*.twee` | The actual task passages, each following the contract in §8. |
+| `game/days/day001/*.twee` | Day 1's task passages, each following the contract in §8. |
+| `game/days/day002/*.twee` | Day 2's task passages. Same contract as Day 1. Notable files: `Day2_Afternoon_A*` + `Day2_Chloe_OralSex` (the Chloe branch, including the obey-vs-redirect choice point - see §8's note on choice points), `Day2_Afternoon_C*` (Lily's nail-painting accept/refuse), `Day2_SideQuests.twee` (Ali/closet/wardrobe). |
