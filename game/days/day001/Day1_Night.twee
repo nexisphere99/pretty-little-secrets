@@ -32,7 +32,7 @@
 
 <<statSummary>>
 
-<<link `"Sleep   Begin Day " + ($day + 1)`>>
+<<link `"Sleep"`>>
   <<set $day += 1>>
   <<set $phase to "morning">>
   <<goto "DailyHub">>

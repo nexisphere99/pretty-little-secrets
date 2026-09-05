@@ -11,13 +11,13 @@
 <<set $currentMapLocation to "home">>
 <</if>>
 <p><strong>I'm exhausted.</strong> My eyes keep drifting shut mid-thought. Whatever else I meant to do today, it'll have to wait. There's only one thing left to do.</p>
-<<link `"Go to sleep   end Day " + $day`>><<goto "Day1_Night">><</link>>
+<<link `"Go to sleep - end Day " + $day`>><<goto "Day1_Night">><</link>>
 
 <<else>>
 
 <<if $gameMinutes is 420>>
 <p>My alarm doesn't wake me. The sun does, cutting through the gap in my curtains like a blade. I roll over, grab my phone, squint at the screen. 9:47 AM. Saturday. A text from Chloe sits at the top of my notifications: <em>"Come over later? Miss you xo."</em> I type back a thumbs up emoji and toss the phone onto my pillow.</p>
-<p>The day's mine to spend however I want, but there's only so much of it. Whatever I do costs time, and eventually I'll be too tired to keep going.</p>
+<p>The day's mine to spend however I want - but there's only so much of it. Whatever I do costs time, and eventually I'll be too tired to keep going.</p>
 <</if>>
 
 <<if $currentMapLocation is "home">>
@@ -57,5 +57,9 @@
 <h2>Day <<print $day>></h2>
 <p>The sun comes up the same as it always does. But this is as far as Alex's story has been written so far - Day <<print $day>> hasn't been authored yet.</p>
 <p>Thanks for playing through Day 1 of <strong>Pretty Little Secrets</strong>. Check back soon for more of Alex's story.</p>
+<div class="version-note">
+  <p class="version-badge">Version 0.0.1 complete!</p>
+  <p>If you enjoyed this and want to support future updates, consider visiting my <a href="https://www.patreon.com/c/zaramystique" target="_blank" rel="noopener">Patreon</a> &#10084;&#65039;</p>
+</div>
 <</if>>
 <</nobr>>

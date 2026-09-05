@@ -1195,6 +1195,31 @@ button:hover {
   padding-bottom: 10px;
   margin-bottom: 4px;
   border-bottom: 1px dashed #ffb6c1;
+}
+
+/* End-of-content version/support note */
+.version-note {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: #fff0f5;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.version-badge {
+  display: inline-block;
+  background: #ff80ab;
+  color: white;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.version-note a {
+  color: #c2185b;
+  font-weight: bold;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">Macro.add("dialog", {
   handler: function () {
     if (this.args.length < 2) {
@@ -2157,7 +2182,7 @@ $(document).on(':passagerender', function () {
 
 &lt;&lt;statSummary&gt;&gt;
 
-&lt;&lt;link `&quot;Sleep   Begin Day &quot; + ($day + 1)`&gt;&gt;
+&lt;&lt;link `&quot;Sleep&quot;`&gt;&gt;
   &lt;&lt;set $day += 1&gt;&gt;
   &lt;&lt;set $phase to &quot;morning&quot;&gt;&gt;
   &lt;&lt;goto &quot;DailyHub&quot;&gt;&gt;
@@ -2247,13 +2272,13 @@ $(document).on(':passagerender', function () {
 &lt;&lt;set $currentMapLocation to &quot;home&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;p&gt;&lt;strong&gt;I&#39;m exhausted.&lt;/strong&gt; My eyes keep drifting shut mid-thought. Whatever else I meant to do today, it&#39;ll have to wait. There&#39;s only one thing left to do.&lt;/p&gt;
-&lt;&lt;link `&quot;Go to sleep   end Day &quot; + $day`&gt;&gt;&lt;&lt;goto &quot;Day1_Night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link `&quot;Go to sleep - end Day &quot; + $day`&gt;&gt;&lt;&lt;goto &quot;Day1_Night&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 &lt;&lt;else&gt;&gt;
 
 &lt;&lt;if $gameMinutes is 420&gt;&gt;
 &lt;p&gt;My alarm doesn&#39;t wake me. The sun does, cutting through the gap in my curtains like a blade. I roll over, grab my phone, squint at the screen. 9:47 AM. Saturday. A text from Chloe sits at the top of my notifications: &lt;em&gt;&quot;Come over later? Miss you xo.&quot;&lt;/em&gt; I type back a thumbs up emoji and toss the phone onto my pillow.&lt;/p&gt;
-&lt;p&gt;The day&#39;s mine to spend however I want, but there&#39;s only so much of it. Whatever I do costs time, and eventually I&#39;ll be too tired to keep going.&lt;/p&gt;
+&lt;p&gt;The day&#39;s mine to spend however I want - but there&#39;s only so much of it. Whatever I do costs time, and eventually I&#39;ll be too tired to keep going.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $currentMapLocation is &quot;home&quot;&gt;&gt;
@@ -2293,6 +2318,10 @@ $(document).on(':passagerender', function () {
 &lt;h2&gt;Day &lt;&lt;print $day&gt;&gt;&lt;/h2&gt;
 &lt;p&gt;The sun comes up the same as it always does. But this is as far as Alex&#39;s story has been written so far - Day &lt;&lt;print $day&gt;&gt; hasn&#39;t been authored yet.&lt;/p&gt;
 &lt;p&gt;Thanks for playing through Day 1 of &lt;strong&gt;Pretty Little Secrets&lt;/strong&gt;. Check back soon for more of Alex&#39;s story.&lt;/p&gt;
+&lt;div class=&quot;version-note&quot;&gt;
+  &lt;p class=&quot;version-badge&quot;&gt;Version 0.0.1 complete!&lt;/p&gt;
+  &lt;p&gt;If you enjoyed this and want to support future updates, consider visiting my &lt;a href=&quot;https://www.patreon.com/c/zaramystique&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Patreon&lt;/a&gt; &amp;#10084;&amp;#65039;&lt;/p&gt;
+&lt;/div&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Start" tags="" position="1100,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;div class=&quot;explicit-warning&quot;&gt;

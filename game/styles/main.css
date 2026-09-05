@@ -1090,3 +1090,28 @@ button:hover {
   margin-bottom: 4px;
   border-bottom: 1px dashed #ffb6c1;
 }
+
+/* End-of-content version/support note */
+.version-note {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: #fff0f5;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.version-badge {
+  display: inline-block;
+  background: #ff80ab;
+  color: white;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.version-note a {
+  color: #c2185b;
+  font-weight: bold;
+}
