@@ -851,6 +851,13 @@ button:hover {
   font-weight: bold;
 }
 
+.version-box {
+  color: #4a2e4a;
+  font-size: 12px;
+  opacity: 0.75;
+  text-align: center;
+}
+
 .day-objectives {
   background: #fff0f5;
   border: 2px solid #ffb6c1;

@@ -1,0 +1,45 @@
+:: Day5_Morning_C [day5 morning evelyn apron]
+<<nobr>>
+<<centerImage "image/events/kitchen.png">>
+<<set $currentLocation to "events/kitchen">>
+
+<p>Evelyn is waiting in the kitchen when I come down. She's standing by the table, which is unusual because Evelyn normally sits, presides, occupies her chair like a throne. Standing means she's presenting something. Standing means something is about to change.</p>
+<p>She's holding an apron.</p>
+<p>Not my old apron. The plain white one she gave me on Day 2 when the chores started, the one that looked like something a hardware store would sell, functional and genderless and safe. This one is different. This one is pastel pink. This one has white ruffles along the edges. This one has a bow that ties at the back. This one is, by any reasonable assessment, something a French maid would wear on her day off.</p>
+<p>"Your old apron was getting worn," she says. "This one is more appropriate."</p>
+<p>It's not more appropriate. A pink ruffled apron is not more appropriate for a nineteen-year-old guy doing housework than a plain white one. She knows it. I know it. The walls know it. But she says it with such matter-of-fact certainty, the same tone she uses to tell me what time dinner is or where the cleaning supplies are stored, that arguing feels absurd. Like correcting a math teacher on two plus two.</p>
+<p>"Turn around."</p>
+<p>I turn around. She ties it around my waist herself. Her fingers work the strings with the practiced efficiency of someone who's tied a thousand bows, pulling the sash tight, adjusting the ruffles so they lay flat against my hips, tugging the fabric until it sits just right. The ruffles brush my thighs. The bow at my lower back feels like a target, a bullseye painted in pink and white that says "look here, look at what he's wearing, look at what he agreed to."</p>
+<p>"There." She steps back. Studies me. Her eyes travel from the ruffled hem to the pink bodice to my face, which I'm sure is the same shade as the apron. "Much better."</p>
+<p>She hands me a feather duster. Not the old ratty one from the closet. A new one. White feathers, long handle, the kind of duster that exists in costume shops and erotic fantasies and nowhere in the real world of actual cleaning.</p>
+<p>"Start with the bookshelf."</p>
+<p>I dust the bookshelf in a pink ruffled apron with a feather duster that looks like it belongs in a burlesque show. The fabric swishes when I move, a soft whisper of material against my jeans that I can hear over the silence of the house. The ruffles bounce slightly with each stretch, a flutter of pink at my periphery that keeps reminding me what I'm wearing.</p>
+<p>Lily walks past the living room. Stops. I can feel her eyes on me without turning around, a heat source at the doorway, her presence a radiation that my body has learned to detect.</p>
+<p>She nearly chokes on her cereal. I hear the cough, the sharp intake of breath, the pause where she's processing what she's seeing: her stepbrother, in a pink ruffled apron, dusting a bookshelf with a feather duster. Then silence. I wait for the comment. The laughter. The camera.</p>
+<p>She takes a photo. I hear the shutter. Always with the photos.</p>
+<p>But she doesn't say anything cruel. Not a word. She just looks at me for a long moment, her phone still raised, and something in her face shifts. Not cruelty. Not amusement. Something closer to satisfaction. Like a hypothesis she'd been testing just got confirmed.</p>
+<p>She walks away. The cereal crunches resume from the kitchen.</p>
+<p>I finish the bookshelf. I move to the mantel. The ruffles swish. The feather duster catches dust motes in the morning light and sends them spinning. The bow at my back pulls slightly with each reach, reminding me it's there, reminding me she tied it, reminding me I stood still and let her.</p>
+<p>Evelyn returns to inspect my work. She runs a finger along the shelf edge. It comes away clean.</p>
+<p>"Satisfactory." She almost smiles. Almost. "The apron suits you, Alex. You should wear it whenever you do housework."</p>
+<p>Whenever. Not today. Not this time. Whenever. A standing order. A new uniform. A pink ruffled apron that I'll put on every time I pick up a dustcloth, and each time I put it on it'll feel a little less strange and a little more normal, and that's the trick, that's always the trick, normalization through repetition until the extraordinary becomes ordinary and the feminine becomes default.</p>
+<p>"Yes, ma'am."</p>
+<p>The words come out smooth. No hesitation. No stumble. Just compliance, clean and simple, delivered on a platter of pink ruffles.</p>
+<p>Evelyn's eyes change. Something in them deepens. Something that was waiting for that response the way a lock waits for a key.</p>
+<p>"Good boy," she says. And then, softer, almost to herself: "Very good."</p>
+
+<<statChange "feminization" 4>>
+<<statChange "obedience" 3>>
+<<statChange "embarrassment" 2>>
+<<set $evelynRelationship += 3>>
+<<set $lilyAwareness += 2>>
+<<set $lilyPhotoCount += 1>>
+<<set $pinkApronWorn to true>>
+<<addItem "pink ruffled apron">>
+<<if $evelynStage < 2>><<set $evelynStage to 2>><</if>>
+<<set $day5_evelynApronDone to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

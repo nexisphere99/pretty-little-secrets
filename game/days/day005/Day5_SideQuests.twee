@@ -1,0 +1,76 @@
+:: Day5_SQ_Ali [day5 sidequest neighborhood ali]
+<<nobr>>
+<<centerImage "image/location/park.png">>
+
+<p>"Alex! Come, come." Ali waves me in before I've even reached the door. The crossword is spread on the counter, pen in hand, reading glasses perched on his nose like they're trying to escape.</p>
+<p>"Seven letters. 'A complete loss of identity.' Starts with E."</p>
+<p>I think. My brain offers options like a multiple-choice test where all the answers are wrong.</p>
+<p>"Eclipse?"</p>
+<p>"Eclipse! Seven letters, E-C-L-I-P-S-E." He writes. Checks the crosses. "Perfect. Eclipse. When one thing covers another and the original disappears." He looks at me over his glasses. "Interesting word. An eclipse isn't destruction. The original is still there. It's just... hidden. Waiting for the shadow to pass."</p>
+<p>He bags my Gatorade. Slides a chocolate bar in without charging. The Ali tax, free snacks for crossword assistance, a barter system as old as their relationship.</p>
+<p>"You seem lighter today, Alex." He caps his pen. "Not lighter in weight. Lighter in... resistance. Like you stopped fighting the current."</p>
+<p>"I didn't know I was fighting anything."</p>
+<p>"Nobody does." He smiles. The smile of a man who solves crosswords and sees patterns in words that other people use without thinking. "That's what makes the current so effective."</p>
+
+<<set $aliFamiliarity += 1>>
+<<set $money -= 1>>
+<<set $day5_aliCrossword to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day5_SQ_Henderson [day5 sidequest neighborhood henderson]
+<<nobr>>
+<<centerImage "image/events/street.png">>
+
+<p>Morning departure. Henderson is doing what Henderson always does, which is existing in his front yard like a man who was planted there by the neighborhood's original developer and has been growing ever since. Orioles cap. Garden hose. The same satisfied expression of someone who has figured out exactly what life is and decided it's watering the lawn.</p>
+<p>"Morning, son!" He waves. The hose oscillates. Droplets catch the sun.</p>
+<p>"Morning, Mr. Henderson."</p>
+<<if $hairClipQuest>>
+<p>"That your hair clip?" He points at the sparkly pink butterfly. Not accusatory. Not mocking. Just noticing. The way he'd notice a new mailbox or a different car in the driveway. Henderson notices everything and judges nothing.</p>
+<p>"It's my sister's," I say. The lie is automatic. The truth would require an explanation that would take longer than Henderson's attention span, which is calibrated to lawn-sized increments.</p>
+<p>"Huh. My wife used to wear butterflies in her hair." He adjusts his cap. "You look like your mother today. Something about the eyes."</p>
+<<else>>
+<p>He squints at me through the oscillating spray. "You look different today." Not accusatory. Not mocking. Just noticing. The way he'd notice a new mailbox or a different car in the driveway. Henderson notices everything and judges nothing.</p>
+<p>"Do I?"</p>
+<p>"Huh." He adjusts his cap. "You look like your mother today. Something about the eyes."</p>
+<</if>>
+<p>He means Evelyn. He's always called her my mother. To Henderson, step-parents are parents and the prefix is a technicality that doesn't survive contact with his worldview.</p>
+<p>But he said I look like Evelyn. Not walk like her, which he said yesterday. Look like her. The observation has migrated from behavior to appearance. From motion to identity. Henderson is watching me become someone else in real time and reporting his findings with the detached accuracy of a nature documentary narrator.</p>
+<p>"Must be the light," I say.</p>
+<p>"Could be." He goes back to his hose. "Good light today. Makes everything look softer."</p>
+<p>I walk to the bus stop. I think about looking soft. I think about Henderson, who has no agenda and no plan and no leverage, who just stands in his yard and says what he sees. And what he sees is a boy who looks like his stepmother<<if $hairClipQuest>> and wears butterflies in his hair<</if>> and walks smoother every day.</p>
+<p>If Henderson can see it, everyone can see it.</p>
+
+<<set $hendersonFamiliarity += 1>>
+<<set $day5_hendersonMorning to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
+
+:: Day5_SQ_PhotoReview [day5 sidequest home lily photoreview]
+<<nobr>>
+<<centerImage "image/events/lily_bedroom.png">>
+
+<p>I pass Lily's room on the way to the bathroom. Her door is cracked. Not an invitation. Lily doesn't do invitations. She does traps that look like open doors.</p>
+<p>Through the crack I can see her at her desk. Laptop open. Phone propped beside it. She's scrolling through photos on her laptop, and even at this angle, even through a two-inch gap, I can see that some of those photos are of me.</p>
+<p>She's editing. She's sitting at her desk with photo editing software open and she's touching up images of my painted toenails, adjusting the color saturation, warming the tones, cropping tight so the images look anonymous and aesthetic and ready for the feed she's building.</p>
+<p>A grid of photos on her screen. The toenails from multiple angles. The waistband shot, cropped to show only the lace and the bow, no face, no identifying features. A photo I didn't know she had: my hand wrapped around a coffee cup, the faint clear gloss on my nails catching the light. When did she take that? How many photos exist that I don't know about?</p>
+<p>She's humming. Working. Happy. Building Lexi pixel by pixel from stolen moments and careful angles, constructing a person who looks feminine and mysterious and just discovering herself, a person who has my body and my nails and my waistband but not my face. Not yet.</p>
+<p>The corkboard above her desk has been updated since yesterday. The @prettyboykai printout is still there. The PROJECT L sheet is still there. But new additions: engagement statistics. Comments from the twelve (now eighteen) followers. Screenshotted DMs from people asking "is this you?" and "more please" and "do you sell content?"</p>
+<p>Sell content. She's looking at monetization. She's building an audience for a person who doesn't know they're a product yet.</p>
+<p>I back away from the door. My stomach is tight. My cock, traitorously, is not. There's something about being seen that terrifies the civilized parts of me and excites the parts that have been growing in the dark like mushrooms in a cellar. The parts that wear panties to bed and call women "ma'am" and let strangers moisturize my face and haven't fought any of it. Not really. Not hard enough.</p>
+<p>Lexi is growing. And the thing that scares me most isn't that she exists. It's that I want to see what she looks like when she's finished.</p>
+
+<<set $lilyPhotoEditing to true>>
+<<set $lexiFollowers to 18>>
+<<set $day5_lilyPhotoReview to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

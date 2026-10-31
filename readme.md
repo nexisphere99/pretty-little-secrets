@@ -53,3 +53,17 @@
 - Added Lily's "Project L" corkboard observation and a quiet-night-in side quest.
 - Added a BBC-gated Pulse Instagram ad and a randomized Evelyn-finds-the-panties laundry event at night.
 - Updated the Patreon link to zaramystique_pls.
+
+## 0.0.5
+- Added Day 5 content (main quest + side quests/NPCs), through Day 5 sleep.
+- Added Evelyn's pink ruffled apron (her Stage 2 entry), gated behind Evelyn relationship 10+ and obedience 10+.
+- Added Sophia's garden and porch evening chat (gated behind Sophia relationship 5+), plus the yoga invitation.
+- Added Chloe's afternoon with Mia and Jade: the skincare ambush, the jeans verdict, and the mall trip queued for Day 8.
+- Added a Nicolette salon preview at Velvet Shears and her Makeup Application card.
+- Added Lily's Instagram reveal (@lexi.secrets) and a follow-up photo-review task on her corkboard and editing setup.
+- Embedded the Vanessa memory taste drill, Derek's return and the Okonkwo follow-up into the cafe shift.
+- Added Henderson's "you look like your mother" and Ali's "eclipse" crossword side quests.
+- Added Evelyn's bedtime inspection and the gold-watch Pulse ad (BBC-gated) to the night passage.
+- Added new relationship/flag state: Mia, Jade, Nicolette, Derek, Okonkwo, Lexi followers/posts/fame, skincare routine.
+- Scenes adapt to earlier choices: hair clip, panties, apron, and whether Lily has the panty photo.
+- Added a "Version - 0.1.0" line to the left sidebar and updated the end-of-content badge to match.

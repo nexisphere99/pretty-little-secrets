@@ -1,0 +1,48 @@
+:: Day5_Evening_A [day5 evening lily instagram]
+<<nobr>>
+<<centerImage "image/location/home.png">>
+<<set $currentLocation to "location/home">>
+
+<p>Lily finds me after dinner. She's sitting on the stairs, legs drawn up, phone in both hands, the blue glow of the screen illuminating her face from below and making her look like a campfire story villain. Her pink hair falls across one eye. The other eye watches me approach with the patience of a spider who finished building the web an hour ago.</p>
+<p>"Come here," she says. "I want to show you something."</p>
+<p>I should walk past. I should go to my room. I should do literally anything other than sit next to Lily when she's glowing with the specific frequency of malicious excitement that I've learned to recognize the way sailors recognize storm clouds.</p>
+<p>I sit next to her on the stairs.</p>
+<p>She turns the phone screen toward me. Instagram. A profile. The username is @lexi.secrets. The bio reads: "just a shy thing discovering herself." The profile picture is a close-up of painted toenails, cropped tight, filtered warm, the kind of ambiguous image that could belong to anyone. Could belong to any girl. Could be mine.</p>
+<p>There's one post. The toenails again, from a different angle, with a caption that says "first steps" and a butterfly emoji and a pink heart emoji.</p>
+<p>Twelve followers already.</p>
+<p>My stomach drops through the stairs, through the floor, through the foundation of the house and into the earth below where it belongs among the worms and the roots and the other things that live in darkness.</p>
+<p>"I made you an account," she says. Her voice is light, conversational, the tone of someone sharing good news. "Well, I made LEXI an account. Don't worry, nothing identifying yet. Just testing the waters."</p>
+<p>"Lily, what the fuck?"</p>
+<p>She scrolls down. Twelve followers. Anonymous accounts, most of them, the kind of blank-avatar profiles that follow anything tagged with the right keywords. But twelve people are now subscribed to the online life of a person called Lexi who doesn't exist yet but whose toenails look suspiciously like mine.</p>
+<<if $lilyCaughtPanties>>
+<p>"Relax." She pockets the phone. "It's anonymous. Nobody knows it's you. But imagine if people DID know." She lets the sentence hang in the air between us like smoke. "Imagine if I posted one of the other photos. The one from yesterday morning. The waistband." She mimes pulling up a waistband. "The bow."</p>
+<p>The photo. The black lace waistband peeking above my sweatpants. The purple bow. My face the color of a cardiac arrest. That photo is in her phone. That photo now exists in the same ecosystem as @lexi.secrets, and the distance between "private collection" and "public post" is exactly one tap of Lily's thumb.</p>
+<p>"I'm just having fun," she says. She leans her shoulder against mine. Sisterly. Casual. The contact of someone who is not threatening you while very obviously threatening you. "Play along and I'll keep it anonymous. Be boring and..." She shrugs. The shrug contains multitudes.</p>
+<<else>>
+<p>"Relax." She pockets the phone. "It's anonymous. Nobody knows it's you. But imagine if people DID know." She lets the sentence hang in the air between us like smoke. "Imagine if I tagged a real name. Yours. Under a very particular set of toes."</p>
+<p>One tap of Lily's thumb. That's the distance between "private collection" and "public post," and the photos she already has of my feet and my nails are enough to measure it.</p>
+<p>"I'm just having fun," she says. She leans her shoulder against mine. Sisterly. Casual. The contact of someone who is not threatening you while very obviously threatening you. "Play along and I'll keep it anonymous. Be boring and..." She shrugs. The shrug contains multitudes.</p>
+<</if>>
+<p>"What do you want?"</p>
+<p>"Nothing! Today. I just wanted you to know it exists." She pulls the phone back out. Opens the account again. Shows me the single post. "Twelve followers and climbing. These people are hungry for this content, Alex. There's a whole community out there that lives for boys like..." She catches herself. Adjusts. "For content like this."</p>
+<p>Boys like me. She was going to say boys like me.</p>
+<p>"I'm not posting anything," I say. My voice comes out smaller than I want it to.</p>
+<p>"You don't have to. That's my job." She stands. Stretches. Yawns with theatrical boredom. "All you have to do is keep being you. Keep wearing the cute stuff. Keep letting Chloe paint your nails and Evelyn dress you up and Vanessa teach you to wiggle." She starts up the stairs. Pauses. Looks back. "The content creates itself, Alex. I just hit record."</p>
+<p>She disappears into her room. Bass kicks in. The door vibrates.</p>
+<p>I sit on the stairs and stare at my phone. I open Instagram. Search for @lexi.secrets. There it is. One post. Twelve followers. Thirteen now. Someone just followed while I was looking.</p>
+<p>Lexi is alive. Lexi is growing. Lexi lives in Lily's phone and on Instagram's servers and in the imaginations of fourteen people who've decided they want to watch a shy thing discover herself.</p>
+<p>And the shy thing has my toenails.</p>
+
+<<statChange "embarrassment" 5>>
+<<statChange "feminization" 2>>
+<<set $lilyRelationship += 2>>
+<<set $onlineFame += 3>>
+<<set $lexiInstagramActive to true>>
+<<set $lexiFollowers to 13>>
+<<set $lexiPosts to 1>>
+<<set $day5_lilyInstagramDone to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "home">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

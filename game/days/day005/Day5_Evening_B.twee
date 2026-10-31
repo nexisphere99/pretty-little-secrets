@@ -1,0 +1,36 @@
+:: Day5_Evening_B [day5 evening sophia porch]
+<<nobr>>
+<<centerImage "image/events/street.png">>
+<<set $currentLocation to "events/street">>
+
+<p>The sun is going down and Sophia's porch light is on. She has a way of being available without being intrusive, like a book left open on a table, inviting but never demanding. I cross the lawn without deciding to cross the lawn. My feet just go.</p>
+<p>She's reading. Wine glass on the railing, half empty, the red catching the last amber light and glowing like a lantern. She looks up when she hears me and her smile arrives before her words, warm and immediate and uncomplicated in a way that nothing else in my life feels right now.</p>
+<p>"Couldn't sleep?"</p>
+<p>"It's seven PM."</p>
+<p>"Couldn't stop thinking, then." She pats the chair next to hers. I sit. The evening air is cool after the day's heat, carrying the smell of jasmine from her garden, <<if $day5_sophiaGardenDone>>the garden we planted together this morning, my hands in floral gloves, her hands on my arm.<<else>>the beds she tends so patiently.<</if>></p>
+<p>We talk for an hour. She asks questions the way therapists ask questions, open-ended, nonjudgmental, creating spaces for answers that might be bigger than I expect. She asks about my life. About Chloe. About Evelyn, and what it's like living with a stepmother who treats the house like a Swiss finishing school. She asks about Lily without mentioning Lily's name, because she can see the tension in my jaw when certain topics get close and she's too kind to push the bruise.</p>
+<p>"You seem like someone who's more comfortable making other people happy than making yourself happy," she says. She's not looking at me when she says it. She's looking at the garden, at the dark shapes of the plants<<if $day5_sophiaGardenDone>> we bedded together<</if>>. "That's a beautiful quality. But it can also be a dangerous one."</p>
+<p>"Dangerous how?"</p>
+<p>"Because people learn to take advantage of it." She turns to me now. Her eyes in the evening light are dark honey. "People see a boy who says yes and they push. Not because they're bad people. Because saying yes feels like permission. And permission without limits is a door that only opens one direction."</p>
+<p>She touches my knee. Her hand rests there. Not moving. Not asking for anything. Just present.</p>
+<p>"You deserve to explore who you really are, Alex. Without judgment. Without someone else's expectations shaping the answer." She squeezes once. Light. "The question isn't whether you're changing. It's whether the changes are yours."</p>
+<p>I want to tell her everything. I want to tell her about the panties<<if $hairClipQuest>> and the clip<</if>><<if $pinkApronWorn>> and the apron and the pink ruffles<</if>><<if $day5_lilyInstagramDone>> and Lexi<</if>> and the way my hips move when I carry trays<<if $day5_cafeShiftDone>> and the fact that I called a woman I barely know "ma'am" this morning and meant it<</if>>. I want to lay all of it at her feet and ask her to make sense of it because I can't, I can't make sense of any of it, and she's the only person who seems to understand that understanding is the point.</p>
+<p>But I don't tell her. I sit in her silence and drink her wine and listen to the crickets and feel her hand on my knee and think about doors that only open one direction.</p>
+<p>"Thank you, Sophia."</p>
+<p>"For what?"</p>
+<p>"For asking questions nobody else asks."</p>
+<p>She smiles. "That's because nobody else wants to hear the answers."</p>
+<p>I walk home in the dark. Her words follow me. Explore who you really are. The question isn't whether you're changing. The changes are yours.</p>
+<p>Are they? Are the changes mine? Or are they Chloe's? Evelyn's? Lily's? Vanessa's? Sophia's? Are they the combined output of a half-dozen women who saw me and decided, independently or together, that I was raw material for something they wanted to build?</p>
+<p>The porch light is on at home. Evelyn's silhouette is in the kitchen window. Lily's bass shakes the upstairs walls.<<if $pinkApronWorn>> My pink ruffled apron is hanging on the hook by the laundry room, waiting for tomorrow's chores.<</if>></p>
+<p>The changes might not be mine. But they're happening to me. And I'm running out of reasons to stop them.</p>
+
+<<statChange "confidence" 3>>
+<<statChange "feminization" 1>>
+<<set $sophiaRelationship += 4>>
+<<set $day5_sophiaEveningDone to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

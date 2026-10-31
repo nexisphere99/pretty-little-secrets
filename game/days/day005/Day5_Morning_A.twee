@@ -1,0 +1,137 @@
+:: Day5_Morning_A [day5 morning cafe vanessa derek okonkwo]
+<<nobr>>
+<<centerImage "image/events/cafe.png">>
+<<set $currentLocation to "events/cafe">>
+
+<p>Third shift. The alarm goes off at six-thirty and my body responds before my brain catches up, legs swinging out of bed, feet hitting cold floor, the whole mechanical sequence of waking up that used to feel like dragging myself through wet concrete but now runs on its own like a program someone installed while I was sleeping.<<if $pantiesEquipped>> Panties on. The lavender pair Chloe left in my drawer two days ago, the ones with the tiny white bow at the front that I told myself I grabbed by accident the first time and stopped lying about by the third. They settle against my skin like a second layer of self, silk cupping me, lace tracing the line of my hip bones, and I pull my jeans over them without hesitation because hesitation died somewhere around Day 3 and didn't leave a forwarding address.<<else>> Jeans, t-shirt, sneakers. Regular guy clothes, pulled on without a second thought.<</if>></p>
+<<if $hairClipQuest>>
+<p>I'm wearing a pink sparkly butterfly clip in my hair. In my own house. I caught my reflection in the bathroom mirror while brushing my teeth and the clip sat there perched in my short brown hair like a tiny declaration of surrender, absurdly feminine, catching the overhead light and throwing little pink sparks across the tile wall. Lily spotted it at breakfast and gave me a thumbs up from across the table, her mouth full of cereal, her eyes full of victory. Evelyn noticed it too but said nothing. Her eyebrow rose exactly one quarter of an inch, which in Evelyn's emotional vocabulary is the equivalent of a standing ovation.</p>
+<</if>>
+<p>Bus to the cafe. The route is muscle memory now. I know which seat has the least graffiti, which stop has the prettiest view of the park, which turn makes my stomach dip if I'm standing. I know the smell of the place before I see it, coffee and sugar and the faint undertone of cleaning solution that Vanessa insists on because "a dirty cafe is a dead cafe and I'm not running a morgue."</p>
+<p>She's behind the counter when I walk in. Wine-colored lipstick today. Hair pulled so tight it looks painted on. The ruffled apron cinched at her waist, the bow at the back sharp enough to cut glass. She looks at me the way she always looks at me, like she's reading a book she's already decided she likes but isn't done with yet.</p>
+<p>"You're three minutes early," she says.</p>
+<p>"Is that bad?"</p>
+<p>"It's keen." She throws me an apron. The green one, the staff one, and when I catch it the fabric unfurls in my hands<<if $pinkApronWorn>> and I think about the pink ruffled apron Evelyn gave me and how that one felt lighter, softer, more like something I was being dressed in rather than something I was putting on for work<</if>>.</p>
+<p>"Table service again today. And I'm testing you."</p>
+<p>"Testing me how?"</p>
+<p>"Memory." She taps her temple with one lacquered fingernail. "You're going to take orders without writing them down. Memory is charm, Alex. Nobody likes watching you scribble on a pad like a court reporter. You look them in the eyes, you smile, you repeat their order back. You make them feel like the only people in the room."</p>
+<p>"What if I mess up?"</p>
+<p>"Then you fix it. Gracefully. A server who messes up and recovers with charm earns more than a server who never messes up at all." She adjusts my collar. Her fingers. My neck. The touch that's become a signature, a stamp of approval that I lean into now instead of flinching away from. "Ready?"</p>
+<p>"Ready."</p>
+<p>The morning rush is a blur of faces and drinks and the constant low-level terror of forgetting someone's oat milk. I hold three orders in my head at once, then four, then five. I smile because Vanessa said smile and I think about feeling pretty because Vanessa said think about feeling pretty and the combination turns my face into something that earns tips and eye contact and, from one woman in a business suit, an actual "you're adorable" that makes my ears burn.</p>
+<p>I mess up twice. The first time is minor. Skim instead of whole for a cappuccino. The customer doesn't notice. The second time is worse. A table of four college girls. Sorority types, all matching scrunchies and iced drinks and the ability to make you feel like you're auditioning for something you'll never be cast in. I get two of their orders switched. The blonde with the pink scrunchie gets the caramel macchiato meant for the brunette. They laugh it off, all gracious smiles and "no worries," but the brunette gives me a look that says she's already composing the Yelp review in her head.</p>
+<p>Vanessa pulls me to the break room. The door shuts. The sounds of the cafe go muffled, distant, a world I've been removed from.</p>
+<p>"Look at me."</p>
+<p>I look at her. She tilts my chin up with one finger. Her eyes are dark, intense, the kind of eyes that don't blink when they're making a point. The break room smells like dish soap and the ghost of a hundred lunches and underneath that, her perfume, something warm and spiced that I've started to associate with correction.</p>
+<p>"You need to focus. When you're out there, you're not Alex. You're a server. You're whoever they need you to be. The cute kid who gets their name right. The attentive sweetheart who remembers their regular. The pretty face that makes waiting for coffee feel like a treat instead of a chore. Understand?"</p>
+<p>"Yes."</p>
+<p>"Yes what?"</p>
+<p>The pause fills the room. It fills my chest. It pushes against my ribs and presses on my lungs and in that pressurized silence, something clicks into place. Not a decision. A reflex. Evelyn's training, her dinner lessons, her "manners are the bones that hold civilization together" speeches, all of it surges up through my nervous system and arrives at my mouth before my brain can review the memo.</p>
+<p>"Yes... ma'am?"</p>
+<p>Vanessa's lips curl. Not a smile. A recognition. Like she heard a frequency she'd been listening for and just confirmed the signal.</p>
+<p>"Good boy. Now get back out there."</p>
+<p>I'm back on the floor before the weight of what happened lands on me. Ma'am. I called her ma'am. Not because she asked for it, not because the situation demanded it, but because Evelyn trained it into me at her dinner table with her bone china and her posture corrections and her cool fingers on my chin, and it crossed over. It jumped tracks from one woman's domain to another and it worked. Vanessa accepted it. Expected it, maybe. Like they've been building the same thing from different blueprints and the pieces just fit together.</p>
+<p>The rest of the shift runs smoother. My memory sharpens. The smile comes easier. The hip sway that Vanessa drilled into me yesterday is becoming unconscious, my body moving in that lateral pendulum motion with each step, carrying trays like they're extensions of my arms, presenting drinks with the small flourish Vanessa demonstrated, the one where you set the cup down and rotate it so the handle faces the customer.</p>
+<p>A regular, the guy who always orders a flat white and reads the newspaper, looks up as I deliver his drink.</p>
+<p>"New walk?" he says.</p>
+<p>"Excuse me?"</p>
+<p>"You're walking different than last week. Smoother." He goes back to his paper. "Suits you."</p>
+<p>I stand there holding the empty tray and processing the fact that a stranger noticed. A stranger looked at the way my body moves through space and registered a change and told me it suits me and went back to reading about stock prices like he'd just commented on the weather.</p>
+<p>The rush ebbs into the dead zone between the morning and the lunch crowd. The cafe is nearly empty, just two laptops and an old man with a newspaper and the permanent smell of beans being tortured into excellence. Vanessa is wiping down the espresso machine, her movements hypnotic, circular, the cloth squeaking against chrome in a rhythm that sounds almost musical.</p>
+<p>"Come here." She drops the cloth. Reaches under the counter and pulls out a tray. On it: six cups, each with a number written on the bottom in Sharpie. "We're playing a game."</p>
+<p>"What kind of game?"</p>
+<p>"The kind that teaches you to pay attention." She arranges the cups in a line. "I'm going to assign each cup a drink. You're going to memorize the order. Then I'm going to scramble them and you're going to unscramble them by taste alone."</p>
+<p>"By taste?"</p>
+<p>"By taste." She starts making drinks. Quick, efficient, her hands moving between machines with the mechanical grace of someone who could build a latte in her sleep and has, probably, literally done so. Six drinks. She slides them into the numbered cups without telling me which is which.</p>
+<p>"Ready?"</p>
+<p>She scrambles the cups. Swaps positions. Spins them. When she's done, the six cups sit in a random order and I have no idea which is which.</p>
+<p>"Taste each one. Tell me the number."</p>
+<p>I taste the first. Oat milk latte. Sweet, creamy, a little nutty. I think it was number four. "Four?"</p>
+<p>"Three. But close." She marks something on a napkin. "Next."</p>
+<p>I work through them. I get three right, two wrong, and one that I can't even identify, some specialty thing with lavender and honey that tastes like drinking a garden.</p>
+<p>"Four out of six." She tears up the napkin. "Average. We'll do this every shift until you're perfect."</p>
+<p>"Why?"</p>
+<p>She leans across the counter. Her face is close. The wine-dark lipstick fills my vision. "Because paying attention is a skill, Alex. And the people who pay attention are the people who get what they want." Her eyes drop to my mouth. Stay there. Come back up. "What do you want?"</p>
+<p>The question is too big for the cafe. Too big for the counter between us. I can feel it pressing against the walls, looking for more room, wanting an answer that has nothing to do with coffee and everything to do with why my heart is hammering in my chest and why her lipstick is the only color I can see.</p>
+<p>"To get better," I say.</p>
+<p>"At what?"</p>
+<p>The pause stretches. I could say "at coffee." I could say "at my job." I could say any safe thing and she'd accept it and we'd move on and the moment would dissolve into the regular background noise of employment.</p>
+<p>"At being what people need me to be," I say.</p>
+<p>Vanessa's expression changes. Something behind her eyes opens, a door or a window or a cage, something that lets a different kind of light through. She reaches across the counter and touches my face. Not my collar. Not my jaw. My face. Her palm on my cheek, warm, sure, possessive in a way that has nothing to do with employment.</p>
+<p>"That," she says, "is the right answer."</p>
+<p>She pulls away. Goes back to the espresso machine. The moment closes like a book being shut, and I'm left standing at the counter with the ghost of her palm on my cheek and the taste of lavender honey on my tongue and the certain knowledge that whatever game we're playing, it stopped being about coffee a long time ago.</p>
+<<set $day5_vanessaDrill to true>>
+<<set $vanessaTasteTestScore to 4>>
+<<if $derekMet>>
+<p>He's back. Same table. Same spot, end seat closest to the aisle, the chair turned slightly so he has a sightline to the counter. Same dirty blond hair pushed back. Same blue eyes. Today the sunglasses are hooked on the collar of a fitted white tee that shows off the kind of arms you get from actually going to the gym instead of thinking about going to the gym.</p>
+<p>He's alone this time. No frat pack. No volume. Just Derek and his phone and an empty cup that means he got here before I started my shift and has been waiting.</p>
+<p>I approach the table. The hip sway is automatic now, my body doing the thing Vanessa taught it without permission from my brain, and I catch him watching. Not the subtle glance from yesterday. Today he's watching openly, chin propped on his fist, his blue eyes tracking my approach with an attention that makes my skin warm from ten feet away.</p>
+<p>"Morning," I say. The professional smile. The Vanessa smile. Think of something that makes you feel pretty. Chloe's eyes when she saw me in panties. The smile comes.</p>
+<p>Derek's answering smile is slow and crooked and does something complicated to my stomach. "You remembered my table."</p>
+<p>"Hard to forget." I pull out my pad. Force of habit. Then remember: no pad today. Memory is charm. I put the pad away. "What can I get you?"</p>
+<p>"Surprise me again." The same half-smile from yesterday. The same two words that contain more than two words should be allowed to contain. "You've got good taste."</p>
+<p>I make his drink. The lavender latte again, because Vanessa said "make something pretty" again and at this point I think she's matching the drinks to the customer in ways that have nothing to do with flavor profiles. I bring it over. Set it down. Rotate the handle.</p>
+<p>"Perfect," he says. Not about the drink.</p>
+<p>I should walk away. I have other tables. Other orders. Other things to do that don't involve standing at table six while a guy with a square jaw looks at me like I'm something he'd like to unwrap very slowly.</p>
+<p>"I liked the receipt note," I say. The words come out before I can stop them. Where did that come from? Why did I say that? The receipt note. "Great service. Great smile. See you tomorrow?" And here he is. Tomorrow. And here I am telling him I liked it.</p>
+<p>Derek's smile widens. "Yeah? I wasn't sure if that was too much."</p>
+<p>"It was nice."</p>
+<p>Nice. I told a guy that his flirtatious note on a coffee receipt was nice. I'm standing at his table with my hips cocked in Vanessa's trained sway and my face wearing Vanessa's trained smile and the word "nice" hanging between us like a bridge I just built without checking where it leads.</p>
+<p>"You're different from most servers," Derek says. He sips the lavender latte. Maintains eye contact over the rim. "Most servers want you in and out. You actually look at people."</p>
+<p>"I was told to."</p>
+<p>"Nah." He sets the cup down. "That's not trained. That's you."</p>
+<p>The conversation lasts three minutes. Three minutes is nothing. Three minutes is also the longest I've ever talked to a guy my age about nothing while my heart rate stayed above resting. He tells me he goes to State. Business major. Plays club lacrosse. Hates group projects. Normal stuff. The kind of stuff guys talk about.</p>
+<p>But the way he talks about it isn't how guys talk to other guys. He talks to me the way he'd talk to someone he's interested in. Eye contact that lasts a beat too long. Questions that land on personal details. Leaning forward in his chair, reducing the distance between us in increments so small they feel accidental.</p>
+<p>"Same time tomorrow?" he says when I finally pull myself away.</p>
+<p>"I work most mornings."</p>
+<p>"Then I'll be here most mornings."</p>
+<p>He tips eight dollars on a five-dollar drink. On the receipt, in that neat handwriting: "The lavender was perfect. Just like last time."</p>
+<p>Vanessa reads it before I can stop her. She plucks it from my fingers and pins it to the board next to yesterday's receipt. Two receipts now. A collection forming. Derek's collection, kept behind the counter, visible every shift, a paper trail of a boy who keeps coming back.</p>
+<p>"He's consistent," Vanessa says. She's not teasing. She's observing the way an entomologist observes insects, with professional interest and no judgment. "Consistent is rare in men."</p>
+<p>"He's just being friendly."</p>
+<p>She gives me the look. The one that says she's heard every lie a server has ever told and mine doesn't even crack the top hundred. "Friendly doesn't tip a hundred and sixty percent, sweetheart."</p>
+<p>Sweetheart. She's never called me that before. The word settles on me like a piece of clothing I didn't know I was being fitted for.</p>
+<<set $day5_derekReturn to true>>
+<<set $derekVisitCount to 2>>
+<<set $derekRelationship += 2>>
+<<set $vanessaCalledSweetheart to true>>
+<</if>>
+<<if $okonkwoMet>>
+<p>She's there. Same table. Same position. Different drink today, something iced, and a different book, thick and blue with gold lettering. She watches me serve for twenty minutes before she says anything.</p>
+<p>I'm busing a table near hers when she speaks.</p>
+<p>"The smile is better."</p>
+<p>I look at her. She's watching me over her reading glasses, the way teachers watch students who are finally getting the algebra.</p>
+<p>"Yesterday it was forced. Today it's starting to come from somewhere real." She taps the table twice with one gnarled finger. "The walk is better too. Less mechanical. You're finding the rhythm."</p>
+<p>"Thank you, Mrs. Okonkwo."</p>
+<p>"Don't thank me. Thank whoever's teaching you." She sips her iced drink. "Is it the tall one behind the counter? The one with the red lipstick and the walk that could stop traffic?"</p>
+<p>"Vanessa. She's my manager."</p>
+<p>"Manager." Mrs. Okonkwo smiles. A smile full of history. "In my day we called them something different. Something closer to what they actually are." She doesn't elaborate. She goes back to her book.</p>
+<p>When I bus her table after she leaves, there's a five-dollar bill under her cup. And a note on a napkin in handwriting that's shaky but legible: "Keep finding the rhythm. You'll need it."</p>
+<<set $day5_okonkwoFollowup to true>>
+<<set $okonkwoRelationship += 1>>
+<<set $money += 5>>
+<</if>>
+<p>Between the rush and closing, Vanessa grabs my hand. Just takes it, wrapping her fingers around mine, and pulls it close to examine my nails. The clear gloss from Sophia's visit is still faintly there, a subtle shine that you'd only notice if you were looking. Vanessa is looking.</p>
+<p>"Nice." She runs her thumb across my thumbnail. "You do them yourself?"</p>
+<p>"My sister." Step-sister, technically, but the word sister comes out faster and easier than the correction, because somewhere between the panties and the hair clip the distinction has stopped mattering.</p>
+<p>"Cute. I could do them better though." She releases my hand. "Remind me sometime."</p>
+<p>Sometime. The word hangs between us like a promise made in a language I'm still learning.</p>
+<p>End of shift. Tips: thirty-one dollars. The best day yet. Vanessa counts them out for me and slides them across the counter with her fingertips.</p>
+<p>"Same time tomorrow?"</p>
+<p>"Same time."</p>
+<p>She adjusts my collar one last time. Runs her thumb along the edge of my jaw where it meets my neck. The touch lasts two seconds. The memory of it will last until I fall asleep.</p>
+<p>"You called me ma'am today," she says. Quietly. Like she's unwrapping a gift very slowly.</p>
+<p>"I didn't mean to."</p>
+<p>"Yes you did." She turns away. "The best things are never accidents, Alex."</p>
+
+<<statChange "obedience" 3>>
+<<statChange "feminization" 1>>
+<<set $money += 31>>
+<<set $vanessaRelationship += 3>>
+<<set $cafeShiftCount += 1>>
+<<set $day5_cafeShiftDone to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "town">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>

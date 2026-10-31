@@ -1,0 +1,92 @@
+:: Day5_Night [day5 night reflection]
+<<nobr>>
+<<centerImage "image/events/sleep.png">>
+
+<<set $phase to "night">>
+<h2>Night</h2>
+
+<<if $pinkApronWorn>>
+<p>I'm heading to my room when Evelyn appears in the hallway. She does this. Materializes at doorways like she has a sixth sense for moments when I'm about to escape unobserved.</p>
+<p>"Alex."</p>
+<p>"Yes, ma'am?"</p>
+<p>The ma'am comes out smooth. Practiced. I've been saying it all day, <<if $day5_cafeShiftDone>>to Vanessa at the cafe, <</if>>to Evelyn at home, and the repetition has polished the edges off the word until it sits in my mouth as naturally as "please" or "thank you."</p>
+<p>"You left the apron on the hook."</p>
+<p>"Yes, I hung it up after..."</p>
+<p>"I noticed." She steps closer. The hallway light catches her face from the side, all angles and shadows and the kind of bone structure that painters would fight to capture. "You took care of it. Folded the ruffles. Straightened the bow."</p>
+<p>I did. I don't remember deciding to do it. I remember finishing the dusting and taking the apron off and my hands just moved, folding the ruffles flat, adjusting the bow so it didn't crinkle, hanging it with the care you'd give something that matters.</p>
+<p>"Of course," I say.</p>
+<p>"Of course." She repeats my words back to me. Holds them. Weighs them. "A week ago you would have crumpled it and thrown it over a chair."</p>
+<p>She's right. A week ago I would have. A week ago I didn't fold ruffles or straighten bows or hang aprons with reverence. A week ago I was a different person standing in the same hallway.</p>
+<p>"You're learning," she says. She touches my shoulder. Brief. The contact of someone who is pleased but not surprised, because she planned this and the plan is working. "Tomorrow, we'll work on the silver polish. I have a tea set that needs attention."</p>
+<p>"Yes, ma'am."</p>
+<p>She holds my gaze for three seconds. In those three seconds I see everything she's not saying. I see the pink apron and the feather duster and the heel polishing and the tray carrying and the walking lessons and the ma'ams stacking on top of each other like bricks in a wall that she's building around me, a wall that looks like a home and feels like a cage and somehow manages to be both at the same time.</p>
+<p>"Goodnight, Alex."</p>
+<p>"Goodnight, ma'am."</p>
+<p>She walks to her room. Her heels click on the hardwood. Five clicks. Her door closes. The house goes quiet.</p>
+<p>I go to my room. <<if $pantiesEquipped>>The panties I'm wearing ride up as I climb into bed and I adjust them without thinking about it and the fact that I adjust them without thinking about it would terrify me if I had the energy to be terrified, but I don't, because being terrified takes resistance<<else>>I climb into bed and the thought that would once have terrified me barely registers, because being terrified takes resistance<</if>> and my resistance has been declining steadily for five days like a battery that nobody's charging.</p>
+<<set $day5_evelynBedtime to true>>
+<<set $evelynRelationship += 3>>
+<</if>>
+<<if $bbcEnabled>>
+<p>Scrolling Instagram before bed. The algorithm has decided it knows me. It's been watching my searches and my pauses and the half-seconds where my thumb hovers over things I don't click on, and it's feeding me a targeted diet of content that the old Alex would have scrolled past without a second thought.</p>
+<p>A sponsored post fills my screen. PULSE NIGHTCLUB: VIP LAUNCH FRIDAY. The photo is dark, moody, neon-soaked. The interior of a club that looks like it was designed by someone who thinks luxury means everything in black leather and blue light. A bar in the background, chrome and glass, bottles lit from underneath like a chemist's display.</p>
+<p>And behind the bar, leaning against it with the relaxed authority of a man who owns the ground he stands on, a tall figure in a charcoal shirt. The photo is slightly blurred at the edges, giving the center focus an intensity that pulls the eye in and holds it. Dark skin. Gold watch on the left wrist. The shirt open one button at the collar, revealing the beginning of a chest that I can tell is broad without seeing more of it.</p>
+<p>He's looking directly into the camera. Not posing. Not performing. Just looking. With an intensity that cuts through the screen and lands somewhere in my lower abdomen, a physical sensation so specific I could point to the exact square inch of my body where it arrives.</p>
+<p>The same gold watch. The same one I saw through the door crack during the delivery, when a hand reached out to take the bag and the watch caught the light and my eyes stayed on it one second too long. The same one from the ad I scrolled past two days ago. Three sightings now. Three times the gold has flashed across my awareness and each time it's left a deposit, a sediment of something accumulating in the bottom of my consciousness.</p>
+<p>I scroll past.</p>
+<p>My thumb hovers. Over the "Learn More" button. Over his face. Over the gold watch.</p>
+<p>Two seconds. Three. My thumb is still hovering. Still not scrolling. Still suspended above the screen in a holding pattern of indecision that my body is making on behalf of my brain while my brain is busy pretending this isn't happening.</p>
+<p>I scroll past. Close Instagram. Open a game. Play until my eyes hurt.</p>
+<p>But when I close my eyes the gold flashes behind my eyelids. Brief. Bright. Like a lighthouse signal that I'm not supposed to be following but can't stop seeing.</p>
+<<set $day5_bbcPulseAd to true>>
+<<set $bbcCuriosity += 1>>
+<<set $pulseAdSeenCount += 1>>
+<<set $goldWatchSightings to 3>>
+<</if>>
+<<if $day5_aliCrossword>>
+<p>I think about eclipse. Ali's word. The original is still there. Just hidden. Waiting for the shadow to pass.</p>
+<p>But what if the shadow doesn't pass? What if the shadow is what I'm becoming?</p>
+<</if>>
+<p>Day 5.</p>
+<p>I'm lying in bed in <<if $pantiesEquipped>>panties<<else>>boxers<</if>> and a t-shirt and the ceiling is the same ceiling it was five days ago but everything else is different. Everything else is different and I'm running out of ceiling to stare at while I pretend it isn't.</p>
+<<if $day5_miaJadeVisitDone>>
+<p>Mia and Jade today. Two women I met for the first time who treated me like I was one of them, who moisturized my face and filed my nails and told me I had main character energy<<if $hairClipQuest>> while a sparkly pink butterfly sat in my hair<</if>>. They didn't ask if I wanted to be included. They just included me. Like it was obvious. Like anyone looking at me would know where I belonged in the social taxonomy and it wasn't with the guys.</p>
+<</if>>
+<<if $pinkApronWorn>>
+<p>Evelyn put me in a pink apron and I wore it. Not because she threatened me. Not because she bribed me. Because she said "this one is more appropriate" and I believed her. Or didn't believe her but obeyed anyway, which might be worse, because at least belief is a reason. Obedience without belief is just surrender.</p>
+<</if>>
+<<if $day5_lilyInstagramDone>>
+<p>Lily built a secret Instagram for a person called Lexi who has my toenails and fourteen followers and a bio that says "just a shy thing discovering herself." The shy thing is me. The discovering is happening. And Lily owns the account and the photos and the whole digital scaffolding of a feminine identity that I didn't create but can't seem to tear down.</p>
+<</if>>
+<<if $day5_sophiaEveningDone>>
+<p>Sophia told me I should explore who I really am. She said it with warmth and wisdom and the kind of genuine care that makes you want to trust the advice even when the advice might lead you off a cliff. Explore who you really are. What if who I really am is the person everyone keeps seeing? The one with the nice skin and the gentle hands and the walk that a stranger said suits me and the face that earns tips and winks?</p>
+<</if>>
+<p>Five days. That's all it's been. Five days and <<if $pantiesEquipped>>a collection of panties in my drawer, <</if>><<if $toenailsPainted>>painted toenails, <</if>><<if $day5_miaJadeVisitDone>>moisturizer on my face, <</if>><<if $hairClipQuest>>a sparkly pink hair clip<<if $day5_miaJadeVisitDone>> that two women called "everything"<</if>>, <</if>><<if $pinkApronWorn>>a pink ruffled apron hanging by the laundry room, a feather duster, <</if>><<if $day5_lilyInstagramDone>>and a digital alter ego with a growing following<<else>>and a list of things I would have laughed at a week ago<</if>>. Five days and four different women have said some version of "this is who you really are" while pushing me further from who I thought I was.</p>
+<p>I can't sleep. I toss and turn.<<if $pantiesEquipped>> The panties ride up and I adjust them without thinking. When did adjusting panties become automatic? When did I stop flinching at the fabric and start forgetting it was there? When did the silk go from foreign to familiar, from costume to clothing, from something I was wearing to something I was?<</if>></p>
+<p>My cock is hard. Not from any specific image or memory but from the accumulated weight of the day, from hands.<<if $day5_cafeShiftDone>> Vanessa's fingers on my collar.<</if>><<if $day5_miaJadeVisitDone>> Mia's fingers on my face.<</if>><<if $day5_nicolettePreviewDone>> Nicolette's fingers in my hair.<</if>><<if $day5_sophiaGardenDone or $day5_sophiaEveningDone>> Sophia's hand on my knee.<</if>> So many hands. So many women. All of them touching me with purpose, shaping me like clay on a wheel, and each one adding a curve or smoothing an edge or pressing a fingerprint into the surface of who I'm becoming.</p>
+<<if $deniedOrgasm gt 0>>
+<p>I don't touch myself. Chloe said don't touch yourself. I'm obeying a woman who's not in the room, who's probably asleep in her own bed three miles away, who told me "don't touch yourself" like she was telling me not to eat dessert before dinner, casual, assumed, the command of someone who owns the dessert and decides when it's served.</p>
+<<else>>
+<p>I don't touch myself. I lie there with the accumulated weight of the day pressing down on me and I don't know who I'm obeying anymore, only that I am.</p>
+<</if>>
+<p>The door that was cracked open is opening wider. The light coming through is getting brighter. And I'm not pushing it shut. I'm leaning toward it. Not to close it. Not to run. Just to see.</p>
+<p>Just to look.</p>
+<p>Just to see.</p>
+<p>Day 5 ends.</p>
+
+<<if $lexiInstagramActive and $lexiFollowers lt 18>><<set $lexiFollowers to 18>><</if>>
+<<if $lexiInstagramActive and $lexiPosts lt 4>><<set $lexiPosts to 4>><</if>>
+<<if $obedience gte 15 and $evelynRelationship gte 15 and $evelynStage < 2>><<set $evelynStage to 2>><</if>>
+<<if $feminization gte 15 and $chloeRelationship gte 20 and $chloeStage < 2>><<set $chloeStage to 2>><</if>>
+<<if $embarrassment gte 10 and $lilyPhotoCount gte 1 and $lexiInstagramActive>><<set $lilyStage2Approaching to true>><</if>>
+<<set $day5_nightDone to true>>
+
+<<statSummary>>
+
+<<link `"Sleep - end Day " + $day`>>
+  <<set $day += 1>>
+  <<set $phase to "morning">>
+  <<set $currentMapLocation to "home">>
+  <<goto "DailyHub">>
+<</link>>
+<</nobr>>

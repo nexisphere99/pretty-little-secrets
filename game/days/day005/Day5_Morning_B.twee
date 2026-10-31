@@ -1,0 +1,32 @@
+:: Day5_Morning_B [day5 morning sophia garden]
+<<nobr>>
+<<centerImage "image/events/street.png">>
+<<set $currentLocation to "events/street">>
+
+<p>The morning is gold and warm and smells like cut grass and honeysuckle when Sophia flags me down from her yard. She's kneeling in a garden bed, her floral gardening gloves dirty at the palms, soil on her knees, her dark hair pulled back with a green bandana that makes her look like a World War II propaganda poster, the kind that says "She Can Do It" except Sophia doesn't need a poster because she just does it, every day, with a grace that makes effort look optional.</p>
+<p>"Alex! Perfect timing. I need strong hands." She tosses me a spare pair of gloves. They arc through the morning air and I catch them and look at them and my stomach does that now-familiar dip that accompanies every small feminine object that enters my orbit. Pink roses on white. Floral print. Unmistakably, inescapably feminine gardening gloves. Sophia's old pair.</p>
+<p>I pull them on without thinking about it. We kneel in the dirt together, side by side, planting tulip bulbs in the dark soil of her front bed. She chats easily while she works. Divorced, she tells me. Three years now. No kids. Teaches yoga at Serene Studio downtown, the same studio I've been watching through the glass like a kid outside a candy store. Book club on Wednesdays. Pilates when she has time. She has a way of talking that makes you feel like the most important person in the world, like her attention is a warm blanket being laid over your shoulders, and everything outside that blanket is cold and irrelevant.</p>
+<p>"You're very gentle with the plants," she says, watching me ease a bulb into the hole I dug. "Most guys just shove them in the dirt. Quick, rough, get it done. You actually care where they go." She touches my arm. Her fingers on my forearm, just above the wrist where the pink glove ends and my bare skin begins. Warm. Lingering. "I like that about you."</p>
+<p>The compliment settles somewhere between my chest and my throat. Not because it's extraordinary but because of what it implies. Gentle. Caring. Careful with delicate things. These are the words people use for women. For nurturers. For the kind of person who arranges flowers and reads poetry and cries at movies. They're not the words that men want to hear about themselves. They're not the words I ever expected to make my cock stiffen<<if $pantiesEquipped>> against lavender silk<</if>>.</p>
+<p>We finish the bed. Twelve bulbs, spaced evenly, patted down with the backs of our floral gloves. Sophia stands and stretches, her yoga teacher body unfolding like a fern in timelapse, every joint popping with the satisfied click of a body that's been well used.</p>
+<p>"Tea?"</p>
+<p>She makes tea on her porch. Chamomile. Two cups, mismatched, one with daisies and one with sunflowers. The floral gloves are still on my hands because I forgot to take them off and she hasn't mentioned it and I've stopped noticing them and that's the whole trick, isn't it. That's how it works. Not force. Not threats. Not blackmail or photos or "wear this or else." Just warmth. Just acceptance. Just the slow, patient erosion of resistance through kindness until the walls come down not because they were battered but because they were no longer needed.</p>
+<p>Fifteen minutes in her company and I'm wearing floral gloves, drinking chamomile tea from a cup with sunflowers on it, listening to her describe a romance novel about a duke who falls for a chambermaid, and I feel comfortable. Not embarrassed. Not aroused. Not anxious. Comfortable. Like this is where I belong on a Wednesday morning, on a porch with a beautiful woman who smells like lavender and speaks in the kind of sentences that make you lean forward.</p>
+<p>"You should come to yoga sometime," she says. "I have a beginner class on Saturdays. No judgment, no competition. Just breathing and movement."</p>
+<p>"I'm not very flexible."</p>
+<p>"Nobody is when they start. That's the whole point." She touches my knee. "Flexibility isn't about the body, Alex. It's about letting go. Letting yourself bend instead of breaking." She holds my eyes. Warm and steady and deeper than the chamomile. "You seem like someone who's spent a lot of time trying not to bend."</p>
+<p>I want to tell her she's wrong. I want to list all the ways I've bent this week, the panties and the purse and the nail polish and the walk<<if $day5_cafeShiftDone or $pinkApronWorn>> and the "yes ma'am" that tumbled out of my mouth this morning like a bird that's been caged too long<</if>>. But she's not talking about those bends. She's talking about the deeper ones. The ones that happen in the places nobody can see.</p>
+<p>"Maybe," I say.</p>
+<p>She smiles. Not the satisfied smile of someone who's won an argument. The gentle smile of someone who planted a seed and is willing to wait for it to grow.</p>
+<p>I leave the gloves on her porch railing. She picks them up after I go and puts them in the drawer by her front door. My pair. She's keeping my pair. She's making a space for me in her home, one pair of floral gloves at a time.</p>
+
+<<statChange "feminization" 2>>
+<<statChange "confidence" 2>>
+<<set $sophiaRelationship += 5>>
+<<set $sophiaYogaInvited to true>>
+<<set $day5_sophiaGardenDone to true>>
+<<spendTime 1>>
+<<set $currentMapLocation to "neighborhood">>
+
+<<link "Continue" "DailyHub">><</link>>
+<</nobr>>
