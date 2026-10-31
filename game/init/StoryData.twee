@@ -67,5 +67,6 @@ Day $day | <<= $phase.toUpperCase()>>
 <li class="progress-box money-box">
   <label>Money</label> $<<= $money>>
 </li>
+<li class="progress-box version-box">Version - 0.0.7</li>
 <br>
 <</nobr>>
